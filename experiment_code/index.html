@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        jsPsych
+    </title>
+
+    <script src="https://unpkg.com/jspsych@7.3.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-multi-select@1.1.2"></script>
+    <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" type="text/css" /> 
+    <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.1"></script>
+    <script src="lists.js"></script>
+</head>
+<body>
+<script>
+    const jsPsych = initJsPsych({
+            on_finish: function() {
+            jsPsych.data.displayData();
+            }
+            });
+
+var trial = {
+  type: jsPsychSurveyMultiSelect,
+  questions: [
+    {
+      prompt: "Place a check next to each item that starts a new grouping:", 
+      options: jsPsych.timelineVariable("items"),
+      required: true,
+      name: 'items'
+    }, 
+  ], 
+  randomize_question_order: true
+};
+
+var proc = {
+    timeline: [trial],
+    timeline_variables: lists,
+    randomize_order: true
+  };
+
+    jsPsych.run([proc]);
+
+
+
+</script>
+</body>
+
+</html>
