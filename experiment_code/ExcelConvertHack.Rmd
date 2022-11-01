@@ -1,0 +1,37 @@
+---
+title: "Hack Excel convert to Js File"
+output: html_notebook
+---
+
+```{r}
+#install.packages("jsonlite")
+#install.packages("dplyr")
+library(dplyr)
+library(jsonlite)
+```
+
+```{r}
+#Read in data file
+data<-read_excel("Jsontest.xlsx")
+
+#Split datafile into datafiles for each subject
+forlist<-unique(data$Subject)
+for(i in 1:length(forlist)){
+     a<-filter(data, Subject==forlist[i])
+     assign(paste0("data", i), a)
+}
+
+#Convert each subject's datafile into js format
+for(z in 1:length(forlist)) {
+  c<-get(paste0("data", z))
+  b<-toJSON(c, dataframe="columns", pretty=TRUE)
+  assign(paste0("json",z),b)
+}
+
+#Print json files for easy copying
+for(x in 1:length(forlist)) {
+  d<-get(paste0("json", x))
+  print(d)
+}
+
+```
