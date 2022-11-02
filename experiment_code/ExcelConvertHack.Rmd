@@ -1,19 +1,56 @@
 ---
 title: "Hack Excel convert to Js File"
 output: html_notebook
+editor_options: 
+  chunk_output_type: inline
 ---
 
 ```{r}
-#install.packages("jsonlite")
-#install.packages("dplyr")
-library(dplyr)
 library(jsonlite)
+library(tidyverse)
 ```
 
-```{r}
-#Read in data file
-data<-read_excel("Jsontest.xlsx")
+# Combining all data
 
+```{r}
+path_trial = paste(getwd(), "/lists/", sep = "")
+fluency <- list.files(path =path_trial, pattern = "*.xlsx", full.names = TRUE) %>% 
+  lapply(readxl::read_excel) %>% 
+  bind_rows %>%
+  select(subject, domain,corpus_response_used_in_semantic_analysis)%>%
+  rename(word = corpus_response_used_in_semantic_analysis)
+
+## general descriptives: num items/domain
+
+fluency %>% group_by(domain, subject) %>%
+  count() %>%
+  group_by(domain) %>% summarize(mean= mean(n))
+
+## taking a random sample for testing
+set.seed(100)
+test = sample(unique(fluency %>% pull(subject)) , 120)
+
+final_data = fluency %>% filter(subject %in% test) %>%
+  group_by(subject) %>%
+  mutate(SIDNO = cur_group_id())
+
+write.csv(final_data, "final_lists.csv", row.names = FALSE)
+```
+# json conversion
+```{r}
+final_data = read_csv("final_lists.csv")
+new = final_data %>% select(-subject) %>% group_by(SIDNO,domain) %>%
+  summarise(across(everything(), ~ paste(word, collapse = ", "))) %>% 
+  ungroup() %>%
+  mutate(word = strsplit(word, ", ")) %>% select(-subject)
+
+list = new %>% filter(SIDNO %in% 1:10) %>% arrange(domain)
+toJSON(list)
+```
+
+# alternative code
+
+```{r}
 #Split datafile into datafiles for each subject
 forlist<-unique(data$Subject)
 for(i in 1:length(forlist)){
@@ -33,5 +70,5 @@ for(x in 1:length(forlist)) {
   d<-get(paste0("json", x))
   print(d)
 }
-
 ```
+
