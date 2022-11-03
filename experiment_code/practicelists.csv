@@ -1,0 +1,63 @@
+﻿subject,domain,word,SIDNO
+1,ANIMALS,cow,1
+1,ANIMALS,sheep,1
+1,ANIMALS,goat,1
+1,ANIMALS,fish,1
+1,ANIMALS,octopus,1
+1,ANIMALS,shark,1
+1,ANIMALS,dog,1
+1,ANIMALS,cat,1
+2,CITIES,Houston ,2
+2,CITIES,Dallas,2
+2,CITIES,San Antonio,2
+2,CITIES,Austin ,2
+2,CITIES,Boston,2
+2,CITIES,Stockton,2
+2,CITIES,Taunton,2
+2,CITIES,New York,2
+2,CITIES,Shanghai,2
+2,CITIES,Paris ,2
+2,CITIES,Moscow,2
+2,CITIES,Tokyo,2
+2,CITIES,London,2
+3,VEHICLES,Car,3
+3,VEHICLES,Truck,3
+3,VEHICLES,Motorcycle,3
+3,VEHICLES,Sedan ,3
+3,VEHICLES,Train,3
+3,VEHICLES,Plane,3
+3,VEHICLES,Seaplane,3
+3,VEHICLES,Sailboat,3
+3,VEHICLES,Motorboat,3
+3,VEHICLES,Row Boat,3
+3,VEHICLES,Kayak,3
+4,OCCUPATIONS,Lawyer,4
+4,OCCUPATIONS,Doctor,4
+4,OCCUPATIONS,Surgeon ,4
+4,OCCUPATIONS,Plumber,4
+4,OCCUPATIONS,Deliveryman,4
+4,OCCUPATIONS,Fireman,4
+4,OCCUPATIONS,Policeman,4
+4,OCCUPATIONS,Security Guard ,4
+5,SPORTS,Baseball,5
+5,SPORTS,Football,5
+5,SPORTS,Rugby,5
+5,SPORTS,Cricket,5
+5,SPORTS,Soccer,5
+5,SPORTS,Tennis,5
+5,SPORTS,Badminton,5
+5,SPORTS,Volleyball,5
+5,SPORTS,Swimming,5
+5,SPORTS,Water Polo,5
+6,FOODS,Hotdog,6
+6,FOODS,Burger,6
+6,FOODS,Corndog,6
+6,FOODS,Lasagna,6
+6,FOODS,Pasta,6
+6,FOODS,Noodles,6
+6,FOODS,Ravioli,6
+6,FOODS,Rice,6
+6,FOODS,Wheat,6
+6,FOODS,Barley,6
+6,FOODS,Cake,6
+6,FOODS,Pie,6

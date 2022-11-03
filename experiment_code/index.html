@@ -26,6 +26,29 @@ const jsPsych = initJsPsych({
 
 var timeline = [];
 
+var Instructions = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `<p>Today you will be tasked with grouping consecutive items in a list </p>
+         <p>You will be presented with a list of items and will be asked to mark when an item departs from the group of items beforehand</p>
+         <p>Press Continue to complete a few practice Lists </p>`,
+        choices: ['Continue'],
+    };
+
+    timeline.push(Instructions)
+
+    var Practice = {
+        type: jsPsychSurveyMultiSelect,
+        questions: [
+          {
+            prompt: "Place a check next to each item that starts a new grouping:",
+        options: ["test","test2"],
+        required: true
+          }
+    ]
+    };
+
+    timeline.push(Practice)
+
 
 var trial = {
   type: jsPsychSurveyMultiSelect,
@@ -281,8 +304,12 @@ function extract_json_subset(json_list, domain_name){
     
       //timeline.push(demo_procedure);
       //timeline.push(endexperiment);
-  jsPsych.run(timeline);
       
+      jsPsych.run(timeline);
+
+
+      
+
 
 
 </script>
