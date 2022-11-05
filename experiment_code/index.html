@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" type="text/css" /> 
     <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.1"></script>
     <script src="lists.js"></script>
+    <script src="practice.js"></script>
 </head>
 <body>
 <script>
@@ -26,29 +27,45 @@ const jsPsych = initJsPsych({
 
 var timeline = [];
 
-var Instructions = {
+var Instructions1 = {
         type: jsPsychHtmlButtonResponse,
         stimulus: `<p>Today you will be tasked with grouping consecutive items in a list </p>
          <p>You will be presented with a list of items and will be asked to mark when an item departs from the group of items beforehand</p>
-         <p>Press Continue to complete a few practice Lists </p>`,
+         <p>Press Continue to complete a few practice lists </p>`,
         choices: ['Continue'],
     };
 
-    timeline.push(Instructions)
+    timeline.push(Instructions1)
+    
+    
 
     var Practice = {
         type: jsPsychSurveyMultiSelect,
         questions: [
           {
             prompt: "Place a check next to each item that starts a new grouping:",
-        options: ["test","test2"],
-        required: true
+            options: jsPsych.timelineVariable("pr"),
+            required: false
           }
     ]
     };
 
-    timeline.push(Practice)
+    var timeline_practice = {
+      timeline: [Practice],
+      timeline_variables: practicelist,
+      randomize_order: true
+    }
 
+    timeline.push(timeline_practice)
+
+    var Instructions2 = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `<p>Thank you for completing these practice lists. Now you will be asked to do the same thing for real </p>
+         <p>Please be thoughtful when considering these lists, press Continue when you are ready</p>`,
+        choices: ['Continue'],
+    };
+
+    timeline.push(Instructions2)
 
 var trial = {
   type: jsPsychSurveyMultiSelect,
@@ -101,7 +118,7 @@ for( var i = 0; i < shuffledDomains.length; i++){
     }
 
     
-/*
+
     var demoinstructions = {
     type: jsPsychHtmlButtonResponse,
     stimulus: `
@@ -235,7 +252,8 @@ data: {
       timeline: [demo_1, demo_2,demo_3, english, not_english_loop, demo_5]
     }
     
-   
+  timeline.push(demo_procedure)
+
 
 
     var endexperiment = {
@@ -247,7 +265,9 @@ data: {
           `,
         choices: ['Finish and Save Data']
     };
-*/
+    
+  timeline.push(endexperiment)
+
 
 function find_list(condition_number){
   var stimuli = []
