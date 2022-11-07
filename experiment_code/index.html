@@ -56,7 +56,7 @@ var Instructions1 = {
       randomize_order: true
     }
 
-    timeline.push(timeline_practice)
+    //timeline.push(timeline_practice)
 
     var Instructions2 = {
         type: jsPsychHtmlButtonResponse,
@@ -87,6 +87,8 @@ var changeofdomain = {
         choices: ['Continue'],
     };
 
+    
+
 
 var teststimuli = []
 var list = [1,2,3,4,5,6,7,8,9,10,11,12] // 12 lists
@@ -101,10 +103,24 @@ var domains = ["ANIMALS", "CITIES", "VEHICLES", "OCCUPATIONS", "SPORTS", "FOODS"
 var shuffledDomains = jsPsych.randomization.shuffle(domains);
 //console.log("shuffledDomains=",shuffledDomains)
 
+
+
 for( var i = 0; i < shuffledDomains.length; i++){
     console.log("i=",i)
+    var d = shuffledDomains[i]
+
+    var domain_info = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: function() {
+          
+          var x = `<p>You will now provide groupings for the domain of ` + d
+          return x
+        } ,
+        choices: ['Continue'],
+    };
+
     var domain_proc = {
-      timeline: [trial],
+      timeline: [domain_info, trial],
       timeline_variables:  extract_json_subset(teststimuli, shuffledDomains[i]),
       randomize_order: true
     }
