@@ -28,16 +28,21 @@ const jsPsych = initJsPsych({
 var timeline = [];
 
 var Instructions1 = {
-        type: jsPsychHtmlButtonResponse,
-        stimulus: `<p>Today you will be tasked with grouping consecutive items in a list </p>
-         <p>You will be presented with a list of items and will be asked to mark when an item departs from the group of items beforehand</p>
-         <p>Press Continue to complete a few practice lists </p>`,
-        choices: ['Continue'],
+  type: jsPsychHtmlButtonResponse,
+  stimulus: `
+  <p style="font-size:20px;"> Welcome! Thank you for your interest in our study. </p>
+  <p style="font-size:20px;"> This study is being conducted by researchers at Bowdoin College.</p>
+  <p style="font-size:20px;"> In this experiment, you will be asked to judge the relatedness of different words.</p>
+  <p style="font-size:20px;"> The entire experiment should not last more than 60 minutes. You will be paid $10 USD for your participation. </p>
+  <p style="font-size:20px;"> Please click <a href = "https://drive.google.com/file/d/1nlZ_4ybU8x6dxAch1sgIze4WqATWSxQZ/view?usp=share_link" target = "_blank">here</a> to read the full consent form. </p>
+  <p style="font-size:20px;"> If you agree to participate, please click the button below to continue to experiment instructions.</p>
+  `,
+  choices: ['I agree to participate']
     };
 
     timeline.push(Instructions1)
     
-    
+    // need practice instructions here
 
     var Practice = {
         type: jsPsychSurveyMultiSelect,
@@ -80,16 +85,6 @@ var trial = {
   randomize_question_order: true
 };
 
-var changeofdomain = {
-        type: jsPsychHtmlButtonResponse,
-        stimulus: `<p>You will now provide groupings on a new domain! </p>
-         <p>Please click the button below to continue. </p>`,
-        choices: ['Continue'],
-    };
-
-    
-
-
 var teststimuli = []
 var list = [1,2,3,4,5,6,7,8,9,10,11,12] // 12 lists
 
@@ -101,35 +96,37 @@ teststimuli = list1
 var domains = ["ANIMALS", "CITIES", "VEHICLES", "OCCUPATIONS", "SPORTS", "FOODS"]
 
 var shuffledDomains = jsPsych.randomization.shuffle(domains);
-//console.log("shuffledDomains=",shuffledDomains)
+console.log("shuffledDomains=",shuffledDomains)
 
-
+var domain_info = []
 
 for( var i = 0; i < shuffledDomains.length; i++){
     console.log("i=",i)
     var d = shuffledDomains[i]
+    domain_info[i] = 'You will now provide groupings for the domain ' + d + '<br><br>'
 
+    console.log("d=",d)
+
+   
     var domain_info = {
         type: jsPsychHtmlButtonResponse,
-        stimulus: function() {
-          
-          var x = `<p>You will now provide groupings for the domain of ` + d
-          return x
-        } ,
+        stimulus: domain_info[i],
         choices: ['Continue'],
     };
 
+    if(i < shuffledDomains.length-1){
+    timeline.push(domain_info)
+    }
+
     var domain_proc = {
-      timeline: [domain_info, trial],
+      timeline: [trial],
       timeline_variables:  extract_json_subset(teststimuli, shuffledDomains[i]),
       randomize_order: true
     }
 
     timeline.push(domain_proc)
 
-    if(i < shuffledDomains.length-1){
-    timeline.push(changeofdomain)
-    }
+   
 
     }
 

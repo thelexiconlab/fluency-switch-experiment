@@ -21,17 +21,26 @@ fluency <- list.files(path =path_trial, pattern = "*.xlsx", full.names = TRUE) %
   select(subject, domain,corpus_response_used_in_semantic_analysis)%>%
   rename(word = corpus_response_used_in_semantic_analysis)
 
+cities_path = paste(getwd(), "/lists/cities/", sep = "")
+fluency_city <- list.files(path =cities_path, pattern = "*.xlsx", full.names = TRUE) %>% 
+  lapply(readxl::read_excel) %>% 
+  bind_rows %>%
+  select(subject, domain,capital)%>%
+  rename(word = capital)
+
+final_fluency = rbind(fluency, fluency_city)
+
 ## general descriptives: num items/domain
 
-fluency %>% group_by(domain, subject) %>%
+final_fluency %>% group_by(domain, subject) %>%
   count() %>%
   group_by(domain) %>% summarize(mean= mean(n))
 
 ## taking a random sample for testing
 set.seed(100)
-test = sample(unique(fluency %>% pull(subject)) , 120)
+test = sample(unique(final_fluency %>% pull(subject)) , 120)
 
-final_data = fluency %>% filter(subject %in% test) %>%
+final_data = final_fluency %>% filter(subject %in% test) %>%
   group_by(subject) %>%
   mutate(SIDNO = cur_group_id())
 
@@ -43,7 +52,7 @@ final_data = read_csv("final_lists.csv")
 new = final_data %>% select(-subject) %>% group_by(SIDNO,domain) %>%
   summarise(across(everything(), ~ paste(word, collapse = ", "))) %>% 
   ungroup() %>%
-  mutate(word = strsplit(word, ", ")) %>% select(-subject)
+  mutate(word = strsplit(word, ", "))
 
 list = new %>% filter(SIDNO %in% 1:10) %>% arrange(domain)
 toJSON(list)
