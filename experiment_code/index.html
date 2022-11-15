@@ -42,7 +42,19 @@ var Instructions1 = {
 
     timeline.push(Instructions1)
     
-    // need practice instructions here
+    var PracticeInstructions = {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: `<p style="font-size:20px;">For this experiment you will be presented with lists of words generated in a previous experiment </p>
+        <p style="font-size:20px;"> Each list will have words from one of six possible domains: </p>
+        <p style="font-size:20px;"> Cities, Animals, Occupations, Sports, Foods, and Vehicles </p>
+        <p style="font-size:20px;"> Your task will be to judge the relatedness of the words and organize them into groups </p>
+        <p style="font-size:20px;"> You'll record the groups by marking the first word of each group </p>
+        <p style="font-size:20px;"> In order to get the hang of this, you will first be presented with six practice lists, one list from each domain </p>
+         <p style="font-size:20px;"> Press Continue when you are ready to begin practicing</p>`,
+        choices: ['Continue'],
+    };
+
+    timeline.push(PracticeInstructions )
 
     var Practice = {
         type: jsPsychSurveyMultiSelect,
