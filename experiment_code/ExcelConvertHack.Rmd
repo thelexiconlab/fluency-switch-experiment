@@ -15,20 +15,13 @@ library(dplyr)
 
 ```{r}
 path_trial = paste(getwd(), "/lists/", sep = "")
-fluency <- list.files(path =path_trial, pattern = "*.xlsx", full.names = TRUE) %>% 
+final_fluency <- list.files(path =path_trial, pattern = "*.xlsx", full.names = TRUE) %>% 
   lapply(readxl::read_excel) %>% 
   bind_rows %>%
-  select(subject, domain,corpus_response_used_in_semantic_analysis)%>%
-  rename(word = corpus_response_used_in_semantic_analysis)
+  select(subject, domain,spellcheck)%>%
+  rename(word = spellcheck) %>%
+  filter(!is.na(subject))
 
-cities_path = paste(getwd(), "/lists/cities/", sep = "")
-fluency_city <- list.files(path =cities_path, pattern = "*.xlsx", full.names = TRUE) %>% 
-  lapply(readxl::read_excel) %>% 
-  bind_rows %>%
-  select(subject, domain,capital)%>%
-  rename(word = capital)
-
-final_fluency = rbind(fluency, fluency_city)
 
 ## general descriptives: num items/domain
 
