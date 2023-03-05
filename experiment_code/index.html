@@ -14,7 +14,7 @@
     <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" type="text/css" /> 
     <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.1"></script>
     <script src="lists.js"></script>
-    <script src="practice.js"></script>
+    <script src="practice2.js"></script>
 </head>
 <body>
 <script>
@@ -54,7 +54,7 @@ var Instructions1 = {
         choices: ['Continue'],
     };
 
-    timeline.push(PracticeInstructions )
+    //timeline.push(PracticeInstructions )
 
     var Practice = {
         type: jsPsychSurveyMultiSelect,
@@ -69,7 +69,7 @@ var Instructions1 = {
 
     var timeline_practice = {
       timeline: [Practice],
-      timeline_variables: practicelist,
+      timeline_variables: practicelist2,
       randomize_order: true
     }
 
@@ -82,20 +82,26 @@ var Instructions1 = {
         choices: ['Continue'],
     };
 
-    timeline.push(Instructions2)
+  timeline.push(Instructions2)
 
-var trial = {
-  type: jsPsychSurveyMultiSelect,
-  questions: [
-    {
-      prompt: "Place a check next to each item that starts a new grouping:", 
-      options: jsPsych.timelineVariable("word"),
-      required: true,
-      name: 'items'
-    }, 
-  ], 
-  randomize_question_order: true
+var buttontrial = {
+  type: jsPsychHtmlButtonResponse,
+    
+      prompt: '', 
+      choices: ['Same Group', 'New Group'],
+      timeline: [
+        {stimulus: jsPsych.timelineVariable("pr")},
+    ]
 };
+//timeline.push(buttontrial)
+
+var timeline_buttontrial = {
+      timeline: [buttontrial],
+      timeline_variables: practicelist2,
+      randomize_order: false
+    }
+//timeline.push(timeline_buttontrial)
+
 
 var teststimuli = []
 var list = [1,2,3,4,5,6,7,8,9,10,11,12] // 12 lists
@@ -103,9 +109,9 @@ var list = [1,2,3,4,5,6,7,8,9,10,11,12] // 12 lists
 var CONDITION = list[Math.floor(Math.random() * list.length)];
 
 //teststimuli = find_list(CONDITION)
-teststimuli = list1
+teststimuli = practicelist2
 
-var domains = ["ANIMALS", "CITIES", "VEHICLES", "OCCUPATIONS", "SPORTS", "FOODS"]
+var domains = ["ANIMALS", "CITIES", "OCCUPATIONS"]
 
 var shuffledDomains = jsPsych.randomization.shuffle(domains);
 console.log("shuffledDomains=",shuffledDomains)
@@ -131,7 +137,7 @@ for( var i = 0; i < shuffledDomains.length; i++){
     }
 
     var domain_proc = {
-      timeline: [trial],
+      timeline: [buttontrial],
       timeline_variables:  extract_json_subset(teststimuli, shuffledDomains[i]),
       randomize_order: true
     }
