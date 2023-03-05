@@ -14,35 +14,33 @@ from functools import lru_cache
 from itertools import product as iterprod 
 import re
 
-class Switch: 
+from utils import collect_words 
+from utils import word_checker 
+from utils import cosine_similarity
+
+'''
+data.py has a Data class that takes an excel file and creates an excel file that contains columns of ID, Original Words, Words, Has Vectors 
+(true or false), Replacements (from word_checker function), Embeddings (list of embeddings), Similarity Scores (cosine similarity between words). 
+
+    Class
+        (1) Data: initializes information from original excel file and creates a new excel file with ID, Original Words, Words, Has Vectors, 
+        Replacenemtns, Embeddings, Similarity Scores. 
+        
+    Function 
+        (1) num_replacement: returns the total number of words that need to be replaced (words that is not in PyMagnitude's vectors)
+        
+'''
+
+
+
+
+class Data: 
     
     def __init__(self, filename): 
-        # name = Filename 
-        # file = Eead excel file 
-        # id_list = All ID from file
-        # words = All words from file
-        # id_words = Dictionary with {Participant ID: Words}
-        # embeddings = List of all embeddings 
-        # replacement = List of replacement word or N/A if word in PyMagnitude 
-        # no_vector_words = List of all words not in PyMagnitude
-        # word_embedding = Dictionary with {Word:Embedding} 
-        # id_embedding = Dictionary with {ID:Embeddings}
-        # id_cosine_similarity = Dictionary with {ID:Cosine Similarity}
-        # id_semantic_matrix = Dictionary with {ID:Semantic Matrix} 
-        
-        # df = dataframe for ID, Words, Embeddings, Similarity 
         
         self.name = filename 
         self.file = pd.read_excel(filename) 
-        words = self.file["spellcheck"].values.tolist()
-        words = [x.lower() for x in words]
-        words = [x.strip() for x in words]
-        words = [x.replace(" ", "_") for x in words]
-        words = [x.replace("-", "_") for x in words]
-        words = [x.replace("//", "") for x in words]
-        words = [x.replace(".", "") for x in words]
-        words = [x.replace("\\", '') for x in words]
-        self.words = words
+        words = collect_words(self.name) 
         
         self.id_list = self.file["subject"].values.tolist() 
         self.id_words = {} 
@@ -141,9 +139,6 @@ class Switch:
             array = np.array(self.id_embedding[ID])
             self.arrays += [array] 
             self.id_semantic_matrix[ID] = semantic_matrix(array)
-            
-        
-        
         
         # Creating DataFrame 
         self.df = pd.DataFrame()
@@ -155,99 +150,54 @@ class Switch:
         self.df["Embeddings"] = self.embeddings 
         self.df["Similarity Scores"] = similarity_list
         
-        self.dp = pd.DataFrame()
-        self.dp["Semantic Matrix"] = self.arrays
         
 
     def save_file(self, out_filename): 
-        # Saving data to excel and csv 
+        '''
+        save_file saves the dataframe into an excel file
+        
+        Args: 
+            (1) out_filename: filename of saved excel file of dataframe
+        
+        '''
         self.df.to_excel(out_filename) 
         self.dp.to_csv(f"{self.name[7:-5]}_semantic_array.csv")
         print("Finished Saving File")         
 
-def collect_words(filename): 
-    file = pd.read_excel(filename) 
-    words = file["spellcheck"].values.tolist()
-    words = [x.lower() for x in words]
-    words = [x.strip() for x in words]
-    words = [x.replace(" ", "_") for x in words]
-    words = [x.replace("-", "_") for x in words]
-    words = [x.replace("//", "") for x in words]
-    words = [x.replace(".", "") for x in words]
-    words = [x.replace("\\", '') for x in words]
-    return words 
+
 
 def num_replacement(self): 
+    ''' 
+        Description: 
+            Counts the number of replacements for words in original list of words. 
+        Returns: 
+            counter (int): number of replacements 
+    '''
+    
     counter = 0
     for word in self.replacement: 
         if word != "N/A":
             counter+=1 
     return counter 
-        
 
-def word_checker(x): 
-        # x = word needed to be checked 
-        # y = combinations of word in vectors. 
-        # v = Magnitude
-        # Uses PyMagnitude's most_similar_to_given to get the next closest word from word2vec
-        v = Magnitude(MagnitudeUtils.download_model('word2vec/medium/GoogleNews-vectors-negative300'))
-        original_word = []
-        original_word.append(x) 
-        z = x.replace("_", "") 
-        y = [] 
-        if "_" in x: 
-            if z in v:
-                return z
-            else: 
-                x = x.replace("_", " ")
-                x = x.split()
-                for words in x: 
-                    if words in v: 
-                        y.append(words) 
-        else: 
-            idx = 0
-            while idx < len(x): 
-                i = idx +1
-                while i < len(x):
-                    if x[idx:i+2] in v: 
-                        y.append(x[idx:i+2])
-                        i +=1 
-                    else: 
-                        i += 1
-                idx += 1 
-        return v.most_similar_to_given(str(original_word), y)
-
-def cosine_similarity(word1, word2): 
-    if word1 == word2: 
-        return 1
-    else: 
-        A = np.array(word1)  
-        B = np.array(word2) 
-        return np.dot(A,B) / (norm(A) * norm(B))
     
-def semantic_matrix(path_to_embeddings): 
-    N = len(path_to_embeddings) 
-    semantic_matrix = 1 - scipy.spatial.distance.cdist(path_to_embeddings, path_to_embeddings, 'cosine').reshape(-1)
-    semantic_matrix = semantic_matrix.reshape((N,N))
-    return semantic_matrix
 
-a = Switch("fovacs_animals.xlsx") 
-a.save_file("animals_embedding.xlsx")
+#a = Data("fovacs_animals.xlsx") 
+#a.save_file("animals_embedding.xlsx")
 
-# b = Switch("fovacs_cities.xlsx")
+# b = Data("fovacs_cities.xlsx")
 # b.save_file("cities_embedding.xlsx")
 
+#c = Data("fovacs_foods.xlsx") 
+#c.save_file("foods_embedding.xlsx")
 
+#d = Data("fovacs_occupations.xlsx") 
+#d.save_file("occupations_embedding.xlsx")
 
-c = Switch("fovacs_foods.xlsx") 
-c.save_file("foods_embedding.xlsx")
-
-d = Switch("fovacs_occupations.xlsx") 
-d.save_file("occupations_embedding.xlsx")
-
-# e = Switch("fovacs_sports.xlsx") 
+# e = Data("fovacs_sports.xlsx") 
 # e.save_file("sports_embedding.xlsx")
 
-
-# f= Switch("fovacs_vehicles.xlsx") 
+# f= Data("fovacs_vehicles.xlsx") 
 # f.save_file("vehicles_embedding.xlsx")
+
+
