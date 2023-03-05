@@ -1,5 +1,7 @@
 Lexical Data Files for Forager 
 
+Files produced from lexical_data.py
+
 Animals, Foods, Occupation Folders Contains : 
 
   (1) embeddings.csv 
