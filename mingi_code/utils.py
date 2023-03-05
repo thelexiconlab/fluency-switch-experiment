@@ -15,9 +15,39 @@ from functools import lru_cache
 from itertools import product as iterprod
 import re
 
+'''
+utils.py has helper functions that help with getting Lexical Data in in lexical_data.py
+
+    Functions 
+        (1) collect_words: gets a list of words from an excel file. The words are turned into lowercase, add an underscore 
+        for spaces, removes all unnecessary characters.
+        (2) word_checker: checks if word is in PyMagnitude's vectors. If word is not in vectors, it creates a list of all 
+        possible combination of given word and use PyMagnitude's most_similar_to_given function to return the most similar. 
+        (3) cosine_similarity: takes word embeddings of two words and returns the cosine 
+        similarity between them. 
+        (4) semantic_matrix: converts a word embedding space into a similarity matrix.
+        (5) frequencies: creates frequencies from semantic embeddings. 
+        
+     Class 
+        (1) phonology_funcs: class contains functions to generate phonemes from a list of words and create a phonological similarity matrix. 
+       
+'''
 
 
 def collect_words(filename): 
+    '''
+        Description: 
+            Creates a list of words from an excel file. The words are turned into lowercase, add an underscore for spaces, 
+            removes all unnecessary characters. The column of excel file is named " spellcheck". To get words from a different 
+            column, change "spellcheck" to column name". Used fovacs_animals.xlsx files to gather words. 
+           
+        Args: 
+            (1) filename: name of excel file (.xlsx) 
+        
+        Returns: 
+            List of adjusted words from the excel file. 
+     '''
+        
     file = pd.read_excel(filename) 
     words = file["spellcheck"].values.tolist()
     words = [x.lower() for x in words]
@@ -32,10 +62,16 @@ def collect_words(filename):
 
 
 def word_checker(x): 
-        # x = word needed to be checked 
-        # y = combinations of word in vectors. 
-        # v = Magnitude
-        # Uses PyMagnitude's most_similar_to_given to get the next closest word from word2vec
+    '''
+        Description: 
+            Takes word (x) and if the word is not in PyMagnitude's vectors, then gets the most similar word from 
+            a list of potential replacement words by PyMagnitude's most_similar_to_given function. 
+        Args: 
+            (1) x (str): word to check if it is in vectors. 
+        Returns: 
+            (1) replacement (str): the replacement word for the original word 
+    ''' 
+    
         v = Magnitude(MagnitudeUtils.download_model('word2vec/medium/GoogleNews-vectors-negative300'))
         original_word = []
         original_word.append(x) 
@@ -61,9 +97,11 @@ def word_checker(x):
                     else: 
                         i += 1
                 idx += 1 
-        return v.most_similar_to_given(str(original_word), y)
+        replacement = v.most_similar_to_give(str(original_word), y) 
+        return replacement 
 
 def cosine_similarity(word1, word2): 
+    
     if word1 == word2: 
         return 1
     else: 
@@ -88,6 +126,15 @@ def semantic_matrix(path_to_embeddings):
     return semantic_matrix
 
 def frequencies(embeddings):
+    '''
+        Description: 
+            Creates frequencies for each word in the vocabulary, obtained from the Google Books Ngram Dataset(version 2) 
+            The first column is the word, the second is the log count, and the third is the raw count. 
+        Args: 
+            (1) embeddings: path to a .csv file containing N word embeddings of size 300 (300xN array). 
+        Returns:
+            (1) items_and_counts: list of frequencies.
+    '''
 
     data = pd.read_csv(embeddings) 
     items = data.columns.to_list()
