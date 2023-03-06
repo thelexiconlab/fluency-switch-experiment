@@ -84,14 +84,28 @@ var Instructions1 = {
 
   timeline.push(Instructions2)
 
+var current_cluster = []
+
 var buttontrial = {
   type: jsPsychHtmlButtonResponse,
     
-      prompt: '', 
+      prompt: function(){
+        var cluster_text = "The current grouping is: " + current_cluster.join(", ")
+        return cluster_text
+      }, 
       choices: ['Same Group', 'New Group'],
       timeline: [
         {stimulus: jsPsych.timelineVariable("pr")},
-    ]
+    ],
+    on_finish: function(data){
+        console.log("data=",data)
+        if(data.response == 0){
+            current_cluster.push(data.stimulus)
+        }
+        else{
+            current_cluster = []
+        }
+    }
 };
 //timeline.push(buttontrial)
 
@@ -122,6 +136,7 @@ for( var i = 0; i < shuffledDomains.length; i++){
     console.log("i=",i)
     var d = shuffledDomains[i]
     domain_info[i] = 'You will now provide groupings for the domain ' + d + '<br><br>'
+    
 
     console.log("d=",d)
 
@@ -132,7 +147,9 @@ for( var i = 0; i < shuffledDomains.length; i++){
         choices: ['Continue'],
     };
 
-    if(i < shuffledDomains.length-1){
+    if(i < shuffledDomains.length){
+    // reset current_cluster
+    current_cluster = []
     timeline.push(domain_info)
     }
 
