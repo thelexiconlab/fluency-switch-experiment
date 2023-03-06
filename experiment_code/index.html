@@ -88,25 +88,27 @@ var current_cluster = []
 
 var buttontrial = {
   type: jsPsychHtmlButtonResponse,
-    
-      prompt: function(){
-        var cluster_text = "The current grouping is: " + current_cluster.join(", ")
-        return cluster_text
-      }, 
-      choices: ['Same Group', 'New Group'],
-      timeline: [
-        {stimulus: jsPsych.timelineVariable("pr")},
-    ],
-    on_finish: function(data){
-        console.log("data=",data)
-        if(data.response == 0){
-            current_cluster.push(data.stimulus)
-        }
-        else{
-            current_cluster = []
-        }
+  prompt: function(){
+    var cluster_text = "The current grouping is: " + current_cluster.join(", ")
+    return cluster_text
+  },
+  choices: ['Same Group', 'New Group'],
+  timeline: [
+    {stimulus: jsPsych.timelineVariable("pr")},
+  ],
+  on_finish: function(data){
+    console.log("data=",data)
+    if (data.response == 0) {
+      current_cluster.push(data.stimulus)
     }
+    else {
+      current_cluster = []
+      current_cluster.push(data.stimulus)
+    }
+    data.cluster = current_cluster.join(", ")
+  }
 };
+
 //timeline.push(buttontrial)
 
 var timeline_buttontrial = {
@@ -132,7 +134,7 @@ console.log("shuffledDomains=",shuffledDomains)
 
 var domain_info = []
 
-for( var i = 0; i < shuffledDomains.length; i++){
+for (var i = 0; i < shuffledDomains.length; i++) {
     console.log("i=",i)
     var d = shuffledDomains[i]
     domain_info[i] = 'You will now provide groupings for the domain ' + d + '<br><br>'
@@ -145,6 +147,9 @@ for( var i = 0; i < shuffledDomains.length; i++){
         type: jsPsychHtmlButtonResponse,
         stimulus: domain_info[i],
         choices: ['Continue'],
+        on_finish: function() {
+          current_cluster = []
+        }
     };
 
     if(i < shuffledDomains.length){
@@ -155,7 +160,7 @@ for( var i = 0; i < shuffledDomains.length; i++){
 
     var domain_proc = {
       timeline: [buttontrial],
-      timeline_variables:  extract_json_subset(teststimuli, shuffledDomains[i]),
+      timeline_variables: extract_json_subset(teststimuli, shuffledDomains[i]),
       randomize_order: true
     }
 
