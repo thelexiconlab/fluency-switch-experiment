@@ -14,7 +14,7 @@
     <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" type="text/css" /> 
     <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.1"></script>
     <script src="lists.js"></script>
-    <script src="practice2.js"></script>
+    <script src="practice.js"></script>
 </head>
 <body>
 <script>
@@ -40,7 +40,7 @@ var Instructions1 = {
   choices: ['I agree to participate']
     };
 
-    timeline.push(Instructions1)
+    //timeline.push(Instructions1)
     
     var PracticeInstructions = {
         type: jsPsychHtmlButtonResponse,
@@ -66,12 +66,13 @@ var Instructions1 = {
           }
     ]
     };
-
+/*
     var timeline_practice = {
       timeline: [Practice],
       timeline_variables: practicelist2,
       randomize_order: true
     }
+    */
 
     //timeline.push(timeline_practice)
 
@@ -82,67 +83,78 @@ var Instructions1 = {
         choices: ['Continue'],
     };
 
-  timeline.push(Instructions2)
+  //timeline.push(Instructions2)
+
+  var fixation = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: '<p style="font-size: 48px;">+</p> New list about to begin!',
+    choices: "NO_KEYS",
+    trial_duration: 1000,
+    on_finish: function(){
+      current_cluster = []
+      this_domain_count = 0
+    }
+};      
+
 
 var current_cluster = []
 var this_domain_count = 0
 
+
+
 var buttontrial = {
   type: jsPsychHtmlButtonResponse,
-  choices: ['Same Group', 'New Group'],
+  choices: function(){
+   var choice1 =  "Add <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase() + " </span>to current group"
+   var choice2 =  "Start a new group for <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase()
+   return [choice1, choice2]
+  },
   timeline: [
     {
       stimulus: function() {
-        var stimulus_text = "<p> Current group: <br>" + current_cluster.join(", ") + "<br> <p style='font-size:30px;'>" + String(jsPsych.timelineVariable("pr")) + "</p> <br> </p>"
+        var stimulus_text = "The <b>current group</b> contains: <span style='color:blue'> " + current_cluster.join(", ") + "</span> <br> <p style='color:black'> The next item is: <span style='color:red'>" +  String(jsPsych.timelineVariable("word")).toUpperCase() + "</span> <br> <p> What would you like to do?</p>"
         return stimulus_text
       }
     },
   ],
   on_finish: function(data){
     this_domain_count += 1
-    console.log("data=",data)
+    
     if (data.response == 0) {
-      current_cluster.push(jsPsych.timelineVariable("pr"))
+      current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
     }
     if (data.response == 1) {
       current_cluster = []
-      current_cluster.push(jsPsych.timelineVariable("pr"))
+      current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
     }
     data.cluster = current_cluster.join(", ")
   },
   on_load: function(trial) {
     if (this_domain_count == 0) {
-      current_cluster.push(jsPsych.timelineVariable("pr"))
+      current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
       console.log(current_cluster)
       jsPsych.finishTrial()
     }
   }
 };
 
-//timeline.push(buttontrial)
-
-var timeline_buttontrial = {
-      timeline: [buttontrial],
-      timeline_variables: practicelist2,
-      randomize_order: false
-    }
-//timeline.push(timeline_buttontrial)
-
 
 var teststimuli = []
-var list = [1,2,3,4,5,6,7,8,9,10,11,12] // 12 lists
+var subjectlist = [1,2,3] // 3 lists
 
-var CONDITION = list[Math.floor(Math.random() * list.length)];
+var CONDITION = subjectlist[Math.floor(Math.random() * subjectlist.length)];
 
 //teststimuli = find_list(CONDITION)
-teststimuli = practicelist2
+teststimuli = list1
 
-var domains = ["ANIMALS", "CITIES", "OCCUPATIONS"]
+var domains = ["ANIMALS", "FOODS", "OCCUPATIONS"]
 
 var shuffledDomains = jsPsych.randomization.shuffle(domains);
 console.log("shuffledDomains=",shuffledDomains)
 
 var domain_info = []
+
+// loop through different domains
 
 for (var i = 0; i < shuffledDomains.length; i++) {
     console.log("i=",i)
@@ -167,17 +179,39 @@ for (var i = 0; i < shuffledDomains.length; i++) {
     // reset current_cluster
     current_cluster = []
     timeline.push(domain_info)
+    
     }
 
-    var domain_proc = {
-      timeline: [buttontrial],
-      timeline_variables: extract_json_subset(teststimuli, shuffledDomains[i]),
-      randomize_order: true
+    // within a given domain, we want to present different subject lists
+    // and separate each list with a fixation cross
+    // we could first extract the domain list itself for all subjects
+    
+
+    domain_list_json = extract_domain_subset(teststimuli, d)
+    console.log("domain_list_json:", domain_list_json)
+
+    var sids = Array.from(new Set(domain_list_json.map(({ SIDNO }) => SIDNO)));
+    var shuffledIDs = jsPsych.randomization.shuffle(sids);
+
+
+    // and then loop through different subjects
+
+
+    // here we extract the individual subject lists for a given domain
+    
+    for (var j = 0; j < shuffledIDs.length; j++){
+
+      timeline.push(fixation)
+      var list_proc = {
+          timeline: [buttontrial],
+          timeline_variables: extract_subject_subset(domain_list_json, shuffledIDs[j]),
+          randomize_order: false
+        }
+
+    timeline.push(list_proc)
+
     }
 
-    timeline.push(domain_proc)
-
-   
 
     }
 
@@ -316,7 +350,7 @@ data: {
       timeline: [demo_1, demo_2,demo_3, english, not_english_loop, demo_5]
     }
     
-  timeline.push(demo_procedure)
+  //timeline.push(demo_procedure)
 
 
 
@@ -332,6 +366,7 @@ data: {
     
   timeline.push(endexperiment)
 
+  
 
 function find_list(condition_number){
   var stimuli = []
@@ -341,48 +376,32 @@ function find_list(condition_number){
   else if(condition_number == 2){
     stimuli = list2
   }
-  else if(condition_number ==3){
+  
+  else {
     stimuli = list3
   }
-  else if(condition_number == 4){
-    stimuli = list4
-  }
-  else if(condition_number == 5){
-    stimuli = list5
-  }
-  else if(condition_number == 6){
-    stimuli = list6
-  }
-  else if(condition_number == 7){
-    stimuli = list7
-  }
-  else if(condition_number == 8){
-    stimuli = list8
-  }
-  else if(condition_number == 9){
-    stimuli = list9
-  }
-  else if(condition_number == 10){
-    stimuli = list10
-  }
-  else if(condition_number == 11){
-    stimuli = list11
-  }
-  else {
-    stimuli = list12
-  }
-
-
-  // fill out rest of the conditions here
 
   return stimuli
 
 }
 
-function extract_json_subset(json_list, domain_name){
 
-      const filtered_json = json_list.filter(({domain}) => domain === domain_name);
-      return filtered_json
+  function extract_domain_subset(json_list, domain_name){
+       
+       console.log("domain_name=",domain_name)
+
+      const filtered_domain = json_list.filter(({domain}) => domain === domain_name);
+      console.log("filtered_domain=",filtered_domain)
+      return filtered_domain
+    }
+
+    function extract_subject_subset(json_list, subject_name){
+       
+       console.log("subject_name=",subject_name)
+
+      const filtered_sub = json_list.filter(({SIDNO}) => SIDNO === subject_name);
+      console.log("filtered_json=",filtered_sub)
+      return filtered_sub
     }
 
     
