@@ -93,7 +93,7 @@ var buttontrial = {
   timeline: [
     {
       stimulus: function() {
-        var stimulus_text = "<p> Current group: <br>" + current_cluster.join(", ") + "<br> <br>" + String(jsPsych.timelineVariable("pr")) + "<br> <br> </p>"
+        var stimulus_text = "<p> Current group: <br>" + current_cluster.join(", ") + "<br> <p style='font-size:30px;'>" + String(jsPsych.timelineVariable("pr")) + "</p> <br> </p>"
         return stimulus_text
       }
     },
