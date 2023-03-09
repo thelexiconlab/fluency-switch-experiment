@@ -52,11 +52,15 @@ def create_history_variables(fluency_list, labels, sim_matrix, freq_matrix, phon
     phon_history = []
 
     for i in range(0,len(fluency_list)):
+        if i == len(fluency_list):
+            break
         word = fluency_list[i]
         currentwordindex = labels.index(word)
 
         freq_list.append(freq_matrix[currentwordindex])
         freq_history.append(freq_matrix)
+        
+        
 
         if i > 0: # get similarity between this word and preceding word
             prevwordindex = labels.index(fluency_list[i-1])
@@ -65,6 +69,7 @@ def create_history_variables(fluency_list, labels, sim_matrix, freq_matrix, phon
             if phon_matrix is not None:
                 phon_list.append(phon_matrix[prevwordindex, currentwordindex] )
                 phon_history.append(phon_matrix[prevwordindex,:])
+
         else: # first word
             sim_list.append(0.0001)
             sim_history.append(sim_matrix[currentwordindex,:])
@@ -86,8 +91,8 @@ def get_labels_and_frequencies(path_to_frequencies):
     '''
 
     freq_matrix = pd.read_csv(path_to_frequencies, header = None)
-    labels = list(freq_matrix[0])
-    freq_matrix = np.array(freq_matrix[1])
+    labels = freq_matrix[freq_matrix.columns[0]].values.tolist()
+    freq_matrix = freq_matrix[freq_matrix.columns[1]].values.tolist()
 
     return labels, freq_matrix
 

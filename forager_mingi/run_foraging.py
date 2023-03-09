@@ -35,6 +35,10 @@ Workflow:
 
 # Global Path Variabiles
 normspath =  'data/norms/troyernorms.csv'
+
+
+
+
 # similaritypath =  'data/Animals/animals_semantic_matrix.csv'
 # frequencypath =  'data/Animals/animals_frequency.csv'
 # phonpath = 'data/Animals/animals_phonological_matrix.csv'
@@ -212,33 +216,33 @@ def synthesize_results(outputs):
     - Switch Vector Result(s)
     - Item-Wise Negative Log Likelihood
     """
-    model_results = []
+    # model_results = []
     switch_results = []
-    nll_results = []
+    # nll_results = []
     for output in outputs:
         subj = output[0]
         fl_list = output[1]
-        model_names = output[2]
-        results = output[3]
-        switch_methods = output[4]
-        switch_vectors = output[5]
-        #Create Model Output Results DataFrame
-        for i, model in enumerate(model_names):
-            print(model)
-            model_dict = dict()
-            model_dict['Subject'] = subj
-            model_dict['Model'] = model
-            model_dict['Beta_Frequency'] = results[i][0]
-            model_dict['Beta_Semantic'] = results[i][1]
-            # print(results[i])
-            # sys.exit()
-            if len(results[i]) == 4:
-                model_dict['Beta_Phonological'] = None
-                model_dict['Negative_Log_Likelihood_Optimized'] = results[i][2]
-            if len(results[i]) == 5:
-                model_dict['Beta_Phonological'] = results[i][2]
-                model_dict['Negative_Log_Likelihood_Optimized'] = results[i][3]
-            model_results.append(model_dict)
+        # model_names = output[2]
+        # results = output[3]
+        switch_methods = output[2]
+        switch_vectors = output[3]
+        # #Create Model Output Results DataFrame
+        # for i, model in enumerate(model_names):
+        #     print(model)
+        #     model_dict = dict()
+        #     model_dict['Subject'] = subj
+        #     model_dict['Model'] = model
+        #     model_dict['Beta_Frequency'] = results[i][0]
+        #     model_dict['Beta_Semantic'] = results[i][1]
+        #     # print(results[i])
+        #     # sys.exit()
+        #     if len(results[i]) == 4:
+        #         model_dict['Beta_Phonological'] = None
+        #         model_dict['Negative_Log_Likelihood_Optimized'] = results[i][2]
+        #     if len(results[i]) == 5:
+        #         model_dict['Beta_Phonological'] = results[i][2]
+        #         model_dict['Negative_Log_Likelihood_Optimized'] = results[i][3]
+        #     model_results.append(model_dict)
         
         #Create  Switch Results DataFrame
         switch_df = []
@@ -253,35 +257,35 @@ def synthesize_results(outputs):
         switch_df = pd.concat(switch_df, ignore_index=True)
         switch_results.append(switch_df)
 
-        # Create Negative Log Likelihood DataFrame with Item Wise NLL 
-        nll_df = pd.DataFrame()
-        nll_df['Subject'] = len(fl_list) * [subj]
-        nll_df['Fluency_Item'] = fl_list
-        for k, result in enumerate(results):
-            if len(result) == 4:
-                nll_df['NLL_{model}'.format(model=model_names[k])] = result[3]
-            if len(result) == 5:
-                nll_df['NLL_{model}'.format(model=model_names[k])] = result[4]
-        # Add freq, semantic sim, and phon sim values to itemwise nll data
-        nll_df['Semantic_Similarity'] = output[6][0]
-        nll_df['Frequency_Value'] = output[6][2]
-        nll_df['Phonological_Similarity'] = output[6][4]
-        nll_results.append(nll_df)
+    #     # Create Negative Log Likelihood DataFrame with Item Wise NLL 
+    #     nll_df = pd.DataFrame()
+    #     nll_df['Subject'] = len(fl_list) * [subj]
+    #     nll_df['Fluency_Item'] = fl_list
+    #     for k, result in enumerate(results):
+    #         if len(result) == 4:
+    #             nll_df['NLL_{model}'.format(model=model_names[k])] = result[3]
+    #         if len(result) == 5:
+    #             nll_df['NLL_{model}'.format(model=model_names[k])] = result[4]
+    #     # Add freq, semantic sim, and phon sim values to itemwise nll data
+    #     nll_df['Semantic_Similarity'] = output[6][0]
+    #     nll_df['Frequency_Value'] = output[6][2]
+    #     nll_df['Phonological_Similarity'] = output[6][4]
+    #     nll_results.append(nll_df)
 
-    model_results = pd.DataFrame(model_results)
+    # model_results = pd.DataFrame(model_results)
     switch_results = pd.concat(switch_results, ignore_index=True)
-    nll_results = pd.concat(nll_results,ignore_index=True)
+    # nll_results = pd.concat(nll_results,ignore_index=True)
     
     
     
-    return model_results, switch_results, nll_results
+    return switch_results
 
 def output_results(results,dname,dpath='output',sep=','):
     if os.path.exists(dpath) == False:
         os.mkdir(dpath)
-    results[0].to_csv(os.path.join(dpath,dname + '_modelresults.csv'), index=False, sep=sep)        
-    results[1].to_csv(os.path.join(dpath,dname + '_switchresults.csv'), index=False, sep=sep)
-    results[2].to_csv(os.path.join(dpath,dname + '_individualitemfits.csv'), index=False, sep=sep)
+    # results[0].to_csv(os.path.join(dpath,dname + '_modelresults.csv'), index=False, sep=sep)        
+    results[0].to_csv(os.path.join(dpath,dname + '_switchresults.csv'), index=False, sep=sep)
+    # results[2].to_csv(os.path.join(dpath,dname + '_individualitemfits.csv'), index=False, sep=sep)
 
 
 def run_model(data, model, switch, dname):
@@ -299,13 +303,15 @@ def run_model(data, model, switch, dname):
         # Calculate Switch Vector(s)
         switch_names, switch_vecs = calculate_switch(switch, fl_list, history_vars[0],   history_vars[4], norms)
 
+        print(switch_names)
+        print(switch_vecs)
         #Execute Individual Model(s) and get result(s)
-        model_names, model_results = calculate_model(model,history_vars, switch_names, switch_vecs)
-        outputs.append([subj, fl_list, model_names, model_results, switch_names, switch_vecs,history_vars])
+        # model_names, model_results = calculate_model(model,history_vars, switch_names, switch_vecs)
+        outputs.append([subj, fl_list, switch_names, switch_vecs,history_vars])
         # print("Results: {names} , {res}".format(names = model_names, res=model_results))
         # print("--- Ran for %s seconds ---" % (time.time() - start_time))
-    model_results, switch_results, nll_results = synthesize_results(outputs)
-    output_results([model_results,switch_results,nll_results],dname)
+    switch_results = synthesize_results(outputs)
+    output_results([switch_results],dname)
 
 
 
