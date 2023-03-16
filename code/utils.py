@@ -72,33 +72,33 @@ def word_checker(x):
             (1) replacement (str): the replacement word for the original word 
     ''' 
     
-        v = Magnitude(MagnitudeUtils.download_model('word2vec/medium/GoogleNews-vectors-negative300'))
-        original_word = []
-        original_word.append(x) 
-        z = x.replace("_", "") 
-        y = [] 
-        if "_" in x: 
-            if z in v:
-                return z
-            else: 
-                x = x.replace("_", " ")
-                x = x.split()
-                for words in x: 
-                    if words in v: 
-                        y.append(words) 
+    v = Magnitude(MagnitudeUtils.download_model('word2vec/medium/GoogleNews-vectors-negative300'))
+    original_word = []
+    original_word.append(x) 
+    z = x.replace("_", "") 
+    y = [] 
+    if "_" in x: 
+        if z in v:
+            return z
         else: 
-            idx = 0
-            while idx < len(x): 
-                i = idx +1
-                while i < len(x):
-                    if x[idx:i+2] in v: 
-                        y.append(x[idx:i+2])
-                        i +=1 
-                    else: 
-                        i += 1
-                idx += 1 
-        replacement = v.most_similar_to_give(str(original_word), y) 
-        return replacement 
+            x = x.replace("_", " ")
+            x = x.split()
+            for words in x: 
+                if words in v: 
+                    y.append(words) 
+    else: 
+        idx = 0
+        while idx < len(x): 
+            i = idx +1
+            while i < len(x):
+                if x[idx:i+2] in v: 
+                    y.append(x[idx:i+2])
+                    i +=1 
+                else: 
+                    i += 1
+            idx += 1 
+    replacement = v.most_similar_to_give(str(original_word), y) 
+    return replacement 
 
 def cosine_similarity(word1, word2): 
     
