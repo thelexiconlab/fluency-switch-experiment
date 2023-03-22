@@ -105,14 +105,16 @@ var this_domain_count = 0
 var buttontrial = {
   type: jsPsychHtmlButtonResponse,
   choices: function(){
-   var choice1 =  "Add <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase() + " </span>to current group"
-   var choice2 =  "Start a new group for <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase()
+    var choice1 = "Yes, same group"
+    var choice2 = "No, new group"
+   //var choice1 =  "Add <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase() + " </span>to current group"
+   //var choice2 =  "Start a new group for <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase()
    return [choice1, choice2]
   },
   timeline: [
     {
       stimulus: function() {
-        var stimulus_text = "The <b>current group</b> contains: <span style='color:blue'> " + current_cluster.join(", ") + "</span> <br> <p style='color:black'> The next item is: <span style='color:red'>" +  String(jsPsych.timelineVariable("word")).toUpperCase() + "</span> <br> <p> What would you like to do?</p>"
+        var stimulus_text = "<span style='color:blue; font-size:150%'> " + current_cluster.join(", ") + "</span> <span style='color:black;font-size:150%'> - </span><span style='color:red;font-size:150%'>" +  String(jsPsych.timelineVariable("word")).toUpperCase() + "</span> <br> <p> Would you put them in the same group?</p>"
         return stimulus_text
       }
     },
@@ -123,7 +125,7 @@ var buttontrial = {
     if (data.response == 0) {
       current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
     }
-    if (data.response == 1) {
+    if (data.response == 1 | current_cluster.length == 2) {
       current_cluster = []
       current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
     }
