@@ -20,8 +20,11 @@
 <script>
 
 const jsPsych = initJsPsych({
+            show_progress_bar: true,
             on_finish: function() {
-            jsPsych.data.displayData();
+            filtered_data = jsPsych.data.get().filter({type_of_trial: 'comparison'});
+            filtered_data.localSave('csv','mydata.csv');
+
             }
             });
 
@@ -44,50 +47,81 @@ var Instructions1 = {
     
     var PracticeInstructions = {
         type: jsPsychHtmlButtonResponse,
-        stimulus: `<p style="font-size:20px;">For this experiment you will be presented with lists of words from a given domain. </p>
-        <p style="font-size:20px;"> Each list will have words from one of six possible domains: </p>
-        <p style="font-size:20px;"> Cities, Animals, Occupations, Sports, Foods, and Vehicles. </p>
-        <p style="font-size:20px;"> Your task will be to judge the relatedness of the words and organize them into groups. </p>
-        <p style="font-size:20px;"> You'll indicate the groupings by placing a check at the start of a new group. </p>
-        <p style="font-size:20px;"> In order to familiarize youself with this procedure, you will first be presented with six practice lists, one list from each domain. </p>
+        stimulus: `<p style="font-size:20px;">For this experiment you will be presented with pairs of words from a given domain. </p>
+        <p style="font-size:20px;"> There are three possible domains: </p>
+        <p style="font-size:20px;"> Animals, Occupations, Foods. </p>
+        <p style="font-size:20px;"> Your task will be to judge the relatedness of the words. </p>
+        <p style="font-size:20px;"> You'll chose whether or not words belong together. </p>
+        <p style="font-size:20px;"> In order to familiarize youself with this procedure, you will first be given some practice with all three domains. </p>
          <p style="font-size:20px;"> Press Continue when you are ready to begin the practice trial.</p>`,
         choices: ['Continue'],
     };
 
-    //timeline.push(PracticeInstructions )
+    timeline.push(PracticeInstructions )
 
-    var Practice = {
-        type: jsPsychSurveyMultiSelect,
-        questions: [
-          {
-            prompt: "Place a check next to each item that starts a new grouping:",
-            options: jsPsych.timelineVariable("pr"),
-            required: false
-          }
-    ]
-    };
-/*
-    var timeline_practice = {
-      timeline: [Practice],
-      timeline_variables: practicelist2,
-      randomize_order: true
+  var practice = {
+  type: jsPsychHtmlButtonResponse,
+  choices: function(){
+    var choice1 = "Yes, same group"
+    var choice2 = "No, new group"
+   //var choice1 =  "Add <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase() + " </span>to current group"
+   //var choice2 =  "Start a new group for <span style='color:red'> " + String(jsPsych.timelineVariable("word")).toUpperCase()
+   return [choice1, choice2]
+  },
+  timeline: [
+    {
+      stimulus: function() {
+        var stimulus_text = "<span style='color:blue; font-size:150%'> " + current_cluster.join(", ") + "</span> <span style='color:black;font-size:150%'> - </span><span style='color:red;font-size:150%'>" +  String(jsPsych.timelineVariable("practice_word")).toUpperCase() + "</span> <br> <p> Would you put them in the same group?</p>"
+        return stimulus_text
+      }
+    },
+  ],
+  on_finish: function(data){
+    this_domain_count += 1
+    
+    if (data.response == 0) {
+      current_cluster.push(String(jsPsych.timelineVariable("practice_word")).toUpperCase())
     }
-    */
+    if (data.response == 1 | current_cluster.length == 2) {
+      current_cluster = []
+      current_cluster.push(String(jsPsych.timelineVariable("practice_word")).toUpperCase())
+    }
+    data.cluster = current_cluster.join(", ")
+    
+    
 
-    //timeline.push(timeline_practice)
+  },
+  on_load: function(trial) {
+    if (this_domain_count == 0) {
+      current_cluster.push(String(jsPsych.timelineVariable("practice_word")).toUpperCase())
+      console.log(current_cluster)
+      jsPsych.finishTrial()
+    }
+  }
+};
 
+var timeline_practice = {
+timeline: [practice],
+timeline_variables: practicelist, 
+randomize_order: false
+}
+
+
+//timeline.push(timeline_practice)
+  
+  
     var Instructions2 = {
         type: jsPsychHtmlButtonResponse,
         stimulus: `<p>Thank you for completing these practice lists. You will now move onto the actual experiment </p>
-         <p>Please indicate the groupings as well as you can, press Continue when you are ready</p>`,
+         <p>Please indicate the pairings as well as you can, press Continue when you are ready</p>`,
         choices: ['Continue'],
     };
 
-  //timeline.push(Instructions2)
+  timeline.push(Instructions2)
 
   var fixation = {
     type: jsPsychHtmlKeyboardResponse,
-    stimulus: '<p style="font-size: 48px;">+</p> New list about to begin!',
+    stimulus: '<p style="font-size: 48px;">+</p> New set of words to group!',
     choices: "NO_KEYS",
     trial_duration: 1000,
     on_finish: function(){
@@ -130,6 +164,12 @@ var buttontrial = {
       current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
     }
     data.cluster = current_cluster.join(", ")
+    data.subject = jsPsych.timelineVariable("subject")
+    data.Sidno = jsPsych.timelineVariable("SIDNO")
+    data.domain = jsPsych.timelineVariable("domain")
+
+    
+
   },
   on_load: function(trial) {
     if (this_domain_count == 0) {
@@ -137,9 +177,49 @@ var buttontrial = {
       console.log(current_cluster)
       jsPsych.finishTrial()
     }
-  }
+  },
+  data: {
+    type_of_trial: "comparison",
+           
+},
+
 };
 
+
+var attention = {
+            type: jsPsychSurveyText,
+            questions: [{prompt: "Type one of the words you saw on the last screen", required: true, name: "attention"}],
+            data: {
+                type_of_trial: "attention",
+                //subject: subject_id,
+                //clue: jsPsych.timelineVariable("word"),
+                word1: jsPsych.timelineVariable('word'),
+                
+            },
+            on_load: function() {
+                document.getElementById("jspsych-survey-text-0").style["font-size"] = "20px";
+                document.body.style.background = 'grey';
+                if (false) {
+                    jsPsych.finishTrial()
+                }
+            },
+            on_finish: function(data) {
+              document.body.style.background = 'white';
+              //Trying (and failing) to define a correct response here by comparing the response 
+              //to the last word in the list
+              console.log("data.response=", data.response)
+              console.log("data.word1=", jsPsych.timelineVariable('word'))
+              
+
+                if (data.response == data.word1) {
+                    data.is_seen = 1
+                  }
+                else {
+                  data.is_seen = 0
+                }
+            }
+      }
+//timeline.push(attention)
 
 var teststimuli = []
 var subjectlist = [1,2,3] // 3 lists
@@ -200,7 +280,11 @@ for (var i = 0; i < shuffledDomains.length; i++) {
 
 
     // here we extract the individual subject lists for a given domain
-    
+
+
+
+
+
     for (var j = 0; j < shuffledIDs.length; j++){
 
       timeline.push(fixation)
@@ -210,12 +294,14 @@ for (var i = 0; i < shuffledDomains.length; i++) {
           randomize_order: false
         }
 
-    timeline.push(list_proc)
+
+    timeline.push(list_proc, attention)
 
     }
 
 
     }
+  
 
     
 
@@ -363,7 +449,8 @@ data: {
         <p> Please click the button below to finish the experiment and save your data.</p>
         <p> IMPORTANT: Please do not leave this page without clicking the button below.</p>
           `,
-        choices: ['Finish and Save Data']
+        choices: ['Finish and Save Data'],
+  
     };
     
   timeline.push(endexperiment)
