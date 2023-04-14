@@ -2,243 +2,243 @@ var practicelist = [
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Cheetah",
+      "word": "Cheetah",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Dog",
+      "word": "Dog",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Cat",
+      "word": "Cat",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Pig",
+      "word": "Pig",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Goat",
+      "word": "Goat",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Lion",
+      "word": "Lion",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Black Panther",
+      "word": "Black Panther",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Snake",
+      "word": "Snake",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Shark",
+      "word": "Shark",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Elephant",
+      "word": "Elephant",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Gazelle",
+      "word": "Gazelle",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Deer",
+      "word": "Deer",
       "SIDNO": 1
     },
     {
       "subject": 71,
       "domain": "ANIMALS",
-      "practice_word": "Monkey",
+      "word": "Monkey",
       "SIDNO": 1
     },
 
     {
       "subject": 482,
       "domain": "FOODS",
-      "practice_word": "Popcorn",
+      "word": "Popcorn",
       "SIDNO": 41
     },
     {
       "subject": 482,
       "domain": "FOODS",
-      "practice_word": "Wheat Thin",
+      "word": "Wheat Thin",
       "SIDNO": 41
     },
     {
       "subject": 482,
       "domain": "FOODS",
-      "practice_word": "Cheese It",
+      "word": "Cheese It",
       "SIDNO": 41
     },
     {
       "subject": 482,
       "domain": "FOODS",
-      "practice_word": "Spaghetti",
+      "word": "Spaghetti",
       "SIDNO": 41
     },
     {
       "subject": 482,
       "domain": "FOODS",
-      "practice_word": "Chicken",
+      "word": "Chicken",
       "SIDNO": 41
     },
     {
       "subject": 482,
       "domain": "FOODS",
-      "practice_word": "Turkey",
+      "word": "Turkey",
       "SIDNO": 41
     },
     {
       "subject": 482,
       "domain": "FOODS",
-      "practice_word": "Cheese",
+      "word": "Cheese",
       "SIDNO": 41
     },
 
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Actress",
+      "word": "Actress",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Nanny",
+      "word": "Nanny",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Butler",
+      "word": "Butler",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Maintenance",
+      "word": "Maintenance",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Custodian",
+      "word": "Custodian",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Teacher",
+      "word": "Teacher",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Counselor",
+      "word": "Counselor",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Counselor",
+      "word": "Counselor",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Surgeon",
+      "word": "Surgeon",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Editor",
+      "word": "Editor",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Reporter",
+      "word": "Reporter",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Dean",
+      "word": "Dean",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Professor",
+      "word": "Professor",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Soldier",
+      "word": "Soldier",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Security",
+      "word": "Security",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Policeman",
+      "word": "Policeman",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Fireman",
+      "word": "Fireman",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Announcer",
+      "word": "Announcer",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Singer",
+      "word": "Singer",
       "SIDNO": 119
     },
     {
       "subject": 1098,
       "domain": "OCCUPATIONS",
-      "practice_word": "Athlete",
+      "word": "Athlete",
       "SIDNO": 119
     },
 

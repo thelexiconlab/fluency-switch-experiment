@@ -30,6 +30,18 @@ const jsPsych = initJsPsych({
 
 var timeline = [];
 
+ // keep track of attention checks
+ var trial_array = [];
+        for (var j = 0; j < 6; j++) {
+            for (var i = 0; i < 9; i++) {
+            trial_array.push(0)
+            }
+            trial_array.push(1)
+        }
+
+var current_trial = -1
+
+
 var Instructions1 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: `
@@ -153,6 +165,9 @@ var buttontrial = {
       }
     },
   ],
+  on_start: function() {
+                current_trial += 1
+  },
   on_finish: function(data){
     this_domain_count += 1
     
@@ -189,6 +204,13 @@ var buttontrial = {
 var attention = {
             type: jsPsychSurveyText,
             questions: [{prompt: "Type one of the words you saw on the last screen", required: true, name: "attention"}],
+            on_load: function() {
+                document.getElementById("jspsych-survey-text-0").style["font-size"] = "20px";
+                //document.body.style.background = 'grey';
+                if (trial_array[current_trial] == 0) {
+                    jsPsych.finishTrial()
+                }
+            },
             data: {
                 type_of_trial: "attention",
                 //subject: subject_id,
@@ -196,28 +218,18 @@ var attention = {
                 word1: jsPsych.timelineVariable('word'),
                 
             },
-            on_load: function() {
-                document.getElementById("jspsych-survey-text-0").style["font-size"] = "20px";
-                document.body.style.background = 'grey';
-                if (false) {
-                    jsPsych.finishTrial()
-                }
-            },
             on_finish: function(data) {
-              document.body.style.background = 'white';
+              if (trial_array[current_trial] == 1) {
+              //document.body.style.background = 'white';
               //Trying (and failing) to define a correct response here by comparing the response 
               //to the last word in the list
-              console.log("data.response=", data.response)
-              console.log("data.word1=", jsPsych.timelineVariable('word'))
-              
-
-                if (data.response == data.word1) {
-                    data.is_seen = 1
-                  }
-                else {
-                  data.is_seen = 0
-                }
+              console.log("data.response.attention=", data.response.attention)
+              console.log("data.word1=", data.word1)
+                
+              data.is_seen = jsPsych.pluginAPI.compareKeys(data.response.attention, data.word1);
+              console.log("data.is_seen=", data.is_seen)
             }
+          }
       }
 //timeline.push(attention)
 
@@ -227,7 +239,7 @@ var subjectlist = [1,2,3] // 3 lists
 var CONDITION = subjectlist[Math.floor(Math.random() * subjectlist.length)];
 
 //teststimuli = find_list(CONDITION)
-teststimuli = list1
+teststimuli = practicelist
 
 var domains = ["ANIMALS", "FOODS", "OCCUPATIONS"]
 
@@ -289,13 +301,13 @@ for (var i = 0; i < shuffledDomains.length; i++) {
 
       timeline.push(fixation)
       var list_proc = {
-          timeline: [buttontrial],
+          timeline: [buttontrial, attention],
           timeline_variables: extract_subject_subset(domain_list_json, shuffledIDs[j]),
           randomize_order: false
         }
 
 
-    timeline.push(list_proc, attention)
+    timeline.push(list_proc)
 
     }
 
