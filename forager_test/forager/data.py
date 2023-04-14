@@ -21,43 +21,43 @@ class data:
     
     def __init__(self, filename): 
 
-        # self.file = pd.read_excel(filename)
-        # self.ID = self.file['subject'].values.tolist()
+        self.file = pd.read_excel(filename)
+        self.ID = self.file['subject'].values.tolist()
         
-        # print("getting words") 
-        # self.words = data.collect_words(self.file['spellcheck'].values.tolist())
-        
-        
-        # print("removing consecutive duplicates")
-        
-        # with alive_bar(len(self.ID)) as bar: 
-        #     idx = 0; 
-        #     last = None
-        #     new_ID = [] 
-        #     new_words = []
-        #     while idx < len(self.ID): 
-        #         if self.words[idx] != last: 
-        #             new_ID.append(self.ID[idx])
-        #             new_words.append(self.words[idx])
-        #         last = self.words[idx] 
-        #         idx += 1
-        #         bar() 
-        
-        # self.ID = new_ID
-        # self.words = new_words
+        print("getting words") 
+        self.words = data.collect_words(self.file['spellcheck'].values.tolist())
         
         
-        # self.df = pd.DataFrame()
-        # self.df['ID'] = self.ID
-        # self.df['Words'] = self.words
+        print("removing consecutive duplicates")
         
-        # # create input file words.txt that has ID and words 
-        # self.df.to_csv('data/input_files/animal_words.csv', header = False, index = False)
-        # print("txt file created")
+        with alive_bar(len(self.ID)) as bar: 
+            idx = 0; 
+            last = None
+            new_ID = [] 
+            new_words = []
+            while idx < len(self.ID): 
+                if self.words[idx] != last: 
+                    new_ID.append(self.ID[idx])
+                    new_words.append(self.words[idx])
+                last = self.words[idx] 
+                idx += 1
+                bar() 
+        
+        self.ID = new_ID
+        self.words = new_words
+        
+        
+        self.df = pd.DataFrame()
+        self.df['ID'] = self.ID
+        self.df['Words'] = self.words
+        
+        # create input file words.txt that has ID and words 
+        self.df.to_csv('data/input_files/animal_words.csv', header = False, index = False)
+        print("txt file created")
     
-        # #creating embeddings 
-        # embeddings(self.words)
-        # print("created embeddings") 
+        #creating embeddings 
+        embeddings(self.words)
+        print("created embeddings") 
         
         #get frequencies 
         get_frequencies('data/lexical_data/embeddings.csv')
