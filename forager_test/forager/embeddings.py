@@ -21,7 +21,7 @@ class embeddings:
         Functions: 
             (1) __init__: creates embeddings.csv file
             (2) collect_words: preprocesses the list of words.
-            (3) word_checker: checks if word is in PyMagnitude's vectors. If not, gets the most similar word.
+            (3) word_checker: checks if word is in Fasttest's vectors. If not, gets the most similar word.
     
     '''
     def __init__(self, list_of_words): 
@@ -54,7 +54,7 @@ class embeddings:
     def collect_words(list_of_words):
         '''
             Description: 
-                Preprocesses the list of words. The words are turned into lowercase, add an underscore for spaces, 
+                Preprocesses the list of words. The words are turned into lowercase, add an dash for spaces, 
                 removes all unnecessary characters, remove consecutive duplicate words, and spell checks the words. 
             
             Args: 
@@ -93,9 +93,11 @@ class embeddings:
                 (1) replacement (str): the replacement word for the original word 
         ''' 
         
+        #need to have fasttext_words.csv in data/models to check words 
         df = pd.read_csv('data/models/fasttext_words.csv')
         model_vocab = df['0'].values.tolist()
         
+        #checks uppercase, lowercase, capitalize, combine compound words by combining them 
         if word in model_vocab:
             return word
         elif word.upper() in model_vocab: 
@@ -113,6 +115,7 @@ class embeddings:
         elif word.replace("-", "").lower() in model_vocab: 
             return word.replace("-", "").lower()
         
+        #split if word is compound word and check if individual words are in model 
         split =  word.replace("-", " ").split()
         possibilities = []
         for words in split: 
@@ -121,7 +124,8 @@ class embeddings:
         
         if len(possibilities) == 0:
             return "none"
-
+        
+        #gets the second word from the compound word
         replacement = possibilities[-1]
         
         return replacement 
@@ -133,6 +137,7 @@ class embeddings:
 
 ### getting words from a excel file 
 
+''' gets embeddings for fovacs animals''' 
 # df = pd.read_excel('data/fluency_lists/fovacs_animals.xlsx')
 # word_list = df['spellcheck'].values.tolist()
 # a = embeddings(word_list)
