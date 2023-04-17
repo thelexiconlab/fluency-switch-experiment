@@ -18,6 +18,14 @@ from alive_progress import alive_bar
  
 
 class data: 
+    ''' 
+        Description: 
+            This class contains functions that create the lexical data used for forager. First creates 
+            an excel file for the text delimited file. Then the semantic matrix, phonological matrix and frequencies. 
+            
+        Functions: 
+            (1) __init__ : gather words from an excel file for initial list and creates words.csv, frequencies.csv, phonmatrix.csv, similaritymatrix.csv 
+            (2) collect_words: preprocesses the list of words from original file. 
     
     def __init__(self, filename): 
 
@@ -28,8 +36,7 @@ class data:
         self.words = data.collect_words(self.file['spellcheck'].values.tolist())
         
         
-        print("removing consecutive duplicates")
-        
+        #removing consecutive duplicates         
         with alive_bar(len(self.ID)) as bar: 
             idx = 0; 
             last = None
