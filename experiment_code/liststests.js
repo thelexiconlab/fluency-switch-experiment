@@ -1,116 +1,695 @@
 var list1 = [
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Cheetah",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Dog",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Cat",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Pig",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Goat",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Lion",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Black Panther",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Snake",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Shark",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Elephant",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Gazelle",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Deer",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Monkey",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Orangutan",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Mouse",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Hamster",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Sheep",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Horse",
-      "SIDNO": 1
-    },
-    {
-      "subject": 71,
-      "domain": "ANIMALS",
-      "word": "Rabbit",
-      "SIDNO": 1
-    },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 1,
+    "participant_response": "doctor",
+    "response_onset_time": 2.641,
+    "IRT": 2.641,
+    "participant_designated_switch": 2,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 2,
+    "participant_response": "officer",
+    "response_onset_time": 3.341,
+    "IRT": 0.7,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 3,
+    "participant_response": "police_officer",
+    "response_onset_time": 4.441,
+    "IRT": 1.1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 4,
+    "participant_response": "EMT",
+    "response_onset_time": 7.941,
+    "IRT": 3.5,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 5,
+    "participant_response": "secretary",
+    "response_onset_time": 9.441,
+    "IRT": 1.5,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 6,
+    "participant_response": "athlete",
+    "response_onset_time": 13.891,
+    "IRT": 4.45,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 7,
+    "participant_response": "teacher",
+    "response_onset_time": 15.441,
+    "IRT": 1.55,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50002,
+    "domain": "occupations",
+    "response_number": 8,
+    "participant_response": "fireman",
+    "response_onset_time": 17.141,
+    "IRT": 1.7,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 2,
+    "participant_response": "fashion_designer",
+    "response_onset_time": 7.084,
+    "IRT": 3.3,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 3,
+    "participant_response": "doctor",
+    "response_onset_time": 10.084,
+    "IRT": 3,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 4,
+    "participant_response": "lawyer",
+    "response_onset_time": 11.684,
+    "IRT": 1.6,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 5,
+    "participant_response": "judge",
+    "response_onset_time": 13.184,
+    "IRT": 1.5,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 6,
+    "participant_response": "police_officer",
+    "response_onset_time": 14.484,
+    "IRT": 1.3,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 7,
+    "participant_response": "firefighter",
+    "response_onset_time": 15.984,
+    "IRT": 1.5,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 8,
+    "participant_response": "mayor",
+    "response_onset_time": 18.084,
+    "IRT": 2.1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "occupations",
+    "response_number": 9,
+    "participant_response": "governor",
+    "response_onset_time": 19.184,
+    "IRT": 1.1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "occupations",
+    "response_number": 9,
+    "participant_response": "president",
+    "response_onset_time": 18.727,
+    "IRT": 4.2,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "occupations",
+    "response_number": 10,
+    "participant_response": "waitress",
+    "response_onset_time": 22.827,
+    "IRT": 4.1,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "occupations",
+    "response_number": 11,
+    "participant_response": "paleontologist",
+    "response_onset_time": 29.027,
+    "IRT": 6.2,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "occupations",
+    "response_number": 12,
+    "participant_response": "orthodontist",
+    "response_onset_time": 32.827,
+    "IRT": 3.8,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "occupations",
+    "response_number": 13,
+    "participant_response": "dental_hygienist",
+    "response_onset_time": 35.527,
+    "IRT": 2.7,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 2,
+    "participant_response": "sandwich",
+    "response_onset_time": 3.218,
+    "IRT": 1,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 3,
+    "participant_response": "ham",
+    "response_onset_time": 4.218,
+    "IRT": 1,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 4,
+    "participant_response": "beef",
+    "response_onset_time": 5.218,
+    "IRT": 1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 5,
+    "participant_response": "pudding",
+    "response_onset_time": 6.418,
+    "IRT": 1.2,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 6,
+    "participant_response": "rice_cake",
+    "response_onset_time": 8.018,
+    "IRT": 1.6,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 7,
+    "participant_response": "rice",
+    "response_onset_time": 9.018,
+    "IRT": 1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 8,
+    "participant_response": "stir_fry",
+    "response_onset_time": 10.218,
+    "IRT": 1.2,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 9,
+    "participant_response": "sausage",
+    "response_onset_time": 15.018,
+    "IRT": 4.8,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50036,
+    "domain": "foods",
+    "response_number": 10,
+    "participant_response": "hot_dog",
+    "response_onset_time": 15.818,
+    "IRT": 0.8,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 198,
+    "domain": "foods",
+    "response_number": 19,
+    "participant_response": "Potato",
+    "response_onset_time": 123.7647059,
+    "IRT": 5,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 198,
+    "domain": "foods",
+    "response_number": 20,
+    "participant_response": "Green Pepper",
+    "response_onset_time": 128.4117647,
+    "IRT": 4.6470588,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 198,
+    "domain": "foods",
+    "response_number": 21,
+    "participant_response": "Red Pepper",
+    "response_onset_time": 132.3529412,
+    "IRT": 3.9411765,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 198,
+    "domain": "foods",
+    "response_number": 22,
+    "participant_response": "Onion",
+    "response_onset_time": 136.7058824,
+    "IRT": 4.3529412,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 198,
+    "domain": "foods",
+    "response_number": 23,
+    "participant_response": "Banana Pepper",
+    "response_onset_time": 139.9411765,
+    "IRT": 3.2352941,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 198,
+    "domain": "foods",
+    "response_number": 24,
+    "participant_response": "Parsley",
+    "response_onset_time": 149.2352941,
+    "IRT": 9.2941176,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 285,
+    "domain": "foods",
+    "response_number": 30,
+    "participant_response": "Roll",
+    "response_onset_time": 151.9705882,
+    "IRT": 6.0294117,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 285,
+    "domain": "foods",
+    "response_number": 31,
+    "participant_response": "Pudding",
+    "response_onset_time": 154.2941176,
+    "IRT": 2.3235294,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 285,
+    "domain": "foods",
+    "response_number": 32,
+    "participant_response": "Soup",
+    "response_onset_time": 160.3088235,
+    "IRT": 6.0147059,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 285,
+    "domain": "foods",
+    "response_number": 33,
+    "participant_response": "Pizza Roll",
+    "response_onset_time": 162.9411765,
+    "IRT": 2.632353,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 285,
+    "domain": "foods",
+    "response_number": 34,
+    "participant_response": "Fish",
+    "response_onset_time": 169.9705882,
+    "IRT": 7.0294117,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 285,
+    "domain": "foods",
+    "response_number": 35,
+    "participant_response": "Turkey",
+    "response_onset_time": 177.6323529,
+    "IRT": 7.6617647,
+    "participant_designated_switch": "NA",
+    "dataset": "HJT",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 4,
+    "participant_response": "penguin",
+    "response_onset_time": 6.853,
+    "IRT": 1.4,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 5,
+    "participant_response": "rat",
+    "response_onset_time": 10.053,
+    "IRT": 3.2,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 6,
+    "participant_response": "snail",
+    "response_onset_time": 11.053,
+    "IRT": 1,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 7,
+    "participant_response": "fish",
+    "response_onset_time": 15.253,
+    "IRT": 4.2,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 8,
+    "participant_response": "shark",
+    "response_onset_time": 16.153,
+    "IRT": 0.9,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 9,
+    "participant_response": "manatee",
+    "response_onset_time": 17.753,
+    "IRT": 1.6,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 10,
+    "participant_response": "porpoise",
+    "response_onset_time": 19.253,
+    "IRT": 1.5,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50004,
+    "domain": "animals",
+    "response_number": 11,
+    "participant_response": "dolphin",
+    "response_onset_time": 20.753,
+    "IRT": 1.5,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "animals",
+    "response_number": 2,
+    "participant_response": "cat",
+    "response_onset_time": 5.454,
+    "IRT": 1.3,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "animals",
+    "response_number": 3,
+    "participant_response": "fish",
+    "response_onset_time": 6.854,
+    "IRT": 1.4,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "animals",
+    "response_number": 4,
+    "participant_response": "bird",
+    "response_onset_time": 10.254,
+    "IRT": 3.4,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "animals",
+    "response_number": 5,
+    "participant_response": "horse",
+    "response_onset_time": 11.754,
+    "IRT": 1.5,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50006,
+    "domain": "animals",
+    "response_number": 6,
+    "participant_response": "mule",
+    "response_onset_time": 13.554,
+    "IRT": 1.8,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 13,
+    "participant_response": "camel",
+    "response_onset_time": 16.964,
+    "IRT": 1,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 14,
+    "participant_response": "horse",
+    "response_onset_time": 17.964,
+    "IRT": 1,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 15,
+    "participant_response": "cow",
+    "response_onset_time": 18.964,
+    "IRT": 1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 16,
+    "participant_response": "bison",
+    "response_onset_time": 20.064,
+    "IRT": 1.1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 17,
+    "participant_response": "puma",
+    "response_onset_time": 22.064,
+    "IRT": 2,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 18,
+    "participant_response": "bird",
+    "response_onset_time": 27.764,
+    "IRT": 5.7,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 19,
+    "participant_response": "moose",
+    "response_onset_time": 31.264,
+    "IRT": 3.5,
+    "participant_designated_switch": 1,
+    "dataset": "LEA",
+    "list_number": 1
+  },
+  {
+    "subject": 50011,
+    "domain": "animals",
+    "response_number": 20,
+    "participant_response": "bear",
+    "response_onset_time": 32.364,
+    "IRT": 1.1,
+    "participant_designated_switch": 0,
+    "dataset": "LEA",
+    "list_number": 1
+  }
 ]

@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice@1.1.2"></script>
     <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" type="text/css" /> 
     <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response@1.1.1"></script>
-    <script src="lists.js"></script>
+    <script src="liststests.js"></script>
     <script src="practice.js"></script>
 </head>
 <body>
@@ -22,24 +22,25 @@
 const jsPsych = initJsPsych({
             show_progress_bar: true,
             on_finish: function() {
-            filtered_data = jsPsych.data.get().filter({type_of_trial: 'comparison'});
+            filtered_data = jsPsych.data.get().filter({save_or_not: 'save'});
             filtered_data.localSave('csv','mydata.csv');
 
             }
             });
 
 var timeline = [];
+var current_cluster = []
+var this_list_count = 0
+var this_domain_count = 0
 
- // keep track of attention checks
- var trial_array = [];
-        for (var j = 0; j < 6; j++) {
-            for (var i = 0; i < 9; i++) {
-            trial_array.push(0)
-            }
-            trial_array.push(1)
-        }
 
-var current_trial = -1
+var teststimuli = []
+var domain_practice_string = []
+var subjectlist = [1,2,3] // 3 lists
+var CONDITION = subjectlist[Math.floor(Math.random() * subjectlist.length)];
+var domains = ["animals", "foods", "occupations"]
+var shuffledDomains = jsPsych.randomization.shuffle(domains);
+console.log("shuffledDomains=",shuffledDomains)
 
 
 var Instructions1 = {
@@ -55,7 +56,7 @@ var Instructions1 = {
   choices: ['I agree to participate']
     };
 
-    //timeline.push(Instructions1)
+timeline.push(Instructions1)
     
     var PracticeInstructions = {
         type: jsPsychHtmlButtonResponse,
@@ -69,9 +70,21 @@ var Instructions1 = {
         choices: ['Continue'],
     };
 
-    timeline.push(PracticeInstructions )
+timeline.push(PracticeInstructions )
 
-  var practice = {
+    var fixation = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: '<p style="font-size: 48px;">+</p> New set of words to group!',
+    choices: "NO_KEYS",
+    trial_duration: 1000,
+    on_finish: function(){
+      current_cluster = []
+      this_list_count = 0
+      this_domain_count += 1
+    }
+};  
+
+  var practice_trials = {
   type: jsPsychHtmlButtonResponse,
   choices: function(){
     var choice1 = "Yes, same group"
@@ -83,20 +96,19 @@ var Instructions1 = {
   timeline: [
     {
       stimulus: function() {
-        var stimulus_text = "<span style='color:blue; font-size:150%'> " + current_cluster.join(", ") + "</span> <span style='color:black;font-size:150%'> - </span><span style='color:red;font-size:150%'>" +  String(jsPsych.timelineVariable("practice_word")).toUpperCase() + "</span> <br> <p> Would you put them in the same group?</p>"
+        var stimulus_text = "<span style='color:blue; font-size:150%'> " + current_cluster.join(", ") + "</span> <span style='color:black;font-size:150%'> - </span><span style='color:red;font-size:150%'>" +  String(jsPsych.timelineVariable("participant_response")).toUpperCase() + "</span> <br> <p> Would you put them in the same group?</p>"
         return stimulus_text
       }
     },
   ],
   on_finish: function(data){
-    this_domain_count += 1
-    
+    this_list_count += 1
     if (data.response == 0) {
-      current_cluster.push(String(jsPsych.timelineVariable("practice_word")).toUpperCase())
+      current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
     }
     if (data.response == 1 | current_cluster.length == 2) {
       current_cluster = []
-      current_cluster.push(String(jsPsych.timelineVariable("practice_word")).toUpperCase())
+      current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
     }
     data.cluster = current_cluster.join(", ")
     
@@ -104,23 +116,64 @@ var Instructions1 = {
 
   },
   on_load: function(trial) {
-    if (this_domain_count == 0) {
-      current_cluster.push(String(jsPsych.timelineVariable("practice_word")).toUpperCase())
+    if (this_list_count == 0) {
+      current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
       console.log(current_cluster)
       jsPsych.finishTrial()
     }
   }
 };
 
-var timeline_practice = {
-timeline: [practice],
-timeline_variables: practicelist, 
-randomize_order: false
-}
+
+for (var i = 0; i < shuffledDomains.length; i++) {
+    //console.log("i=",i)
+    var d = shuffledDomains[i]
+    domain_practice_string[i] = 'You will now practice providing groupings for the domain ' + d + '<br><br>'
+    
+
+    //console.log("d=",d)
+
+   //this is a different domain_info, a routine, not the array
+    var domain_info = {
+        type: jsPsychHtmlButtonResponse,
+        //This calls the domain_info array (I should change the name)
+        stimulus: domain_practice_string[i],
+        choices: ['Continue'],
+        on_finish: function() {
+          current_cluster = []
+          this_list_count = 0
+        }
+    };
+
+    //this should always be true (experiment with taking it out)
+    if(i < shuffledDomains.length){
+    // reset current_cluster
+    current_cluster = []
+    //add the domain_info routine to the timeline
+    //timeline.push(domain_info)
+    
+    }
+
+    // within a given domain, we want to present different subject lists
+    // and separate each list with a fixation cross
+    // we could first extract the domain list itself for all subjects
+    
+  //extract_domain_subset takes all the lists from the list.js that match the current domain
+    domain_list_json = extract_domain_subset(practicelist, d)
+    //console.log("domain_list_json:", domain_list_json)
+      //timeline.push(fixation)
+      var practice_timeline = {
+          timeline: [practice_trials],
+          //Then extract_subject_subset takes all the lists in the domain that match the current subject (which should be 1 list)
+          timeline_variables: domain_list_json,
+          randomize_order: false
+        }
 
 
-//timeline.push(timeline_practice)
-  
+//timeline.push(practice_timeline)
+
+
+  }  
   
     var Instructions2 = {
         type: jsPsychHtmlButtonResponse,
@@ -129,22 +182,7 @@ randomize_order: false
         choices: ['Continue'],
     };
 
-  timeline.push(Instructions2)
-
-  var fixation = {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: '<p style="font-size: 48px;">+</p> New set of words to group!',
-    choices: "NO_KEYS",
-    trial_duration: 1000,
-    on_finish: function(){
-      current_cluster = []
-      this_domain_count = 0
-    }
-};      
-
-
-var current_cluster = []
-var this_domain_count = 0
+timeline.push(Instructions2)    
 
 
 
@@ -160,39 +198,40 @@ var buttontrial = {
   timeline: [
     {
       stimulus: function() {
-        var stimulus_text = "<span style='color:blue; font-size:150%'> " + current_cluster.join(", ") + "</span> <span style='color:black;font-size:150%'> - </span><span style='color:red;font-size:150%'>" +  String(jsPsych.timelineVariable("word")).toUpperCase() + "</span> <br> <p> Would you put them in the same group?</p>"
+        var stimulus_text = "<span style='color:blue; font-size:150%'> " + current_cluster.join(", ") + "</span> <span style='color:black;font-size:150%'> - </span><span style='color:red;font-size:150%'>" +  String(jsPsych.timelineVariable("participant_response")).toUpperCase() + "</span> <br> <p> Would you put them in the same group?</p>"
         return stimulus_text
       }
     },
   ],
-  on_start: function() {
-                current_trial += 1
-  },
+
   on_finish: function(data){
-    this_domain_count += 1
+    this_list_count += 1
     
     if (data.response == 0) {
-      current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
+      current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
     }
     if (data.response == 1 | current_cluster.length == 2) {
       current_cluster = []
-      current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
+      current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
     }
     data.cluster = current_cluster.join(", ")
     data.subject = jsPsych.timelineVariable("subject")
-    data.Sidno = jsPsych.timelineVariable("SIDNO")
     data.domain = jsPsych.timelineVariable("domain")
-
-    
-
+    data.save_or_not = 'save'
   },
+
   on_load: function(trial) {
-    if (this_domain_count == 0) {
-      current_cluster.push(String(jsPsych.timelineVariable("word")).toUpperCase())
-      console.log(current_cluster)
+    if (this_list_count == 0) {
+      current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
+      //console.log('current cluster= ',current_cluster)
       jsPsych.finishTrial()
     }
+    if (this_list_count>1) {
+      old_word= current_cluster.toString().toLowerCase()
+      new_word= jsPsych.timelineVariable("participant_response")
+    }
   },
+
   data: {
     type_of_trial: "comparison",
            
@@ -204,74 +243,87 @@ var buttontrial = {
 var attention = {
             type: jsPsychSurveyText,
             questions: [{prompt: "Type one of the words you saw on the last screen", required: true, name: "attention"}],
-            on_load: function() {
-                document.getElementById("jspsych-survey-text-0").style["font-size"] = "20px";
-                //document.body.style.background = 'grey';
-                if (trial_array[current_trial] == 0) {
-                    jsPsych.finishTrial()
-                }
-            },
             data: {
                 type_of_trial: "attention",
+                domain: jsPsych.timelineVariable("domain")
                 //subject: subject_id,
                 //clue: jsPsych.timelineVariable("word"),
-                word1: jsPsych.timelineVariable('word'),
+                
+            },
+            on_load: function() {
+                //If the attention trial has already been run for this domain or its not the 5th trial in the list
+                // or if its not the 2nd list in the domain it won't run
+                if (att_yet==1 | this_list_count<4 | this_domain_count<1) {
+                    jsPsych.finishTrial()
+                }
+                else {
+                document.getElementById("jspsych-survey-text-0").style["font-size"] = "20px";
+                document.body.style.background = 'grey';
+
+                }
                 
             },
             on_finish: function(data) {
-              if (trial_array[current_trial] == 1) {
-              //document.body.style.background = 'white';
-              //Trying (and failing) to define a correct response here by comparing the response 
-              //to the last word in the list
-              console.log("data.response.attention=", data.response.attention)
-              console.log("data.word1=", data.word1)
+              document.body.style.background = 'white';
+              if (data.response) {
+                att_yet=1
                 
-              data.is_seen = jsPsych.pluginAPI.compareKeys(data.response.attention, data.word1);
-              console.log("data.is_seen=", data.is_seen)
+                console.log('This is new_word=', new_word)
+                console.log('This is old_word=', old_word)
+                
+              if (data.response.attention.toLowerCase() == new_word.toLowerCase() || data.response.attention.toLowerCase() == old_word.toLowerCase()) {
+                  data.attention = 1
+                  console.log('CORRECT')
+                  } 
+              else {
+                  data.attention = 0
+                  console.log('INCORRECT')
+                }
+              console.log("data.response.attention=", data.response.attention.toLowerCase())
+              data.save_or_not = 'save'
+              data.response = data.response.attention.toLowerCase()
+              data.att_correct = old_word+ ", "+new_word
+              
+              }
             }
-          }
       }
-//timeline.push(attention)
 
 var teststimuli = []
 var subjectlist = [1,2,3] // 3 lists
-
 var CONDITION = subjectlist[Math.floor(Math.random() * subjectlist.length)];
-
-//teststimuli = find_list(CONDITION)
-teststimuli = practicelist
-
-var domains = ["ANIMALS", "FOODS", "OCCUPATIONS"]
-
+//teststimuli = find_list(CONDITION) 
+teststimuli = list1
+var domains = ["animals", "foods", "occupations"]
 var shuffledDomains = jsPsych.randomization.shuffle(domains);
-console.log("shuffledDomains=",shuffledDomains)
 
-var domain_info = []
+//declares domain_info as empty array that are then populated by the three strings
+var domain_string = []
 
 // loop through different domains
-
+//i++ means everytime we complete the for loop, 1 is added to i. 
+//So it defines i as 0, and as long as i is less than domain length (3) it will loop (so it should loop 3 times)
 for (var i = 0; i < shuffledDomains.length; i++) {
-    console.log("i=",i)
+   // console.log("i=",i)
     var d = shuffledDomains[i]
-    domain_info[i] = 'You will now provide groupings for the domain ' + d + '<br><br>'
+    domain_string[i] = 'You will now provide groupings for the domain ' + d + '<br><br>'
     
-
-    console.log("d=",d)
-
-   
     var domain_info = {
         type: jsPsychHtmlButtonResponse,
-        stimulus: domain_info[i],
+        //This calls the domain_info array (I should change the name)
+        stimulus: domain_string[i],
         choices: ['Continue'],
         on_finish: function() {
           current_cluster = []
+          att_yet = 0
           this_domain_count = 0
         }
     };
 
+    //this should always be true (experiment with taking it out)
     if(i < shuffledDomains.length){
     // reset current_cluster
     current_cluster = []
+    //add the domain_info routine to the timeline
     timeline.push(domain_info)
     
     }
@@ -280,28 +332,24 @@ for (var i = 0; i < shuffledDomains.length; i++) {
     // and separate each list with a fixation cross
     // we could first extract the domain list itself for all subjects
     
-
+  //extract_domain_subset takes all the lists from the list.js that match the current domain
     domain_list_json = extract_domain_subset(teststimuli, d)
-    console.log("domain_list_json:", domain_list_json)
+    //console.log("domain_list_json:", domain_list_json)
 
-    var sids = Array.from(new Set(domain_list_json.map(({ SIDNO }) => SIDNO)));
+    // randomizing the order in which you see this lists
+    var sids = Array.from(new Set(domain_list_json.map(({ subject }) => subject)));
     var shuffledIDs = jsPsych.randomization.shuffle(sids);
 
-
     // and then loop through different subjects
-
-
     // here we extract the individual subject lists for a given domain
-
-
-
-
-
     for (var j = 0; j < shuffledIDs.length; j++){
+      
+      //console.log('this domain count = ', this_domain_count)
 
       timeline.push(fixation)
       var list_proc = {
           timeline: [buttontrial, attention],
+          //Then extract_subject_subset takes all the lists in the domain that match the current ID (which should be 1 list)
           timeline_variables: extract_subject_subset(domain_list_json, shuffledIDs[j]),
           randomize_order: false
         }
@@ -332,8 +380,6 @@ for (var i = 0; i < shuffledDomains.length; i++) {
           typeoftrial: 'demo',
         }
     }; 
-
-    timeline.push(demoinstructions)
 
     var demo_1 = {
         type: jsPsychSurveyText,
@@ -450,6 +496,7 @@ data: {
       timeline: [demo_1, demo_2,demo_3, english, not_english_loop, demo_5]
     }
     
+  //timeline.push(demoinstructions)
   //timeline.push(demo_procedure)
 
 
@@ -489,19 +536,19 @@ function find_list(condition_number){
 
   function extract_domain_subset(json_list, domain_name){
        
-       console.log("domain_name=",domain_name)
+       //console.log("domain_name=",domain_name)
 
       const filtered_domain = json_list.filter(({domain}) => domain === domain_name);
-      console.log("filtered_domain=",filtered_domain)
+      //console.log("filtered_domain=",filtered_domain)
       return filtered_domain
     }
 
-    function extract_subject_subset(json_list, subject_name){
+    function extract_subject_subset(filtered_by_domain, subject_name){
        
-       console.log("subject_name=",subject_name)
+       //console.log("subject_name=",subject_name)
 
-      const filtered_sub = json_list.filter(({SIDNO}) => SIDNO === subject_name);
-      console.log("filtered_json=",filtered_sub)
+      const filtered_sub = filtered_by_domain.filter(({subject}) => subject === subject_name);
+      //console.log("filtered_json=",filtered_sub)
       return filtered_sub
     }
 
