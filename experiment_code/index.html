@@ -206,6 +206,8 @@ var buttontrial = {
 
   on_finish: function(data){
     this_list_count += 1
+    console.log('list count =', this_list_count)
+
     
     if (data.response == 0) {
       current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
@@ -214,10 +216,15 @@ var buttontrial = {
       current_cluster = []
       current_cluster.push(String(jsPsych.timelineVariable("participant_response")).toUpperCase())
     }
+    if (data.response == undefined) {
+      data.response = 2
+    }
+    console.log('this is the data response =', data.response)
     data.cluster = current_cluster.join(", ")
     data.subject = jsPsych.timelineVariable("subject")
     data.domain = jsPsych.timelineVariable("domain")
     data.save_or_not = 'save'
+    data.stimulus= null
   },
 
   on_load: function(trial) {
@@ -234,7 +241,7 @@ var buttontrial = {
 
   data: {
     type_of_trial: "comparison",
-           
+    
 },
 
 };
@@ -282,7 +289,7 @@ var attention = {
               console.log("data.response.attention=", data.response.attention.toLowerCase())
               data.save_or_not = 'save'
               data.response = data.response.attention.toLowerCase()
-              data.att_correct = old_word+ ", "+new_word
+              data.att_correct = old_word.toLowerCase+ ", "+new_word.toLowerCase
               
               }
             }
