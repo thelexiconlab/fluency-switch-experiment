@@ -10,33 +10,33 @@ from frequency import get_frequencies
 from cues import get_labels_and_frequencies
 from cues import phonology_funcs
 from cues import create_semantic_matrix
-from pymagnitude import * 
-from pymagnitude import MagnitudeUtils 
 import gensim.downloader as api 
 import difflib 
+import os 
 from alive_progress import alive_bar 
  
 
 class data: 
-    ''' 
-        Description: 
-            This class contains functions that create the lexical data used for forager. First creates 
-            an excel file for the text delimited file. Then the semantic matrix, phonological matrix and frequencies. 
-            
-        Functions: 
-            (1) __init__ : gather words from an excel file for initial list and creates words.csv, frequencies.csv, phonmatrix.csv, similaritymatrix.csv 
-            (2) collect_words: preprocesses the list of words from original file. 
     
-    def __init__(self, filename): 
+    def __init__(self, filename, column_name, domain_name): 
+        
+        #check if domain exists or else create a new folder in data/lexical_data/ + domain name 
+        self.path = 'data/lexical_data/' + domain_name 
+        if not os.path.exists(self.path): 
+            os.makedirs(self.path)
+        
+        self.domain_name = domain_name
 
+        # argument - name of columns to get
         self.file = pd.read_excel(filename)
-        self.ID = self.file['subject'].values.tolist()
+        self.ID = self.file[str(column_name)].values.tolist()
         
-        print("getting words") 
-        self.words = data.collect_words(self.file['spellcheck'].values.tolist())
+        # print("getting words") 
+        self.words = data.collect_words(self.file[column_name].values.tolist())
         
         
-        #removing consecutive duplicates         
+        # print("removing consecutive duplicates")
+        
         with alive_bar(len(self.ID)) as bar: 
             idx = 0; 
             last = None
@@ -59,20 +59,21 @@ class data:
         self.df['Words'] = self.words
         
         # create input file words.txt that has ID and words 
-        self.df.to_csv('data/input_files/animal_words.csv', header = False, index = False)
+        self.df.to_csv('data/input_files/' + domain_name + '_words.csv', header = False, index = False)
         print("txt file created")
-    
+
+        
         #creating embeddings 
-        embeddings(self.words)
+        embeddings(self.words, self.domain_name)
         print("created embeddings") 
         
         #get frequencies 
-        get_frequencies('data/lexical_data/embeddings.csv')
+        get_frequencies(self.path + '/semantic_embeddings.csv')
         print("created frequencies") 
         
         
         # get semantic matrix 
-        semantic_matrix = create_semantic_matrix('data/lexical_data/embeddings.csv')
+        semantic_matrix = create_semantic_matrix(self.path + '/semantic_embeddings.csv')
         semantic_matrix = pd.DataFrame(semantic_matrix)        
         semantic_matrix.to_csv('data/lexical_data/similaritymatrix.csv', index = False, header = False)
         print("created semantic matrix") 
@@ -83,7 +84,7 @@ class data:
         phonmatrix = pd.DataFrame(phonmatrix) 
         phonmatrix.to_csv('data/lexical_data/phonmatrix.csv', header = False, index = False)
         print("created phon matrix")
-        
+    
         
     def collect_words(list_of_words):
         '''
@@ -111,6 +112,7 @@ class data:
             
         # removes consecutive duplicates 
         
+        words = [*set(words)]
                 
         return words 
 
@@ -118,6 +120,6 @@ class data:
             
             
             
-a = data("data/fluency_lists/fovacs_animals.xlsx")
+# a = data("data/fluency_lists/fovacs_animals.xlsx")
 # b = data("data/fluency_lists/fovacs_foods.xlsx")
 # c = data("data/fluency_lists/fovacs_occupations.xlsx")

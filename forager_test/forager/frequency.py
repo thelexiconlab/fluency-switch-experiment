@@ -22,6 +22,7 @@ def get_frequencies(embeddings):
 
     items_and_counts = []
     for item in tqdm(items):
+        # #### try getting rid of "-"
         new = item.replace("_", " ")
         encoded_query = urllib.parse.quote(new)
         params = {'corpus': 'eng-us', 'query': encoded_query, 'topk': 10, 'format': 'tsv'}

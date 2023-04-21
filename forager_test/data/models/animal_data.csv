@@ -1,0 +1,651 @@
+,Original Words,Vocab,Modified Words,Vocab,Replacement
+0,Salamander,included,salamander,included,N/A
+1,Blacktail Deer,not included,blacktail-deer,not included,deer
+2,House,included,house,included,N/A
+3,Dolphin Whale,not included,dolphin-whale,not included,whale
+4,Whale,included,whale,included,N/A
+5,Chihuahua,included,chihuahua,included,N/A
+6,Birds,included,birds,included,N/A
+7,Walrus,included,walrus,included,N/A
+8,Rattle Snake,not included,rattle-snake,not included,rattlesnake
+9,Gold Fish ,not included,gold-fish,not included,goldfish
+10,Manta Ray,not included,manta-ray,not included,Mantaray
+11,Pike,included,pike,included,N/A
+12,Porpoise,included,porpoise,included,N/A
+13,Chip Monk,not included,chip-monk,not included,monk
+14,Lynx,included,lynx,included,N/A
+15,Slugs,included,slugs,included,N/A
+16,Emu,included,emu,included,N/A
+17,Bass,included,bass,included,N/A
+18,Turtle,included,turtle,included,N/A
+19,Shark ,not included,shark,included,N/A
+20,Macaw,included,macaw,included,N/A
+21,Monkey ,not included,monkey,included,N/A
+22,Cockatiel,included,cockatiel,included,N/A
+23,Scorpion,included,scorpion,included,N/A
+24,Flounder,included,flounder,included,N/A
+25,Blow Fish,not included,blow-fish,not included,blowfish
+26,Koala Bears,not included,koala-bears,not included,bears
+27,Farm,included,farm,included,N/A
+28,Great Dane,not included,great-dane,not included,dane
+29,Worm,included,worm,included,N/A
+30,Turkey,included,turkey,included,N/A
+31,Peacock,included,peacock,included,N/A
+32,Pelican,included,pelican,included,N/A
+33,Wild Cat,not included,wild-cat,included,N/A
+34,Dove,included,dove,included,N/A
+35,Reptile,included,reptile,included,N/A
+36,Ferrets,included,ferrets,included,N/A
+37,Alligator,included,alligator,included,N/A
+38,Sea Turtle,not included,sea-turtle,included,N/A
+39,Jaguars,included,jaguars,included,N/A
+40,Finch,included,finch,included,N/A
+41,Chipmunk,included,chipmunk,included,N/A
+42,Asp,included,asp,included,N/A
+43,Gazelles,included,gazelles,included,N/A
+44,Python,included,python,included,N/A
+45,Labrador Retriever,not included,labrador-retriever,not included,retriever
+46,Bengal Tiger,not included,bengal-tiger,not included,tiger
+47,Black Panther,not included,black-panther,not included,panther
+48,Cat,included,cat,included,N/A
+49,Cavy,included,cavy,included,N/A
+50,Liger (It Exists),not included,liger-it-exists,not included,exists
+51,Pigs,included,pigs,included,N/A
+52,Eagles,included,eagles,included,N/A
+53,Snake,included,snake,included,N/A
+54,Newt,included,newt,included,N/A
+55,Baboon,included,baboon,included,N/A
+56,Liger,included,liger,included,N/A
+57,Ram,included,ram,included,N/A
+58,Oyster,included,oyster,included,N/A
+59,Wildebeest,included,wildebeest,included,N/A
+60, Bears,not included,bears,included,N/A
+61,Swans,included,swans,included,N/A
+62,Arrowhead Shark,not included,arrowhead-shark,not included,shark
+63,Gold Finch,not included,gold-finch,not included,goldfinch
+64,Raccoons,included,raccoons,included,N/A
+65,Donkey,included,donkey,included,N/A
+66,Bloodhound,included,bloodhound,included,N/A
+67,Dalmatian,included,dalmatian,included,N/A
+68,Koi Fish,not included,koi-fish,not included,fish
+69,Mountain Lion,not included,mountain-lion,not included,lion
+70,Billy Goat,not included,billy-goat,not included,Billygoat
+71,Flying Squirrel,not included,flying-squirrel,not included,squirrel
+72,Snow Fox,not included,snow-fox,not included,fox
+73,Hamsters,included,hamsters,included,N/A
+74,Bonobo,included,bonobo,included,N/A
+75, Rat,not included,rat,included,N/A
+76,Iguanas,included,iguanas,included,N/A
+77,Caribou,included,caribou,included,N/A
+78,Hogs,included,hogs,included,N/A
+79,Red Bird,not included,red-bird,not included,redbird
+80,Blue Whale,not included,blue-whale,not included,whale
+81,Crane,included,crane,included,N/A
+82,Kodiak Bear,not included,kodiak-bear,not included,bear
+83,Squirrel,included,squirrel,included,N/A
+84,Beetle,included,beetle,included,N/A
+85,Turtles ,not included,turtles,included,N/A
+86,Hog,included,hog,included,N/A
+87,Flamingo,included,flamingo,included,N/A
+88,Axolotl,included,axolotl,included,N/A
+89,Preying Mantis,not included,preying-mantis,not included,mantis
+90,Lions,included,lions,included,N/A
+91,[Pig,not included,pig,included,N/A
+92,Catfish,included,catfish,included,N/A
+93,Woodpecker,included,woodpecker,included,N/A
+94,Siberian Husky,not included,siberian-husky,not included,husky
+95,Yellow Jacket,not included,yellow-jacket,not included,yellowjacket
+96,Crocodile,included,crocodile,included,N/A
+97,Leopard,included,leopard,included,N/A
+98,Raccoons ,not included,raccoons,included,N/A
+99,Rooster,included,rooster,included,N/A
+100,Rabbits,included,rabbits,included,N/A
+101,Groundhog,included,groundhog,included,N/A
+102,Llama,included,llama,included,N/A
+103,Chimpanzee,included,chimpanzee,included,N/A
+104,Sea Bass,not included,sea-bass,not included,seabass
+105,Ferret,included,ferret,included,N/A
+106,Sparrow,included,sparrow,included,N/A
+107,Horse,included,horse,included,N/A
+108,Cats,included,cats,included,N/A
+109,Hen,included,hen,included,N/A
+110, Squirrel,not included,squirrel,included,N/A
+111,Dog,included,dog,included,N/A
+112,Zebra,included,zebra,included,N/A
+113,Clown Fish,not included,clown-fish,not included,clownfish
+114,Polar Bear,not included,polar-bear,included,N/A
+115,Crab,included,crab,included,N/A
+116,Coral,included,coral,included,N/A
+117,Cantaloupe,included,cantaloupe,included,N/A
+118,Wallaby,included,wallaby,included,N/A
+119,Calf,included,calf,included,N/A
+120,Do,included,do,included,N/A
+121,Siamese Cat,not included,siamese-cat,not included,cat
+122,Antelope,included,antelope,included,N/A
+123,Pinguin,included,pinguin,not included,Pinguin
+124, Pigeon,not included,pigeon,included,N/A
+125,Crabs,included,crabs,included,N/A
+126,Giraffe,included,giraffe,included,N/A
+127,Mammoth,included,mammoth,included,N/A
+128,Wildcat,included,wildcat,included,N/A
+129,Lady Bugs,not included,lady-bugs,not included,ladybugs
+130,Coyotes,included,coyotes,included,N/A
+131,Wild Dog,not included,wild-dog,not included,dog
+132,Hammer-Head Shark,not included,hammer-head-shark,not included,shark
+133,Cock,included,cock,included,N/A
+134,Fish,included,fish,included,N/A
+135,Black Bird,not included,black-bird,not included,blackbird
+136,Salmon,included,salmon,included,N/A
+137,Whale Shark,not included,whale-shark,not included,shark
+138,Human,included,human,included,N/A
+139,Bull,included,bull,included,N/A
+140,Possum,included,possum,included,N/A
+141,Boa,included,boa,included,N/A
+142,Owls,included,owls,included,N/A
+143,Sea Monkeys,not included,sea-monkeys,not included,monkeys
+144,Tick,included,tick,included,N/A
+145,Mink,included,mink,included,N/A
+146,Turtle ,not included,turtle,included,N/A
+147,Ocelot,included,ocelot,included,N/A
+148,Sting Ray,not included,sting-ray,not included,stingray
+149,Jumping Spider,not included,jumping-spider,not included,spider
+150,Pigeons,included,pigeons,included,N/A
+151,Muse,included,muse,included,N/A
+152,Wale,included,wale,included,N/A
+153,Gold Fish,not included,gold-fish,not included,goldfish
+154,Dill Pigs,not included,dill-pigs,not included,pigs
+155,Bronco,included,bronco,included,N/A
+156,Spiders,included,spiders,included,N/A
+157,Tapir,included,tapir,included,N/A
+158,Piranha,included,piranha,included,N/A
+159,Lion ,not included,lion,included,N/A
+160,Boar,included,boar,included,N/A
+161,Quetzal,included,quetzal,included,N/A
+162,Fisher,included,fisher,included,N/A
+163,Pill Bug,not included,pill-bug,not included,bug
+164,Goose,included,goose,included,N/A
+165,Pink Salmon,not included,pink-salmon,not included,salmon
+166,Squirrel ,not included,squirrel,included,N/A
+167,Camel,included,camel,included,N/A
+168,Goat,included,goat,included,N/A
+169,Humpback Whale,not included,humpback-whale,not included,whale
+170,Beaver,included,beaver,included,N/A
+171,Tasmanian Devil,not included,tasmanian-devil,not included,devil
+172,Mule Deer,not included,mule-deer,not included,deer
+173,Ducks,included,ducks,included,N/A
+174,Dogs,included,dogs,included,N/A
+175,Lamb,included,lamb,included,N/A
+176,Pot Belly Pig,not included,pot-belly-pig,not included,pig
+177,Blue Bird,not included,blue-bird,not included,bluebird
+178,Gulls,included,gulls,included,N/A
+179,Orangutan,included,orangutan,included,N/A
+180,Treefrog,included,treefrog,included,N/A
+181,Marmoset,included,marmoset,included,N/A
+182,Cheetah,included,cheetah,included,N/A
+183,Leech,included,leech,included,N/A
+184,Rattlesnake,included,rattlesnake,included,N/A
+185,Skunks,included,skunks,included,N/A
+186,Cougars,included,cougars,included,N/A
+187,Tortoise,included,tortoise,included,N/A
+188,Hours,included,hours,included,N/A
+189,Insect,included,insect,included,N/A
+190,Canary,included,canary,included,N/A
+191,Rabbit,included,rabbit,included,N/A
+192,Mule,included,mule,included,N/A
+193,Musk Rat,not included,musk-rat,not included,muskrat
+194,Golden Retriever,not included,golden-retriever,not included,retriever
+195,Colt,included,colt,included,N/A
+196,Big,included,big,included,N/A
+197,Ape,included,ape,included,N/A
+198,Sheep,included,sheep,included,N/A
+199,Daddy Long Leg,not included,daddy-long-leg,not included,leg
+200,Fergie,included,fergie,included,N/A
+201,Muskrat,included,muskrat,included,N/A
+202,Bacteria,included,bacteria,included,N/A
+203,Tuna,included,tuna,included,N/A
+204,Praying Mantis,not included,praying-mantis,not included,mantis
+205,Beta Fish,not included,beta-fish,not included,fish
+206,Alligators,included,alligators,included,N/A
+207,T-Rex,included,t-rex,included,N/A
+208,Dolphins,included,dolphins,included,N/A
+209,Spider Monkey,not included,spider-monkey,not included,Spidermonkey
+210,Dinosaur,included,dinosaur,included,N/A
+211,Loin,included,loin,included,N/A
+212, Lion,not included,lion,included,N/A
+213, Sloth,not included,sloth,included,N/A
+214,Black Widow,not included,black-widow,not included,widow
+215,Grasshoppers,included,grasshoppers,included,N/A
+216,Lizard,included,lizard,included,N/A
+217,Gorilla,included,gorilla,included,N/A
+218,Mosquito,included,mosquito,included,N/A
+219,Poodle,included,poodle,included,N/A
+220,Penguins ,not included,penguins,included,N/A
+221,Clownfish,included,clownfish,included,N/A
+222, Tiger,not included,tiger,included,N/A
+223,Grasshopper,included,grasshopper,included,N/A
+224,Chickens,included,chickens,included,N/A
+225,Blue Gill,not included,blue-gill,not included,bluegill
+226,Gat,included,gat,included,N/A
+227,Boars,included,boars,included,N/A
+228,Wild Boar,not included,wild-boar,included,N/A
+229,Black Squirrel,not included,black-squirrel,not included,squirrel
+230,Capybara,included,capybara,included,N/A
+231,Star Fish ,not included,star-fish,not included,starfish
+232,Whales,included,whales,included,N/A
+233,Hamster,included,hamster,included,N/A
+234,Flea,included,flea,included,N/A
+235,Tad Pole,not included,tad-pole,not included,tadpole
+236,Sleuth,included,sleuth,included,N/A
+237,Sea Elephant,not included,sea-elephant,not included,elephant
+238,Dogs ,not included,dogs,included,N/A
+239,Mice,included,mice,included,N/A
+240,Rt,included,rt,included,N/A
+241,Duck-Billed Platypus,not included,duck-billed-platypus,not included,platypus
+242,Guinea Pic,not included,guinea-pic,not included,pic
+243,Raptor,included,raptor,included,N/A
+244,Reptiles,included,reptiles,included,N/A
+245,Blowfish,included,blowfish,included,N/A
+246,Dolphin ,not included,dolphin,included,N/A
+247,Water Snakes,not included,water-snakes,not included,snakes
+248,Howler Monkey,not included,howler-monkey,not included,monkey
+249,Blue Heron,not included,blue-heron,not included,heron
+250,Mole,included,mole,included,N/A
+251,Sea Urchin,not included,sea-urchin,included,N/A
+252,Lion,included,lion,included,N/A
+253,Hamper,included,hamper,included,N/A
+254,Sword Fish,not included,sword-fish,not included,swordfish
+255,Moth,included,moth,included,N/A
+256,Bunny,included,bunny,included,N/A
+257,Monkeys,included,monkeys,included,N/A
+258,Chicken,included,chicken,included,N/A
+259,Elk,included,elk,included,N/A
+260,Frogs,included,frogs,included,N/A
+261,Caterpillars,included,caterpillars,included,N/A
+262,Tiger,included,tiger,included,N/A
+263,Jaguar,included,jaguar,included,N/A
+264,Bee,included,bee,included,N/A
+265,Crawfish,included,crawfish,included,N/A
+266,Bald Eagle,not included,bald-eagle,not included,eagle
+267,Narwhal,included,narwhal,included,N/A
+268,Shih Tzu,not included,shih-tzu,included,N/A
+269,Stag,included,stag,included,N/A
+270,Bird ,not included,bird,included,N/A
+271,Snake ,not included,snake,included,N/A
+272,Akita,included,akita,included,N/A
+273,Gazelle,included,gazelle,included,N/A
+274,Centipede,included,centipede,included,N/A
+275,Sponge,included,sponge,included,N/A
+276,Pig,included,pig,included,N/A
+277,Bees,included,bees,included,N/A
+278,Chimp,included,chimp,included,N/A
+279,People,included,people,included,N/A
+280,Cougar,included,cougar,included,N/A
+281,Money,included,money,included,N/A
+282,Bear Racoon,not included,bear-racoon,not included,racoon
+283,Anaconda,included,anaconda,included,N/A
+284,Sharks,included,sharks,included,N/A
+285,Hyenas,included,hyenas,included,N/A
+286,Garter Snake,not included,garter-snake,not included,snake
+287,Seagull,included,seagull,included,N/A
+288,Ox,included,ox,included,N/A
+289,Fresh Water Otter,not included,fresh-water-otter,not included,otter
+290,Chimpanzees,included,chimpanzees,included,N/A
+291,Cardinal,included,cardinal,included,N/A
+292,Chameleon,included,chameleon,included,N/A
+293,Flies,included,flies,included,N/A
+294, Great White Shark,not included,great-white-shark,not included,shark
+295,Buffalo,included,buffalo,included,N/A
+296,Wombat,included,wombat,included,N/A
+297,Guerilla,included,guerilla,included,N/A
+298,Tarantulas,included,tarantulas,included,N/A
+299,Water Buffalo,not included,water-buffalo,not included,buffalo
+300,Yak,included,yak,included,N/A
+301,Blackbird,included,blackbird,included,N/A
+302,Skunk,included,skunk,included,N/A
+303,Labrador,included,labrador,included,N/A
+304,Racoon,included,racoon,included,N/A
+305,Snails,included,snails,included,N/A
+306,Ostrich,included,ostrich,included,N/A
+307,Hen ,not included,hen,included,N/A
+308,Qilin,included,qilin,included,N/A
+309,Seal,included,seal,included,N/A
+310,Starfish,included,starfish,included,N/A
+311,Raven,included,raven,included,N/A
+312,Mountain Bear,not included,mountain-bear,not included,bear
+313,Fleas,included,fleas,included,N/A
+314,Penguin,included,penguin,included,N/A
+315,Rat,included,rat,included,N/A
+316,Tail,included,tail,included,N/A
+317,Boa Constrictor,not included,boa-constrictor,not included,constrictor
+318,Koala,included,koala,included,N/A
+319,Beluga Whale,not included,beluga-whale,not included,whale
+320,Zoo,included,zoo,included,N/A
+321,\Fish,not included,fish,included,N/A
+322,Guinea Pigs,not included,guinea-pigs,included,N/A
+323,Bugs,included,bugs,included,N/A
+324,Lemur,included,lemur,included,N/A
+325,Dog Squirrel,not included,dog-squirrel,not included,squirrel
+326,Crab ,not included,crab,included,N/A
+327,Woodchuck,included,woodchuck,included,N/A
+328,Corral,included,corral,included,N/A
+329,Snail,included,snail,included,N/A
+330, Sheep,not included,sheep,included,N/A
+331,Humans,included,humans,included,N/A
+332,Egret,included,egret,included,N/A
+333,Blue Footed Booby,not included,blue-footed-booby,not included,booby
+334,North African Mountain Lion,not included,north-african-mountain-lion,not included,lion
+335,Cockroach,included,cockroach,included,N/A
+336,Stick Bug,not included,stick-bug,not included,bug
+337, Ostrich,not included,ostrich,included,N/A
+338,Great White Shark,not included,great-white-shark,not included,shark
+339,Angel Fish,not included,angel-fish,not included,angelfish
+340,Doe,included,doe,included,N/A
+341,Quale,included,quale,included,N/A
+342, Rabbit,not included,rabbit,included,N/A
+343,Coyote,included,coyote,included,N/A
+344,Bison,included,bison,included,N/A
+345,Elephant,included,elephant,included,N/A
+346,Zebra Lion,not included,zebra-lion,not included,lion
+347,Golden Marmot,not included,golden-marmot,not included,marmot
+348,Buck,included,buck,included,N/A
+349,Hummingbird,included,hummingbird,included,N/A
+350,Bluebird,included,bluebird,included,N/A
+351,Viper ,not included,viper,included,N/A
+352,Rabbit ,not included,rabbit,included,N/A
+353,Gecko,included,gecko,included,N/A
+354,Rainbow Fish,not included,rainbow-fish,not included,rainbowfish
+355,Komodo Dragon,not included,komodo-dragon,not included,dragon
+356,Mouse,included,mouse,included,N/A
+357,Hedgehogs,included,hedgehogs,included,N/A
+358,Deer ,not included,deer,included,N/A
+359,Cub,included,cub,included,N/A
+360,Chickens ,not included,chickens,included,N/A
+361,Dingo,included,dingo,included,N/A
+362,Ewe,included,ewe,included,N/A
+363,Duck,included,duck,included,N/A
+364,Crocodiles,included,crocodiles,included,N/A
+365,Birds ,not included,birds,included,N/A
+366,Sugar Glider,not included,sugar-glider,not included,glider
+367, Fly,not included,fly,included,N/A
+368,Blue Jay,not included,blue-jay,not included,bluejay
+369,Fox,included,fox,included,N/A
+370,Sand Dollar,not included,sand-dollar,not included,dollar
+371,Shark,included,shark,included,N/A
+372,Malamute,included,malamute,included,N/A
+373,Kitty,included,kitty,included,N/A
+374,Puppy,included,puppy,included,N/A
+375,Kitten,included,kitten,included,N/A
+376, Owls,not included,owls,included,N/A
+377,Donkeys,included,donkeys,included,N/A
+378,Tarantula,included,tarantula,included,N/A
+379,Greyhound,included,greyhound,included,N/A
+380,Sea Horse,not included,sea-horse,included,N/A
+381,Hippo,included,hippo,included,N/A
+382,Wildcats,included,wildcats,included,N/A
+383,Newts,included,newts,included,N/A
+384,Kangaroos,included,kangaroos,included,N/A
+385,Zebras,included,zebras,included,N/A
+386,Geese,included,geese,included,N/A
+387,Moose,included,moose,included,N/A
+388,Minnows,included,minnows,included,N/A
+389,Rhino,included,rhino,included,N/A
+390,Shrimp,included,shrimp,included,N/A
+391,Panda Bear,not included,panda-bear,not included,bear
+392,Falcon,included,falcon,included,N/A
+393,Ants,included,ants,included,N/A
+394,Whale ,not included,whale,included,N/A
+395,Wolf,included,wolf,included,N/A
+396,Snakes,included,snakes,included,N/A
+397,Snow Monkey,not included,snow-monkey,not included,monkey
+398,Anteater,included,anteater,included,N/A
+399,Swan,included,swan,included,N/A
+400,Snow Lion,not included,snow-lion,not included,lion
+401,Trout,included,trout,included,N/A
+402,Tiger Bears,not included,tiger-bears,not included,bears
+403,Yeti,included,yeti,included,N/A
+404,Monarch Butterfly,not included,monarch-butterfly,not included,butterfly
+405,Saltwater Fish,not included,saltwater-fish,not included,fish
+406, Cow,not included,cow,included,N/A
+407,Gerbils,included,gerbils,included,N/A
+408,Guppies,included,guppies,included,N/A
+409,Frogs ,not included,frogs,included,N/A
+410,Pic,included,pic,included,N/A
+411,Bird,included,bird,included,N/A
+412,Hippopotamus,included,hippopotamus,included,N/A
+413,Cheetahs,included,cheetahs,included,N/A
+414,Black Lab,not included,black-lab,not included,lab
+415,Bobcat,included,bobcat,included,N/A
+416,Giraffes,included,giraffes,included,N/A
+417,Tigers,included,tigers,included,N/A
+418,Koala Bear ,not included,koala-bear,not included,bear
+419,Black Bear,not included,black-bear,not included,Blackbear
+420,Fly ,not included,fly,included,N/A
+421,Frog,included,frog,included,N/A
+422,Eel,included,eel,included,N/A
+423,Beluga,included,beluga,included,N/A
+424,Vulture,included,vulture,included,N/A
+425,Bears,included,bears,included,N/A
+426,Puggle,included,puggle,included,N/A
+427,Cat ,not included,cat,included,N/A
+428,Butterfly,included,butterfly,included,N/A
+429,Hens,included,hens,included,N/A
+430,Bull Dog,not included,bull-dog,included,N/A
+431,Mantis,included,mantis,included,N/A
+432,Sea Sponge,not included,sea-sponge,not included,sponge
+433,Mountain Lions,not included,mountain-lions,not included,lions
+434,Bunny Rabbit,not included,bunny-rabbit,not included,rabbit
+435,Caterpillar,included,caterpillar,included,N/A
+436,Paw,included,paw,included,N/A
+437,House Cat,not included,house-cat,not included,housecat
+438,Dodo,included,dodo,included,N/A
+439,Chip,included,chip,included,N/A
+440,Cricket,included,cricket,included,N/A
+441,Squirrels,included,squirrels,included,N/A
+442,Sea Otter,not included,sea-otter,included,N/A
+443,Viper,included,viper,included,N/A
+444,Barracuda,included,barracuda,included,N/A
+445,Possum ,not included,possum,included,N/A
+446,Parakeet,included,parakeet,included,N/A
+447,Slug,included,slug,included,N/A
+448,Porcupines,included,porcupines,included,N/A
+449,Hawk,included,hawk,included,N/A
+450,Wolverine,included,wolverine,included,N/A
+451,Lady Bug,not included,lady-bug,not included,ladybug
+452,Bug,included,bug,included,N/A
+453,HumpBack Whales,not included,humpback-whales,not included,whales
+454,Duckbill,included,duckbill,included,N/A
+455,Snow Tiger,not included,snow-tiger,not included,tiger
+456,Tadpole,included,tadpole,included,N/A
+457,Man,included,man,included,N/A
+458,Clam,included,clam,included,N/A
+459,Deer,included,deer,included,N/A
+460,Bob Cat,not included,bob-cat,not included,bobcat
+461,Minx,included,minx,included,N/A
+462,Mountain Goat,not included,mountain-goat,not included,goat
+463,Gorillas,included,gorillas,included,N/A
+464,Tiger ,not included,tiger,included,N/A
+465,Whitetail Deer ,not included,whitetail-deer,not included,deer
+466,Penguins,included,penguins,included,N/A
+467,Kiwi,included,kiwi,included,N/A
+468,Garden Snake,not included,garden-snake,not included,snake
+469,Bat,included,bat,included,N/A
+470,Lioness,included,lioness,included,N/A
+471,Doggy,included,doggy,included,N/A
+472,Stallion,included,stallion,included,N/A
+473,Unicorn,included,unicorn,included,N/A
+474,Flee,included,flee,included,N/A
+475,Hyena,included,hyena,included,N/A
+476,Brown Bear,not included,brown-bear,not included,bear
+477,Cray Fish,not included,cray-fish,not included,crayfish
+478,Turtles,included,turtles,included,N/A
+479,Sealion,included,sealion,included,N/A
+480,Gerbil,included,gerbil,included,N/A
+481,Owl,included,owl,included,N/A
+482,Seahorse,included,seahorse,included,N/A
+483,Hornet,included,hornet,included,N/A
+484,Nightingale,included,nightingale,included,N/A
+485,Piglet,included,piglet,included,N/A
+486,Jellyfish,included,jellyfish,included,N/A
+487,Bluegill,included,bluegill,included,N/A
+488,Pigeon,included,pigeon,included,N/A
+489,Cow,included,cow,included,N/A
+490,Wolves,included,wolves,included,N/A
+491,Sushi,included,sushi,included,N/A
+492,Meerkat,included,meerkat,included,N/A
+493,\Rat,not included,rat,included,N/A
+494,Worms,included,worms,included,N/A
+495,Quaker Parakeet,not included,quaker-parakeet,not included,parakeet
+496,Orca,included,orca,included,N/A
+497,Cattle,included,cattle,included,N/A
+498,Scallop,included,scallop,included,N/A
+499,Tilapia,included,tilapia,included,N/A
+500,Aardvark,included,aardvark,included,N/A
+501,Toucan,included,toucan,included,N/A
+502,Guinea Pig,not included,guinea-pig,included,N/A
+503,Red Rumped Agouti,not included,red-rumped-agouti,not included,agouti
+504, Alligator,not included,alligator,included,N/A
+505,Chinchilla,included,chinchilla,included,N/A
+506,Naked Mole Rat,not included,naked-mole-rat,not included,rat
+507,Alpaca,included,alpaca,included,N/A
+508,Polar Bears,not included,polar-bears,not included,bears
+509,Bumble Bee,not included,bumble-bee,included,N/A
+510,Ant Eater,not included,ant-eater,not included,anteater
+511,Dog ,not included,dog,included,N/A
+512,Orangutang,included,orangutang,included,N/A
+513,Bever,included,bever,included,N/A
+514,Panther,included,panther,included,N/A
+515,Ladybug,included,ladybug,included,N/A
+516,Raccoon,included,raccoon,included,N/A
+517,Black Mamba,not included,black-mamba,not included,mamba
+518,Insects,included,insects,included,N/A
+519,Robin,included,robin,included,N/A
+520,Dolphin,included,dolphin,included,N/A
+521,Baboons,included,baboons,included,N/A
+522,Flamingos,included,flamingos,included,N/A
+523,Snow Leopard,not included,snow-leopard,not included,leopard
+524,Wasp,included,wasp,included,N/A
+525,Freshwater Fish,not included,freshwater-fish,not included,fish
+526,Bear ,not included,bear,included,N/A
+527,Rats,included,rats,included,N/A
+528,Jack Rabbit,not included,jack-rabbit,not included,jackrabbit
+529,Duck Billed Platypus,not included,duck-billed-platypus,not included,platypus
+530,Goldfish,included,goldfish,included,N/A
+531,Mongoose,included,mongoose,included,N/A
+532,Otter,included,otter,included,N/A
+533,Godzilla,included,godzilla,included,N/A
+534,Bear,included,bear,included,N/A
+535,Ant,included,ant,included,N/A
+536,Ant Lion,not included,ant-lion,not included,antlion
+537,Killer Whale,not included,killer-whale,included,N/A
+538,Mammal,included,mammal,included,N/A
+539,Quail,included,quail,included,N/A
+540,Comodo Dragon,not included,comodo-dragon,not included,dragon
+541,Puma,included,puma,included,N/A
+542,Lobster,included,lobster,included,N/A
+543,White Rhino,not included,white-rhino,not included,rhino
+544,Beak,included,beak,included,N/A
+545,Grizzly Bear,not included,grizzly-bear,not included,bear
+546,Cockatoo,included,cockatoo,included,N/A
+547,Spider,included,spider,included,N/A
+548,Elephant\,not included,elephant,included,N/A
+549,Manatee,included,manatee,included,N/A
+550,Monkey,included,monkey,included,N/A
+551, Spider,not included,spider,included,N/A
+552,June Bug,not included,june-bug,not included,Junebug
+553,Pheasant,included,pheasant,included,N/A
+554,Fly,included,fly,included,N/A
+555,Wood Pecker,not included,wood-pecker,not included,woodpecker
+556,Lama,included,lama,included,N/A
+557,Gopher,included,gopher,included,N/A
+558, Wolf,not included,wolf,included,N/A
+559, Cat,not included,cat,included,N/A
+560,Siamese,included,siamese,included,N/A
+561,Lizards,included,lizards,included,N/A
+562,Haw,included,haw,included,N/A
+563,Sea Star,not included,sea-star,not included,seastar
+564,Huskie,included,huskie,not included,Huskie
+565,Armadillo,included,armadillo,included,N/A
+566,Seahorses,included,seahorses,included,N/A
+567,Welsh Pembroke Corgi,not included,welsh-pembroke-corgi,not included,corgi
+568, Goat,not included,goat,included,N/A
+569,Leper,included,leper,included,N/A
+570,Hippos,included,hippos,included,N/A
+571,Brine Shrimp,not included,brine-shrimp,not included,shrimp
+572,Sting Ray ,not included,sting-ray,not included,stingray
+573,Hair,included,hair,included,N/A
+574,Prairie Dog,not included,prairie-dog,not included,dog
+575,Oriole,included,oriole,included,N/A
+576,Loon,included,loon,included,N/A
+577,Crow,included,crow,included,N/A
+578,Cubs,included,cubs,included,N/A
+579,Miniature Pony,not included,miniature-pony,not included,pony
+580,Reindeer,included,reindeer,included,N/A
+581,Octopus,included,octopus,included,N/A
+582,Rhinoceros,included,rhinoceros,included,N/A
+583,Sea Lion,not included,sea-lion,included,N/A
+584,Cat Dog Mouse,not included,cat-dog-mouse,not included,mouse
+585,Badger,included,badger,included,N/A
+586,Humming Bird,not included,humming-bird,included,N/A
+587,Star Fish,not included,star-fish,not included,starfish
+588,Panthers,included,panthers,included,N/A
+589,Sea Gull,not included,sea-gull,not included,seagull
+590,Mosquitoes,included,mosquitoes,included,N/A
+591,Koalas,included,koalas,included,N/A
+592,Sea Monkey,not included,sea-monkey,not included,seamonkey
+593,Iguana,included,iguana,included,N/A
+594,Butterflies,included,butterflies,included,N/A
+595,Kangaroo,included,kangaroo,included,N/A
+596,Elephants,included,elephants,included,N/A
+597,Terrier,included,terrier,included,N/A
+598,Colts,included,colts,included,N/A
+599,Ant Eaters,not included,ant-eaters,not included,anteaters
+600,Squid,included,squid,included,N/A
+601,Chickadee,included,chickadee,included,N/A
+602,Cows,included,cows,included,N/A
+603,Horses,included,horses,included,N/A
+604,Parrot,included,parrot,included,N/A
+605,Okapi,included,okapi,included,N/A
+606,Amphibian,included,amphibian,included,N/A
+607,Eagle,included,eagle,included,N/A
+608,Mouse ,not included,mouse,included,N/A
+609,Cat Lion,not included,cat-lion,not included,lion
+610,Stork,included,stork,included,N/A
+611,Bats,included,bats,included,N/A
+612,Camel ,not included,camel,included,N/A
+613,Jaguar ,not included,jaguar,included,N/A
+614,Sloth,included,sloth,included,N/A
+615,Woolly Mammoth,not included,woolly-mammoth,not included,mammoth
+616,Hedgehog,included,hedgehog,included,N/A
+617,Hare,included,hare,included,N/A
+618,Stingray,included,stingray,included,N/A
+619,Platypus,included,platypus,included,N/A
+620,Parroket,not included,parroket,not included,none
+621,Cat Fish,not included,cat-fish,not included,catfish
+622,Toad,included,toad,included,N/A
+623,Panther ,not included,panther,included,N/A
+624,Bull Frog,not included,bull-frog,not included,bullfrog
+625,Timber Wolf,not included,timber-wolf,not included,Timberwolf
+626,Pony,included,pony,included,N/A
+627,Koala Bear,not included,koala-bear,not included,bear
+628,Gnat,included,gnat,included,N/A
+629,Chick,included,chick,included,N/A
+630,Mako Shark,not included,mako-shark,not included,shark
+631,Possums,included,possums,included,N/A
+632, Chicken,not included,chicken,included,N/A
+633,Jackrabbit,included,jackrabbit,included,N/A
+634,Ground Hog,not included,ground-hog,not included,groundhog
+635,Gazelle ,not included,gazelle,included,N/A
+636,Warthog,included,warthog,included,N/A
+637,Shake,included,shake,included,N/A
+638,Aardvarks,included,aardvarks,included,N/A
+639,Porcupine,included,porcupine,included,N/A
+640,Chipmunks,included,chipmunks,included,N/A
+641,Opossum,included,opossum,included,N/A
+642,Fishes,included,fishes,included,N/A
+643,Cobra,included,cobra,included,N/A
+644,Elephant ,not included,elephant,included,N/A
+645,Caiman,included,caiman,included,N/A
+646,Goats,included,goats,included,N/A
+647,Panda,included,panda,included,N/A
+648,Golf Fish,not included,golf-fish,not included,fish
+649,Jelly Fish,not included,jelly-fish,included,N/A

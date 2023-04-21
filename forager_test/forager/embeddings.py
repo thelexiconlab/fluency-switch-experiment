@@ -2,12 +2,12 @@
 
 ### CODE WRITTEN BY: Mingi Kang and Abhilasha Kumar (Bowdoin College)
 
-from pymagnitude import * 
-from pymagnitude import MagnitudeUtils 
 import pandas as pd 
 import pandas as pd
 import gensim.downloader as api
-import difflib 
+import os
+import os.path 
+import numpy as np
 
 # pip install alive-progress for progress bar 
 from alive_progress import alive_bar 
@@ -21,23 +21,43 @@ class embeddings:
         Functions: 
             (1) __init__: creates embeddings.csv file
             (2) collect_words: preprocesses the list of words.
-            (3) word_checker: checks if word is in Fasttest's vectors. If not, gets the most similar word.
+            (3) word_checker: checks if word is in PyMagnitude's vectors. If not, gets the most similar word.
     
     '''
-    def __init__(self, list_of_words): 
+    def __init__(self, list_of_words, domain_name): 
+        
+        #check if domain exists or else create a new folder in data/lexical_data/ + domain name 
+        self.domain_name = domain_name
+        self.path = 'data/lexical_data/' + domain_name 
+        if not os.path.exists(self.path): 
+            os.makedirs(self.path)
+        
+    
+        
         self.words = embeddings.collect_words(list_of_words) 
         
-        model = api.load('fasttext-wiki-news-subwords-300')
-        model_vocab = list(model.key_to_index.keys())
+        self.model = api.load('fasttext-wiki-news-subwords-300')
+        self.model_vocab = list(self.model.key_to_index.keys())
         
         self.updated_words = [] 
-        
         self.embeddings = [] 
+        
+
+        if os.path.exists(self.path + "/semantic_embeddings.csv"): 
+            self.add_to_semantic_embeddings()
+        else: 
+            self.new_semantic_embeddings()
+            
+
+    
+    
+    def new_semantic_embeddings(self): 
+        #creates a new semantic_embeddings if not in folder
         
         with alive_bar(len(self.words)) as bar:
             for word in self.words: 
                 vector_word = embeddings.word_checker(word)
-                vector = model[vector_word]
+                vector = self.model[vector_word]
                 self.updated_words += [vector_word]
                 self.embeddings += [vector] 
                 bar()
@@ -49,12 +69,32 @@ class embeddings:
             i += 1
             
         self.df = pd.DataFrame(self.dict)
-        self.df.to_csv('data/lexical_data/embeddings.csv', index=False)
+        self.df.to_csv(self.path + '/semantic_embeddings.csv', index=False)
+        
+    def add_to_semantic_embeddings(self): 
+        df = pd.read_csv(self.path + "/semantic_embeddings.csv")
+        
+        df_words = list(df.columns.values)
+        
+        with alive_bar(len(self.words)) as bar: 
+            for word in self.words: 
+                if word not in df_words: 
+                    vector_word = embeddings.word_checker(word) 
+                    if vector_word == 'none': 
+                        mean = np.mean(df, axis=1) 
+                        df[word] = mean.tolist()
+                    else: 
+                        df[word] = self.model[vector_word]
+                df_words.append(word)
+                bar()
+        
+        df.to_csv(self.path + '/semantic_embeddings.csv', index = False)
+        
     
     def collect_words(list_of_words):
         '''
             Description: 
-                Preprocesses the list of words. The words are turned into lowercase, add an dash for spaces, 
+                Preprocesses the list of words. The words are turned into lowercase, add an underscore for spaces, 
                 removes all unnecessary characters, remove consecutive duplicate words, and spell checks the words. 
             
             Args: 
@@ -93,11 +133,9 @@ class embeddings:
                 (1) replacement (str): the replacement word for the original word 
         ''' 
         
-        #need to have fasttext_words.csv in data/models to check words 
         df = pd.read_csv('data/models/fasttext_words.csv')
         model_vocab = df['0'].values.tolist()
         
-        #checks uppercase, lowercase, capitalize, combine compound words by combining them 
         if word in model_vocab:
             return word
         elif word.upper() in model_vocab: 
@@ -115,7 +153,6 @@ class embeddings:
         elif word.replace("-", "").lower() in model_vocab: 
             return word.replace("-", "").lower()
         
-        #split if word is compound word and check if individual words are in model 
         split =  word.replace("-", " ").split()
         possibilities = []
         for words in split: 
@@ -124,21 +161,45 @@ class embeddings:
         
         if len(possibilities) == 0:
             return "none"
-        
-        #gets the second word from the compound word
+
         replacement = possibilities[-1]
         
         return replacement 
     
             
 #### SAMPLE RUN CODE ####
-# a = embeddings(['apple', 'mango', 'mango', 'apple', 'bob']) 
-# print(a.df)
+# a = embeddings(['apple', 'mango', 'mango', 'apple', 'bob'], "Test") 
+# b = embeddings(['apple'], 'Test') 
 
 ### getting words from a excel file 
 
-''' gets embeddings for fovacs animals''' 
+# dp = pd.read_csv('data/models/psyrev_data.csv')
+# psy_words = dp['0'].values.tolist()
+# a = embeddings(psy_words, "Animals")
+
+
 # df = pd.read_excel('data/fluency_lists/fovacs_animals.xlsx')
 # word_list = df['spellcheck'].values.tolist()
-# a = embeddings(word_list)
-# print(a.df)
+# b = embeddings(word_list,"Animals")
+
+
+
+# df = pd.read_excel('data/fluency_lists/fovacs_foods.xlsx')
+# word_list = df['spellcheck'].values.tolist()
+# b = embeddings(word_list,"Foods")
+
+# df = pd.read_excel('data/fluency_lists/fovacs_occupations.xlsx')
+# word_list = df['spellcheck'].values.tolist()
+# b = embeddings(word_list,"Occupations")
+
+df = pd.read_excel('data/fluency_lists/fovacs_cities.xlsx')
+word_list = df['spellcheck'].values.tolist()
+b = embeddings(word_list,"Cities")
+
+df = pd.read_excel('data/fluency_lists/fovacs_sports.xlsx')
+word_list = df['spellcheck'].values.tolist()
+b = embeddings(word_list,"Sports")
+
+df = pd.read_excel('data/fluency_lists/fovacs_vehicles.xlsx')
+word_list = df['spellcheck'].values.tolist()
+b = embeddings(word_list,"vehicles")
