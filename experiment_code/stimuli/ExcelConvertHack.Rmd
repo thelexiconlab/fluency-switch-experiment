@@ -110,4 +110,87 @@ for(x in 1:length(forlist)) {
   print(d)
 }
 ```
+```{r}
+#Alternative Adding Info
 
+lists = read_csv("final_60.csv")
+
+lists = lists %>%
+  mutate(domain = tolower(domain)) %>%
+  group_by(subject, domain) %>%
+  mutate(response_number = row_number(),
+         IRT_prev = lag(response_onset_time),
+         IRT_prev= ifelse(is.na(IRT_prev), 0, IRT_prev),
+         IRT = response_onset_time-IRT_prev,
+         prev_word = lag(participant_response),
+         repetition = ifelse(participant_response == prev_word, 1,0),
+         repetition = ifelse(is.na(repetition), 0, repetition)) %>%
+  filter(repetition != 1) %>%
+  select(-c(prev_word, repetition, IRT_prev))
+
+
+
+unique_HJT = unique(lists %>% filter(dataset == "HJT") %>% pull(subject))
+unique_LEA = unique(lists %>% filter(dataset == "LEA") %>% pull(subject))
+
+#samples_HJT <-sample(unique_HJT, size = 5, replace = FALSE)
+#samples_LEA<-map(1:6, ~sample(unique_LEA, size = 5, replace = FALSE))
+
+list1_HJT = sample(unique_HJT, size = 5, replace = FALSE)
+list1_LEA = sample(unique_LEA, size = 5, replace = FALSE)
+
+unique_HJT<-unique_HJT[!unique_HJT %in% list1_HJT]
+unique_LEA<-unique_LEA[!unique_LEA %in% list1_LEA]
+
+list2_HJT = sample(unique_HJT, size = 5, replace = FALSE)
+list2_LEA = sample(unique_LEA, size = 5, replace = FALSE)
+
+unique_HJT<-unique_HJT[!unique_HJT %in% list2_HJT]
+unique_LEA<-unique_LEA[!unique_LEA %in% list2_LEA]
+
+list3_HJT = sample(unique_HJT, size = 5, replace = FALSE)
+list3_LEA = sample(unique_LEA, size = 5, replace = FALSE)
+
+unique_HJT<-unique_HJT[!unique_HJT %in% list3_HJT]
+unique_LEA<-unique_LEA[!unique_LEA %in% list3_LEA]
+
+list4_HJT = sample(unique_HJT, size = 5, replace = FALSE)
+list4_LEA = sample(unique_LEA, size = 5, replace = FALSE)
+
+unique_HJT<-unique_HJT[!unique_HJT %in% list4_HJT]
+unique_LEA<-unique_LEA[!unique_LEA %in% list4_LEA]
+
+list5_HJT = sample(unique_HJT, size = 5, replace = FALSE)
+list5_LEA = sample(unique_LEA, size = 5, replace = FALSE)
+
+unique_HJT<-unique_HJT[!unique_HJT %in% list5_HJT]
+unique_LEA<-unique_LEA[!unique_LEA %in% list5_LEA]
+
+list6_HJT = sample(unique_HJT, size = 5, replace = FALSE)
+list6_LEA = sample(unique_LEA, size = 5, replace = FALSE)
+
+
+
+list1 = lists %>% filter(subject %in% c(list1_HJT, list1_LEA))%>% mutate(list_number = 1)
+test<-unique(list6[1])
+list2 = lists %>% filter(subject %in% c(list2_HJT, list2_LEA))%>% mutate(list_number = 2)
+list3 = lists %>% filter(subject %in% c(list3_HJT, list3_LEA))%>% mutate(list_number = 3)
+list4 = lists %>% filter(subject %in% c(list4_HJT, list4_LEA))%>% mutate(list_number = 4)
+list5 = lists %>% filter(subject %in% c(list5_HJT, list5_LEA))%>% mutate(list_number = 5)
+list6 = lists %>% filter(subject %in% c(list6_HJT, list6_LEA))%>% mutate(list_number = 6)
+test3<-unique(list3[1])
+test2<-unique(list2[1])
+list1_HJT
+list1_LEA
+
+
+
+
+
+write.csv(list1, "list1.csv", row.names = FALSE)
+write.csv(list2, "list2.csv", row.names = FALSE)
+write.csv(list3, "list3.csv", row.names = FALSE)
+write.csv(list4, "list4.csv", row.names = FALSE)
+write.csv(list5, "list5.csv", row.names = FALSE)
+write.csv(list6, "list6.csv", row.names = FALSE)
+```
