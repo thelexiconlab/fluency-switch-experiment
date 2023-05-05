@@ -1,0 +1,774 @@
+,Original Words,Vocab,Modified Words,Vocab,Replacement
+0,Zucchini,included,zucchini,included,N/A
+1,Salary,included,salary,included,N/A
+2,Protein,included,protein,included,N/A
+3,Stringbean,included,stringbean,not included,Stringbean
+4,Palak Paneer,not included,palak-paneer,not included,paneer
+5,Tomato Soup,not included,tomato-soup,not included,soup
+6,Monkey,included,monkey,included,N/A
+7,Peanut Butter,not included,peanut-butter,included,N/A
+8,Nut,included,nut,included,N/A
+9,Oregano,included,oregano,included,N/A
+10,Enchilada,included,enchilada,included,N/A
+11,Kool-Aid,included,kool-aid,included,N/A
+12,Pig In A Blanket,not included,pig-in-a-blanket,not included,blanket
+13,Cherry Jelly,not included,cherry-jelly,not included,jelly
+14,Cuban,included,cuban,included,N/A
+15,Jalapeno Pepper,not included,jalapeno-pepper,not included,pepper
+16,Crouton,included,crouton,included,N/A
+17,Mango,included,mango,included,N/A
+18,Applesauce,included,applesauce,included,N/A
+19,Bosco Stick,not included,bosco-stick,not included,stick
+20,Kitkat,included,kitkat,included,N/A
+21,Italian,included,italian,included,N/A
+22,Juice,included,juice,included,N/A
+23,Pepperoni,included,pepperoni,included,N/A
+24,Lemonade,included,lemonade,included,N/A
+25,Turkey,included,turkey,included,N/A
+26,Salad Dressing,not included,salad-dressing,not included,dressing
+27,Boston Lettuce,not included,boston-lettuce,not included,lettuce
+28,Latte,included,latte,included,N/A
+29,Dressing,included,dressing,included,N/A
+30,Antelope,included,antelope,included,N/A
+31,Salt,included,salt,included,N/A
+32,Soup,included,soup,included,N/A
+33,Papaya,included,papaya,included,N/A
+34,Lo Mein,not included,lo-mein,not included,mein
+35,Gnocchi,included,gnocchi,included,N/A
+36,Strawberry Jelly,not included,strawberry-jelly,not included,jelly
+37,Ravioli,included,ravioli,included,N/A
+38,Onion Ring,not included,onion-ring,not included,ring
+39,Pumpkin,included,pumpkin,included,N/A
+40,Pancakes,included,pancakes,included,N/A
+41,Pizza Macaroni,not included,pizza-macaroni,not included,macaroni
+42,Tangerine,included,tangerine,included,N/A
+43,Milk,included,milk,included,N/A
+44,Shortbread,included,shortbread,included,N/A
+45,Baked Bean,not included,baked-bean,not included,bean
+46,Mooncake,included,mooncake,included,N/A
+47,Syrup,included,syrup,included,N/A
+48,Chex Mix,not included,chex-mix,not included,mix
+49,Saganaki,not included,saganaki,included,N/A
+50,Trout,included,trout,included,N/A
+51,Cantaloupe,included,cantaloupe,included,N/A
+52,Dried Fruit,not included,dried-fruit,not included,fruit
+53,Mashed Potato,not included,mashed-potato,not included,potato
+54,Fruit Punch,not included,fruit-punch,not included,punch
+55,Union,included,union,included,N/A
+56,Hibachi,included,hibachi,included,N/A
+57,Leave,included,leave,included,N/A
+58,Red Leaf Lettuce,not included,red-leaf-lettuce,not included,lettuce
+59,Tortilla,included,tortilla,included,N/A
+60,Dip,included,dip,included,N/A
+61,Cold Cut,not included,cold-cut,not included,Coldcut
+62,Northern Bean,not included,northern-bean,not included,bean
+63,Asparagus,included,asparagus,included,N/A
+64,Greek,included,greek,included,N/A
+65,French,included,french,included,N/A
+66,Peanut Butter And Jelly,not included,peanut-butter-and-jelly,not included,jelly
+67,Water,included,water,included,N/A
+68,Squash,included,squash,included,N/A
+69,Cheeto,included,cheeto,not included,Cheeto
+70,Soap,included,soap,included,N/A
+71,Cornbread,included,cornbread,included,N/A
+72,Volt,included,volt,included,N/A
+73,Tater Tot,not included,tater-tot,not included,tot
+74,Stix With Cheese,not included,stix-with-cheese,not included,cheese
+75,Mint,included,mint,included,N/A
+76,Lobster Tail,not included,lobster-tail,not included,tail
+77,Blt,not included,blt,included,N/A
+78,American,included,american,included,N/A
+79,Rhubarb,included,rhubarb,included,N/A
+80,Yeast,included,yeast,included,N/A
+81,Mexican Food,not included,mexican-food,not included,food
+82,Cereal,included,cereal,included,N/A
+83,Monkey Brain,not included,monkey-brain,not included,brain
+84,Chicken Fried Rice,not included,chicken-fried-rice,not included,rice
+85,Pad Thai,not included,pad-thai,not included,thai
+86,Mocha,included,mocha,included,N/A
+87,Steak Ham,not included,steak-ham,not included,ham
+88,Eggroll,not included,eggroll,not included,none
+89,Seed,included,seed,included,N/A
+90,Chipotle,included,chipotle,included,N/A
+91,Oat,included,oat,included,N/A
+92,Mushroom,included,mushroom,included,N/A
+93,Chimichanga,included,chimichanga,included,N/A
+94,Tenderloin,included,tenderloin,included,N/A
+95,Red Potato,not included,red-potato,not included,potato
+96,Beverage,included,beverage,included,N/A
+97,Guineapig,not included,guineapig,not included,none
+98,Relish,included,relish,included,N/A
+99,Hoho,included,hoho,included,N/A
+100,Acorn Squash,not included,acorn-squash,not included,squash
+101,Sucker,included,sucker,included,N/A
+102,Pizza Ice Cream,not included,pizza-ice-cream,not included,cream
+103,Nutrigrain Bar,not included,nutrigrain-bar,not included,bar
+104,Baked Potato,not included,baked-potato,not included,potato
+105,Red Pepper,not included,red-pepper,included,N/A
+106,Nectarine,included,nectarine,included,N/A
+107,Watermelon,included,watermelon,included,N/A
+108,Bell Pepper,not included,bell-pepper,not included,pepper
+109,Chocolate Mousse,not included,chocolate-mousse,not included,mousse
+110,Mahimahi,not included,mahimahi,included,N/A
+111,Shrimp,included,shrimp,included,N/A
+112,Stuffing,included,stuffing,included,N/A
+113,Grain,included,grain,included,N/A
+114,Croissant,included,croissant,included,N/A
+115,Chicken Wing,not included,chicken-wing,included,N/A
+116,Fried Rice,not included,fried-rice,not included,rice
+117,Cottage Cheese,not included,cottage-cheese,not included,cheese
+118,Dietary,included,dietary,included,N/A
+119,Grape,included,grape,included,N/A
+120,Krackel,not included,krackel,not included,none
+121,Cow Tongue,not included,cow-tongue,not included,tongue
+122,Licorice,included,licorice,included,N/A
+123,Dolphin,included,dolphin,included,N/A
+124,Potato Salad,not included,potato-salad,not included,salad
+125,Bunt Cake,not included,bunt-cake,not included,cake
+126,Craisin,not included,craisin,not included,none
+127,Bran,included,bran,included,N/A
+128,Candy Corn,not included,candy-corn,not included,corn
+129,Honey,included,honey,included,N/A
+130,Tuna Salad,not included,tuna-salad,not included,salad
+131,Creampuff,not included,creampuff,not included,none
+132,Pirogue,included,pirogue,included,N/A
+133,Pecan Pie,not included,pecan-pie,not included,pie
+134,Meatloaf,included,meatloaf,included,N/A
+135,Granola,included,granola,included,N/A
+136,Lime,included,lime,included,N/A
+137,Fruitcake,included,fruitcake,included,N/A
+138,Tamale,included,tamale,included,N/A
+139,Corned Beef,not included,corned-beef,included,N/A
+140,Cranberry Sauce,not included,cranberry-sauce,not included,sauce
+141,Snicker Bar,not included,snicker-bar,not included,bar
+142,Plantain,included,plantain,included,N/A
+143,Meatball,included,meatball,included,N/A
+144,Fries,included,fries,included,N/A
+145,Guacamole,included,guacamole,included,N/A
+146,Beef Jerky,not included,beef-jerky,not included,jerky
+147,Buicake,not included,buicake,not included,none
+148,Pita,included,pita,included,N/A
+149,Cappuccino,included,cappuccino,included,N/A
+150,Salsa,included,salsa,included,N/A
+151,Whip Cream,not included,whip-cream,not included,cream
+152,Pig,included,pig,included,N/A
+153,Scallion,included,scallion,included,N/A
+154,Banana Pepper,not included,banana-pepper,not included,pepper
+155,Hotdog,included,hotdog,included,N/A
+156,Brisket,included,brisket,included,N/A
+157,Crab Leg,not included,crab-leg,not included,leg
+158,Butterfinger,included,butterfinger,not included,Butterfinger
+159,Habanero Pepper,not included,habanero-pepper,not included,pepper
+160,Pineapple,included,pineapple,included,N/A
+161,Steak,included,steak,included,N/A
+162,Fried,included,fried,included,N/A
+163,Gelato,included,gelato,included,N/A
+164,Ramen,included,ramen,included,N/A
+165,Wendys,included,wendys,not included,Wendys
+166,American Cheese,not included,american-cheese,not included,cheese
+167,Filet Migon,not included,filet-migon,not included,filet
+168,Whipped Cream,not included,whipped-cream,included,N/A
+169,Hashbrown,not included,hashbrown,not included,none
+170,Cheetos,included,cheetos,included,N/A
+171,Cinnamon Roll,not included,cinnamon-roll,not included,roll
+172,White,included,white,included,N/A
+173,Cheese Fry,not included,cheese-fry,not included,fry
+174,Peach,included,peach,included,N/A
+175,Bologna,included,bologna,included,N/A
+176,Prawn,included,prawn,included,N/A
+177,Miso Soup,not included,miso-soup,not included,soup
+178,Stuffed Pepper,not included,stuffed-pepper,not included,pepper
+179,Linguini,included,linguini,included,N/A
+180,Pork,included,pork,included,N/A
+181,Sauerkraut,included,sauerkraut,included,N/A
+182,Dairy,included,dairy,included,N/A
+183,Smoothie,included,smoothie,included,N/A
+184,Rice Ball,not included,rice-ball,not included,ball
+185,Water Chestnut,not included,water-chestnut,not included,chestnut
+186,Lays Chip,not included,lays-chip,not included,chip
+187,Human,included,human,included,N/A
+188,Buffalo Wing,not included,buffalo-wing,not included,wing
+189,Potatoes Soup,not included,potatoes-soup,not included,soup
+190,Jalapeno,included,jalapeno,included,N/A
+191,Scone,included,scone,included,N/A
+192,Soybean,included,soybean,included,N/A
+193,Anchovy,included,anchovy,included,N/A
+194,Hot Pocket,not included,hot-pocket,not included,pocket
+195,Grapefruit,included,grapefruit,included,N/A
+196,Funnel Cake,not included,funnel-cake,not included,cake
+197,Pastry,included,pastry,included,N/A
+198,Macadamia Nut,not included,macadamia-nut,not included,nut
+199,Pig Nose,not included,pig-nose,not included,nose
+200,Mayonnaise,included,mayonnaise,included,N/A
+201,Cod,included,cod,included,N/A
+202,Raison,included,raison,included,N/A
+203,Cheerio,included,cheerio,included,N/A
+204,Cauliflower,included,cauliflower,included,N/A
+205,Broth,included,broth,included,N/A
+206,Roast Beef,not included,roast-beef,included,N/A
+207,Beagle,included,beagle,included,N/A
+208,Shake,included,shake,included,N/A
+209,Fried Chicken,not included,fried-chicken,included,N/A
+210,Toast,included,toast,included,N/A
+211,Cream Cheese,not included,cream-cheese,included,N/A
+212,Dingle Doodle,not included,dingle-doodle,not included,doodle
+213,Green Onion,not included,green-onion,not included,onion
+214,Pepper Chicken,not included,pepper-chicken,not included,chicken
+215,Cheese It,not included,cheese-it,not included,it
+216,Fat,included,fat,included,N/A
+217,German Chocolate Cake,not included,german-chocolate-cake,not included,cake
+218,Beansprout,not included,beansprout,not included,none
+219,French-Fry,not included,french-fry,not included,fry
+220,Artichoke,included,artichoke,included,N/A
+221,Ritz Cracker,not included,ritz-cracker,not included,cracker
+222,Pita Bread,not included,pita-bread,not included,bread
+223,Stew,included,stew,included,N/A
+224,English Muffin,not included,english-muffin,not included,muffin
+225,Jam,included,jam,included,N/A
+226,Trail Mix,not included,trail-mix,not included,mix
+227,Bacon,included,bacon,included,N/A
+228,Cashew,included,cashew,included,N/A
+229,Candy,included,candy,included,N/A
+230,Chip And Salsa,not included,chip-and-salsa,not included,salsa
+231,Bacon Lettuce And Tomato,not included,bacon-lettuce-and-tomato,not included,tomato
+232,Currant,included,currant,included,N/A
+233,Cookie,included,cookie,included,N/A
+234,Crab,included,crab,included,N/A
+235,Frosting,included,frosting,included,N/A
+236,Guava,included,guava,included,N/A
+237,Rib,included,rib,included,N/A
+238,Beef And Noodle,not included,beef-and-noodle,not included,noodle
+239,Vegetable,included,vegetable,included,N/A
+240,Mil,included,mil,included,N/A
+241,Muffin,included,muffin,included,N/A
+242,Panera,included,panera,not included,Panera
+243,Dark Chocolate,not included,dark-chocolate,included,N/A
+244,Alcohol,included,alcohol,included,N/A
+245,Crab Rangoon,not included,crab-rangoon,not included,crab
+246,Wheat Thin,not included,wheat-thin,not included,thin
+247,Parmesan Cheese,not included,parmesan-cheese,not included,cheese
+248,Almond,included,almond,included,N/A
+249,Honeydew,included,honeydew,included,N/A
+250,Sweet And Sour Chicken,not included,sweet-and-sour-chicken,not included,chicken
+251,Ryebread,not included,ryebread,not included,none
+252,Lifesaver,included,lifesaver,included,N/A
+253,Tuna,included,tuna,included,N/A
+254,Sprout,included,sprout,included,N/A
+255,Turkey Sandwich,not included,turkey-sandwich,not included,sandwich
+256,Grit,included,grit,included,N/A
+257,Special K,not included,special-k,not included,k
+258,Candy Bar,not included,candy-bar,included,N/A
+259,Crablet,not included,crablet,not included,none
+260,Chicken Cordon Bleu,not included,chicken-cordon-bleu,not included,bleu
+261,Red Onion,not included,red-onion,not included,onion
+262,Protein Bar,not included,protein-bar,not included,bar
+263,Elephant Ear,not included,elephant-ear,not included,ear
+264,String Cheese,not included,string-cheese,not included,cheese
+265,Green Pepper,not included,green-pepper,not included,pepper
+266,Chicken Sandwich,not included,chicken-sandwich,not included,sandwich
+267,Pizza Roll,not included,pizza-roll,not included,roll
+268,Spice,included,spice,included,N/A
+269,Brown Rice,not included,brown-rice,not included,rice
+270,Curry,included,curry,included,N/A
+271,Frozen Yogurt,not included,frozen-yogurt,not included,yogurt
+272,Grilled Cheese,not included,grilled-cheese,included,N/A
+273,Frog Leg,not included,frog-leg,not included,leg
+274,Apple Chip,not included,apple-chip,not included,chip
+275,Oil,included,oil,included,N/A
+276,Green Bean,not included,green-bean,not included,bean
+277,Muskmelon,not included,muskmelon,included,N/A
+278,Starfruit,included,starfruit,included,N/A
+279,Okra,included,okra,included,N/A
+280,Slim Fast,not included,slim-fast,not included,Slimfast
+281,Swiss Cheese,not included,swiss-cheese,not included,Swiss-cheese
+282,Green,included,green,included,N/A
+283,Date,included,date,included,N/A
+284,Hummus,included,hummus,included,N/A
+285,Potato Skin,not included,potato-skin,not included,skin
+286,Rice Cake,not included,rice-cake,not included,cake
+287,Summer Squash,not included,summer-squash,not included,squash
+288,Roll,included,roll,included,N/A
+289,Hot Chocolate,not included,hot-chocolate,not included,chocolate
+290,Chili,included,chili,included,N/A
+291,Nachos,included,nachos,included,N/A
+292,Pretzel,included,pretzel,included,N/A
+293,Raisin,included,raisin,included,N/A
+294,Cap'N Crunch,not included,capn-crunch,not included,crunch
+295,Salted Nut Roll,not included,salted-nut-roll,not included,roll
+296,Hershey Bar,not included,hershey-bar,not included,bar
+297,Coleslaw,included,coleslaw,included,N/A
+298,Chip Dip,not included,chip-dip,not included,dip
+299,Berry,included,berry,included,N/A
+300,Hoagie,included,hoagie,included,N/A
+301,Garlic Bread,not included,garlic-bread,not included,bread
+302,Barbeque Chicken,not included,barbeque-chicken,not included,chicken
+303,Barbeque Chip,not included,barbeque-chip,not included,chip
+304,Pulse,included,pulse,included,N/A
+305,Gouda Cheese,not included,gouda-cheese,not included,cheese
+306,Cheesecake,included,cheesecake,included,N/A
+307,Falafel,included,falafel,included,N/A
+308,Marshmallow,included,marshmallow,included,N/A
+309,Penne Alla Vodka,not included,penne-alla-vodka,not included,vodka
+310,Gummy Bear,not included,gummy-bear,not included,bear
+311,Animal Cracker,not included,animal-cracker,not included,cracker
+312,Goldfish Cracker,not included,goldfish-cracker,not included,cracker
+313,Frozen Dinner,not included,frozen-dinner,not included,dinner
+314,Beef Stew,not included,beef-stew,not included,BEEFSTEW
+315,Tomato,included,tomato,included,N/A
+316,Sushi,included,sushi,included,N/A
+317,Grouper,included,grouper,included,N/A
+318,Hamburger,included,hamburger,included,N/A
+319,Diet,included,diet,included,N/A
+320,Bun,included,bun,included,N/A
+321,Sandwich,included,sandwich,included,N/A
+322,Chocolate Cake,not included,chocolate-cake,not included,cake
+323,Patty Melt,not included,patty-melt,not included,melt
+324,Snicker,included,snicker,included,N/A
+325,Chicken Breast,not included,chicken-breast,not included,breast
+326,Yam,included,yam,included,N/A
+327,Starch,included,starch,included,N/A
+328,Lemon Cake,not included,lemon-cake,not included,cake
+329,Catfish,included,catfish,included,N/A
+330,Coke,included,coke,included,N/A
+331,Scallop,included,scallop,included,N/A
+332,Orange,included,orange,included,N/A
+333,Lean Pocket,not included,lean-pocket,not included,pocket
+334,Butter,included,butter,included,N/A
+335,Salad,included,salad,included,N/A
+336,Italian Sausage,not included,italian-sausage,not included,sausage
+337,Chicken Finger,not included,chicken-finger,not included,finger
+338,Cabbage,included,cabbage,included,N/A
+339,Key Lime Pie,not included,key-lime-pie,not included,pie
+340,Brazil Nut,not included,brazil-nut,not included,nut
+341,Carbohydrate,included,carbohydrate,included,N/A
+342,Ground Round,not included,ground-round,not included,round
+343,Bleu Cheese,not included,bleu-cheese,not included,cheese
+344,Ground Beef,not included,ground-beef,not included,beef
+345,Lima Bean,not included,lima-bean,not included,bean
+346,The Baconator ,not included,the-baconator,not included,the
+347,Pear,included,pear,included,N/A
+348,Honeydew Melon,not included,honeydew-melon,not included,melon
+349,Vinaigrette,included,vinaigrette,included,N/A
+350,Minimuffin,not included,minimuffin,not included,none
+351,Ketchup,included,ketchup,included,N/A
+352,Sweet And Sour Pork,not included,sweet-and-sour-pork,not included,pork
+353,Cheese,included,cheese,included,N/A
+354,Potato,included,potato,included,N/A
+355,Hazelnut,included,hazelnut,included,N/A
+356,Garlic,included,garlic,included,N/A
+357,Orange Juice,not included,orange-juice,not included,juice
+358,Daifuku,included,daifuku,not included,Daifuku
+359,Grilled Chicken,not included,grilled-chicken,not included,chicken
+360,Fettucine,not included,fettucine,included,N/A
+361,Chicken Noodle Soup,not included,chicken-noodle-soup,not included,soup
+362,Lamb,included,lamb,included,N/A
+363,Biscuit,included,biscuit,included,N/A
+364,Roasted Chicken,not included,roasted-chicken,not included,chicken
+365,Mozzarella,included,mozzarella,included,N/A
+366,Popcorn,included,popcorn,included,N/A
+367,Sashimi,included,sashimi,included,N/A
+368,Chicken And Dumpling,not included,chicken-and-dumpling,not included,dumpling
+369,Ice Cream,not included,ice-cream,included,N/A
+370,Pepsi,included,pepsi,included,N/A
+371,Sub,included,sub,included,N/A
+372,Walnut,included,walnut,included,N/A
+373,Fried Potato,not included,fried-potato,not included,potato
+374,Pig Feet,not included,pig-feet,not included,feet
+375,Fish,included,fish,included,N/A
+376,Pesto,included,pesto,included,N/A
+377,Chicken Alfredo,not included,chicken-alfredo,not included,alfredo
+378,Black Bean,not included,black-bean,included,N/A
+379,Sugar Cookie,not included,sugar-cookie,not included,cookie
+380,Melt,included,melt,included,N/A
+381,Melon,included,melon,included,N/A
+382,Dorito,included,dorito,not included,Dorito
+383,Napoleon,included,napoleon,included,N/A
+384,Fried Vegetable,not included,fried-vegetable,not included,vegetable
+385,Ice Creams,not included,ice-creams,included,N/A
+386,Sunflower Seed,not included,sunflower-seed,not included,sunflowerseed
+387,Macaroni,included,macaroni,included,N/A
+388,Scrambled Egg,not included,scrambled-egg,not included,egg
+389,Pea,included,pea,included,N/A
+390,Oatmeal,included,oatmeal,included,N/A
+391,Poultry,included,poultry,included,N/A
+392,Cake,included,cake,included,N/A
+393,Pepper,included,pepper,included,N/A
+394,Twizzler,included,twizzler,not included,Twizzler
+395,Chocolate Pie,not included,chocolate-pie,not included,pie
+396,Goldfish,included,goldfish,included,N/A
+397,Rice Krispie Treat,not included,rice-krispie-treat,not included,treat
+398,Cream,included,cream,included,N/A
+399,Oatmeal Cookie,not included,oatmeal-cookie,not included,cookie
+400,Bbq,not included,bbq,included,N/A
+401,Lucky Charm,not included,lucky-charm,not included,charm
+402,Banana,included,banana,included,N/A
+403,Manakish,not included,manakish,not included,none
+404,Fig,included,fig,included,N/A
+405,Lasagna,included,lasagna,included,N/A
+406,Kimchi,included,kimchi,included,N/A
+407,White Onion,not included,white-onion,not included,onion
+408,Pickle,included,pickle,included,N/A
+409,Ponsit,not included,ponsit,not included,none
+410,Oreo,included,oreo,included,N/A
+411,Quiche,included,quiche,included,N/A
+412,Wheat,included,wheat,included,N/A
+413,Broccoli,included,broccoli,included,N/A
+414,Snack,included,snack,included,N/A
+415,Crepe,included,crepe,included,N/A
+416,Sod,included,sod,included,N/A
+417,Beef Stroganoff,not included,beef-stroganoff,not included,stroganoff
+418,Fruit,included,fruit,included,N/A
+419,Chitterling,not included,chitterling,not included,none
+420,Lettuce,included,lettuce,included,N/A
+421,Chicken Marsala,not included,chicken-marsala,not included,marsala
+422,Donut,included,donut,included,N/A
+423,Shitake Mushroom,not included,shitake-mushroom,not included,mushroom
+424,Parsley,included,parsley,included,N/A
+425,Vanilla Cake,not included,vanilla-cake,not included,cake
+426,Veggie Burger,not included,veggie-burger,not included,burger
+427,Tootsie Roll,not included,tootsie-roll,not included,roll
+428,Lemon Chicken,not included,lemon-chicken,not included,chicken
+429,Yellow Pepper,not included,yellow-pepper,not included,pepper
+430,Bread,included,bread,included,N/A
+431,Steak Diane,not included,steak-diane,not included,diane
+432,Pine Nut,not included,pine-nut,included,N/A
+433,Liver,included,liver,included,N/A
+434,Waffle,included,waffle,included,N/A
+435,Strudel,included,strudel,included,N/A
+436,Pumpkinseed,included,pumpkinseed,included,N/A
+437,Cracker,included,cracker,included,N/A
+438,Celery,included,celery,included,N/A
+439,Black Olive,not included,black-olive,not included,olive
+440,Kumquat,included,kumquat,included,N/A
+441,Jones Soda,not included,jones-soda,not included,soda
+442,Porkchop,included,porkchop,included,N/A
+443,Sauteed,included,sauteed,included,N/A
+444,Liquor,included,liquor,included,N/A
+445,M And M'S,not included,m-and-ms,not included,ms
+446,Wholegrain Bread,not included,wholegrain-bread,not included,bread
+447,Yucca,included,yucca,included,N/A
+448,Angel Hair Pasta,not included,angel-hair-pasta,not included,pasta
+449,Tofu,included,tofu,included,N/A
+450,Grape Jelly,not included,grape-jelly,not included,jelly
+451,Cheese Puff,not included,cheese-puff,not included,puff
+452,Samosa,included,samosa,included,N/A
+453,Beef,included,beef,included,N/A
+454,Scalloped Potato,not included,scalloped-potato,not included,potato
+455,Shrimp Lobster,not included,shrimp-lobster,not included,lobster
+456,Chinese Food,not included,chinese-food,not included,food
+457,Chicken Nugget,not included,chicken-nugget,not included,nugget
+458,Fontina,included,fontina,included,N/A
+459,Pinto Bean,not included,pinto-bean,not included,bean
+460,Sweet Potato,not included,sweet-potato,included,N/A
+461,Seafood,included,seafood,included,N/A
+462,Deer Steak,not included,deer-steak,not included,steak
+463,Kiwi,included,kiwi,included,N/A
+464,Grass,included,grass,included,N/A
+465,Reese,included,reese,included,N/A
+466,Granola Bar,not included,granola-bar,not included,bar
+467,Cheddar Cheese,not included,cheddar-cheese,not included,cheese
+468,Nocos,not included,nocos,not included,none
+469,Sausage,included,sausage,included,N/A
+470,Roast,included,roast,included,N/A
+471,Shepherds Pie,not included,shepherds-pie,not included,pie
+472,Spicy Chicken,not included,spicy-chicken,not included,chicken
+473,Jello,included,jello,included,N/A
+474,Flan,included,flan,included,N/A
+475,Ice-Cream,included,ice-cream,included,N/A
+476,Hushpuppy,included,hushpuppy,not included,Hushpuppy
+477,Breadstick,not included,breadstick,included,N/A
+478,Chinese,included,chinese,included,N/A
+479,Dog,included,dog,included,N/A
+480,Spanish,included,spanish,included,N/A
+481,Appetizer,included,appetizer,included,N/A
+482,Submarine Sandwich,not included,submarine-sandwich,not included,sandwich
+483,Twinkie,included,twinkie,included,N/A
+484,Ham Sandwich,not included,ham-sandwich,not included,sandwich
+485,Rice Krispie,not included,rice-krispie,not included,rice
+486,Stromboli,included,stromboli,included,N/A
+487,String Pea,not included,string-pea,not included,pea
+488,Basil,included,basil,included,N/A
+489,Shees,not included,shees,not included,none
+490,Peanut,included,peanut,included,N/A
+491,Ziti,included,ziti,included,N/A
+492,Lambchop,included,lambchop,not included,Lambchop
+493,All Cheese,not included,all-cheese,not included,cheese
+494,Salmon,included,salmon,included,N/A
+495,Ramen Noodles,not included,ramen-noodles,not included,noodles
+496,Kidney Bean,not included,kidney-bean,not included,bean
+497,Lentil,included,lentil,included,N/A
+498,Tostito,not included,tostito,not included,none
+499,Country Fried Steak,not included,country-fried-steak,not included,steak
+500,Chicken Teriyaki,not included,chicken-teriyaki,not included,teriyaki
+501,Bunch,included,bunch,included,N/A
+502,Plum,included,plum,included,N/A
+503,Dough,included,dough,included,N/A
+504,Sauce,included,sauce,included,N/A
+505,Leek,included,leek,included,N/A
+506,Ribeye,included,ribeye,included,N/A
+507,Doughnut,included,doughnut,included,N/A
+508,Vegetarian,included,vegetarian,included,N/A
+509,Thai,included,thai,included,N/A
+510,Chili Cheese Fry,not included,chili-cheese-fry,not included,fry
+511,Lollipop,included,lollipop,included,N/A
+512,Breakfast Burrito,not included,breakfast-burrito,not included,burrito
+513,Peanut Butter Cookie,not included,peanut-butter-cookie,not included,cookie
+514,Italian Bread,not included,italian-bread,not included,bread
+515,Milano Cookie,not included,milano-cookie,not included,cookie
+516,Pop Rock,not included,pop-rock,included,N/A
+517,Sour Cream,not included,sour-cream,not included,cream
+518,Baguette,included,baguette,included,N/A
+519,Steak Fajita,not included,steak-fajita,not included,fajita
+520,Sweet,included,sweet,included,N/A
+521,Dragon Fruit,not included,dragon-fruit,not included,dragonfruit
+522,Swiss,included,swiss,included,N/A
+523,Pomegranate,included,pomegranate,included,N/A
+524,Casserole,included,casserole,included,N/A
+525,Gyro,included,gyro,included,N/A
+526,Chocolate,included,chocolate,included,N/A
+527,Egg,included,egg,included,N/A
+528,Refried Bean,not included,refried-bean,not included,bean
+529,Pot-Roast,not included,pot-roast,not included,roast
+530,Onion,included,onion,included,N/A
+531,Chicken,included,chicken,included,N/A
+532,Chocolate Chip Cookie,not included,chocolate-chip-cookie,not included,cookie
+533,Pecan,included,pecan,included,N/A
+534,Takoyaki,included,takoyaki,included,N/A
+535,Corndog,included,corndog,included,N/A
+536,Corn On The Cob,not included,corn-on-the-cob,included,N/A
+537,Cinnamon,included,cinnamon,included,N/A
+538,Cream Of Mushroom Soup,not included,cream-of-mushroom-soup,not included,soup
+539,Oyster,included,oyster,included,N/A
+540,Matzo,included,matzo,included,N/A
+541,Manicotti,included,manicotti,included,N/A
+542,Junk Food,not included,junk-food,included,N/A
+543,Hot Fudge Sundae,not included,hot-fudge-sundae,not included,sundae
+544,Snake,included,snake,included,N/A
+545,Apricot,included,apricot,included,N/A
+546,Strawberry,included,strawberry,included,N/A
+547,Turkey Breast,not included,turkey-breast,not included,breast
+548,Flour,included,flour,included,N/A
+549,Olive,included,olive,included,N/A
+550,Chicken Tender,not included,chicken-tender,not included,tender
+551,Mustard,included,mustard,included,N/A
+552,Pad Tai,not included,pad-tai,not included,tai
+553,Dessert,included,dessert,included,N/A
+554,English,included,english,included,N/A
+555,Chalupa,included,chalupa,included,N/A
+556,Coffeecake,not included,coffeecake,not included,none
+557,Collard Green,not included,collard-green,not included,green
+558,Serrano Pepper,not included,serrano-pepper,not included,pepper
+559,Japanese,included,japanese,included,N/A
+560,Calzone,included,calzone,included,N/A
+561,Fruit Loop,not included,fruit-loop,not included,fruitloop
+562,Bratwurst,included,bratwurst,included,N/A
+563,Omelet,included,omelet,included,N/A
+564,Butter Lettuce,not included,butter-lettuce,not included,lettuce
+565,Cranberry,included,cranberry,included,N/A
+566,Chicken Salad,not included,chicken-salad,not included,salad
+567,Chow Mein,not included,chow-mein,not included,mein
+568,Uni,included,uni,included,N/A
+569,Cucumber,included,cucumber,included,N/A
+570,Churro,included,churro,included,N/A
+571,White Cake,not included,white-cake,not included,cake
+572,Taco,included,taco,included,N/A
+573,Fruit Salad,not included,fruit-salad,not included,salad
+574,Caramel,included,caramel,included,N/A
+575,Spam,included,spam,included,N/A
+576,Cube Steak,not included,cube-steak,not included,steak
+577,Crabcake,not included,crabcake,not included,none
+578,Pringle,included,pringle,included,N/A
+579,Noodle,included,noodle,included,N/A
+580,Cheezit,not included,cheezit,not included,none
+581,Macaroni And Cheese,not included,macaroni-and-cheese,not included,cheese
+582,Polish Sausage,not included,polish-sausage,not included,sausage
+583,Panini,included,panini,included,N/A
+584,Cotton Candy,not included,cotton-candy,included,N/A
+585,Brie,included,brie,included,N/A
+586,Brownie,included,brownie,included,N/A
+587,Rice,included,rice,included,N/A
+588,Skittle,included,skittle,included,N/A
+589,Wrap,included,wrap,included,N/A
+590,Gummi Bear,not included,gummi-bear,not included,bear
+591,Chicken Parmesan,not included,chicken-parmesan,not included,parmesan
+592,Nougat,included,nougat,included,N/A
+593,Kale,included,kale,included,N/A
+594,Meat,included,meat,included,N/A
+595,Tiramisu,included,tiramisu,included,N/A
+596,Chocolate Ice Cream,not included,chocolate-ice-cream,not included,cream
+597,Tic Tac,not included,tic-tac,included,N/A
+598,Wing,included,wing,included,N/A
+599,Fruit Roll Up,not included,fruit-roll-up,not included,up
+600,Portabella Mushroom,not included,portabella-mushroom,not included,mushroom
+601,Salami,included,salami,included,N/A
+602,Cheese Stick,not included,cheese-stick,not included,stick
+603,Chip,included,chip,included,N/A
+604,Bass,included,bass,included,N/A
+605,Edamame,included,edamame,included,N/A
+606,Pizza,included,pizza,included,N/A
+607,Sprinkle,included,sprinkle,included,N/A
+608,Wheat Bread,not included,wheat-bread,not included,bread
+609,Mr Goodbar,not included,mr-goodbar,not included,mr
+610,Pop Tart,not included,pop-tart,not included,poptart
+611,Eclair,included,eclair,included,N/A
+612,Bluegill,included,bluegill,included,N/A
+613,Caesar Salad,not included,caesar-salad,not included,salad
+614,Poundcake,included,poundcake,included,N/A
+615,Pistachio,included,pistachio,included,N/A
+616,Apple,included,apple,included,N/A
+617,Nacho,included,nacho,included,N/A
+618,Danish,included,danish,included,N/A
+619,Couscous,included,couscous,included,N/A
+620,Bibb Lettuce,not included,bibb-lettuce,not included,lettuce
+621,Mozzarella Stick,not included,mozzarella-stick,not included,stick
+622,Pasta,included,pasta,included,N/A
+623,Carrot Cake,not included,carrot-cake,not included,cake
+624,Barbecue,included,barbecue,included,N/A
+625,Desert,included,desert,included,N/A
+626,Tea,included,tea,included,N/A
+627,Mostaccioli,not included,mostaccioli,not included,none
+628,Maple Syrup,not included,maple-syrup,included,N/A
+629,Pudding,included,pudding,included,N/A
+630,Greenleaf Lettuce,not included,greenleaf-lettuce,not included,lettuce
+631,Green Pea,not included,green-pea,not included,pea
+632,Pancake,included,pancake,included,N/A
+633,Alfredo,included,alfredo,included,N/A
+634,Feta Cheese,not included,feta-cheese,not included,cheese
+635,European,included,european,included,N/A
+636,Israeli,included,israeli,included,N/A
+637,Provolone Cheese,not included,provolone-cheese,not included,cheese
+638,Chocolate Chip,not included,chocolate-chip,included,N/A
+639,French Toast,not included,french-toast,not included,toast
+640,Vanilla Ice Cream,not included,vanilla-ice-cream,not included,cream
+641,Mile,included,mile,included,N/A
+642,Blueberry,included,blueberry,included,N/A
+643,Milk Dud,not included,milk-dud,not included,dud
+644,Baklava,included,baklava,included,N/A
+645,Jolly Rancher,not included,jolly-rancher,not included,rancher
+646,Orange Chicken,not included,orange-chicken,not included,chicken
+647,Fruit Snack,not included,fruit-snack,not included,snack
+648,Taquito,included,taquito,included,N/A
+649,Tortellini,included,tortellini,included,N/A
+650,Cherry,included,cherry,included,N/A
+651,Stir-Fry,not included,stir-fry,included,N/A
+652,Roast Beer,not included,roast-beer,not included,beer
+653,Tempura,included,tempura,included,N/A
+654,Cherrypie,not included,cherrypie,not included,none
+655,Lobster Stuffed With Taco,not included,lobster-stuffed-with-taco,not included,taco
+656,Lemon,included,lemon,included,N/A
+657,Blackberry,included,blackberry,included,N/A
+658,Tostada,included,tostada,included,N/A
+659,Rotisserie Chicken,not included,rotisserie-chicken,not included,chicken
+660,Chicken Potpie,not included,chicken-potpie,not included,potpie
+661,Twix Bar,not included,twix-bar,not included,bar
+662,Gum,included,gum,included,N/A
+663,General Tso'S Chicken,not included,general-tsos-chicken,not included,chicken
+664,Orange Grape,not included,orange-grape,not included,grape
+665,French-Fries,not included,french-fries,not included,fries
+666,Frozen Pizza,not included,frozen-pizza,not included,pizza
+667,Mousse,included,mousse,included,N/A
+668,Duck,included,duck,included,N/A
+669,Beer,included,beer,included,N/A
+670,Lobster,included,lobster,included,N/A
+671,French Fry,not included,french-fry,not included,fry
+672,Spinach,included,spinach,included,N/A
+673,Ostrich,included,ostrich,included,N/A
+674,Radish,included,radish,included,N/A
+675,Bagel,included,bagel,included,N/A
+676,Turnip,included,turnip,included,N/A
+677,Reeses,included,reeses,not included,Reeses
+678,Broiled,included,broiled,included,N/A
+679,Bready,included,bready,included,N/A
+680,Sub Sandwich,not included,sub-sandwich,not included,sandwich
+681,Goat Cheese,not included,goat-cheese,included,N/A
+682,Capicola,not included,capicola,included,N/A
+683,Macaroni Cheese,not included,macaroni-cheese,not included,cheese
+684,Yogurt,included,yogurt,included,N/A
+685,Parfait,included,parfait,included,N/A
+686,Potpie,not included,potpie,included,N/A
+687,Hot Sauce,not included,hot-sauce,not included,sauce
+688,Burger,included,burger,included,N/A
+689,Wax Bean,not included,wax-bean,not included,bean
+690,White Chocolate,not included,white-chocolate,included,N/A
+691,Pumpkin Pie,not included,pumpkin-pie,not included,pie
+692,Avocado,included,avocado,included,N/A
+693,Mexican,included,mexican,included,N/A
+694,Shallot,included,shallot,included,N/A
+695,Tilapia,included,tilapia,included,N/A
+696,Potato Chip,not included,potato-chip,included,N/A
+697,Barbeque,included,barbeque,included,N/A
+698,White Bread,not included,white-bread,included,N/A
+699,Fast-Food,included,fast-food,included,N/A
+700,Mandarin Orange,not included,mandarin-orange,not included,orange
+701,Udon,included,udon,included,N/A
+702,Prime Rib,not included,prime-rib,not included,rib
+703,Cheeseburger,included,cheeseburger,included,N/A
+704,Eggplant,included,eggplant,included,N/A
+705,Filet Mignon,not included,filet-mignon,not included,mignon
+706,Raspberry,included,raspberry,included,N/A
+707,Brie Cheese,not included,brie-cheese,not included,cheese
+708,Bbq Chicken,not included,bbq-chicken,not included,chicken
+709,Cupcake,included,cupcake,included,N/A
+710,Ice-Creams,not included,ice-creams,included,N/A
+711,Graham Cracker,not included,graham-cracker,not included,cracker
+712,Diet Coke,not included,diet-coke,not included,coke
+713,Corn,included,corn,included,N/A
+714,Grilled,included,grilled,included,N/A
+715,Beef Patty,not included,beef-patty,not included,patty
+716,Marinara Sauce,not included,marinara-sauce,not included,sauce
+717,Romaine Lettuce,not included,romaine-lettuce,not included,lettuce
+718,Twix,included,twix,included,N/A
+719,Rout,included,rout,included,N/A
+720,Fettuccine Alfredo,not included,fettuccine-alfredo,not included,alfredo
+721,Quesadilla,included,quesadilla,included,N/A
+722,Lunchmeat,not included,lunchmeat,included,N/A
+723,Pasta Salad,not included,pasta-salad,not included,salad
+724,Chickpea,included,chickpea,included,N/A
+725,Calamari,included,calamari,included,N/A
+726,Deer Meat,not included,deer-meat,not included,meat
+727,Passionfruit,included,passionfruit,included,N/A
+728,Brussels Sprout,not included,brussels-sprout,not included,sprout
+729,Flax,included,flax,included,N/A
+730,Apple Juice,not included,apple-juice,not included,juice
+731,Seaweed,included,seaweed,included,N/A
+732,Ice,included,ice,included,N/A
+733,Honey Mustard,not included,honey-mustard,not included,mustard
+734,Soda,included,soda,included,N/A
+735,Ground Chuck,not included,ground-chuck,not included,chuck
+736,Cinnamon Apple,not included,cinnamon-apple,not included,apple
+737,Barbeque Sauce,not included,barbeque-sauce,not included,sauce
+738,Sugar,included,sugar,included,N/A
+739,Apple-Pie,not included,apple-pie,included,N/A
+740,Burrito,included,burrito,included,N/A
+741,Yellow Onion,not included,yellow-onion,not included,onion
+742,Starburst,included,starburst,included,N/A
+743,Bean,included,bean,included,N/A
+744,Macaroni Salad,not included,macaroni-salad,not included,salad
+745,Venison,included,venison,included,N/A
+746,Beet,included,beet,included,N/A
+747,Topping,included,topping,included,N/A
+748,Pie,included,pie,included,N/A
+749,Honeybun,included,honeybun,not included,Honeybun
+750,Carrot,included,carrot,included,N/A
+751,Squid,included,squid,included,N/A
+752,Gummy Worm,not included,gummy-worm,not included,worm
+753,Gravy,included,gravy,included,N/A
+754,Good And Plenty,not included,good-and-plenty,not included,plenty
+755,Pop,included,pop,included,N/A
+756,Ground Sirloin,not included,ground-sirloin,not included,sirloin
+757,Pastrami,included,pastrami,included,N/A
+758,Cheese Panini,not included,cheese-panini,not included,panini
+759,Chicken Patty,not included,chicken-patty,not included,patty
+760,Spaghetti,included,spaghetti,included,N/A
+761,Reese Piece,not included,reese-piece,not included,piece
+762,Cat,included,cat,included,N/A
+763,Jelly,included,jelly,included,N/A
+764,Gordita,included,gordita,included,N/A
+765,Deer,included,deer,included,N/A
+766,Coffee,included,coffee,included,N/A
+767,Veal,included,veal,included,N/A
+768,Coconut,included,coconut,included,N/A
+769,Moose Track Ice Cream,not included,moose-track-ice-cream,not included,cream
+770,Ham,included,ham,included,N/A
+771,Matzo Ball Soup,not included,matzo-ball-soup,not included,soup
+772,Clam,included,clam,included,N/A
