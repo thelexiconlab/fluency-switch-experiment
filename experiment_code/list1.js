@@ -12543,7 +12543,7 @@ var list1=[
     "subject": 693,
     "domain": "occupations",
     "response_number": 21,
-    "participant_response": "Business",
+    "participant_response": "Business Person",
     "response_onset_time": 126.5588235,
     "IRT": 4,
     "participant_designated_switch": "NA",
