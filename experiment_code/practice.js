@@ -1,9 +1,9 @@
 var practicelist = [
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 1,
-    "participant_response": "doctor",
+    "checked_words": "doctor",
     "response_onset_time": 2.641,
     "IRT": 2.641,
     "participant_designated_switch": 2,
@@ -11,10 +11,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 2,
-    "participant_response": "officer",
+    "checked_words": "lawyer",
     "response_onset_time": 3.341,
     "IRT": 0.7,
     "participant_designated_switch": 1,
@@ -22,10 +22,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 3,
-    "participant_response": "police_officer",
+    "checked_words": "police_officer",
     "response_onset_time": 4.441,
     "IRT": 1.1,
     "participant_designated_switch": 0,
@@ -33,10 +33,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 4,
-    "participant_response": "EMT",
+    "checked_words": "nurse",
     "response_onset_time": 7.941,
     "IRT": 3.5,
     "participant_designated_switch": 1,
@@ -44,10 +44,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 5,
-    "participant_response": "secretary",
+    "checked_words": "secretary",
     "response_onset_time": 9.441,
     "IRT": 1.5,
     "participant_designated_switch": 1,
@@ -55,10 +55,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 6,
-    "participant_response": "athlete",
+    "checked_words": "runner",
     "response_onset_time": 13.891,
     "IRT": 4.45,
     "participant_designated_switch": 1,
@@ -66,10 +66,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 7,
-    "participant_response": "teacher",
+    "checked_words": "teacher",
     "response_onset_time": 15.441,
     "IRT": 1.55,
     "participant_designated_switch": 1,
@@ -77,10 +77,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
+    "subject": 'practice',
     "domain": "occupations",
     "response_number": 8,
-    "participant_response": "fireman",
+    "checked_words": "fireman",
     "response_onset_time": 17.141,
     "IRT": 1.7,
     "participant_designated_switch": 1,
@@ -88,43 +88,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 50002,
-    "domain": "occupations",
-    "response_number": 9,
-    "participant_response": "librarian",
-    "response_onset_time": 17.941,
-    "IRT": 0.8,
-    "participant_designated_switch": 1,
-    "dataset": "LEA",
-    "list_number": 1
-  },
-  {
-    "subject": 50002,
-    "domain": "occupations",
-    "response_number": 10,
-    "participant_response": "physical_therapist",
-    "response_onset_time": 23.041,
-    "IRT": 5.1,
-    "participant_designated_switch": 1,
-    "dataset": "LEA",
-    "list_number": 1
-  },
-  {
-    "subject": 50002,
-    "domain": "occupations",
-    "response_number": 11,
-    "participant_response": "clinical_psychologist",
-    "response_onset_time": 24.341,
-    "IRT": 1.3,
-    "participant_designated_switch": 0,
-    "dataset": "LEA",
-    "list_number": 1
-  },
-  {
-    "subject": 50014,
+    "subject": 'practice',
     "domain": "animals",
     "response_number": 1,
-    "participant_response": "horse",
+    "checked_words": "horse",
     "response_onset_time": 1.59,
     "IRT": 1.59,
     "participant_designated_switch": 2,
@@ -132,10 +99,10 @@ var practicelist = [
     "list_number": 2
   },
   {
-    "subject": 50014,
+    "subject": 'practice',
     "domain": "animals",
     "response_number": 2,
-    "participant_response": "cow",
+    "checked_words": "donkey",
     "response_onset_time": 2.49,
     "IRT": 0.9,
     "participant_designated_switch": 0,
@@ -143,10 +110,10 @@ var practicelist = [
     "list_number": 2
   },
   {
-    "subject": 50014,
+    "subject": 'practice',
     "domain": "animals",
     "response_number": 3,
-    "participant_response": "calf",
+    "checked_words": "calf",
     "response_onset_time": 3.39,
     "IRT": 0.9,
     "participant_designated_switch": 0,
@@ -154,10 +121,10 @@ var practicelist = [
     "list_number": 2
   },
   {
-    "subject": 50014,
+    "subject": 'practice',
     "domain": "animals",
     "response_number": 4,
-    "participant_response": "heifer",
+    "checked_words": "cow",
     "response_onset_time": 4.09,
     "IRT": 0.7,
     "participant_designated_switch": 0,
@@ -165,10 +132,10 @@ var practicelist = [
     "list_number": 2
   },
   {
-    "subject": 50014,
+    "subject": 'practice',
     "domain": "animals",
     "response_number": 5,
-    "participant_response": "holstein_cow",
+    "checked_words": "holstein_cow",
     "response_onset_time": 6.79,
     "IRT": 2.7,
     "participant_designated_switch": 0,
@@ -176,43 +143,10 @@ var practicelist = [
     "list_number": 2
   },
   {
-    "subject": 50014,
-    "domain": "animals",
-    "response_number": 6,
-    "participant_response": "jersey_cow",
-    "response_onset_time": 7.99,
-    "IRT": 1.2,
-    "participant_designated_switch": 0,
-    "dataset": "LEA",
-    "list_number": 2
-  },
-  {
-    "subject": 50014,
-    "domain": "animals",
-    "response_number": 7,
-    "participant_response": "lamb",
-    "response_onset_time": 10.09,
-    "IRT": 2.1,
-    "participant_designated_switch": 0,
-    "dataset": "LEA",
-    "list_number": 2
-  },
-  {
-    "subject": 50014,
-    "domain": "animals",
-    "response_number": 8,
-    "participant_response": "goat",
-    "response_onset_time": 10.89,
-    "IRT": 0.8,
-    "participant_designated_switch": 0,
-    "dataset": "LEA",
-    "list_number": 2
-  },
-  {
-    "subject": 50014,
+    "subject": 'practice',
     "domain": "animals",
     "response_number": 9,
-    "participant_response": "koala",
+    "checked_words": "koala",
     "response_onset_time": 13.39,
     "IRT": 2.5,
     "participant_designated_switch": 1,
@@ -220,10 +154,10 @@ var practicelist = [
     "list_number": 2
   },
   {
-    "subject": 578,
+    "subject": 'practice',
     "domain": "foods",
     "response_number": 1,
-    "participant_response": "Apple",
+    "checked_words": "lemon",
     "response_onset_time": 2.882352941,
     "IRT": 2.882352941,
     "participant_designated_switch": "NA",
@@ -231,10 +165,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 578,
+    "subject": 'practice',
     "domain": "foods",
     "response_number": 2,
-    "participant_response": "Banana",
+    "checked_words": "Banana",
     "response_onset_time": 7.176470588,
     "IRT": 4.294117647,
     "participant_designated_switch": "NA",
@@ -242,10 +176,10 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 578,
+    "subject": 'practice',
     "domain": "foods",
     "response_number": 3,
-    "participant_response": "Pasta",
+    "checked_words": "Pasta",
     "response_onset_time": 9.882352941,
     "IRT": 2.705882353,
     "participant_designated_switch": "NA",
@@ -253,102 +187,14 @@ var practicelist = [
     "list_number": 1
   },
   {
-    "subject": 578,
+    "subject": 'practice',
     "domain": "foods",
     "response_number": 4,
-    "participant_response": "Salad",
+    "checked_words": "Salad",
     "response_onset_time": 11.88235294,
     "IRT": 1.999999999,
     "participant_designated_switch": "NA",
     "dataset": "HJT",
     "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 5,
-    "participant_response": "Wrap",
-    "response_onset_time": 12.88235294,
-    "IRT": 1,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 6,
-    "participant_response": "Grape",
-    "response_onset_time": 18.52941176,
-    "IRT": 5.64705882,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 7,
-    "participant_response": "Chicken",
-    "response_onset_time": 18.82352941,
-    "IRT": 0.29411765,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 8,
-    "participant_response": "Noodle",
-    "response_onset_time": 23.17647059,
-    "IRT": 4.35294118,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 9,
-    "participant_response": "Lasagna",
-    "response_onset_time": 25.17647059,
-    "IRT": 2,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 10,
-    "participant_response": "Turkey",
-    "response_onset_time": 27.52941176,
-    "IRT": 2.35294117,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 11,
-    "participant_response": "Beef",
-    "response_onset_time": 29.23529412,
-    "IRT": 1.70588236,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
-  {
-    "subject": 578,
-    "domain": "foods",
-    "response_number": 12,
-    "participant_response": "Bacon",
-    "response_onset_time": 31.88235294,
-    "IRT": 2.64705882,
-    "participant_designated_switch": "NA",
-    "dataset": "HJT",
-    "list_number": 1
-  },
+  }
 ]

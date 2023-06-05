@@ -5324,7 +5324,7 @@ var list2 = [
     "IRT": 3.82352941,
     "participant_designated_switch": "NA",
     "dataset": "HJT",
-    "checked_words": "Guinea Pic",
+    "checked_words": "Guinea Pig",
     "list_number": 2
   },
   {
