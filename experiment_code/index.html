@@ -41,6 +41,7 @@ var timeline = [];
 var current_cluster = []
 var this_list_count = 0
 var this_domain_count = 0
+var count_attention = 0
 
 
 var teststimuli = []
@@ -53,6 +54,22 @@ var run_feedback = false
 var shuffledDomains = jsPsych.randomization.shuffle(domains);
 //console.log("shuffledDomains=",shuffledDomains)
 
+var prolific_id = {
+            type: jsPsychSurveyText,
+            preamble: "Welcome to the study!",
+            questions: [
+                {
+                    prompt: "Before you begin, please copy your unique Prolific ID and paste it in the box below", 
+                    required: true, 
+                    name: "prolific_id"}
+            ],
+            data: {
+                type_of_trial: "prolific_id",
+                subject: prolific_id
+            }
+        }
+        
+timeline.push(prolific_id)
 
 var Instructions1 = {
   type: jsPsychHtmlButtonResponse,
@@ -289,7 +306,7 @@ for (var i = 0; i < shuffledDomains.length; i++) {
         }
 
 
-//timeline.push(practice_timeline)
+timeline.push(practice_timeline)
 
 
   }  
@@ -301,6 +318,7 @@ for (var i = 0; i < shuffledDomains.length; i++) {
         <p>In these cases, please use your best judgment to make the decisions.</p>
         <p> <b>Please pay attention, your careful responses are important for our research.</b>  </p>
         <p> To ensure you are paying attention, you will also be asked to type in the words you group at random points during the experiment. You will not be provided feedback on your responses.</p>
+        <p> <b>Your submission will be returned if you fail more than two attention checks!</b> </p>
          <p>Please indicate the pairings as well as you can! Click the button below to continue.</p>`,
         choices: ['Continue'],
     };
@@ -429,9 +447,12 @@ var attention = {
                 
               if (data.response.attention.toLowerCase() == new_word.toLowerCase() || data.response.attention.toLowerCase() == old_word.toLowerCase()) {
                   data.attention = 1
+                  
                   //console.log('CORRECT')
                   } 
               else {
+                // update the number of incorrect attention checks
+                  count_attention+= 1
                   data.attention = 0
                   //console.log('INCORRECT')
                 }
@@ -668,21 +689,40 @@ data: {
 
 
 
-    var endexperiment = {
-        type: jsPsychHtmlButtonResponse,
-        stimulus: `<p>Thank you for participating! </p>
-        <p> Please click <a href="https://bit.ly/3GHKbaL" target="_blank" rel="noopener noreferrer">here</a> to access the debriefing form and know more about our research.</p>
-        <p> Please click the button below to finish the experiment and save your data.</p>
-        <p> IMPORTANT: Please do not leave this page without clicking the button below.</p>
-        <p> Once there is no text on the screen, you may close this tab. Thank you! </p>
-          `,
-        choices: ['Finish and Save Data'],
-  
-    };
-    
+var endexperiment = {
+            type: jsPsychHtmlButtonResponse,
+            stimulus: function()
+            {
+              if(count_attention > 2){
+                // they have failed at least 2 attention checks
+                    return `<p style='font-size: 20px; padding-right: 10%; padding-left: 10%'> This concludes the experiment. Thank you for your participation! 
+                <br> <br> <b> Your completion code is CK95X1BS. </b>Please copy this code and paste it into Prolific to receive compensation. <br> <br> 
+                If you want to learn more about this study, feel free to read this <a target='_blank' href='https://drive.google.com/file/d/1mMn60E2rN2TEqW8-J_GBsh_OLLBiyKrK/view?usp=sharing'>debriefing<a> document, 
+                which explains the purpose and theory behind this research, and contains contact information for the experimenters. 
+                If this research interests you, feel free to explore our <a target='_blank' href='https://thelexiconlab.github.io/'>lab website</a> as well! <br> <br> 
+                IMPORTANT: Please return to this site and click 'Finish and Save Data' to save your data after reading. <br> <br> 
+                Once you have copied your completion code and clicked 'Finish and Save,' and the screen becomes blank, you may close this tab. <br> <br> Thank you again!,
+                `
+                
+              }
+               else {
+                  return `<p style='font-size: 20px; padding-right: 10%; padding-left: 10%'> This concludes the experiment. Thank you for your participation! 
+                  <br> <br> <b> Your completion code is CQEHJXIE. </b>Please copy this code and paste it into Prolific to receive compensation. <br> <br> 
+                  If you want to learn more about this study, feel free to read this <a target='_blank' href='https://drive.google.com/file/d/1mMn60E2rN2TEqW8-J_GBsh_OLLBiyKrK/view?usp=sharing'>debriefing<a> document, 
+                  which explains the purpose and theory behind this research, and contains contact information for the experimenters. 
+                  If this research interests you, feel free to explore our <a target='_blank' href='https://thelexiconlab.github.io/'>lab website</a> as well! <br> <br> 
+                  IMPORTANT: Please return to this site and click 'Finish and Save Data' to save your data after reading. <br> <br> 
+                  Once you have copied your completion code and clicked 'Finish and Save,' and the screen becomes blank, you may close this tab. <br> <br> Thank you again!,
+                  `
+            }
+            },
+            choices: ["Finish and Save Data"],
+            data: {
+                type_of_trial: "debrief",
+            }
+        }
 
   
-
 function find_list(condition_number){
   var stimuli = []
   if(condition_number == 1){
@@ -775,7 +815,6 @@ function find_list(condition_number){
   timeline.push(endexperiment);
 
       jsPsych.run(timeline);
-
 
 </script>
 </body>
