@@ -1,0 +1,262 @@
+---
+title: "preliminary_scripts"
+output: html_document
+date: "2023-04-05"
+---
+
+#install new packages
+```{r}
+#install.packages("stringdist")
+#install.packages("lmerTest")
+#install.packages("sjPlot")
+#install.packages("Hmisc")
+#install.packages("psych")
+#install.packages("data.table")
+#install.packages("MuMIn")
+```
+
+
+# load packages
+```{r}
+library(tidyverse)
+# library(car)
+# library(readr)
+library(ggplot2)
+library(ggthemes)
+library(stringdist)
+library(lme4)
+library(lmerTest)
+# library(sjPlot)
+# library(Hmisc)
+# library(psych)
+library(broom.mixed)
+# library(data.table)
+# library(MuMIn)
+```
+
+# import empirical data
+```{r}
+data = read_csv("../data/fluency-switch.csv")
+
+trials = data %>% filter(type_of_trial == "comparison") %>% mutate(cluster = tolower(cluster))
+```
+
+# filter out IDs with incomplete data
+```{r}
+insufficient_trials = trials %>%
+  group_by(ID, domain, subject) %>%
+  count() %>% 
+  group_by(ID, domain) %>%
+  count()%>%
+  filter(n != 6)
+
+trials = trials %>%
+  filter(!(ID %in% insufficient_trials$ID))
+```
+
+# filter based on attention checks
+```{r}
+
+attention = data %>% filter(type_of_trial == "attention" & !is.na(response)) %>%
+  separate(current_pair, into = c("prev", "current"), sep = ",") %>%
+  mutate(attn_corr = ifelse((stringdist(tolower(response), prev, method = "lv") < 2 ) | 
+                              (stringdist(tolower(response), current, method = "lv") < 2 ), 1, 0))
+
+ID_attn = attention %>%
+  group_by(ID) %>%
+  summarise(n_correct = sum(attn_corr))
+
+insufficient_attentions = ID_attn %>%
+  filter(n_correct < 15)
+
+trials = trials %>%
+  filter(!(ID %in% insufficient_attentions$ID)) %>%
+  mutate(response = as.numeric(response)) %>%
+  filter(response!= 2)
+```
+# foods
+
+## input model rating
+
+
+```{r}
+foods = read_csv("../forager_test/output/reed_foods_model_static_switch_all_switchresults.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  select(-c(Semantic_Similarity, Phonological_Similarity, Frequency_Value)) %>%
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "foods")
+
+animals = read_csv("../forager_test/output/reed_animals_model_static_switch_all_switchresults.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  select(-c(Semantic_Similarity, Phonological_Similarity, Frequency_Value)) %>%
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "animals")
+
+occupations = read_csv("../forager_test/output/reed_occupations_model_static_switch_all_switchresults.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  select(-c(Semantic_Similarity, Phonological_Similarity, Frequency_Value)) %>%
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject)) %>%
+  mutate(domain = "occupations")
+
+all_domains = rbind(animals, occupations, foods)
+```
+
+##merge with ratings
+
+```{r}
+trials_merged = trials %>% left_join(all_domains)
+```
+
+## models
+
+```{r}
+my_data <- trials_merged %>% select(2, 20, 23, 29:66)
+
+# Assuming your dataframe is called 'my_data' and the response variable is 'response'
+
+# Function to clean column names by replacing special characters with underscores
+clean_column_names <- function(column_names) {
+  str_replace_all(column_names, "[^[:alnum:] ]", "_")
+}
+
+# Get the list of predictor variables (columns) from the dataframe
+predictor_columns <- setdiff(names(my_data), c("response", "ID", "domain"))
+
+# Clean predictor column names in the dataframe
+cleaned_data <- my_data %>%
+  rename_with(clean_column_names, .cols = predictor_columns)
+
+# Get the list of predictor variables (columns) from the dataframe
+predictor_columns <- setdiff(names(cleaned_data), c("response", "ID", "domain"))
+
+# Define a function to fit the glmer model for each cleaned predictor column
+fit_glmer <- function(df, column) {
+  model_formula <- as.formula(paste("response ~", column, "+ (1 | ID)"))
+  model <- glmer(model_formula, data = df, family = binomial)
+  
+   
+  fixed_effects <- fixef(model)
+  aic <- AIC(model)
+  bic <- BIC(model)
+  r_squared <- MuMIn::r.squaredGLMM(model)[1]
+  log_likelihood <- as.numeric(logLik(model))
+  n_obs <- nobs(model)
+  
+  tibble(
+    Predictor = column,
+    Fixed_Effect = fixed_effects[column],
+    AIC = aic,
+    BIC = bic,
+    R_squared = r_squared,
+    Log_Likelihood = log_likelihood,
+    N_Observations = n_obs
+  )
+}
+
+model_results <- cleaned_data %>%
+  group_by(domain) %>%
+  summarise(model = map(setNames(predictor_columns, predictor_columns), ~ fit_glmer(df = cur_data(), column = .x)))
+
+results <- model_results %>%
+  unnest(cols = c(model))%>%
+  mutate(across(Log_Likelihood:N_Observations, ~ as.vector(.)))
+
+```
+
+
+# demographic data
+```{r}
+demo = data %>%
+  filter(ID %in% trials$ID) %>%
+  filter(type_of_trial == "demo" | type_of_trial == "english")
+
+# deal with age learned english
+not_english = demo %>%
+  filter(!is.na(first_language))
+
+first_language = not_english %>%
+  group_by(first_language) %>%
+  count()
+
+age_learned = not_english %>%
+  mutate(clean_age_learned = str_extract(age_learned, "\\d+\\.?\\d*") %>% 
+              as.numeric())
+
+al_av = age_learned %>%
+  filter(!is.na(clean_age_learned)) %>%
+  summarise(age_learned_average = mean(clean_age_learned))
+age_learned_av = al_av$age_learned_average[1]
+
+al_sd = age_learned %>%
+  filter(!is.na(clean_age_learned)) %>%
+  summarise(age_learned_stdev = sd(clean_age_learned))
+age_learned_sd = al_sd$age_learned_stdev[1]
+
+over_age_4 = age_learned %>%
+  filter(clean_age_learned > 4)
+n_over_age_4 = nrow(over_age_4)
+
+trials = trials %>%
+  filter(!(ID %in% over_age_4$ID))
+
+demo = demo %>%
+  filter(ID %in% trials$ID)
+
+# final number IDs
+n_IDs = nrow(trials %>%
+  group_by(ID) %>%
+  count())
+
+# rest of demographics
+age_gen_ed = demo %>%
+  filter(!is.na(age)) %>%
+  filter(!str_detect(education, "[^[:digit:].]"))
+
+age_av = mean(age_gen_ed$age)
+age_sd = sd(age_gen_ed$age)
+
+education_av = mean(as.numeric(age_gen_ed$education))
+education_sd = sd(as.numeric(age_gen_ed$education))
+
+genders = age_gen_ed %>%
+  group_by(gender) %>%
+  count()
+
+race = demo %>%
+  filter(!is.na(race)) %>%
+  group_by(race) %>%
+  count()
+
+eth_hand_alert_eng = demo %>%
+  filter(!is.na(english))
+
+ethnicity = eth_hand_alert_eng %>%
+  group_by(ethnicity) %>%
+  count()
+
+hand = eth_hand_alert_eng %>%
+  group_by(hand) %>%
+  count()
+
+alert = eth_hand_alert_eng %>%
+  group_by(alert) %>%
+  count()
+
+english = eth_hand_alert_eng %>%
+  group_by(english) %>%
+  count()
+
+non_sona = trials %>%
+  filter(sona_id == 1) %>%
+  group_by(ID) %>%
+  count()
+nrow(non_sona)
+```
+
+
