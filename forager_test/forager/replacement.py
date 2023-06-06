@@ -26,9 +26,9 @@ class replacement:
     
     def __init__(self, list_words, domain_name): 
         
-        self.path = 'forager_test/data/lexical_data/' + domain_name
+        self.path = '../data/lexical_data/' + domain_name
         # self.model = api.load('fasttext-wiki-news-subwords-300')
-        self.model_vocab = pd.read_csv('forager_test/data/models/fasttext_words.csv')['0'].values.tolist()
+        self.model_vocab = pd.read_csv('../data/models/fasttext_words.csv')['0'].values.tolist()
         
         # list words 
         self.original_words = [*set(list_words)]
@@ -67,7 +67,7 @@ class replacement:
                 bar()
         
         self.df = pd.DataFrame(list(zip(self.original_words, self.original_words_included, self.collected_words, self.collected_words_included, self.replacement)), columns= ['Original Words', 'Vocab', 'Modified Words', 'Vocab', 'Replacement'])
-        self.df.to_csv(self.path + '/data.csv') 
+        self.df.to_csv(self.path + '/replacements.csv') 
         
         
     def word_checker(word): 
@@ -82,7 +82,7 @@ class replacement:
                 (1) replacement (str): the replacement word for the original word 
         ''' 
         
-        df = pd.read_csv('forager_test/data/models/fasttext_words.csv')
+        df = pd.read_csv('../data/models/fasttext_words.csv')
         model_vocab = df['0'].values.tolist()
         
         if word in model_vocab:

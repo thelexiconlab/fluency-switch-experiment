@@ -30,7 +30,7 @@ class embeddings:
         
         #check if domain exists or else create a new folder in data/lexical_data/ + domain name 
         self.domain_name = domain_name
-        self.path = 'forager_test/data/lexical_data/' + domain_name 
+        self.path = '../data/lexical_data/' + domain_name 
         if not os.path.exists(self.path): 
             os.makedirs(self.path)
                 
@@ -226,7 +226,7 @@ class embeddings:
                 (1) replacement (str): the replacement word for the original word 
         ''' 
         
-        df = pd.read_csv('forager_test/data/models/fasttext_words.csv')
+        df = pd.read_csv('../data/models/fasttext_words.csv')
         model_vocab = df['0'].values.tolist()
         
         # check every single possibility (uppercase, lowercase, cap, combine words,etc)
@@ -272,34 +272,34 @@ class embeddings:
 
 ### getting words from a excel file 
 
-# dp = pd.read_csv('forager_test/data/models/psyrev_data.csv')
+# dp = pd.read_csv('../data/models/psyrev_data.csv')
 # psy_words = dp['0'].values.tolist()
 
 # a = embeddings(psy_words, "Animals")
 
 
 
-# df = pd.read_excel('forager_test/data/fluency_lists/fovacs_animals.xlsx')
+# df = pd.read_excel('../data/fluency_lists/fovacs_animals.xlsx')
 # word_list = df['spellcheck'].values.tolist()
 # b = embeddings(word_list,"Animals")
 
 
-# df = pd.read_excel('forager_test/data/fluency_lists/fovacs_foods.xlsx')
+# df = pd.read_excel('../data/fluency_lists/fovacs_foods.xlsx')
 # word_list = df['spellcheck'].values.tolist()
 # b = embeddings(word_list,"Foods")
 
-# df = pd.read_excel('forager_test/data/fluency_lists/fovacs_occupations.xlsx')
+# df = pd.read_excel('../data/fluency_lists/fovacs_occupations.xlsx')
 # word_list = df['spellcheck'].values.tolist()
 # b = embeddings(word_list,"Occupations")
 
-# df = pd.read_excel('forager_test/data/fluency_lists/fovacs_cities.xlsx')
+# df = pd.read_excel('../data/fluency_lists/fovacs_cities.xlsx')
 # word_list = df['spellcheck'].values.tolist()
 # b = embeddings(word_list,"Cities")
 
-# df = pd.read_excel('forager_test/data/fluency_lists/fovacs_sports.xlsx')
+# df = pd.read_excel('../data/fluency_lists/fovacs_sports.xlsx')
 # word_list = df['spellcheck'].values.tolist()
 # b = embeddings(word_list,"Sports")
 
-# df = pd.read_excel('forager_test/data/fluency_lists/fovacs_vehicles.xlsx')
+# df = pd.read_excel('../data/fluency_lists/fovacs_vehicles.xlsx')
 # word_list = df['spellcheck'].values.tolist()
 # b = embeddings(word_list,"Vehicles")

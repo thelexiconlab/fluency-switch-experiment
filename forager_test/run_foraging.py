@@ -34,13 +34,13 @@ Workflow:
 
 """
 # change for different domains 
-domain_name = "Animals"
+domain_name = "occupations"
 
 # Global Path Variabiles
-normspath =  'forager_test/data/norms/troyernorms.csv'
-similaritypath =  'forager_test/data/lexical_data/' + domain_name + '/similaritymatrix.csv'
-frequencypath =  'forager_test/data/lexical_data/' + domain_name + '/frequencies.csv'
-phonpath = 'forager_test/data/lexical_data/' + domain_name + '/phonmatrix.csv'
+normspath =  'data/norms/troyernorms.csv'
+similaritypath =  'data/lexical_data/' + domain_name + '/similaritymatrix.csv'
+frequencypath =  'data/lexical_data/' + domain_name + '/frequencies.csv'
+phonpath = 'data/lexical_data/' + domain_name + '/phonmatrix.csv'
 
 
 
@@ -60,6 +60,7 @@ def retrieve_data(path):
         ex_str = "Provided path to data \"{path}\" does not exist. Please specify a proper path".format(path=path)
         raise Exception(ex_str)
     data = prepareData(path, delimiter='\t')
+    
     return data
 
 def get_lexical_data():
@@ -245,6 +246,9 @@ def synthesize_results(outputs):
             df['Fluency_Item'] = fl_list
             df['Switch_Value'] = switch
             df['Switch_Method'] = switch_methods[j]
+            df['Semantic_Similarity'] = output[4][0]
+            df['Frequency_Value'] = output[4][2]
+            df['Phonological_Similarity'] = output[4][4]
             switch_df.append(df)
     
         switch_df = pd.concat(switch_df, ignore_index=True)
@@ -288,21 +292,24 @@ def run_model(data, model, switch, dname):
     # Run through each fluency list in dataset
     for i, (subj, fl_list) in enumerate(tqdm(data)):
         print("\nRunning Model for Subject {subj}".format(subj=subj))
-        import time
-        start_time = time.time()
+        #import time
+        #start_time = time.time()
         # Get History Variables 
+        
+        print("fl_list: ", fl_list)
+        print("similarity_matrix: ", similarity_matrix.shape)
+        print("frequency_list: ", frequency_list.shape)
+        print("phon_matrix: ", phon_matrix.shape)
         history_vars = create_history_variables(fl_list, labels, similarity_matrix, frequency_list, phon_matrix)
         
         # Calculate Switch Vector(s)
         switch_names, switch_vecs = calculate_switch(switch, fl_list, history_vars[0],   history_vars[4], norms)
 
-        print(switch_names)
-        print(switch_vecs)
         #Execute Individual Model(s) and get result(s)
         # model_names, model_results = calculate_model(model,history_vars, switch_names, switch_vecs)
         outputs.append([subj, fl_list, switch_names, switch_vecs,history_vars])
         # print("Results: {names} , {res}".format(names = model_names, res=model_results))
-        # print("--- Ran for %s seconds ---" % (time.time() - start_time))
+        #print("--- Ran for %s seconds ---" % (time.time() - start_time))
     switch_results = synthesize_results(outputs)
     output_results([switch_results],dname)
 

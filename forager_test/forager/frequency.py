@@ -44,7 +44,7 @@ def get_frequencies(embeddings, domain_name):
     item_counts_df = item_counts_df[['item', 'log_count', 'count']]
 
     #print(item_counts_df)
-    item_counts_df.to_csv('forager_test/data/lexical_data/' + domain_name +'/frequencies.csv', index=False)
+    item_counts_df.to_csv('../data/lexical_data/' + domain_name +'/frequencies.csv', index=False, header=False)
     return None
 
 #get_frequencies('data/lexical data/semantic_embeddings.csv')

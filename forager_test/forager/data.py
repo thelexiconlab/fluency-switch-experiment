@@ -31,7 +31,13 @@ class data:
     def __init__(self, input_file, id_column, word_column, domain_name):
 
         self.domain_name = domain_name
-        self.path = 'forager_test/data/lexical_data/' + domain_name
+        self.path = '../data/lexical_data/' + domain_name
+
+        # Check whether the specified path exists or not
+        isExist = os.path.exists(self.path)
+        if not isExist:
+            # Create a new directory because it does not exist
+            os.makedirs(self.path)
         
         
         # argument - name of columns to get
@@ -71,7 +77,7 @@ class data:
         self.df['Words'] = self.words
         
         # create input file words.txt that has ID and words 
-        self.df.to_csv('forager_test/data/input_files/' + domain_name.lower() + '_words.csv', header = False, index = False)
+        self.df.to_csv('../data/input_files/' + domain_name.lower() + '_words.csv', header = False, index = False)
         print("txt file created")
 
         
@@ -127,8 +133,6 @@ class data:
 
             
             
-# a = embeddings('data/models/psyrev_data.csv', '0', 'Animals')
-
-a = data("forager_test/data/fluency_lists/fovacs_animals.xlsx", "subject", "spellcheck", "Animals")
-# b = data("forager_test/data/fluency_lists/fovacs_foods.xlsx")
-# c = data("forager_test/data/fluency_lists/fovacs_occupations.xlsx")
+#a = data("../data/fluency_lists/reed_animals.xlsx", "subject", "checked_words", "animals")
+# b = data("../data/fluency_lists/reed_foods.xlsx", "subject", "checked_words", "foods")
+c = data("../data/fluency_lists/reed_occupations.xlsx", "subject", "checked_words", "occupations")

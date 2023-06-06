@@ -19,10 +19,10 @@ def prepareData(path,delimiter = '\t'):
     ### LOAD BEHAVIORAL DATA ###
     df = pd.read_csv(path, header=None, names=['SID', 'entry'], delimiter=delimiter)
     # load labels
-    labels = pd.read_csv("data/lexical_data/frequencies.csv", names=['word', 'logct', 'ct']) 
+    #labels = pd.read_csv("data/lexical_data/frequencies.csv", names=['word', 'logct', 'ct']) 
 
     # get values from df 
-    values = df['entry'].values
+    #values = df['entry'].values
     
     # # loop through values to find which ones are not in file
     # oov = [w for w in values if w not in labels['word'].values]
