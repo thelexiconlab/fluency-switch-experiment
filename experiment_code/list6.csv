@@ -1,0 +1,755 @@
+"subject","domain","response_number","participant_response","response_onset_time","IRT","participant_designated_switch","dataset","checked_words","list_number"
+50029,"occupations",1,"accounting",2.7115,2.7115,2,"LEA","accounting",6
+50029,"occupations",2,"sales",5.6115,2.9,0,"LEA","sales",6
+50029,"occupations",3,"realty",13.7115,8.1,0,"LEA","realty",6
+50029,"occupations",4,"mowing_lawns",28.7115,15,1,"LEA","mowing lawns",6
+50029,"occupations",5,"insurance",33.4115,4.7,1,"LEA","insurance",6
+50029,"occupations",6,"psychologist",52.6115,19.2,1,"LEA","psychologist",6
+50029,"occupations",7,"librarian",64.1115,11.5,1,"LEA","librarian",6
+50029,"occupations",8,"pilot",81.5115,17.4,1,"LEA","pilot",6
+50029,"occupations",9,"professional_athlete",97.5115,16,1,"LEA","professional athlete",6
+50029,"occupations",10,"manager",160.5115,63,1,"LEA","manager",6
+50029,"occupations",11,"CEO",164.3115,3.79999999999998,0,"LEA","CEO",6
+50029,"occupations",12,"CFO",168.4115,4.09999999999999,0,"LEA","CFO",6
+50030,"occupations",1,"doctor",2.30171966,2.30171966,2,"LEA","doctor",6
+50030,"occupations",2,"lawyer",3.70171966,1.4,1,"LEA","lawyer",6
+50030,"occupations",3,"teacher",5.10171966,1.4,1,"LEA","teacher",6
+50030,"occupations",4,"plumber",6.70171966,1.6,1,"LEA","plumber",6
+50030,"occupations",5,"cab_driver",8.10171966,1.4,1,"LEA","cab driver",6
+50030,"occupations",6,"researcher",12.50171966,4.4,1,"LEA","researcher",6
+50030,"occupations",7,"nurse",16.00171966,3.5,1,"LEA","nurse",6
+50030,"occupations",8,"technician",18.20171966,2.2,0,"LEA","technician",6
+50030,"occupations",9,"electrician",19.70171966,1.5,1,"LEA","electrician",6
+50030,"occupations",10,"professor",24.40171966,4.7,1,"LEA","professor",6
+50030,"occupations",11,"barista",29.90171966,5.5,1,"LEA","barista",6
+50030,"occupations",12,"bartender",31.20171966,1.3,0,"LEA","bartender",6
+50030,"occupations",13,"chef",33.90171966,2.7,0,"LEA","chef",6
+50030,"occupations",14,"server",35.30171966,1.40000000000001,0,"LEA","server",6
+50030,"occupations",15,"dietician",39.30171966,4,1,"LEA","dietician",6
+50030,"occupations",16,"surgeon",41.50171966,2.2,1,"LEA","surgeon",6
+50030,"occupations",17,"instructor",58.00171966,16.5,1,"LEA","instructor",6
+50030,"occupations",18,"life_guard",60.60171966,2.6,0,"LEA","life guard",6
+50030,"occupations",19,"beautician",72.00171966,11.4,1,"LEA","beautician",6
+50030,"occupations",20,"designer",73.90171966,1.89999999999999,1,"LEA","designer",6
+50030,"occupations",21,"architect",75.50171966,1.60000000000001,0,"LEA","architect",6
+50030,"occupations",22,"librarian",77.80171966,2.3,1,"LEA","librarian",6
+50030,"occupations",23,"tailor",84.90171966,7.09999999999999,1,"LEA","tailor",6
+50030,"occupations",24,"truck_driver",92.30171966,7.40000000000001,1,"LEA","truck driver",6
+50030,"occupations",25,"engineer",95.00171966,2.7,1,"LEA","engineer",6
+50030,"occupations",26,"businessman",98.60171966,3.59999999999999,1,"LEA","businessman",6
+50030,"occupations",27,"accountant",105.4017197,6.80000004,0,"LEA","accountant",6
+50030,"occupations",28,"actuary",108.3017197,2.90000000000001,0,"LEA","actuary",6
+50030,"occupations",29,"mortician",111.6017197,3.3,1,"LEA","mortician",6
+50030,"occupations",30,"pathologist",118.0017197,6.39999999999999,0,"LEA","pathologist",6
+50030,"occupations",31,"judge",121.4017197,3.40000000000001,1,"LEA","judge",6
+50030,"occupations",32,"CEO",133.6017197,12.2,1,"LEA","CEO",6
+50030,"occupations",33,"student",152.3017197,18.7,1,"LEA","student",6
+50030,"occupations",34,"construction_worker",166.2017197,13.9,1,"LEA","construction worker",6
+50030,"occupations",35,"police_officer",168.5017197,2.29999999999998,1,"LEA","police officer",6
+50030,"occupations",36,"sheriff",176.3017197,7.80000000000001,0,"LEA","sheriff",6
+50030,"occupations",37,"baler",177.7017197,1.40000000000001,0,"LEA","baler",6
+50030,"occupations",38,"counselor",180.1017197,2.39999999999998,1,"LEA","counselor",6
+50036,"occupations",1,"welder",2.575,2.575,2,"LEA","welder",6
+50036,"occupations",2,"policeman",4.175,1.6,1,"LEA","policeman",6
+50036,"occupations",3,"fireman",5.175,1,0,"LEA","fireman",6
+50036,"occupations",4,"professor",7.375,2.2,1,"LEA","professor",6
+50036,"occupations",5,"teacher",8.775,1.4,0,"LEA","teacher",6
+50036,"occupations",6,"kindergarten_teacher",10.975,2.2,0,"LEA","kindergarten teacher",6
+50036,"occupations",7,"nurse",13.175,2.2,1,"LEA","nurse",6
+50036,"occupations",8,"daycare_counselor",16.675,3.5,0,"LEA","daycare counselor",6
+50036,"occupations",9,"psychiatrist",18.975,2.3,1,"LEA","psychiatrist",6
+50036,"occupations",10,"psychologist",19.975,1,0,"LEA","psychologist",6
+50036,"occupations",11,"proctologist",23.875,3.9,0,"LEA","proctologist",6
+50036,"occupations",12,"ophthalmologist",25.275,1.4,0,"LEA","ophthalmologist",6
+50036,"occupations",13,"optometrist",26.775,1.5,0,"LEA","optometrist",6
+50036,"occupations",14,"entomologist",29.775,3,0,"LEA","entomologist",6
+50036,"occupations",15,"etymologist",30.675,0.900000000000002,0,"LEA","etymologist",6
+50036,"occupations",16,"carpenter",37.275,6.6,1,"LEA","carpenter",6
+50036,"occupations",17,"construction_worker",42.675,5.4,1,"LEA","construction worker",6
+50036,"occupations",18,"cyclist",46.175,3.5,1,"LEA","cyclist",6
+50036,"occupations",19,"professional_sports_player",49.375,3.2,0,"LEA","professional sports player",6
+50036,"occupations",20,"actor",53.675,4.3,1,"LEA","actor",6
+50036,"occupations",21,"actress",54.275,0.600000000000001,0,"LEA","actress",6
+50036,"occupations",22,"photographer",59.675,5.4,1,"LEA","photographer",6
+50036,"occupations",23,"artist",61.775,2.1,0,"LEA","artist",6
+50036,"occupations",24,"painter",62.875,1.1,0,"LEA","painter",6
+50036,"occupations",25,"contractor",68.875,6,1,"LEA","contractor",6
+50036,"occupations",26,"programmer",70.375,1.5,1,"LEA","programmer",6
+50036,"occupations",27,"engineer",72.975,2.59999999999999,0,"LEA","engineer",6
+50036,"occupations",28,"computer_engineer",73.575,0.600000000000009,0,"LEA","computer engineer",6
+50036,"occupations",29,"electrician",74.675,1.09999999999999,0,"LEA","electrician",6
+50036,"occupations",30,"electrical_engineer",75.575,0.900000000000006,0,"LEA","electrical engineer",6
+50036,"occupations",31,"mechanical_engineer",78.675,3.09999999999999,0,"LEA","mechanical engineer",6
+50036,"occupations",32,"mechanist",80.475,1.8,0,"LEA","mechanist",6
+50036,"occupations",33,"machinist",81.175,0.700000000000003,0,"LEA","machinist",6
+50036,"occupations",34,"car_salesman",85.075,3.90000000000001,1,"LEA","car salesman",6
+50036,"occupations",35,"phone_salesman",90.875,5.8,0,"LEA","phone salesman",6
+50036,"occupations",36,"retail_person",97.275,6.40000000000001,0,"LEA","retail person",6
+50036,"occupations",37,"officer",99.375,2.09999999999999,1,"LEA","officer",6
+50036,"occupations",38,"mall_cop",100.175,0.799999999999997,0,"LEA","mall cop",6
+50036,"occupations",39,"soldier",103.275,3.10000000000001,0,"LEA","soldier",6
+50036,"occupations",40,"general",105.375,2.09999999999999,0,"LEA","general",6
+50036,"occupations",41,"tailor",107.375,2,1,"LEA","tailor",6
+50036,"occupations",42,"spy",109.175,1.8,0,"LEA","spy",6
+50036,"occupations",43,"mathematician",113.575,4.40000000000001,1,"LEA","mathematician",6
+50036,"occupations",44,"safety_inspector",120.675,7.09999999999999,1,"LEA","safety inspector",6
+50036,"occupations",45,"data_analyst",125.875,5.2,1,"LEA","data analyst",6
+50036,"occupations",46,"developer",132.975,7.09999999999999,0,"LEA","developer",6
+50036,"occupations",47,"gardener",134.975,2,1,"LEA","gardener",6
+50036,"occupations",48,"funeral_home_manager",141.275,6.30000000000001,1,"LEA","funeral home manager",6
+50036,"occupations",49,"surgeon",146.975,5.69999999999999,1,"LEA","surgeon",6
+50036,"occupations",50,"doctor",152.175,5.20000000000002,0,"LEA","doctor",6
+50036,"occupations",51,"lab_technician",170.475,18.3,0,"LEA","lab technician",6
+50036,"occupations",52,"scientist",172.275,1.80000000000001,0,"LEA","scientist",6
+50036,"occupations",53,"geologist",173.575,1.29999999999998,0,"LEA","geologist",6
+50036,"occupations",54,"climatologist",177.975,4.40000000000001,0,"LEA","climatologist",6
+50036,"occupations",55,"weatherman",180.275,2.30000000000001,1,"LEA","weatherman",6
+50029,"foods",1,"spaghetti",4.263,4.263,2,"LEA","spaghetti",6
+50029,"foods",2,"pizza",5.663,1.4,0,"LEA","pizza",6
+50029,"foods",3,"broccoli",8.763,3.1,1,"LEA","broccoli",6
+50029,"foods",4,"asparagus",11.463,2.7,0,"LEA","asparagus",6
+50029,"foods",5,"green_beans",12.963,1.5,0,"LEA","green beans",6
+50029,"foods",6,"pasta",20.363,7.4,1,"LEA","pasta",6
+50029,"foods",7,"seeds",29.563,9.2,1,"LEA","seeds",6
+50029,"foods",8,"almonds",33.663,4.1,0,"LEA","almonds",6
+50029,"foods",9,"hamburger",39.763,6.1,1,"LEA","hamburger",6
+50029,"foods",10,"chicken",51.963,12.2,0,"LEA","chicken",6
+50029,"foods",11,"steak",57.163,5.2,0,"LEA","steak",6
+50029,"foods",12,"apple",65.863,8.7,1,"LEA","apple",6
+50029,"foods",13,"orange",69.163,3.3,0,"LEA","orange",6
+50029,"foods",14,"pineapple",75.063,5.90000000000001,0,"LEA","pineapple",6
+50029,"foods",15,"mango",77.063,2,0,"LEA","mango",6
+50029,"foods",16,"bacon",86.263,9.2,1,"LEA","bacon",6
+50029,"foods",17,"eggs",88.163,1.89999999999999,0,"LEA","eggs",6
+50029,"foods",18,"sausage",90.063,1.90000000000001,0,"LEA","sausage",6
+50029,"foods",19,"hot_dog",109.663,19.6,1,"LEA","hot dog",6
+50029,"foods",20,"cheese",114.263,4.60000000000001,1,"LEA","cheese",6
+50029,"foods",21,"pudding",125.263,11,0,"LEA","pudding",6
+50029,"foods",22,"chips",127.463,2.19999999999999,1,"LEA","chips",6
+50029,"foods",23,"corn",138.163,10.7,1,"LEA","corn",6
+50029,"foods",24,"gummy_bears",152.063,13.9,1,"LEA","gummy bears",6
+50029,"foods",25,"avocado",169.963,17.9,1,"LEA","avocado",6
+50029,"foods",26,"chocolate",180.663,10.7,1,"LEA","chocolate",6
+50030,"foods",1,"apple",4.5443,4.5443,2,"LEA","apple",6
+50030,"foods",2,"fruit",6.6443,2.1,0,"LEA","fruit",6
+50030,"foods",3,"orange",7.9443,1.3,0,"LEA","orange",6
+50030,"foods",4,"avocado",9.4443,1.5,0,"LEA","avocado",6
+50030,"foods",5,"dessert",11.3443,1.9,1,"LEA","dessert",6
+50030,"foods",6,"pineapple",12.6443,1.3,1,"LEA","pineapple",6
+50030,"foods",7,"pear",16.3443,3.7,0,"LEA","pear",6
+50030,"foods",8,"peach",17.5443,1.2,0,"LEA","peach",6
+50030,"foods",9,"pizza",19.7443,2.2,1,"LEA","pizza",6
+50030,"foods",10,"cake",21.7443,2,1,"LEA","cake",6
+50030,"foods",11,"ice_cream",24.8443,3.1,0,"LEA","ice cream",6
+50030,"foods",12,"pomegranate",31.3443,6.5,1,"LEA","pomegranate",6
+50030,"foods",13,"breadsticks",37.0443,5.7,1,"LEA","breadsticks",6
+50030,"foods",14,"chicken",41.5443,4.5,1,"LEA","chicken",6
+50030,"foods",15,"wings",44.1443,2.6,0,"LEA","wings",6
+50030,"foods",16,"hamburger",52.9443,8.8,1,"LEA","hamburger",6
+50030,"foods",17,"taco",54.4443,1.5,1,"LEA","taco",6
+50030,"foods",18,"burrito",56.7443,2.3,0,"LEA","burrito",6
+50030,"foods",19,"chips",58.3443,1.59999999999999,0,"LEA","chips",6
+50030,"foods",20,"cheese",59.6443,1.3,0,"LEA","cheese",6
+50030,"foods",21,"salsa",63.2443,3.6,0,"LEA","salsa",6
+50030,"foods",22,"apricots",67.9443,4.7,1,"LEA","apricots",6
+50030,"foods",23,"tomato",70.8443,2.90000000000001,1,"LEA","tomato",6
+50030,"foods",24,"broccoli",73.7443,2.89999999999999,1,"LEA","broccoli",6
+50030,"foods",25,"tuna",77.3443,3.60000000000001,1,"LEA","tuna",6
+50030,"foods",26,"salmon",79.0443,1.7,0,"LEA","salmon",6
+50030,"foods",27,"banana",81.5443,2.5,1,"LEA","banana",6
+50030,"foods",28,"bread",87.5443,6,1,"LEA","bread",6
+50030,"foods",29,"sausage",88.8443,1.3,0,"LEA","sausage",6
+50030,"foods",30,"biscuits_and_gravy",90.5443,1.7,0,"LEA","biscuits and gravy",6
+50030,"foods",31,"oatmeal",99.5443,9,1,"LEA","oatmeal",6
+50030,"foods",32,"cereal",101.3443,1.8,0,"LEA","cereal",6
+50030,"foods",33,"cookie",103.8443,2.5,1,"LEA","cookie",6
+50030,"foods",34,"fries",112.6443,8.8,1,"LEA","fries",6
+50030,"foods",35,"milkshake",114.6443,2,0,"LEA","milkshake",6
+50030,"foods",36,"brownie",118.0443,3.40000000000001,1,"LEA","brownie",6
+50030,"foods",37,"soda",121.5443,3.5,1,"LEA","soda",6
+50030,"foods",38,"crackers",126.2443,4.69999999999999,1,"LEA","crackers",6
+50030,"foods",39,"chocolate",130.0443,3.8,1,"LEA","chocolate",6
+50030,"foods",40,"tangerine",147.2443,17.2,1,"LEA","tangerine",6
+50030,"foods",41,"blueberries",151.8443,4.59999999999999,0,"LEA","blueberries",6
+50030,"foods",42,"raspberries",153.3443,1.5,0,"LEA","raspberries",6
+50030,"foods",43,"strawberries",155.6443,2.29999999999998,0,"LEA","strawberries",6
+50030,"foods",44,"lettuce",158.6443,3,1,"LEA","lettuce",6
+50030,"foods",45,"spinach",159.7443,1.10000000000002,0,"LEA","spinach",6
+50030,"foods",46,"salad",161.0443,1.29999999999998,0,"LEA","salad",6
+50030,"foods",47,"rice",164.1443,3.09999999999999,1,"LEA","rice",6
+50030,"foods",48,"noodles",167.0443,2.90000000000001,0,"LEA","noodles",6
+50030,"foods",49,"soup",171.4443,4.40000000000001,0,"LEA","soup",6
+50030,"foods",50,"mozzarella_sticks",175.2443,3.80000000000001,1,"LEA","mozzarella sticks",6
+50036,"foods",1,"chocolate",2.218,2.218,2,"LEA","chocolate",6
+50036,"foods",2,"sandwich",3.218,1,1,"LEA","sandwich",6
+50036,"foods",3,"ham",4.218,1,1,"LEA","ham",6
+50036,"foods",4,"beef",5.218,1,0,"LEA","beef",6
+50036,"foods",5,"pudding",6.418,1.2,1,"LEA","pudding",6
+50036,"foods",6,"rice_cake",8.018,1.6,1,"LEA","rice cake",6
+50036,"foods",7,"rice",9.018,1,0,"LEA","rice",6
+50036,"foods",8,"stir_fry",10.218,1.2,0,"LEA","stir fry",6
+50036,"foods",9,"sausage",15.018,4.8,1,"LEA","sausage",6
+50036,"foods",10,"hot_dog",15.818,0.799999999999999,0,"LEA","hot dog",6
+50036,"foods",11,"hamburger",16.518,0.700000000000001,0,"LEA","hamburger",6
+50036,"foods",12,"french_fries",17.418,0.899999999999999,0,"LEA","french fries",6
+50036,"foods",13,"salad",19.318,1.9,1,"LEA","salad",6
+50036,"foods",14,"kale",21.718,2.4,0,"LEA","kale",6
+50036,"foods",15,"broccoli",23.218,1.5,1,"LEA","broccoli",6
+50036,"foods",16,"celery",24.018,0.800000000000001,0,"LEA","celery",6
+50036,"foods",17,"carrots",25.618,1.6,0,"LEA","carrots",6
+50036,"foods",18,"raspberries",27.018,1.4,1,"LEA","raspberries",6
+50036,"foods",19,"dessert",29.118,2.1,1,"LEA","dessert",6
+50036,"foods",20,"ice_cream",29.718,0.600000000000001,0,"LEA","ice cream",6
+50036,"foods",21,"ice_cream_sandwich",32.318,2.6,0,"LEA","ice cream sandwich",6
+50036,"foods",22,"cake",36.718,4.40000000000001,0,"LEA","cake",6
+50036,"foods",23,"cupcake",37.718,1,0,"LEA","cupcake",6
+50036,"foods",24,"whipped_cream",41.018,3.3,0,"LEA","whipped cream",6
+50036,"foods",25,"cherries",42.318,1.3,0,"LEA","cherries",6
+50036,"foods",26,"cookie",46.218,3.90000000000001,0,"LEA","cookie",6
+50036,"foods",27,"candy",48.418,2.2,0,"LEA","candy",6
+50036,"foods",28,"candy_cane",49.618,1.2,0,"LEA","candy cane",6
+50036,"foods",29,"chocolate_chips",50.818,1.2,0,"LEA","chocolate chips",6
+50036,"foods",30,"mashed_potatoes",56.318,5.5,1,"LEA","mashed potatoes",6
+50036,"foods",31,"beans",58.418,2.1,1,"LEA","beans",6
+50036,"foods",32,"butter",62.118,3.7,1,"LEA","butter",6
+50036,"foods",33,"cream",63.318,1.2,0,"LEA","cream",6
+50036,"foods",34,"french_toast",65.918,2.60000000000001,1,"LEA","french toast",6
+50036,"foods",35,"pancakes",66.718,0.799999999999997,0,"LEA","pancakes",6
+50036,"foods",36,"waffles",67.518,0.799999999999997,0,"LEA","waffles",6
+50036,"foods",37,"bacon",69.918,2.40000000000001,0,"LEA","bacon",6
+50036,"foods",38,"raisin_bread",74.118,4.19999999999999,0,"LEA","raisin bread",6
+50036,"foods",39,"macaroni_and_cheese",78.918,4.80000000000001,1,"LEA","macaroni and cheese",6
+50036,"foods",40,"pasta",80.318,1.39999999999999,0,"LEA","pasta",6
+50036,"foods",41,"spaghetti",81.118,0.799999999999997,0,"LEA","spaghetti",6
+50036,"foods",42,"linguine",82.118,1,0,"LEA","linguine",6
+50036,"foods",43,"pesto",84.518,2.40000000000001,0,"LEA","pesto",6
+50036,"foods",44,"salmon",87.618,3.09999999999999,1,"LEA","salmon",6
+50036,"foods",45,"tuna",88.618,1,0,"LEA","tuna",6
+50036,"foods",46,"shrimp",92.818,4.2,0,"LEA","shrimp",6
+50036,"foods",47,"souffle",95.418,2.60000000000001,1,"LEA","souffle",6
+50036,"foods",48,"casserole",98.418,3,1,"LEA","casserole",6
+50036,"foods",49,"eggplant",99.718,1.3,1,"LEA","eggplant",6
+50036,"foods",50,"eggs",102.518,2.8,0,"LEA","eggs",6
+50036,"foods",51,"deviled_eggs",104.018,1.5,0,"LEA","deviled eggs",6
+50036,"foods",52,"jello",112.718,8.7,1,"LEA","jello",6
+50036,"foods",53,"soup",115.218,2.5,1,"LEA","soup",6
+50036,"foods",54,"broth",117.618,2.39999999999999,0,"LEA","broth",6
+50036,"foods",55,"pastry",124.518,6.90000000000001,1,"LEA","pastry",6
+50036,"foods",56,"danish",126.218,1.7,0,"LEA","danish",6
+50036,"foods",57,"eclair",128.018,1.8,0,"LEA","eclair",6
+50036,"foods",58,"mille_feuille",129.618,1.59999999999999,0,"LEA","mille feuille",6
+50036,"foods",59,"grains",141.018,11.4,1,"LEA","grains",6
+50036,"foods",60,"sesame_seeds",142.518,1.5,0,"LEA","sesame seeds",6
+50036,"foods",61,"crackers",144.818,2.30000000000001,1,"LEA","crackers",6
+50036,"foods",62,"hors_doeuvres",147.318,2.5,0,"LEA","hors doeuvres",6
+50036,"foods",63,"peas",149.818,2.5,1,"LEA","peas",6
+50036,"foods",64,"cottage_cheese",152.518,2.69999999999999,1,"LEA","cottage cheese",6
+50036,"foods",65,"yogurt",154.518,2,0,"LEA","yogurt",6
+50036,"foods",66,"stew",169.118,14.6,1,"LEA","stew",6
+50036,"foods",67,"omelette",173.618,4.5,1,"LEA","omelette",6
+50036,"foods",68,"sushi",176.918,3.30000000000001,1,"LEA","sushi",6
+50029,"animals",1,"giraffe",3.47616,3.47616,2,"LEA","giraffe",6
+50029,"animals",2,"dog",6.77616,3.3,1,"LEA","dog",6
+50029,"animals",3,"cat",8.27616,1.5,0,"LEA","cat",6
+50029,"animals",4,"hippo",11.67616,3.4,1,"LEA","hippo",6
+50029,"animals",5,"shark",13.37616,1.7,1,"LEA","shark",6
+50029,"animals",6,"fish",15.37616,2,0,"LEA","fish",6
+50029,"animals",7,"octopus",17.37616,2,0,"LEA","octopus",6
+50029,"animals",8,"bird",22.07616,4.7,1,"LEA","bird",6
+50029,"animals",9,"alligator",28.57616,6.5,1,"LEA","alligator",6
+50029,"animals",10,"monkey",32.77616,4.2,1,"LEA","monkey",6
+50029,"animals",11,"lion",49.37616,16.6,1,"LEA","lion",6
+50029,"animals",12,"tiger",51.07616,1.7,0,"LEA","tiger",6
+50029,"animals",13,"gazelle",53.97616,2.9,0,"LEA","gazelle",6
+50029,"animals",14,"iguana",58.17616,4.2,0,"LEA","iguana",6
+50029,"animals",15,"rat",60.47616,2.3,1,"LEA","rat",6
+50029,"animals",16,"chimpanzee",110.87616,50.4,1,"LEA","chimpanzee",6
+50029,"animals",17,"gorilla",112.97616,2.09999999999999,0,"LEA","gorilla",6
+50029,"animals",18,"wolf",121.37616,8.40000000000001,1,"LEA","wolf",6
+50029,"animals",19,"puppy",135.27616,13.9,0,"LEA","puppy",6
+50029,"animals",20,"flamingo",142.07616,6.79999999999998,1,"LEA","flamingo",6
+50029,"animals",21,"penguin",146.57616,4.5,0,"LEA","penguin",6
+50029,"animals",22,"butterfly",168.57616,22,0,"LEA","butterfly",6
+50029,"animals",23,"snake",174.97616,6.40000000000001,1,"LEA","snake",6
+50029,"animals",24,"lizard",180.87616,5.90000000000001,0,"LEA","lizard",6
+50030,"animals",1,"dog",2.696,2.696,2,"LEA","dog",6
+50030,"animals",2,"cat",4.496,1.8,0,"LEA","cat",6
+50030,"animals",3,"fish",6.996,2.5,0,"LEA","fish",6
+50030,"animals",4,"bird",9.096,2.1,0,"LEA","bird",6
+50030,"animals",5,"zebra",10.896,1.8,1,"LEA","zebra",6
+50030,"animals",6,"orangutan",12.496,1.6,1,"LEA","orangutan",6
+50030,"animals",7,"kangaroo",14.196,1.7,1,"LEA","kangaroo",6
+50030,"animals",8,"koala",16.196,2,0,"LEA","koala",6
+50030,"animals",9,"lion",17.696,1.5,1,"LEA","lion",6
+50030,"animals",10,"tiger",19.496,1.8,0,"LEA","tiger",6
+50030,"animals",11,"shark",21.096,1.6,1,"LEA","shark",6
+50030,"animals",12,"whale",23.296,2.2,0,"LEA","whale",6
+50030,"animals",13,"lizard",27.796,4.5,1,"LEA","lizard",6
+50030,"animals",14,"iguana",29.096,1.3,0,"LEA","iguana",6
+50030,"animals",15,"sheep",32.096,3,1,"LEA","sheep",6
+50030,"animals",16,"goat",33.696,1.6,0,"LEA","goat",6
+50030,"animals",17,"cow",35.496,1.8,0,"LEA","cow",6
+50030,"animals",18,"penguin",44.596,9.09999999999999,1,"LEA","penguin",6
+50030,"animals",19,"seal",46.596,2,1,"LEA","seal",6
+50030,"animals",20,"ostrich",50.496,3.90000000000001,1,"LEA","ostrich",6
+50030,"animals",21,"baboon",54.496,4,1,"LEA","baboon",6
+50030,"animals",22,"gorilla",56.296,1.8,0,"LEA","gorilla",6
+50030,"animals",23,"horse",58.796,2.5,1,"LEA","horse",6
+50030,"animals",24,"pony",60.296,1.5,0,"LEA","pony",6
+50030,"animals",25,"turtle",65.296,5.00000000000001,1,"LEA","turtle",6
+50030,"animals",26,"tortoise",67.296,2,0,"LEA","tortoise",6
+50030,"animals",27,"alligator",69.796,2.5,1,"LEA","alligator",6
+50030,"animals",28,"crocodile",71.596,1.8,0,"LEA","crocodile",6
+50030,"animals",29,"flamingo",73.396,1.8,1,"LEA","flamingo",6
+50030,"animals",30,"cardinal",80.296,6.90000000000001,1,"LEA","cardinal",6
+50030,"animals",31,"parakeet",81.996,1.69999999999999,0,"LEA","parakeet",6
+50030,"animals",32,"parrot",89.096,7.10000000000001,0,"LEA","parrot",6
+50030,"animals",33,"toucan",90.496,1.39999999999999,0,"LEA","toucan",6
+50030,"animals",34,"macaque_monkey",98.396,7.90000000000001,1,"LEA","macaque monkey",6
+50030,"animals",35,"roadrunner",107.196,8.8,1,"LEA","roadrunner",6
+50030,"animals",36,"coyote",108.696,1.5,0,"LEA","coyote",6
+50030,"animals",37,"rabbit",110.596,1.90000000000001,0,"LEA","rabbit",6
+50030,"animals",38,"duck",112.096,1.5,0,"LEA","duck",6
+50030,"animals",39,"beagle",130.696,18.6,1,"LEA","beagle",6
+50030,"animals",40,"piranha",132.096,1.40000000000001,1,"LEA","piranha",6
+50030,"animals",41,"clown_fish",136.096,4,0,"LEA","clown fish",6
+50030,"animals",42,"squirrel",147.696,11.6,1,"LEA","squirrel",6
+50030,"animals",43,"chipmunk",149.496,1.80000000000001,0,"LEA","chipmunk",6
+50030,"animals",44,"possum",152.996,3.5,1,"LEA","possum",6
+50030,"animals",45,"armadillo",156.896,3.89999999999998,1,"LEA","armadillo",6
+50030,"animals",46,"vulture",169.596,12.7,1,"LEA","vulture",6
+50030,"animals",47,"eagle",173.896,4.29999999999998,0,"LEA","eagle",6
+50036,"animals",1,"dog",2.4703,2.4703,2,"LEA","dog",6
+50036,"animals",2,"cat",2.9703,0.5,0,"LEA","cat",6
+50036,"animals",3,"pig",3.4703,0.5,1,"LEA","pig",6
+50036,"animals",4,"chicken",3.8703,0.4,0,"LEA","chicken",6
+50036,"animals",5,"horse",5.4703,1.6,0,"LEA","horse",6
+50036,"animals",6,"cow",7.2703,1.8,0,"LEA","cow",6
+50036,"animals",7,"eagle",10.8703,3.6,1,"LEA","eagle",6
+50036,"animals",8,"bird",12.7703,1.9,0,"LEA","bird",6
+50036,"animals",9,"robin",13.4703,0.699999999999999,0,"LEA","robin",6
+50036,"animals",10,"penguin",15.1703,1.7,0,"LEA","penguin",6
+50036,"animals",11,"pelican",16.7703,1.6,0,"LEA","pelican",6
+50036,"animals",12,"seagull",18.2703,1.5,0,"LEA","seagull",6
+50036,"animals",13,"hummingbird",19.7703,1.5,0,"LEA","hummingbird",6
+50036,"animals",14,"flamingo",21.7703,2,0,"LEA","flamingo",6
+50036,"animals",15,"hawk",23.9703,2.2,0,"LEA","hawk",6
+50036,"animals",16,"falcon",24.8703,0.899999999999999,0,"LEA","falcon",6
+50036,"animals",17,"capybara",27.7703,2.9,1,"LEA","capybara",6
+50036,"animals",18,"elephant",29.9703,2.2,1,"LEA","elephant",6
+50036,"animals",19,"giraffe",30.4703,0.5,0,"LEA","giraffe",6
+50036,"animals",20,"lion",31.1703,0.699999999999999,0,"LEA","lion",6
+50036,"animals",21,"cheetah",31.7703,0.599999999999998,0,"LEA","cheetah",6
+50036,"animals",22,"warthog",33.7703,2,0,"LEA","warthog",6
+50036,"animals",23,"mosquito",35.6703,1.9,1,"LEA","mosquito",6
+50036,"animals",24,"muskrat",36.6703,1,1,"LEA","muskrat",6
+50036,"animals",25,"meerkat",37.4703,0.800000000000004,1,"LEA","meerkat",6
+50036,"animals",26,"ant",39.4703,2,1,"LEA","ant",6
+50036,"animals",27,"butterfly",41.4703,2,0,"LEA","butterfly",6
+50036,"animals",28,"antlion",45.3703,3.9,0,"LEA","antlion",6
+50036,"animals",29,"grasshopper",47.9703,2.6,0,"LEA","grasshopper",6
+50036,"animals",30,"cricket",48.5703,0.600000000000001,0,"LEA","cricket",6
+50036,"animals",31,"praying_mantis",50.7703,2.2,0,"LEA","praying mantis",6
+50036,"animals",32,"monkey",59.3703,8.6,1,"LEA","monkey",6
+50036,"animals",33,"chimpanzee",60.6703,1.3,0,"LEA","chimpanzee",6
+50036,"animals",34,"orangutan",61.4703,0.800000000000004,0,"LEA","orangutan",6
+50036,"animals",35,"gorilla",62.2703,0.799999999999997,0,"LEA","gorilla",6
+50036,"animals",36,"lemur",65.1703,2.9,0,"LEA","lemur",6
+50036,"animals",37,"ring_tailed_lemur",66.5703,1.40000000000001,0,"LEA","ring tailed lemur",6
+50036,"animals",38,"opossum",67.6703,1.09999999999999,1,"LEA","opossum",6
+50036,"animals",39,"raccoon",71.1703,3.5,1,"LEA","raccoon",6
+50036,"animals",40,"red_panda",72.2703,1.10000000000001,0,"LEA","red panda",6
+50036,"animals",41,"panda",73.0703,0.799999999999997,0,"LEA","panda",6
+50036,"animals",42,"tiger",75.1703,2.09999999999999,1,"LEA","tiger",6
+50036,"animals",43,"panther",78.0703,2.90000000000001,0,"LEA","panther",6
+50036,"animals",44,"jaguar",80.3703,2.3,0,"LEA","jaguar",6
+50036,"animals",45,"lynx",84.6703,4.3,0,"LEA","lynx",6
+50036,"animals",46,"puma",86.2703,1.60000000000001,0,"LEA","puma",6
+50036,"animals",47,"ox",89.6703,3.39999999999999,1,"LEA","ox",6
+50036,"animals",48,"wildebeest",93.0703,3.40000000000001,0,"LEA","wildebeest",6
+50036,"animals",49,"bison",93.6703,0.599999999999994,0,"LEA","bison",6
+50036,"animals",50,"lizard",97.4703,3.8,1,"LEA","lizard",6
+50036,"animals",51,"snake",98.2703,0.800000000000011,1,"LEA","snake",6
+50036,"animals",52,"cobra",99.0703,0.799999999999997,0,"LEA","cobra",6
+50036,"animals",53,"python",100.9703,1.89999999999999,0,"LEA","python",6
+50036,"animals",54,"asp",101.7703,0.800000000000011,0,"LEA","asp",6
+50036,"animals",55,"boa_constrictor",102.6703,0.899999999999991,0,"LEA","boa constrictor",6
+50036,"animals",56,"grass_snake",108.2703,5.60000000000001,0,"LEA","grass snake",6
+50036,"animals",57,"frog",115.7703,7.5,1,"LEA","frog",6
+50036,"animals",58,"toad",116.9703,1.19999999999999,0,"LEA","toad",6
+50036,"animals",59,"flea",120.2703,3.30000000000001,1,"LEA","flea",6
+50036,"animals",60,"lice",123.7703,3.5,0,"LEA","lice",6
+50036,"animals",61,"louse",124.8703,1.09999999999999,0,"LEA","louse",6
+50036,"animals",62,"mouse",129.5703,4.7,1,"LEA","mouse",6
+50036,"animals",63,"rat",131.5703,2,0,"LEA","rat",6
+50036,"animals",64,"guinea_pig",133.8703,2.29999999999998,0,"LEA","guinea pig",6
+50036,"animals",65,"rabbit",136.3703,2.5,0,"LEA","rabbit",6
+50036,"animals",66,"hare",138.7703,2.40000000000001,0,"LEA","hare",6
+50036,"animals",67,"fox",142.6703,3.90000000000001,1,"LEA","fox",6
+50036,"animals",68,"wolf",143.5703,0.900000000000006,1,"LEA","wolf",6
+50036,"animals",69,"aardvark",147.6703,4.09999999999999,1,"LEA","aardvark",6
+50036,"animals",70,"aardwolf",149.6703,2,0,"LEA","aardwolf",6
+50036,"animals",71,"wild_dog",152.6703,3,0,"LEA","wild dog",6
+50036,"animals",72,"hyena",156.5703,3.90000000000001,0,"LEA","hyena",6
+50036,"animals",73,"elephant",160.6703,4.09999999999999,1,"LEA","elephant",6
+50036,"animals",74,"vulture",169.3703,8.69999999999999,1,"LEA","vulture",6
+50036,"animals",75,"raptor",173.3703,4,1,"LEA","raptor",6
+50036,"animals",76,"dinosaur",174.5703,1.20000000000002,0,"LEA","dinosaur",6
+50036,"animals",77,"fish",177.4703,2.90000000000001,1,"LEA","fish",6
+50036,"animals",78,"dolphin",178.1703,0.699999999999989,0,"LEA","dolphin",6
+50036,"animals",79,"whale",178.8703,0.699999999999989,0,"LEA","whale",6
+285,"animals",1,"Deer",2.308823529,2.308823529,NA,"HJT","Deer",6
+285,"animals",2,"Squirrel",5.955882353,3.647058824,NA,"HJT","Squirrel",6
+285,"animals",3,"Rabbit",8.632352941,2.676470588,NA,"HJT","Rabbit",6
+285,"animals",4,"Elk",12.64705882,4.014705879,NA,"HJT","Elk",6
+285,"animals",5,"Moose",13.97058824,1.32352942,NA,"HJT","Moose",6
+285,"animals",6,"Mule Deer",16.61764706,2.64705882,NA,"HJT","Mule Deer",6
+285,"animals",7,"Whitetail Deer",23.58823529,6.97058823,NA,"HJT","Whitetail Deer",6
+285,"animals",8,"Blacktail Deer",28.92647059,5.3382353,NA,"HJT","Blacktail Deer",6
+285,"animals",9,"Grizzly Bear",36.26470588,7.33823529,NA,"HJT","Grizzly Bear",6
+285,"animals",10,"Black Bear",39.27941176,3.01470588,NA,"HJT","Black Bear",6
+285,"animals",11,"Brown Bear",42.27941176,3,NA,"HJT","Brown Bear",6
+285,"animals",12,"Kodiak Bear",46.94117647,4.66176471,NA,"HJT","Kodiak Bear",6
+285,"animals",13,"Mountain Goat",52.60294118,5.66176471,NA,"HJT","Mountain Goat",6
+285,"animals",14,"Billy Goat",56.27941176,3.67647058,NA,"HJT","Billy Goat",6
+285,"animals",15,"Wolf",62.30882353,6.02941177,NA,"HJT","Wolf",6
+285,"animals",16,"Fox",65.64705882,3.33823529,NA,"HJT","Fox",6
+285,"animals",17,"Coyote",67.63235294,1.98529412000001,NA,"HJT","Coyote",6
+285,"animals",18,"Dog",71.30882353,3.67647058999999,NA,"HJT","Dog",6
+285,"animals",19,"Cat",73.30882353,2,NA,"HJT","Cat",6
+285,"animals",20,"Rat",75.30882353,2,NA,"HJT","Rat",6
+285,"animals",21,"Mouse",77.97058824,2.66176471,NA,"HJT","Mouse",6
+285,"animals",22,"Bird",80.30882353,2.33823529,NA,"HJT","Bird",6
+285,"animals",23,"Cardinal",82.95588235,2.64705882,NA,"HJT","Cardinal",6
+285,"animals",24,"Blue Jay",84.95588235,2,NA,"HJT","Blue Jay",6
+285,"animals",25,"Robin",88.97058824,4.01470589,NA,"HJT","Robin",6
+285,"animals",26,"Black Bird",89.27941176,0.308823520000004,NA,"HJT","Black Bird",6
+285,"animals",27,"Crow",93.30882353,4.02941177,NA,"HJT","Crow",6
+285,"animals",28,"Turkey",96.63235294,3.32352941000001,NA,"HJT","Turkey",6
+285,"animals",29,"Vulture",114.6323529,17.99999996,NA,"HJT","Vulture",6
+285,"animals",30,"Eagle",117.9705882,3.33823529999999,NA,"HJT","Eagle",6
+285,"animals",31,"Hawk",121.3088235,3.33823530000001,NA,"HJT","Hawk",6
+285,"animals",32,"Mountain Lion",150.6029412,29.2941177,NA,"HJT","Mountain Lion",6
+285,"animals",33,"Elephant",154.9558824,4.3529412,NA,"HJT","Elephant",6
+285,"animals",34,"Giraffe",164.6323529,9.67647049999999,NA,"HJT","Giraffe",6
+285,"animals",35,"Lion",169.3088235,4.67647059999999,NA,"HJT","Lion",6
+285,"animals",36,"Tiger",170.6323529,1.32352940000001,NA,"HJT","Tiger",6
+285,"animals",37,"Zebra",175.9705882,5.33823530000001,NA,"HJT","Zebra",6
+285,"animals",38,"Antelope",180.9558824,4.9852942,NA,"HJT","Antelope",6
+297,"animals",1,"Dog",-0.117647059,-0.117647059,NA,"HJT","Dog",6
+297,"animals",2,"Cat",1.882352941,2,NA,"HJT","Cat",6
+297,"animals",3,"Fish",2.602941176,0.720588235,NA,"HJT","Fish",6
+297,"animals",4,"Monkey",5.044117647,2.441176471,NA,"HJT","Monkey",6
+297,"animals",5,"Cow",6.882352941,1.838235294,NA,"HJT","Cow",6
+297,"animals",6,"Hippo",8.323529412,1.441176471,NA,"HJT","Hippo",6
+297,"animals",7,"Pigs",10.60294118,2.279411768,NA,"HJT","Pigs",6
+297,"animals",8,"Hogs",12.60294118,2,NA,"HJT","Hogs",6
+297,"animals",9,"Squirrel",18.48529412,5.88235294,NA,"HJT","Squirrel",6
+297,"animals",10,"Flying Squirrel",20.52941176,2.04411764,NA,"HJT","Flying Squirrel",6
+297,"animals",11,"Dolphin",30.76470588,10.23529412,NA,"HJT","Dolphin",6
+297,"animals",12,"Sand Dollar",30.64705882,-0.117647059999999,NA,"HJT","Sand Dollar",6
+297,"animals",13,"Snakes",35.04411765,4.39705883,NA,"HJT","Snakes",6
+297,"animals",14,"Snails",36.04411765,1,NA,"HJT","Snails",6
+297,"animals",15,"Slugs",37.32352941,1.27941176,NA,"HJT","Slugs",6
+297,"animals",16,"Raccoons",39.20588235,1.88235294,NA,"HJT","Raccoons",6
+297,"animals",17,"Chipmunks",41.20588235,2,NA,"HJT","Chipmunks",6
+297,"animals",18,"Skunks",44.04411765,2.83823529999999,NA,"HJT","Skunks",6
+297,"animals",19,"Kangaroos",46.20588235,2.16176470000001,NA,"HJT","Kangaroos",6
+297,"animals",20,"Koala Bears",52.64705882,6.44117647,NA,"HJT","Koala Bears",6
+297,"animals",21,"Ferret",62.04411765,9.39705883,NA,"HJT","Ferret",6
+297,"animals",22,"Tiger",70.32352941,8.27941176000001,NA,"HJT","Tiger",6
+297,"animals",23,"Lion",72.32352941,2,NA,"HJT","Lion",6
+297,"animals",24,"Bear",74.32352941,2,NA,"HJT","Bear",6
+297,"animals",25,"Cheetah",77.76470588,3.44117646999999,NA,"HJT","Cheetah",6
+297,"animals",26,"Polar Bear",80.92647059,3.16176471,NA,"HJT","Polar Bear",6
+297,"animals",27,"Brown Bear",84.92647059,4,NA,"HJT","Brown Bear",6
+297,"animals",28,"Jack Rabbit",110.6470588,25.72058821,NA,"HJT","Jack Rabbit",6
+297,"animals",29,"Rabbit",113.7647059,3.1176471,NA,"HJT","Rabbit",6
+297,"animals",30,"Bunny",115.3235294,1.5588235,NA,"HJT","Bunny",6
+297,"animals",31,"Penguin",118.7647059,3.4411765,NA,"HJT","Penguin",6
+297,"animals",32,"Iguana",123.0441176,4.27941170000001,NA,"HJT","Iguana",6
+297,"animals",33,"Lizard",124.0441176,1,NA,"HJT","Lizard",6
+297,"animals",34,"Mosquito",125.2058824,1.16176479999999,NA,"HJT","Mosquito",6
+297,"animals",35,"Bee",128.8823529,3.67647050000001,NA,"HJT","Bee",6
+297,"animals",36,"Yellow Jacket",130.0882353,1.20588240000001,NA,"HJT","Yellow Jacket",6
+297,"animals",37,"Ant",135.8823529,5.79411759999999,NA,"HJT","Ant",6
+297,"animals",38,"Rattle Snake",140.3676471,4.4852942,NA,"HJT","Rattle Snake",6
+297,"animals",39,"Ostrich",143.7647059,3.3970588,NA,"HJT","Ostrich",6
+297,"animals",40,"Lemur",150.3235294,6.55882350000002,NA,"HJT","Lemur",6
+297,"animals",41,"Emu",156.8823529,6.55882349999999,NA,"HJT","Emu",6
+297,"animals",42,"Shark",159.3235294,2.44117650000001,NA,"HJT","Shark",6
+297,"animals",43,"Clownfish",160.2058824,0.882352999999995,NA,"HJT","Clownfish",6
+297,"animals",44,"Catfish",163.7647059,3.55882349999999,NA,"HJT","Catfish",6
+297,"animals",45,"Tarantula",167.2058824,3.44117650000001,NA,"HJT","Tarantula",6
+297,"animals",46,"Spider",170.0441176,2.83823519999999,NA,"HJT","Spider",6
+297,"animals",47,"Turtle",176.0441176,6,NA,"HJT","Turtle",6
+297,"animals",48,"Parakeet",177.4852941,1.44117650000001,NA,"HJT","Parakeet",6
+491,"animals",1,"Cheetah",0.705882353,0.705882353,NA,"HJT","Cheetah",6
+491,"animals",2,"Dog",4.352941176,3.647058823,NA,"HJT","Dog",6
+491,"animals",3,"Cat Lion",5.294117647,0.941176471,NA,"HJT","Cat",6
+491,"animals",4,"Cat Lion",5.294117647,0,NA,"HJT","Lion",6
+491,"animals",5,"Tiger",7.529411765,2.235294118,NA,"HJT","Tiger",6
+491,"animals",6,"Bear Racoon",8.058823529,0.529411764,NA,"HJT","Bear",6
+491,"animals",7,"Bear Racoon",8.058823529,0,NA,"HJT","Raccoon",6
+491,"animals",8,"Squirrel",12.29411765,4.235294121,NA,"HJT","Squirrel",6
+491,"animals",9,"Snake",15.52941176,3.23529411,NA,"HJT","Snake",6
+491,"animals",10,"Bee",18.35294118,2.82352942,NA,"HJT","Bee",6
+491,"animals",11,"Bug",19.35294118,1,NA,"HJT","Bug",6
+491,"animals",12,"Fly",20.94117647,1.58823529,NA,"HJT","Fly",6
+491,"animals",13,"Spider",27.11764706,6.17647059,NA,"HJT","Spider",6
+491,"animals",14,"Mammal",31.11764706,4,NA,"HJT","Mammal",6
+491,"animals",15,"Monkey",33.11764706,2,NA,"HJT","Monkey",6
+491,"animals",16,"Dolphin Whale",35.23529412,2.11764706,NA,"HJT","Dolphin Whale",6
+491,"animals",17,"Whale",43.11764706,7.88235294,NA,"HJT","Whale",6
+491,"animals",18,"Fish",46.94117647,3.82352941,NA,"HJT","Fish",6
+491,"animals",19,"Crab",48.52941176,1.58823529,NA,"HJT","Crab",6
+491,"animals",20,"Shark",52.52941176,4,NA,"HJT","Shark",6
+491,"animals",21,"Elephant\",58.88235294,6.35294118,NA,"HJT","Elephant",6
+491,"animals",22,"Jumping Spider",69.82352941,10.94117647,NA,"HJT","Jumping Spider",6
+491,"animals",23,"Ant Eater",80.88235294,11.05882353,NA,"HJT","Ant Eater",6
+491,"animals",24,"Dolphin",87.70588235,6.82352940999999,NA,"HJT","Dolphin",6
+491,"animals",25,"Water Snakes",92.64705882,4.94117647,NA,"HJT","Water Snakes",6
+491,"animals",26,"Bear",115.9411765,23.29411768,NA,"HJT","Bear",6
+491,"animals",27,"Frog",118.9411765,3,NA,"HJT","Frog",6
+491,"animals",28,"Hair",130.9411765,12,NA,"HJT","Hare",6
+491,"animals",29,"Walrus",146.1176471,15.1764706,NA,"HJT","Walrus",6
+491,"animals",30,"Penguin",150.7058824,4.58823530000001,NA,"HJT","Penguin",6
+491,"animals",31,"Frog",190.9411765,40.2352941,NA,"HJT","Frog",6
+285,"foods",1,"Bread",5.970588235,5.970588235,NA,"HJT","Bread",6
+285,"foods",2,"Meat",9.308823529,3.338235294,NA,"HJT","Meat",6
+285,"foods",3,"Vegetable",12.27941176,2.970588231,NA,"HJT","Vegetable",6
+285,"foods",4,"Fruit",16.63235294,4.35294118,NA,"HJT","Fruit",6
+285,"foods",5,"Apple",20.63235294,4,NA,"HJT","Apple",6
+285,"foods",6,"Banana",24.63235294,4,NA,"HJT","Banana",6
+285,"foods",7,"Orange",28.63235294,4,NA,"HJT","Orange",6
+285,"foods",8,"Strawberry",36.27941176,7.64705882,NA,"HJT","Strawberry",6
+285,"foods",9,"Grape",39.97058824,3.69117648,NA,"HJT","Grape",6
+285,"foods",10,"Kiwi",42.30882353,2.33823529,NA,"HJT","Kiwi",6
+285,"foods",11,"Lime",45.30882353,3,NA,"HJT","Lime",6
+285,"foods",12,"Lemon",46.97058824,1.66176471,NA,"HJT","Lemon",6
+285,"foods",13,"Grapefruit",49.27941176,2.30882352,NA,"HJT","Grapefruit",6
+285,"foods",14,"Tomato",52.63235294,3.35294118,NA,"HJT","Tomato",6
+285,"foods",15,"Carrot",55.63235294,3,NA,"HJT","Carrot",6
+285,"foods",16,"Celery",59.63235294,4,NA,"HJT","Celery",6
+285,"foods",17,"Zucchini",67.29411765,7.66176471000001,NA,"HJT","Zucchini",6
+285,"foods",18,"Cucumber",73.95588235,6.66176469999999,NA,"HJT","Cucumber",6
+285,"foods",19,"Cantaloupe",79.95588235,6,NA,"HJT","Cantaloupe",6
+285,"foods",20,"Pineapple",86.61764706,6.66176471,NA,"HJT","Pineapple",6
+285,"foods",21,"Coconut",96.29411765,9.67647059000001,NA,"HJT","Coconut",6
+285,"foods",22,"Chip",106.9705882,10.67647055,NA,"HJT","Chip",6
+285,"foods",23,"Green Bean",114.2794118,7.30882360000001,NA,"HJT","Green Bean",6
+285,"foods",24,"Pea",119.3088235,5.0294117,NA,"HJT","Pea",6
+285,"foods",25,"Corn",119.9705882,0.661764699999992,NA,"HJT","Corn",6
+285,"foods",26,"Macaroni",127.6176471,7.6470589,NA,"HJT","Macaroni",6
+285,"foods",27,"Spaghetti",136.9558824,9.33823530000001,NA,"HJT","Spaghetti",6
+285,"foods",28,"Pizza",139.9705882,3.0147058,NA,"HJT","Pizza",6
+285,"foods",29,"Breadstick",145.9411765,5.9705883,NA,"HJT","Breadstick",6
+285,"foods",30,"Roll",151.9705882,6.0294117,NA,"HJT","Roll",6
+285,"foods",31,"Pudding",154.2941176,2.32352939999998,NA,"HJT","Pudding",6
+285,"foods",32,"Soup",160.3088235,6.0147059,NA,"HJT","Soup",6
+285,"foods",33,"Pizza Roll",162.9411765,2.63235300000002,NA,"HJT","Pizza Roll",6
+285,"foods",34,"Fish",169.9705882,7.0294117,NA,"HJT","Fish",6
+285,"foods",35,"Turkey",177.6323529,7.66176469999999,NA,"HJT","Turkey",6
+297,"foods",1,"Carrot",0.764705882,0.764705882,NA,"HJT","Carrot",6
+297,"foods",2,"Tomato",4.764705882,4,NA,"HJT","Tomato",6
+297,"foods",3,"Steak",6.323529412,1.55882353,NA,"HJT","Steak",6
+297,"foods",4,"Salad",7.602941176,1.279411764,NA,"HJT","Salad",6
+297,"foods",5,"Lettuce",11.48529412,3.882352944,NA,"HJT","Lettuce",6
+297,"foods",6,"Burger",15.04411765,3.55882353,NA,"HJT","Burger",6
+297,"foods",7,"Beef",16.60294118,1.55882353,NA,"HJT","Beef",6
+297,"foods",8,"Chicken",18.20588235,1.60294117,NA,"HJT","Chicken",6
+297,"foods",9,"Pork",20.60294118,2.39705883,NA,"HJT","Pork",6
+297,"foods",10,"Vegetable",20.92647059,0.323529410000003,NA,"HJT","Vegetable",6
+297,"foods",11,"Fruit",24.04411765,3.11764706,NA,"HJT","Fruit",6
+297,"foods",12,"Apple",25.04411765,1,NA,"HJT","Apple",6
+297,"foods",13,"Peanut Butter",26.08823529,1.04411764,NA,"HJT","Peanut Butter",6
+297,"foods",14,"Cracker",29.48529412,3.39705883,NA,"HJT","Cracker",6
+297,"foods",15,"Banana",34.76470588,5.27941176,NA,"HJT","Banana",6
+297,"foods",16,"Bagel",37.04411765,2.27941177,NA,"HJT","Bagel",6
+297,"foods",17,"Sandwich",37.92647059,0.882352940000004,NA,"HJT","Sandwich",6
+297,"foods",18,"Cookie",39.76470588,1.83823529,NA,"HJT","Cookie",6
+297,"foods",19,"Chocolate",41.20588235,1.44117647,NA,"HJT","Chocolate",6
+297,"foods",20,"Ice Cream",43.20588235,2,NA,"HJT","Ice Cream",6
+297,"foods",21,"Green Bean",46.64705882,3.44117647,NA,"HJT","Green Bean",6
+297,"foods",22,"Pepper",49.76470588,3.11764706,NA,"HJT","Pepper",6
+297,"foods",23,"Yogurt",52.04411765,2.27941177,NA,"HJT","Yogurt",6
+297,"foods",24,"Cheese",54.04411765,2,NA,"HJT","Cheese",6
+297,"foods",25,"Milk",56.60294118,2.55882353,NA,"HJT","Milk",6
+297,"foods",26,"Gum",61.88235294,5.27941176,NA,"HJT","Gum",6
+297,"foods",27,"Granola",64.76470588,2.88235294,NA,"HJT","Granola",6
+297,"foods",28,"Apple",67.32352941,2.55882353000001,NA,"HJT","Apple",6
+297,"foods",29,"Applesauce",68.64705882,1.32352940999999,NA,"HJT","Applesauce",6
+297,"foods",30,"Pineapple",72.20588235,3.55882353,NA,"HJT","Pineapple",6
+297,"foods",31,"Cranberry",73.64705882,1.44117647,NA,"HJT","Cranberry",6
+297,"foods",32,"Raison",76.76470588,3.11764706,NA,"HJT","Raison",6
+297,"foods",33,"Craisin",78.48529412,1.72058824000001,NA,"HJT","Craisin",6
+297,"foods",34,"Apricot",83.48529412,5,NA,"HJT","Apricot",6
+297,"foods",35,"Peach",84.48529412,1,NA,"HJT","Peach",6
+297,"foods",36,"Stir-Fry",91.76470588,7.27941175999999,NA,"HJT","Stir-Fry",6
+297,"foods",37,"Rice",93.60294118,1.83823530000001,NA,"HJT","Rice",6
+297,"foods",38,"Chip",96.04411765,2.44117647,NA,"HJT","Chip",6
+297,"foods",39,"Frozen Yogurt",99.08823529,3.04411764,NA,"HJT","Frozen Yogurt",6
+297,"foods",40,"Sprinkle",101.2058824,2.11764710999999,NA,"HJT","Sprinkle",6
+297,"foods",41,"Whipped Cream",102.8088235,1.60294110000001,NA,"HJT","Whipped Cream",6
+297,"foods",42,"Cherry",107.9264706,5.1176471,NA,"HJT","Cherry",6
+297,"foods",43,"Plum",112.3235294,4.3970588,NA,"HJT","Plum",6
+297,"foods",44,"Pear",114.0441176,1.72058820000001,NA,"HJT","Pear",6
+297,"foods",45,"Ketchup",122.4852941,8.4411765,NA,"HJT","Ketchup",6
+297,"foods",46,"Mustard",124.7647059,2.27941179999999,NA,"HJT","Mustard",6
+297,"foods",47,"Cucumber",125.9264706,1.16176470000001,NA,"HJT","Cucumber",6
+297,"foods",48,"Pickle",129.4852941,3.5588235,NA,"HJT","Pickle",6
+297,"foods",49,"Onion",133.0441176,3.55882349999999,NA,"HJT","Onion",6
+297,"foods",50,"Mayonnaise",134.9264706,1.88235299999999,NA,"HJT","Mayonnaise",6
+297,"foods",51,"Chickpea",140.9264706,6,NA,"HJT","Chickpea",6
+297,"foods",52,"Kidney Bean",142.0882353,1.16176470000002,NA,"HJT","Kidney Bean",6
+297,"foods",53,"Green Pea",145.9264706,3.83823529999998,NA,"HJT","Green Pea",6
+297,"foods",54,"Cantaloupe",148.2058824,2.27941180000002,NA,"HJT","Cantaloupe",6
+297,"foods",55,"Cottage Cheese",148.8088235,0.602941099999981,NA,"HJT","Cottage Cheese",6
+297,"foods",56,"Ice",152.8823529,4.07352940000001,NA,"HJT","Ice",6
+297,"foods",57,"Doughnut",159.2058824,6.32352950000001,NA,"HJT","Doughnut",6
+297,"foods",58,"Croissant",161.9264706,2.72058819999998,NA,"HJT","Croissant",6
+297,"foods",59,"Egg",164.6029412,2.67647060000002,NA,"HJT","Egg",6
+297,"foods",60,"Bacon",165.3235294,0.720588200000009,NA,"HJT","Bacon",6
+297,"foods",61,"Ham",167.6029412,2.27941179999999,NA,"HJT","Ham",6
+297,"foods",62,"Sausage",168.7647059,1.16176469999999,NA,"HJT","Sausage",6
+297,"foods",63,"Pancake",170.4852941,1.72058820000001,NA,"HJT","Pancake",6
+297,"foods",64,"French Toast",171.0882353,0.602941200000004,NA,"HJT","French Toast",6
+297,"foods",65,"Syrup",174.3235294,3.2352941,NA,"HJT","Syrup",6
+297,"foods",66,"Butter",176.0441176,1.72058819999998,NA,"HJT","Butter",6
+297,"foods",67,"Oil",183.8823529,7.83823530000001,NA,"HJT","Oil",6
+491,"foods",1,"Salad",4.529411765,4.529411765,NA,"HJT","Salad",6
+491,"foods",2,"Soup",5.941176471,1.411764706,NA,"HJT","Soup",6
+491,"foods",3,"Vegetable",9.470588235,3.529411764,NA,"HJT","Vegetable",6
+491,"foods",4,"Tomato",13.70588235,4.235294115,NA,"HJT","Tomato",6
+491,"foods",5,"Grape",16.11764706,2.41176471,NA,"HJT","Grape",6
+491,"foods",6,"Carrot",18.70588235,2.58823529,NA,"HJT","Carrot",6
+491,"foods",7,"Water",21.52941176,2.82352941,NA,"HJT","Water",6
+491,"foods",8,"Hamburger",25.88235294,4.35294118,NA,"HJT","Hamburger",6
+491,"foods",9,"Dessert",30.70588235,4.82352941,NA,"HJT","Dessert",6
+491,"foods",10,"Cake",33.52941176,2.82352941,NA,"HJT","Cake",6
+491,"foods",11,"Ice-Cream",33.88235294,0.352941179999995,NA,"HJT","Ice-Cream",6
+491,"foods",12,"Sandwich",39.47058824,5.5882353,NA,"HJT","Sandwich",6
+491,"foods",13,"Turkey",43.11764706,3.64705882,NA,"HJT","Turkey",6
+491,"foods",14,"Bready",45.11764706,2,NA,"HJT","Bready",6
+491,"foods",15,"Bread",48.52941176,3.4117647,NA,"HJT","Bread",6
+491,"foods",16,"Ham",51.35294118,2.82352942,NA,"HJT","Ham",6
+491,"foods",17,"Lettuce",51.70588235,0.352941170000001,NA,"HJT","Lettuce",6
+491,"foods",18,"Onion",57.11764706,5.41176471,NA,"HJT","Onion",6
+491,"foods",19,"Ketchup",63.70588235,6.58823529,NA,"HJT","Ketchup",6
+491,"foods",20,"Fried",68.52941176,4.82352941,NA,"HJT","Fried",6
+491,"foods",21,"Onion Ring",71.05882353,2.52941177,NA,"HJT","Onion Ring",6
+491,"foods",22,"Cucumber",77.88235294,6.82352941000001,NA,"HJT","Cucumber",6
+491,"foods",23,"Sucker",80.70588235,2.82352940999999,NA,"HJT","Sucker",6
+491,"foods",24,"Candy",83.52941176,2.82352941000001,NA,"HJT","Candy",6
+491,"foods",25,"Chocolate",85.88235294,2.35294118,NA,"HJT","Chocolate",6
+491,"foods",26,"Nut",89.94117647,4.05882353,NA,"HJT","Nut",6
+491,"foods",27,"Raisin",92.70588235,2.76470587999999,NA,"HJT","Raisin",6
+491,"foods",28,"Cereal",96.11764706,3.41176471,NA,"HJT","Cereal",6
+491,"foods",29,"Lucky Charm",99.64705882,3.52941176,NA,"HJT","Lucky Charm",6
+491,"foods",30,"Marshmallow",103.6470588,3.99999998,NA,"HJT","Marshmallow",6
+491,"foods",31,"Sugar",112.5294118,8.88235300000001,NA,"HJT","Sugar",6
+491,"foods",32,"Yogurt",125.1176471,12.5882353,NA,"HJT","Yogurt",6
+491,"foods",33,"Potato",132.2941176,7.17647049999999,NA,"HJT","Potato",6
+491,"foods",34,"Mashed Potato",134.4117647,2.1176471,NA,"HJT","Mashed Potato",6
+491,"foods",35,"Pepper",143.7058824,9.29411770000002,NA,"HJT","Pepper",6
+491,"foods",36,"Green Pepper",146.2352941,2.5294117,NA,"HJT","Green Pepper",6
+491,"foods",37,"Banana",160.7058824,14.4705883,NA,"HJT","Banana",6
+491,"foods",38,"Apple",163.1176471,2.41176469999999,NA,"HJT","Apple",6
+491,"foods",39,"Grape",167.1176471,4,NA,"HJT","Grape",6
+491,"foods",40,"Jalapeno",173.8823529,6.7647058,NA,"HJT","Jalapeno",6
+491,"foods",41,"Spice",179.1176471,5.2352942,NA,"HJT","Spice",6
+285,"occupations",1,"Teacher",1.294117647,1.294117647,NA,"HJT","Teacher",6
+285,"occupations",2,"Farmer",3.632352941,2.338235294,NA,"HJT","Farmer",6
+285,"occupations",3,"Doctor",4.632352941,1,NA,"HJT","Doctor",6
+285,"occupations",4,"Nurse",6.970588235,2.338235294,NA,"HJT","Nurse",6
+285,"occupations",5,"Mechanic",9.955882353,2.985294118,NA,"HJT","Mechanic",6
+285,"occupations",6,"Cowboy",14.63235294,4.676470587,NA,"HJT","Cowboy",6
+285,"occupations",7,"Manager",25.29411765,10.66176471,NA,"HJT","Manager",6
+285,"occupations",8,"Fireman",38.29411765,13,NA,"HJT","Fireman",6
+285,"occupations",9,"Engineer",46.27941176,7.98529411,NA,"HJT","Engineer",6
+285,"occupations",10,"Pilot",52.97058824,6.69117648,NA,"HJT","Pilot",6
+285,"occupations",11,"Manager",64.91176471,11.94117647,NA,"HJT","Manager",6
+285,"occupations",12,"Therapist",81.26470588,16.35294117,NA,"HJT","Therapist",6
+285,"occupations",13,"Dentist",89.29411765,8.02941177000001,NA,"HJT","Dentist",6
+285,"occupations",14,"Surgeon",96.63235294,7.33823529,NA,"HJT","Surgeon",6
+285,"occupations",15,"Technician",110.9411765,14.30882356,NA,"HJT","Technician",6
+285,"occupations",16,"Athlete",119.8970588,8.9558823,NA,"HJT","Athlete",6
+285,"occupations",17,"Driver",132.6029412,12.7058824,NA,"HJT","Driver",6
+285,"occupations",18,"Carpenter",145.6176471,13.0147059,NA,"HJT","Carpenter",6
+285,"occupations",19,"Electrician",151.9411765,6.32352940000001,NA,"HJT","Electrician",6
+285,"occupations",20,"Teller",166.6323529,14.6911764,NA,"HJT","Teller",6
+285,"occupations",21,"Bartender",170.6176471,3.9852942,NA,"HJT","Bartender",6
+285,"occupations",22,"Accountant",178.2794118,7.66176469999999,NA,"HJT","Accountant",6
+297,"occupations",1,"Teacher",-0.235294118,-0.235294118,NA,"HJT","Teacher",6
+297,"occupations",2,"Doctor",2.044117647,2.279411765,NA,"HJT","Doctor",6
+297,"occupations",3,"Psychologist",2.367647059,0.323529412,NA,"HJT","Psychologist",6
+297,"occupations",4,"Farmer",7.044117647,4.676470588,NA,"HJT","Farmer",6
+297,"occupations",5,"Prostitute",8.926470588,1.882352941,NA,"HJT","Prostitute",6
+297,"occupations",6,"Optometrist",13.64705882,4.720588232,NA,"HJT","Optometrist",6
+297,"occupations",7,"Ophthalmologist",17.80882353,4.16176471,NA,"HJT","Ophthalmologist",6
+297,"occupations",8,"Pediatrician",22.08823529,4.27941176,NA,"HJT","Pediatrician",6
+297,"occupations",9,"Veterinarian",27.88235294,5.79411765,NA,"HJT","Veterinarian",6
+297,"occupations",10,"Babysitter",28.92647059,1.04411765,NA,"HJT","Babysitter",6
+297,"occupations",11,"Student",30.76470588,1.83823529,NA,"HJT","Student",6
+297,"occupations",12,"Taxi Driver",33.64705882,2.88235294,NA,"HJT","Taxi Driver",6
+297,"occupations",13,"Driver",35.64705882,2,NA,"HJT","Driver",6
+297,"occupations",14,"Associate",37.52941176,1.88235294,NA,"HJT","Associate",6
+297,"occupations",15,"Stockbroker",40.36764706,2.8382353,NA,"HJT","Stockbroker",6
+297,"occupations",16,"Banker",42.97058824,2.60294118,NA,"HJT","Banker",6
+297,"occupations",17,"Physicist",51.20588235,8.23529411,NA,"HJT","Physicist",6
+297,"occupations",18,"Scientist",53.20588235,2,NA,"HJT","Scientist",6
+297,"occupations",19,"Professor",58.20588235,5,NA,"HJT","Professor",6
+297,"occupations",20,"Garbage",60.64705882,2.44117647,NA,"HJT","Garbage Man",6
+297,"occupations",21,"Trainer",65.64705882,5,NA,"HJT","Trainer",6
+297,"occupations",22,"Weatherperson",67.52941176,1.88235294,NA,"HJT","Weatherperson",6
+297,"occupations",23,"Reporter",71.08823529,3.55882353,NA,"HJT","Reporter",6
+297,"occupations",24,"Anchor",74.08823529,3,NA,"HJT","Anchor",6
+297,"occupations",25,"Writer",78.04411765,3.95588236,NA,"HJT","Writer",6
+297,"occupations",26,"Artist",79.76470588,1.72058822999999,NA,"HJT","Artist",6
+297,"occupations",27,"Painter",80.76470588,1,NA,"HJT","Painter",6
+297,"occupations",28,"Technician",88.41176471,7.64705883000001,NA,"HJT","Technician",6
+297,"occupations",29,"Manager",100.7647059,12.35294119,NA,"HJT","Manager",6
+297,"occupations",30,"Supervisor",103.9264706,3.16176470000001,NA,"HJT","Supervisor",6
+297,"occupations",31,"Attendant",106.25,2.3235294,NA,"HJT","Attendant",6
+297,"occupations",32,"Pilot",111.3235294,5.0735294,NA,"HJT","Pilot",6
+297,"occupations",33,"Nurse",118.3235294,7,NA,"HJT","Nurse",6
+297,"occupations",34,"Technician",121.5294118,3.20588240000001,NA,"HJT","Technician",6
+297,"occupations",35,"Performer",133.9264706,12.3970588,NA,"HJT","Performer",6
+297,"occupations",36,"Artist",135.8088235,1.8823529,NA,"HJT","Artist",6
+297,"occupations",37,"Investigator",140.1323529,4.32352940000001,NA,"HJT","Investigator",6
+297,"occupations",38,"Counselor",145.6911765,5.55882360000001,NA,"HJT","Counselor",6
+297,"occupations",39,"Retailer",161.4852941,15.7941176,NA,"HJT","Retailer",6
+297,"occupations",40,"Importer",166.8088235,5.32352939999998,NA,"HJT","Importer",6
+297,"occupations",41,"Reporter",185.8088235,19,NA,"HJT","Reporter",6
+491,"occupations",1,"Dentist",0.705882353,0.705882353,NA,"HJT","Dentist",6
+491,"occupations",2,"Mayor",5.529411765,4.823529412,NA,"HJT","Mayor",6
+491,"occupations",3,"Garbage",6.058823529,0.529411764,NA,"HJT","Garbageman",6
+491,"occupations",4,"Teacher",10.70588235,4.647058821,NA,"HJT","Teacher",6
+491,"occupations",5,"Student",12.70588235,2,NA,"HJT","Student",6
+491,"occupations",6,"Therapist",16.88235294,4.17647059,NA,"HJT","Therapist",6
+491,"occupations",7,"Businessman",19.05882353,2.17647059,NA,"HJT","Businessman",6
+491,"occupations",8,"Star",26.05882353,7,NA,"HJT","Star",6
+491,"occupations",9,"Manager",31.41176471,5.35294118,NA,"HJT","Manager",6
+491,"occupations",10,"CEO",46.35294118,14.94117647,NA,"HJT","CEO",6
+491,"occupations",11,"Entrepreneur",49.64705882,3.29411764,NA,"HJT","Entrepreneur",6
+491,"occupations",12,"Waitress",58.29411765,8.64705883,NA,"HJT","Waitress",6
+491,"occupations",13,"Cook",61.94117647,3.64705882,NA,"HJT","Cook",6
+491,"occupations",14,"Psychiatrist",67.64705882,5.70588235,NA,"HJT","Psychiatrist",6
+491,"occupations",15,"Merchandising",73.23529412,5.58823530000001,NA,"HJT","Merchandising",6
+491,"occupations",16,"Designer",79.29411765,6.05882353,NA,"HJT","Designer",6
+491,"occupations",17,"Model",82.52941176,3.23529411,NA,"HJT","Model",6
+491,"occupations",18,"Writer",88.11764706,5.58823529999999,NA,"HJT","Writer",6
+491,"occupations",19,"Columnist",90.88235294,2.76470588000001,NA,"HJT","Columnist",6
+491,"occupations",20,"Unemployed",99.47058824,8.58823529999999,NA,"HJT","Unemployed",6
+491,"occupations",21,"Manager",102.7058824,3.23529416,NA,"HJT","Manager",6
+491,"occupations",22,"Assistant",114.8823529,12.1764705,NA,"HJT","Assistant",6
+491,"occupations",23,"Doctor",124.1176471,9.2352942,NA,"HJT","Doctor",6
+491,"occupations",24,"Nurse",126.5294118,2.41176470000001,NA,"HJT","Nurse",6
+491,"occupations",25,"Taster",128.0588235,1.52941169999998,NA,"HJT","Taster",6
+491,"occupations",26,"Priest",135.1176471,7.05882360000001,NA,"HJT","Priest",6
+491,"occupations",27,"Cashier",145.7058824,10.5882353,NA,"HJT","Cashier",6
+491,"occupations",28,"President",152.8823529,7.17647049999999,NA,"HJT","President",6
+491,"occupations",29,"Congressman",155.0588235,2.17647059999999,NA,"HJT","Congressman",6
+491,"occupations",30,"Supervisor",161.4705882,6.41176470000002,NA,"HJT","Supervisor",6
+491,"occupations",31,"Relations",169,7.52941179999999,NA,"HJT","Relations",6
+491,"occupations",32,"Artist",175.6470588,6.6470588,NA,"HJT","Artist",6
