@@ -1,0 +1,1992 @@
+"subject","domain","response_number","participant_response","response_onset_time","IRT","participant_designated_switch","dataset","checked_words","lagRT"
+50001,"occupations",1,"lawyer",3.841,3.841,2,"LEA","lawyer",NA
+50001,"occupations",2,"doctor",5.541,1.7,0,"LEA","doctor",3.841
+50001,"occupations",3,"researcher",8.441,2.9,0,"LEA","researcher",5.541
+50001,"occupations",4,"social_worker",18.041,9.6,0,"LEA","social worker",8.441
+50001,"occupations",5,"politician",25.641,7.6,1,"LEA","politician",18.041
+50001,"occupations",6,"writer",31.441,5.8,0,"LEA","writer",25.641
+50001,"occupations",7,"singer",33.741,2.3,0,"LEA","singer",31.441
+50001,"occupations",8,"musician",35.341,1.6,0,"LEA","musician",33.741
+50001,"occupations",9,"chef",42.341,7,0,"LEA","chef",35.341
+50001,"occupations",10,"secretary",47.341,5,0,"LEA","secretary",42.341
+50001,"occupations",11,"nurse",59.041,11.7,0,"LEA","nurse",47.341
+50001,"occupations",12,"audiologist",65.941,6.90000000000001,1,"LEA","audiologist",59.041
+50001,"occupations",13,"speech_pathologist",72.141,6.2,0,"LEA","speech pathologist",65.941
+50001,"occupations",14,"teacher",77.041,4.89999999999999,0,"LEA","teacher",72.141
+50001,"occupations",15,"seamstress",87.141,10.1,1,"LEA","seamstress",77.041
+50001,"occupations",16,"actor",90.741,3.59999999999999,1,"LEA","actor",87.141
+50001,"occupations",17,"cashier",104.141,13.4,1,"LEA","cashier",90.741
+50001,"occupations",18,"professor",124.841,20.7,0,"LEA","professor",104.141
+50001,"occupations",19,"construction_worker",133.441,8.60000000000001,0,"LEA","construction worker",124.841
+50001,"occupations",20,"manager",142.741,9.30000000000001,1,"LEA","manager",133.441
+50001,"occupations",21,"firefighter",159.341,16.6,1,"LEA","firefighter",142.741
+50001,"occupations",22,"police",162.541,3.19999999999999,0,"LEA","police",159.341
+50001,"occupations",23,"surgeon",175.041,12.5,1,"LEA","surgeon",162.541
+50002,"occupations",1,"doctor",2.641,2.641,2,"LEA","doctor",NA
+50002,"occupations",2,"officer",3.341,0.7,1,"LEA","officer",2.641
+50002,"occupations",3,"police_officer",4.441,1.1,0,"LEA","police officer",3.341
+50002,"occupations",4,"EMT",7.941,3.5,1,"LEA","EMT",4.441
+50002,"occupations",5,"secretary",9.441,1.5,1,"LEA","secretary",7.941
+50002,"occupations",6,"athlete",13.891,4.45,1,"LEA","athlete",9.441
+50002,"occupations",7,"teacher",15.441,1.55,1,"LEA","teacher",13.891
+50002,"occupations",8,"fireman",17.141,1.7,1,"LEA","fireman",15.441
+50002,"occupations",9,"librarian",17.941,0.800000000000001,1,"LEA","librarian",17.141
+50002,"occupations",10,"physical_therapist",23.041,5.1,1,"LEA","physical therapist",17.941
+50002,"occupations",11,"clinical_psychologist",24.341,1.3,0,"LEA","clinical psychologist",23.041
+50002,"occupations",12,"lab_worker",26.641,2.3,0,"LEA","lab worker",24.341
+50002,"occupations",13,"engineer",29.841,3.2,1,"LEA","engineer",26.641
+50002,"occupations",14,"computer_technician",32.041,2.2,0,"LEA","computer technician",29.841
+50002,"occupations",15,"business_person",37.891,5.85,1,"LEA","business person",32.041
+50002,"occupations",16,"travel_agent",41.841,3.95,0,"LEA","travel agent",37.891
+50002,"occupations",17,"real_estate",43.041,1.2,0,"LEA","real estate",41.841
+50002,"occupations",18,"realtor",46.891,3.85,0,"LEA","realtor",43.041
+50002,"occupations",19,"pilot",50.941,4.05,0,"LEA","pilot",46.891
+50002,"occupations",20,"attendant",53.141,2.2,0,"LEA","attendant",50.941
+50002,"occupations",21,"nurse",55.341,2.2,1,"LEA","nurse",53.141
+50002,"occupations",22,"professor",62.341,7,1,"LEA","professor",55.341
+50002,"occupations",23,"mayor",75.441,13.1,1,"LEA","mayor",62.341
+50002,"occupations",24,"dancer",88.491,13.05,1,"LEA","dancer",75.441
+50002,"occupations",25,"artist",89.241,0.75,0,"LEA","artist",88.491
+50002,"occupations",26,"post_office_worker",97.041,7.8,1,"LEA","post office worker",89.241
+50002,"occupations",27,"security_guard",103.541,6.5,1,"LEA","security guard",97.041
+50002,"occupations",28,"driver",110.241,6.7,1,"LEA","driver",103.541
+50002,"occupations",29,"housekeeper",113.541,3.3,0,"LEA","housekeeper",110.241
+50002,"occupations",30,"plumber",116.441,2.90000000000001,1,"LEA","plumber",113.541
+50002,"occupations",31,"manager",124.241,7.8,1,"LEA","manager",116.441
+50002,"occupations",32,"waiting",125.441,1.2,0,"LEA","waiter",124.241
+50002,"occupations",33,"wait_staff",126.441,1,1,"LEA","wait staff",125.441
+50002,"occupations",34,"cook",130.041,3.59999999999999,0,"LEA","cook",126.441
+50002,"occupations",35,"floor_worker",134.141,4.09999999999999,0,"LEA","floor worker",130.041
+50002,"occupations",36,"craftsperson",145.991,11.85,1,"LEA","craftsperson",134.141
+50002,"occupations",37,"electrician",152.541,6.54999999999998,1,"LEA","electrician",145.991
+50002,"occupations",38,"customer_service_representative",161.841,9.30000000000001,1,"LEA","customer service representative",152.541
+50002,"occupations",39,"cashier",168.241,6.40000000000001,0,"LEA","cashier",161.841
+50002,"occupations",40,"zoologist",174.241,6,1,"LEA","zoologist",168.241
+50003,"occupations",1,"lawyer",4.801,4.801,2,"LEA","lawyer",NA
+50003,"occupations",2,"doctor",6.001,1.2,0,"LEA","doctor",4.801
+50003,"occupations",3,"surgeon",7.301,1.3,0,"LEA","surgeon",6.001
+50003,"occupations",4,"psychologist",8.701,1.4,0,"LEA","psychologist",7.301
+50003,"occupations",5,"counselor",10.101,1.4,0,"LEA","counselor",8.701
+50003,"occupations",6,"janitor",12.501,2.4,0,"LEA","janitor",10.101
+50003,"occupations",7,"secretary",15.301,2.8,0,"LEA","secretary",12.501
+50003,"occupations",8,"clerk",16.801,1.5,0,"LEA","clerk",15.301
+50003,"occupations",9,"salesperson",19.001,2.2,0,"LEA","salesperson",16.801
+50003,"occupations",10,"manager",20.801,1.8,0,"LEA","manager",19.001
+50003,"occupations",11,"teacher",22.801,2,1,"LEA","teacher",20.801
+50003,"occupations",12,"lunch_lady",27.501,4.7,0,"LEA","lunch lady",22.801
+50003,"occupations",13,"truck_driver",30.101,2.6,1,"LEA","truck driver",27.501
+50003,"occupations",14,"lab_technician",35.501,5.4,0,"LEA","lab technician",30.101
+50003,"occupations",15,"engineer",42.701,7.2,0,"LEA","engineer",35.501
+50003,"occupations",16,"architect",44.501,1.8,0,"LEA","architect",42.701
+50003,"occupations",17,"physical_therapist",65.801,21.3,0,"LEA","physical therapist",44.501
+50003,"occupations",18,"dermatologist",68.901,3.09999999999999,0,"LEA","dermatologist",65.801
+50003,"occupations",19,"audiologist",71.701,2.8,0,"LEA","audiologist",68.901
+50003,"occupations",20,"accountant",81.601,9.90000000000001,1,"LEA","accountant",71.701
+50003,"occupations",21,"oncologist",92.301,10.7,0,"LEA","oncologist",81.601
+50003,"occupations",22,"chef",99.101,6.8,0,"LEA","chef",92.301
+50003,"occupations",23,"artist",105.201,6.09999999999999,0,"LEA","artist",99.101
+50003,"occupations",24,"animator",107.201,2,0,"LEA","animator",105.201
+50003,"occupations",25,"director",109.001,1.80000000000001,0,"LEA","director",107.201
+50003,"occupations",26,"producer",109.901,0.899999999999991,0,"LEA","producer",109.001
+50003,"occupations",27,"actor",111.401,1.5,0,"LEA","actor",109.901
+50003,"occupations",28,"musician",118.701,7.3,0,"LEA","musician",111.401
+50003,"occupations",29,"professional_sports_player",124.801,6.10000000000001,0,"LEA","professional sports player",118.701
+50003,"occupations",30,"gardener",136.701,11.9,0,"LEA","gardener",124.801
+50003,"occupations",31,"construction",147.801,11.1,0,"LEA","construction",136.701
+50003,"occupations",32,"uber_driver",152.201,4.40000000000001,0,"LEA","uber driver",147.801
+50003,"occupations",33,"student",157.701,5.5,0,"LEA","student",152.201
+50003,"occupations",34,"retail_salesman",171.701,14,0,"LEA","retail salesman",157.701
+50004,"occupations",1,"teacher",2.844,2.844,2,"LEA","teacher",NA
+50004,"occupations",2,"excavator",4.544,1.7,1,"LEA","excavator",2.844
+50004,"occupations",3,"doctor",6.844,2.3,1,"LEA","doctor",4.544
+50004,"occupations",4,"soldier",12.144,5.3,1,"LEA","soldier",6.844
+50004,"occupations",5,"librarian",13.844,1.7,1,"LEA","librarian",12.144
+50004,"occupations",6,"curator",15.344,1.5,0,"LEA","curator",13.844
+50004,"occupations",7,"dentist",19.344,4,1,"LEA","dentist",15.344
+50004,"occupations",8,"surgeon",22.044,2.7,0,"LEA","surgeon",19.344
+50004,"occupations",9,"professor",25.844,3.8,0,"LEA","professor",22.044
+50004,"occupations",10,"brick_layer",29.244,3.4,1,"LEA","brick layer",25.844
+50004,"occupations",11,"businessman",38.544,9.3,1,"LEA","businessman",29.244
+50004,"occupations",12,"executive",42.644,4.1,0,"LEA","executive",38.544
+50004,"occupations",13,"president",46.144,3.5,0,"LEA","president",42.644
+50004,"occupations",14,"senator",48.844,2.7,0,"LEA","senator",46.144
+50004,"occupations",15,"singer",58.844,10,1,"LEA","singer",48.844
+50004,"occupations",16,"actor",60.644,1.8,0,"LEA","actor",58.844
+50004,"occupations",17,"director",63.544,2.9,0,"LEA","director",60.644
+50004,"occupations",18,"set_dresser",66.844,3.3,0,"LEA","set dresser",63.544
+50004,"occupations",19,"tailor",73.744,6.90000000000001,0,"LEA","tailor",66.844
+50004,"occupations",20,"spy",75.744,2,0,"LEA","spy",73.744
+50004,"occupations",21,"dancer",88.244,12.5,0,"LEA","dancer",75.744
+50004,"occupations",22,"carpenter",91.544,3.3,1,"LEA","carpenter",88.244
+50004,"occupations",23,"plumber",93.344,1.8,0,"LEA","plumber",91.544
+50004,"occupations",24,"cabinet_maker",97.944,4.60000000000001,0,"LEA","cabinet maker",93.344
+50004,"occupations",25,"designer",107.444,9.5,1,"LEA","designer",97.944
+50004,"occupations",26,"model",110.044,2.59999999999999,0,"LEA","model",107.444
+50004,"occupations",27,"marine_biologist",129.144,19.1,1,"LEA","marine biologist",110.044
+50004,"occupations",28,"film_archivist",134.744,5.59999999999999,1,"LEA","film archivist",129.144
+50004,"occupations",29,"private_manuscript_consultant",138.844,4.09999999999999,0,"LEA","private manuscript consultant",134.744
+50004,"occupations",30,"locksmith",150.944,12.1,1,"LEA","locksmith",138.844
+50004,"occupations",31,"farmer",158.044,7.10000000000002,1,"LEA","farmer",150.944
+50004,"occupations",32,"antiques_dealer",164.244,6.19999999999999,0,"LEA","antiques dealer",158.044
+50006,"occupations",1,"consultant",3.784,3.784,2,"LEA","consultant",NA
+50006,"occupations",2,"fashion_designer",7.084,3.3,1,"LEA","fashion designer",3.784
+50006,"occupations",3,"doctor",10.084,3,1,"LEA","doctor",7.084
+50006,"occupations",4,"lawyer",11.684,1.6,0,"LEA","lawyer",10.084
+50006,"occupations",5,"judge",13.184,1.5,0,"LEA","judge",11.684
+50006,"occupations",6,"police_officer",14.484,1.3,0,"LEA","police officer",13.184
+50006,"occupations",7,"firefighter",15.984,1.5,0,"LEA","firefighter",14.484
+50006,"occupations",8,"mayor",18.084,2.1,0,"LEA","mayor",15.984
+50006,"occupations",9,"governor",19.184,1.1,0,"LEA","governor",18.084
+50006,"occupations",10,"president",20.184,1,0,"LEA","president",19.184
+50006,"occupations",11,"congressman",21.384,1.2,0,"LEA","congressman",20.184
+50006,"occupations",12,"garbage_man",24.984,3.6,0,"LEA","garbage man",21.384
+50006,"occupations",13,"nurse",27.184,2.2,0,"LEA","nurse",24.984
+50006,"occupations",14,"bank_teller",30.684,3.5,0,"LEA","bank teller",27.184
+50006,"occupations",15,"CEO",32.784,2.1,0,"LEA","CEO",30.684
+50006,"occupations",16,"COO",34.084,1.3,0,"LEA","COO",32.784
+50006,"occupations",17,"CFO",34.984,0.899999999999999,0,"LEA","CFO",34.084
+50006,"occupations",18,"associate",45.584,10.6,1,"LEA","associate",34.984
+50006,"occupations",19,"cashier",55.884,10.3,0,"LEA","cashier",45.584
+50006,"occupations",20,"cook",57.284,1.4,1,"LEA","cook",55.884
+50006,"occupations",21,"waiter",59.584,2.3,0,"LEA","waiter",57.284
+50006,"occupations",22,"waitress",60.484,0.899999999999999,0,"LEA","waitress",59.584
+50006,"occupations",23,"scientist",70.784,10.3,1,"LEA","scientist",60.484
+50006,"occupations",24,"marine_biologist",76.884,6.09999999999999,0,"LEA","marine biologist",70.784
+50006,"occupations",25,"chemist",80.084,3.2,0,"LEA","chemist",76.884
+50006,"occupations",26,"computer_programmer",84.584,4.5,1,"LEA","computer programmer",80.084
+50006,"occupations",27,"musician",100.084,15.5,1,"LEA","musician",84.584
+50006,"occupations",28,"artist",101.884,1.8,0,"LEA","artist",100.084
+50006,"occupations",29,"teacher",115.184,13.3,1,"LEA","teacher",101.884
+50006,"occupations",30,"principal",116.384,1.2,0,"LEA","principal",115.184
+50006,"occupations",31,"custodian",118.884,2.5,0,"LEA","custodian",116.384
+50006,"occupations",32,"manager",125.784,6.90000000000001,0,"LEA","manager",118.884
+50006,"occupations",33,"financial_adviser",132.684,6.89999999999999,1,"LEA","financial adviser",125.784
+50006,"occupations",34,"academic_advisor",140.084,7.40000000000001,1,"LEA","academic advisor",132.684
+50006,"occupations",35,"dean",149.284,9.19999999999999,0,"LEA","dean",140.084
+50006,"occupations",36,"professor",151.084,1.80000000000001,0,"LEA","professor",149.284
+50006,"occupations",37,"social_worker",156.384,5.29999999999998,1,"LEA","social worker",151.084
+50006,"occupations",38,"marine",171.584,15.2,1,"LEA","marine",156.384
+50007,"occupations",1,"police_officer",4.303,4.303,2,"LEA","police officer",NA
+50007,"occupations",2,"fireman",6.803,2.5,0,"LEA","fireman",4.303
+50007,"occupations",3,"doctor",9.203,2.4,0,"LEA","doctor",6.803
+50007,"occupations",4,"nurse",11.503,2.3,0,"LEA","nurse",9.203
+50007,"occupations",5,"physical_therapist",14.003,2.5,0,"LEA","physical therapist",11.503
+50007,"occupations",6,"receptionist",18.303,4.3,1,"LEA","receptionist",14.003
+50007,"occupations",7,"teacher",23.403,5.1,1,"LEA","teacher",18.303
+50007,"occupations",8,"professor",26.403,3,0,"LEA","professor",23.403
+50007,"occupations",9,"writer",33.503,7.1,1,"LEA","writer",26.403
+50007,"occupations",10,"journalist",37.903,4.4,0,"LEA","journalist",33.503
+50007,"occupations",11,"eye_doctor",41.803,3.9,1,"LEA","eye doctor",37.903
+50007,"occupations",12,"podiatrist",49.403,7.6,0,"LEA","podiatrist",41.803
+50007,"occupations",13,"veterinarian",52.203,2.8,1,"LEA","veterinarian",49.403
+50007,"occupations",14,"dietician",57.303,5.09999999999999,1,"LEA","dietician",52.203
+50007,"occupations",15,"fitness_instructor",62.803,5.5,1,"LEA","fitness instructor",57.303
+50007,"occupations",16,"ear_nose_and_throat_specialist",73.603,10.8,1,"LEA","ear nose and throat specialist",62.803
+50007,"occupations",17,"military_officer",80.203,6.60000000000001,1,"LEA","military officer",73.603
+50007,"occupations",18,"psychiatrist",87.803,7.59999999999999,1,"LEA","psychiatrist",80.203
+50007,"occupations",19,"IT_person",94.303,6.5,1,"LEA","IT person",87.803
+50007,"occupations",20,"book_editor",99.603,5.3,1,"LEA","book editor",94.303
+50007,"occupations",21,"factory_worker",105.703,6.10000000000001,1,"LEA","factory worker",99.603
+50007,"occupations",22,"chauffeur",111.903,6.2,1,"LEA","chauffeur",105.703
+50007,"occupations",23,"bus_driver",120.103,8.19999999999999,0,"LEA","bus driver",111.903
+50007,"occupations",24,"president",131.903,11.8,1,"LEA","president",120.103
+50007,"occupations",25,"any_branch_of_government_job",142.503,10.6,0,"LEA","government worker",131.903
+50007,"occupations",26,"athlete",152.403,9.90000000000001,1,"LEA","athlete",142.503
+50007,"occupations",27,"computer_programmer",160.803,8.40000000000001,1,"LEA","computer programmer",152.403
+50007,"occupations",28,"cartographer",168.803,8,1,"LEA","cartographer",160.803
+50007,"occupations",29,"chemist",173.403,4.59999999999999,1,"LEA","chemist",168.803
+50007,"occupations",30,"researcher",180.503,7.09999999999999,0,"LEA","researcher",173.403
+50008,"occupations",1,"receptionist",5.672,5.672,2,"LEA","receptionist",NA
+50008,"occupations",2,"elevator_operator",9.072,3.4,0,"LEA","elevator operator",5.672
+50008,"occupations",3,"door_person",11.572,2.5,1,"LEA","door person",9.072
+50008,"occupations",4,"doctor",16.172,4.6,0,"LEA","doctor",11.572
+50008,"occupations",5,"nurse",16.872,0.699999999999999,0,"LEA","nurse",16.172
+50008,"occupations",6,"nurse_assistant",21.872,5,1,"LEA","nurse assistant",16.872
+50008,"occupations",7,"firefighter",28.172,6.3,0,"LEA","firefighter",21.872
+50008,"occupations",8,"police",29.772,1.6,1,"LEA","police",28.172
+50008,"occupations",9,"tax_collector",36.872,7.1,0,"LEA","tax collector",29.772
+50008,"occupations",10,"accountant",40.172,3.3,1,"LEA","accountant",36.872
+50008,"occupations",11,"dentist",49.272,9.1,1,"LEA","dentist",40.172
+50008,"occupations",12,"professor",54.972,5.7,0,"LEA","professor",49.272
+50008,"occupations",13,"administrative_assistant",64.672,9.7,0,"LEA","administrative assistant",54.972
+50008,"occupations",14,"teacher",80.872,16.2,0,"LEA","teacher",64.672
+50008,"occupations",15,"teacher_aid",82.372,1.5,0,"LEA","teacher aid",80.872
+50008,"occupations",16,"principal",84.172,1.8,1,"LEA","principal",82.372
+50008,"occupations",17,"grocer",90.172,6,0,"LEA","grocer",84.172
+50008,"occupations",18,"cashier",103.372,13.2,1,"LEA","cashier",90.172
+50008,"occupations",19,"technician",119.172,15.8,0,"LEA","technician",103.372
+50008,"occupations",20,"welder",123.772,4.60000000000001,0,"LEA","welder",119.172
+50008,"occupations",21,"maintenance_person",125.772,2,0,"LEA","maintenance person",123.772
+50008,"occupations",22,"cook",130.772,4.99999999999999,1,"LEA","cook",125.772
+50008,"occupations",23,"factory_worker",150.272,19.5,1,"LEA","factory worker",130.772
+50008,"occupations",24,"therapist",161.672,11.4,1,"LEA","therapist",150.272
+50008,"occupations",25,"gas_station_attendant",173.572,11.9,1,"LEA","gas station attendant",161.672
+50010,"occupations",1,"doctor",2.652,2.652,2,"LEA","doctor",NA
+50010,"occupations",2,"teacher",3.552,0.9,1,"LEA","teacher",2.652
+50010,"occupations",3,"professor",5.152,1.6,0,"LEA","professor",3.552
+50010,"occupations",4,"CEO",7.452,2.3,1,"LEA","CEO",5.152
+50010,"occupations",5,"CFO",8.752,1.3,0,"LEA","CFO",7.452
+50010,"occupations",6,"accountant",10.552,1.8,1,"LEA","accountant",8.752
+50010,"occupations",7,"auditor",13.152,2.6,0,"LEA","auditor",10.552
+50010,"occupations",8,"writer",15.452,2.3,1,"LEA","writer",13.152
+50010,"occupations",9,"author",16.652,1.2,0,"LEA","author",15.452
+50010,"occupations",10,"producer",17.752,1.1,1,"LEA","producer",16.652
+50010,"occupations",11,"actor",19.152,1.4,0,"LEA","actor",17.752
+50010,"occupations",12,"musician",20.852,1.7,0,"LEA","musician",19.152
+50010,"occupations",13,"scientist",25.952,5.1,1,"LEA","scientist",20.852
+50010,"occupations",14,"volunteer",29.752,3.8,1,"LEA","volunteer",25.952
+50010,"occupations",15,"manager",35.952,6.2,1,"LEA","manager",29.752
+50010,"occupations",16,"marketer",37.652,1.7,0,"LEA","marketer",35.952
+50010,"occupations",17,"advertiser",38.952,1.3,0,"LEA","advertiser",37.652
+50010,"occupations",18,"salesperson",42.152,3.2,0,"LEA","salesperson",38.952
+50010,"occupations",19,"customer_service",46.552,4.4,0,"LEA","customer service",42.152
+50010,"occupations",20,"trainer",51.352,4.8,1,"LEA","trainer",46.552
+50010,"occupations",21,"tutor",54.152,2.8,0,"LEA","tutor",51.352
+50010,"occupations",22,"owner",57.552,3.4,1,"LEA","owner",54.152
+50010,"occupations",23,"supervisor",63.852,6.3,1,"LEA","supervisor",57.552
+50010,"occupations",24,"risk_manager",66.052,2.20000000000001,1,"LEA","risk manager",63.852
+50010,"occupations",25,"assistant",75.052,9,1,"LEA","assistant",66.052
+50010,"occupations",26,"mechanic",81.252,6.19999999999999,1,"LEA","mechanic",75.052
+50010,"occupations",27,"engineer",82.952,1.7,0,"LEA","engineer",81.252
+50010,"occupations",28,"zookeeper",91.252,8.3,1,"LEA","zookeeper",82.952
+50010,"occupations",29,"soldier",103.252,12,1,"LEA","soldier",91.252
+50010,"occupations",30,"general",105.552,2.30000000000001,0,"LEA","general",103.252
+50010,"occupations",31,"priest",109.952,4.39999999999999,1,"LEA","priest",105.552
+50010,"occupations",32,"real_estate_agent",119.352,9.40000000000001,1,"LEA","real estate agent",109.952
+50010,"occupations",33,"agent",123.552,4.2,0,"LEA","agent",119.352
+50010,"occupations",34,"security",126.352,2.8,1,"LEA","security",123.552
+50010,"occupations",35,"police_officer",128.352,2,0,"LEA","police officer",126.352
+50010,"occupations",36,"front_desk",138.252,9.90000000000001,1,"LEA","front desk attendant",128.352
+50010,"occupations",37,"valet",142.652,4.39999999999998,1,"LEA","valet",138.252
+50010,"occupations",38,"chef",150.752,8.10000000000002,1,"LEA","chef",142.652
+50010,"occupations",39,"sous_chef",152.352,1.59999999999999,0,"LEA","sous chef",150.752
+50010,"occupations",40,"waiter",156.052,3.69999999999999,0,"LEA","waiter",152.352
+50010,"occupations",41,"waitress",156.652,0.599999999999994,0,"LEA","waitress",156.052
+50010,"occupations",42,"host",164.152,7.5,1,"LEA","host",156.652
+50010,"occupations",43,"busboy",168.052,3.90000000000001,1,"LEA","busboy",164.152
+50010,"occupations",44,"cleaning_lady",176.052,8,0,"LEA","cleaning lady",168.052
+50011,"occupations",1,"doctor",2.727,2.727,2,"LEA","doctor",NA
+50011,"occupations",2,"lawyer",3.427,0.7,0,"LEA","lawyer",2.727
+50011,"occupations",3,"pharmacist",4.727,1.3,1,"LEA","pharmacist",3.427
+50011,"occupations",4,"sales_manager",6.527,1.8,1,"LEA","sales manager",4.727
+50011,"occupations",5,"sales_representative",7.927,1.4,0,"LEA","sales representative",6.527
+50011,"occupations",6,"accountant",10.027,2.1,0,"LEA","accountant",7.927
+50011,"occupations",7,"biologist",12.727,2.7,1,"LEA","biologist",10.027
+50011,"occupations",8,"researcher",14.527,1.8,0,"LEA","researcher",12.727
+50011,"occupations",9,"president",18.727,4.2,1,"LEA","president",14.527
+50011,"occupations",10,"waitress",22.827,4.1,1,"LEA","waitress",18.727
+50011,"occupations",11,"paleontologist",29.027,6.2,1,"LEA","paleontologist",22.827
+50011,"occupations",12,"orthodontist",32.827,3.8,1,"LEA","orthodontist",29.027
+50011,"occupations",13,"dental_hygienist",35.527,2.7,0,"LEA","dental hygienist",32.827
+50011,"occupations",14,"dentist",36.827,1.3,0,"LEA","dentist",35.527
+50011,"occupations",15,"policeman",42.327,5.5,1,"LEA","policeman",36.827
+50011,"occupations",16,"taxi_driver",45.327,3,1,"LEA","taxi driver",42.327
+50011,"occupations",17,"agent",55.827,10.5,1,"LEA","agent",45.327
+50011,"occupations",18,"athlete",57.427,1.6,0,"LEA","athlete",55.827
+50011,"occupations",19,"stockbroker",68.727,11.3,1,"LEA","stockbroker",57.427
+50011,"occupations",20,"speech_pathologist",74.527,5.8,1,"LEA","speech pathologist",68.727
+50011,"occupations",21,"MRI_technician",77.327,2.8,1,"LEA","MRI technician",74.527
+50011,"occupations",22,"architect",82.627,5.3,1,"LEA","architect",77.327
+50011,"occupations",23,"construction_worker",88.027,5.40000000000001,1,"LEA","construction worker",82.627
+50011,"occupations",24,"excavator",98.127,10.1,1,"LEA","excavator",88.027
+50011,"occupations",25,"appraiser",101.427,3.30000000000001,1,"LEA","appraiser",98.127
+50011,"occupations",26,"assistant",113.527,12.1,1,"LEA","assistant",101.427
+50011,"occupations",27,"receptionist",118.527,5,1,"LEA","receptionist",113.527
+50011,"occupations",28,"student",124.827,6.3,1,"LEA","student",118.527
+50011,"occupations",29,"beautician",134.727,9.90000000000001,1,"LEA","beautician",124.827
+50011,"occupations",30,"publisher",143.627,8.90000000000001,1,"LEA","publisher",134.727
+50011,"occupations",31,"editor",145.727,2.09999999999999,0,"LEA","editor",143.627
+50011,"occupations",32,"journalist",151.827,6.09999999999999,0,"LEA","journalist",145.727
+50011,"occupations",33,"reporter",154.027,2.19999999999999,0,"LEA","reporter",151.827
+50011,"occupations",34,"anchor",157.727,3.70000000000002,0,"LEA","anchor",154.027
+50011,"occupations",35,"fisherman",162.627,4.90000000000001,1,"LEA","fisherman",157.727
+50011,"occupations",36,"colonel",169.527,6.89999999999998,1,"LEA","colonel",162.627
+50011,"occupations",37,"sergeant",170.127,0.600000000000023,1,"LEA","sergeant",169.527
+50011,"occupations",38,"adviser",176.427,6.29999999999998,1,"LEA","adviser",170.127
+50012,"occupations",1,"dog_walker",2.94,2.94,2,"LEA","dog walker",NA
+50012,"occupations",2,"sales_manager",5.04,2.1,1,"LEA","sales manager",2.94
+50012,"occupations",3,"physical_therapist",6.74,1.7,1,"LEA","physical therapist",5.04
+50012,"occupations",4,"nurse",8.74,2,0,"LEA","nurse",6.74
+50012,"occupations",5,"doctor",10.04,1.3,0,"LEA","doctor",8.74
+50012,"occupations",6,"anesthesiologist",11.64,1.6,0,"LEA","anesthesiologist",10.04
+50012,"occupations",7,"event_manager",19.34,7.7,1,"LEA","event manager",11.64
+50012,"occupations",8,"nurse_anesthetist",22.84,3.5,1,"LEA","nurse anesthetist",19.34
+50012,"occupations",9,"photographer",26.14,3.3,1,"LEA","photographer",22.84
+50012,"occupations",10,"painter",28.24,2.1,0,"LEA","painter",26.14
+50012,"occupations",11,"dancer",30.44,2.2,0,"LEA","dancer",28.24
+50012,"occupations",12,"fitness_educator",34.34,3.9,1,"LEA","fitness educator",30.44
+50012,"occupations",13,"architect",38.44,4.09999999999999,1,"LEA","architect",34.34
+50012,"occupations",14,"engineer",40.04,1.6,0,"LEA","engineer",38.44
+50012,"occupations",15,"swim_coach",42.74,2.7,1,"LEA","swim coach",40.04
+50012,"occupations",16,"basketball_coach",44.94,2.2,0,"LEA","basketball coach",42.74
+50012,"occupations",17,"football_coach",47.24,2.3,0,"LEA","football coach",44.94
+50012,"occupations",18,"gymnast",50.04,2.8,0,"LEA","gymnast",47.24
+50012,"occupations",19,"journalist",57.54,7.5,1,"LEA","journalist",50.04
+50012,"occupations",20,"writer",59.34,1.8,0,"LEA","writer",57.54
+50012,"occupations",21,"editor",61.04,1.7,0,"LEA","editor",59.34
+50012,"occupations",22,"designer",73.14,12.1,0,"LEA","designer",61.04
+50012,"occupations",23,"landscaper",75.34,2.2,0,"LEA","landscaper",73.14
+50012,"occupations",24,"data_analyst",80.64,5.3,1,"LEA","data analyst",75.34
+50012,"occupations",25,"psychologist",83.04,2.40000000000001,1,"LEA","psychologist",80.64
+50012,"occupations",26,"counselor",85.34,2.3,0,"LEA","counselor",83.04
+50012,"occupations",27,"professor",89.14,3.8,0,"LEA","professor",85.34
+50012,"occupations",28,"teacher",91.74,2.59999999999999,0,"LEA","teacher",89.14
+50012,"occupations",29,"real_estate_agent",111.94,20.2,1,"LEA","real estate agent",91.74
+50012,"occupations",30,"occupational_therapist",126.24,14.3,1,"LEA","occupational therapist",111.94
+50012,"occupations",31,"recreational_therapist",128.64,2.39999999999999,0,"LEA","recreational therapist",126.24
+50012,"occupations",32,"paramedic",134.44,5.80000000000001,0,"LEA","paramedic",128.64
+50012,"occupations",33,"dance_instructor",160.14,25.7,1,"LEA","dance instructor",134.44
+50012,"occupations",34,"financial_analyst",166.64,6.5,1,"LEA","financial analyst",160.14
+50013,"occupations",1,"farmer",4.32,4.32,2,"LEA","farmer",NA
+50013,"occupations",2,"musician",6.92,2.6,1,"LEA","musician",4.32
+50013,"occupations",3,"IT_manager",14.02,7.1,1,"LEA","IT manager",6.92
+50013,"occupations",4,"program_manager",17.32,3.3,0,"LEA","program manager",14.02
+50013,"occupations",5,"math_teacher",20.62,3.3,1,"LEA","math teacher",17.32
+50013,"occupations",6,"principal",23.82,3.2,0,"LEA","principal",20.62
+50013,"occupations",7,"dean",27.02,3.2,0,"LEA","dean",23.82
+50013,"occupations",8,"jazz_band_arranger",31.42,4.4,1,"LEA","jazz band arranger",27.02
+50013,"occupations",9,"composer",35.62,4.2,0,"LEA","composer",31.42
+50013,"occupations",10,"trombone_player",39.82,4.2,0,"LEA","trombone player",35.62
+50013,"occupations",11,"flute_player",43.92,4.1,0,"LEA","flute player",39.82
+50013,"occupations",12,"conductor",47.52,3.6,0,"LEA","conductor",43.92
+50013,"occupations",13,"animal_rights_activist",51.92,4.4,1,"LEA","animal rights activist",47.52
+50013,"occupations",14,"leader_of_an_organization",59.92,8,0,"LEA","leader of an organization",51.92
+50013,"occupations",15,"religious_or_spiritual_leader",65.92,6,1,"LEA","religious or spiritual leader",59.92
+50013,"occupations",16,"rabbi",71.52,5.59999999999999,0,"LEA","rabbi",65.92
+50013,"occupations",17,"priest",74.42,2.90000000000001,0,"LEA","priest",71.52
+50013,"occupations",18,"minister",77.52,3.09999999999999,0,"LEA","minister",74.42
+50013,"occupations",19,"social_studies_teacher",83.42,5.90000000000001,1,"LEA","social studies teacher",77.52
+50013,"occupations",20,"dog_walker",90.12,6.7,1,"LEA","dog walker",83.42
+50013,"occupations",21,"language_arts_teacher",94.52,4.39999999999999,1,"LEA","language arts teacher",90.12
+50013,"occupations",22,"therapist",100.42,5.90000000000001,1,"LEA","therapist",94.52
+50013,"occupations",23,"psychiatrist",103.72,3.3,0,"LEA","psychiatrist",100.42
+50013,"occupations",24,"psychologist",108.12,4.40000000000001,0,"LEA","psychologist",103.72
+50013,"occupations",25,"lawn_mower",113.82,5.69999999999999,1,"LEA","lawn mower",108.12
+50013,"occupations",26,"landlord",121.72,7.90000000000001,0,"LEA","landlord",113.82
+50013,"occupations",27,"housekeeper",125.42,3.7,0,"LEA","housekeeper",121.72
+50013,"occupations",28,"agent",133.52,8.10000000000001,1,"LEA","agent",125.42
+50013,"occupations",29,"manager",138.42,4.89999999999998,0,"LEA","manager",133.52
+50013,"occupations",30,"baseball_player",144.22,5.80000000000001,1,"LEA","baseball player",138.42
+50013,"occupations",31,"athlete",149.82,5.59999999999999,0,"LEA","athlete",144.22
+50013,"occupations",32,"figure_skater",153.72,3.90000000000001,0,"LEA","figure skater",149.82
+50013,"occupations",33,"basketball_player",161.52,7.80000000000001,0,"LEA","basketball player",153.72
+50013,"occupations",34,"psychic",177.12,15.6,1,"LEA","psychic",161.52
+50014,"occupations",1,"researcher",4.273,4.273,2,"LEA","researcher",NA
+50014,"occupations",2,"scientist",4.973,0.7,0,"LEA","scientist",4.273
+50014,"occupations",3,"teacher",5.973,1,0,"LEA","teacher",4.973
+50014,"occupations",4,"professor",7.773,1.8,0,"LEA","professor",5.973
+50014,"occupations",5,"technician",10.173,2.4,0,"LEA","technician",7.773
+50014,"occupations",6,"librarian",14.973,4.8,1,"LEA","librarian",10.173
+50014,"occupations",7,"shop_owner",17.173,2.2,0,"LEA","shop owner",14.973
+50014,"occupations",8,"shopkeeper",18.573,1.4,0,"LEA","shopkeeper",17.173
+50014,"occupations",9,"manager",22.873,4.3,0,"LEA","manager",18.573
+50014,"occupations",10,"construction_worker",31.473,8.6,1,"LEA","construction worker",22.873
+50014,"occupations",11,"architect",33.373,1.9,0,"LEA","architect",31.473
+50014,"occupations",12,"foreman",37.273,3.90000000000001,0,"LEA","foreman",33.373
+50014,"occupations",13,"police_officer",40.673,3.4,1,"LEA","police officer",37.273
+50014,"occupations",14,"firefighter",42.373,1.7,0,"LEA","firefighter",40.673
+50014,"occupations",15,"traffic_cop",57.173,14.8,0,"LEA","traffic cop",42.373
+50014,"occupations",16,"sheriff",60.473,3.3,0,"LEA","sheriff",57.173
+50014,"occupations",17,"president",63.473,3,1,"LEA","president",60.473
+50014,"occupations",18,"senator",64.873,1.40000000000001,0,"LEA","senator",63.473
+50014,"occupations",19,"member_of_the_house",69.173,4.3,0,"LEA","house member",64.873
+50014,"occupations",20,"representative",72.573,3.39999999999999,0,"LEA","representative",69.173
+50014,"occupations",21,"member_of_the_cabinet",76.773,4.2,0,"LEA","cabinet member",72.573
+50014,"occupations",22,"journalist",79.973,3.2,1,"LEA","journalist",76.773
+50014,"occupations",23,"writer",83.273,3.3,0,"LEA","writer",79.973
+50014,"occupations",24,"blogger",85.773,2.5,0,"LEA","blogger",83.273
+50014,"occupations",25,"actor",93.073,7.3,1,"LEA","actor",85.773
+50014,"occupations",26,"actress",94.273,1.2,0,"LEA","actress",93.073
+50014,"occupations",27,"director",96.173,1.90000000000001,0,"LEA","director",94.273
+50014,"occupations",28,"producer",96.973,0.799999999999997,0,"LEA","producer",96.173
+50014,"occupations",29,"accountant",101.173,4.2,1,"LEA","accountant",96.973
+50014,"occupations",30,"auditor",102.373,1.2,0,"LEA","auditor",101.173
+50014,"occupations",31,"cheese_maker",104.773,2.39999999999999,1,"LEA","cheese maker",102.373
+50014,"occupations",32,"farmer",105.873,1.10000000000001,0,"LEA","farmer",104.773
+50014,"occupations",33,"tax_preparer",113.073,7.19999999999999,1,"LEA","tax preparer",105.873
+50014,"occupations",34,"secretary",120.473,7.40000000000001,0,"LEA","secretary",113.073
+50014,"occupations",35,"CEO",125.173,4.7,0,"LEA","CEO",120.473
+50014,"occupations",36,"CFO",126.073,0.899999999999991,0,"LEA","CFO",125.173
+50014,"occupations",37,"consultant",129.373,3.3,0,"LEA","consultant",126.073
+50014,"occupations",38,"chef",136.573,7.20000000000002,1,"LEA","chef",129.373
+50014,"occupations",39,"waitress",137.973,1.40000000000001,0,"LEA","waitress",136.573
+50014,"occupations",40,"hostess",138.773,0.799999999999983,0,"LEA","hostess",137.973
+50014,"occupations",41,"busboy",140.673,1.90000000000001,0,"LEA","busboy",138.773
+50014,"occupations",42,"bartender",142.073,1.40000000000001,0,"LEA","bartender",140.673
+50014,"occupations",43,"bar_back",144.073,2,0,"LEA","bar back",142.073
+50014,"occupations",44,"dancer",146.373,2.29999999999998,1,"LEA","dancer",144.073
+50014,"occupations",45,"musician",147.873,1.5,0,"LEA","musician",146.373
+50014,"occupations",46,"piano_player",150.373,2.5,0,"LEA","piano player",147.873
+50014,"occupations",47,"jazz_musician",152.773,2.40000000000001,0,"LEA","jazz musician",150.373
+50014,"occupations",48,"rock_musician",153.873,1.09999999999999,0,"LEA","rock musician",152.773
+50014,"occupations",49,"singer",155.873,2,0,"LEA","singer",153.873
+50014,"occupations",50,"roadie",159.273,3.40000000000001,0,"LEA","roadie",155.873
+50014,"occupations",51,"actor",164.673,5.40000000000001,0,"LEA","actor",159.273
+50014,"occupations",52,"theater_actor",166.273,1.59999999999999,0,"LEA","theater actor",164.673
+50014,"occupations",53,"theater_manager",170.773,4.5,0,"LEA","theater manager",166.273
+50014,"occupations",54,"usher",173.473,2.70000000000002,0,"LEA","usher",170.773
+50014,"occupations",55,"security",177.873,4.39999999999998,0,"LEA","security",173.473
+50016,"occupations",1,"doctor",3.381,3.381,2,"LEA","doctor",NA
+50016,"occupations",2,"lawyer",4.981,1.6,1,"LEA","lawyer",3.381
+50016,"occupations",3,"physical_therapist",7.181,2.2,1,"LEA","physical therapist",4.981
+50016,"occupations",4,"professional_athlete",9.481,2.3,0,"LEA","professional athlete",7.181
+50016,"occupations",5,"teacher",11.781,2.3,1,"LEA","teacher",9.481
+50016,"occupations",6,"taxi_driver",16.881,5.1,1,"LEA","taxi driver",11.781
+50016,"occupations",7,"truck_driver",19.781,2.9,0,"LEA","truck driver",16.881
+50016,"occupations",8,"garbage_man",23.681,3.9,1,"LEA","garbage man",19.781
+50016,"occupations",9,"postal_worker",27.281,3.6,0,"LEA","postal worker",23.681
+50016,"occupations",10,"priest",31.281,4,1,"LEA","priest",27.281
+50016,"occupations",11,"volunteer",36.181,4.9,0,"LEA","volunteer",31.281
+50016,"occupations",12,"president",45.081,8.90000000000001,1,"LEA","president",36.181
+50016,"occupations",13,"government_official",47.581,2.5,0,"LEA","government official",45.081
+50016,"occupations",14,"mayor",49.881,2.3,0,"LEA","mayor",47.581
+50016,"occupations",15,"secretary",52.581,2.7,1,"LEA","secretary",49.881
+50016,"occupations",16,"chief_executive_officer",55.881,3.3,1,"LEA","chief executive officer",52.581
+50016,"occupations",17,"accountant",59.381,3.5,0,"LEA","accountant",55.881
+50016,"occupations",18,"chef",62.081,2.7,1,"LEA","chef",59.381
+50016,"occupations",19,"supervisor",67.981,5.89999999999999,1,"LEA","supervisor",62.081
+50016,"occupations",20,"yoga_instructor",72.881,4.90000000000001,1,"LEA","yoga instructor",67.981
+50016,"occupations",21,"nurse",78.781,5.90000000000001,1,"LEA","nurse",72.881
+50016,"occupations",22,"pharmacist",80.681,1.89999999999999,0,"LEA","pharmacist",78.781
+50016,"occupations",23,"delivery_driver",86.381,5.7,1,"LEA","delivery driver",80.681
+50016,"occupations",24,"receptionist",98.381,12,1,"LEA","receptionist",86.381
+50016,"occupations",25,"janitor",100.781,2.40000000000001,1,"LEA","janitor",98.381
+50016,"occupations",26,"undertaker",103.481,2.69999999999999,1,"LEA","undertaker",100.781
+50016,"occupations",27,"telemarketer",113.381,9.90000000000001,1,"LEA","telemarketer",103.481
+50016,"occupations",28,"movie_star",118.681,5.3,1,"LEA","movie star",113.381
+50016,"occupations",29,"musician",120.581,1.90000000000001,0,"LEA","musician",118.681
+50016,"occupations",30,"artist",126.581,6,0,"LEA","artist",120.581
+50016,"occupations",31,"mathematician",130.181,3.60000000000001,1,"LEA","mathematician",126.581
+50016,"occupations",32,"commissioner_of_the_NBA",144.381,14.2,1,"LEA","commissioner of the NBA",130.181
+50016,"occupations",33,"sports_agent",148.881,4.5,0,"LEA","sports agent",144.381
+50016,"occupations",34,"fireman",160.181,11.3,1,"LEA","fireman",148.881
+50016,"occupations",35,"policeman",161.881,1.69999999999999,0,"LEA","policeman",160.181
+50016,"occupations",36,"social_worker",166.181,4.30000000000001,1,"LEA","social worker",161.881
+50016,"occupations",37,"coach",171.681,5.5,1,"LEA","coach",166.181
+50016,"occupations",38,"therapist",176.781,5.09999999999999,1,"LEA","therapist",171.681
+50017,"occupations",1,"scientist",4.287,4.287,2,"LEA","scientist",NA
+50017,"occupations",2,"doctor",6.287,2,0,"LEA","doctor",4.287
+50017,"occupations",3,"teacher",8.187,1.9,0,"LEA","teacher",6.287
+50017,"occupations",4,"athlete",9.987,1.8,0,"LEA","athlete",8.187
+50017,"occupations",5,"astronomer",16.287,6.3,0,"LEA","astronomer",9.987
+50017,"occupations",6,"astronaut",18.887,2.6,0,"LEA","astronaut",16.287
+50017,"occupations",7,"welder",25.287,6.4,1,"LEA","welder",18.887
+50017,"occupations",8,"construction_worker",29.687,4.4,0,"LEA","construction worker",25.287
+50017,"occupations",9,"blogger",32.587,2.9,0,"LEA","blogger",29.687
+50017,"occupations",10,"musician",33.687,1.09999999999999,1,"LEA","musician",32.587
+50017,"occupations",11,"therapist",38.087,4.40000000000001,1,"LEA","therapist",33.687
+50017,"occupations",12,"psychiatrist",41.087,3,0,"LEA","psychiatrist",38.087
+50017,"occupations",13,"nurse",43.087,2,0,"LEA","nurse",41.087
+50017,"occupations",14,"student",46.987,3.9,1,"LEA","student",43.087
+50017,"occupations",15,"nanny",55.487,8.5,1,"LEA","nanny",46.987
+50017,"occupations",16,"president",58.787,3.3,1,"LEA","president",55.487
+50017,"occupations",17,"king",60.187,1.4,0,"LEA","king",58.787
+50017,"occupations",18,"clerk",67.187,7,1,"LEA","clerk",60.187
+50017,"occupations",19,"librarian",68.887,1.7,0,"LEA","librarian",67.187
+50017,"occupations",20,"paleontologist",70.887,2,1,"LEA","paleontologist",68.887
+50017,"occupations",21,"radiologist",75.987,5.09999999999999,0,"LEA","radiologist",70.887
+50017,"occupations",22,"respiratory_therapist",78.487,2.5,0,"LEA","respiratory therapist",75.987
+50017,"occupations",23,"fisherman",83.287,4.80000000000001,1,"LEA","fisherman",78.487
+50017,"occupations",24,"hunter",85.787,2.5,0,"LEA","hunter",83.287
+50017,"occupations",25,"singer",91.587,5.8,1,"LEA","singer",85.787
+50017,"occupations",26,"painter",93.487,1.89999999999999,1,"LEA","painter",91.587
+50017,"occupations",27,"trapeze_artist",99.487,6,1,"LEA","trapeze artist",93.487
+50017,"occupations",28,"comedian",103.587,4.10000000000001,1,"LEA","comedian",99.487
+50017,"occupations",29,"public_speaker",107.187,3.59999999999999,0,"LEA","public speaker",103.587
+50017,"occupations",30,"event_planner",111.987,4.8,0,"LEA","event planner",107.187
+50017,"occupations",31,"truck_driver",118.787,6.80000000000001,1,"LEA","truck driver",111.987
+50017,"occupations",32,"mathematician",127.587,8.8,1,"LEA","mathematician",118.787
+50017,"occupations",33,"entomologist",137.387,9.8,0,"LEA","entomologist",127.587
+50017,"occupations",34,"writer",143.087,5.69999999999999,1,"LEA","writer",137.387
+50017,"occupations",35,"vagabond",149.287,6.20000000000002,1,"LEA","vagabond",143.087
+50017,"occupations",36,"cashier",161.187,11.9,1,"LEA","cashier",149.287
+50017,"occupations",37,"waiter",163.587,2.39999999999998,0,"LEA","waiter",161.187
+50017,"occupations",38,"cook",167.387,3.80000000000001,0,"LEA","cook",163.587
+50017,"occupations",39,"brewer",172.987,5.59999999999999,1,"LEA","brewer",167.387
+50017,"occupations",40,"sommelier",176.187,3.20000000000002,0,"LEA","sommelier",172.987
+50018,"occupations",1,"doctor",3.794,3.794,2,"LEA","doctor",NA
+50018,"occupations",2,"teacher",5.994,2.2,1,"LEA","teacher",3.794
+50018,"occupations",3,"analyst",13.794,7.8,1,"LEA","analyst",5.994
+50018,"occupations",4,"writer",15.894,2.1,1,"LEA","writer",13.794
+50018,"occupations",5,"psychologist",19.094,3.2,1,"LEA","psychologist",15.894
+50018,"occupations",6,"psychiatrist",21.194,2.1,0,"LEA","psychiatrist",19.094
+50018,"occupations",7,"neurologist",24.094,2.9,1,"LEA","neurologist",21.194
+50018,"occupations",8,"podiatrist",26.394,2.3,0,"LEA","podiatrist",24.094
+50018,"occupations",9,"oncologist",28.694,2.3,0,"LEA","oncologist",26.394
+50018,"occupations",10,"proctologist",31.194,2.5,0,"LEA","proctologist",28.694
+50018,"occupations",11,"nurse",36.794,5.6,0,"LEA","nurse",31.194
+50018,"occupations",12,"secretary",39.694,2.90000000000001,1,"LEA","secretary",36.794
+50018,"occupations",13,"designer",51.294,11.6,1,"LEA","designer",39.694
+50018,"occupations",14,"artist",55.794,4.5,0,"LEA","artist",51.294
+50018,"occupations",15,"preacher",58.794,3,1,"LEA","preacher",55.794
+50018,"occupations",16,"entrepreneur",74.094,15.3,1,"LEA","entrepreneur",58.794
+50018,"occupations",17,"coach",80.694,6.60000000000001,1,"LEA","coach",74.094
+50018,"occupations",18,"accountant",93.194,12.5,1,"LEA","accountant",80.694
+50018,"occupations",19,"marketer",98.894,5.7,0,"LEA","marketer",93.194
+50018,"occupations",20,"financial_adviser",102.794,3.89999999999999,0,"LEA","financial adviser",98.894
+50018,"occupations",21,"supply_chain",109.894,7.10000000000001,0,"LEA","supply chain manager",102.794
+50018,"occupations",22,"lineman",123.394,13.5,1,"LEA","lineman",109.894
+50018,"occupations",23,"janitor",126.094,2.69999999999999,1,"LEA","janitor",123.394
+50018,"occupations",24,"principal",128.094,2,0,"LEA","principal",126.094
+50018,"occupations",25,"counselor",130.394,2.30000000000001,0,"LEA","counselor",128.094
+50018,"occupations",26,"professor",142.294,11.9,0,"LEA","professor",130.394
+50018,"occupations",27,"singer",151.094,8.79999999999998,1,"LEA","singer",142.294
+50019,"occupations",1,"firefighter",4.012,4.012,2,"LEA","firefighter",NA
+50019,"occupations",2,"police_officer",5.012,1,0,"LEA","police officer",4.012
+50019,"occupations",3,"teacher",6.612,1.6,0,"LEA","teacher",5.012
+50019,"occupations",4,"principal",7.412,0.8,0,"LEA","principal",6.612
+50019,"occupations",5,"secretary",8.112,0.7,0,"LEA","secretary",7.412
+50019,"occupations",6,"nurse",9.812,1.7,0,"LEA","nurse",8.112
+50019,"occupations",7,"counselor",10.512,0.700000000000001,0,"LEA","counselor",9.812
+50019,"occupations",8,"school_bus_driver",13.712,3.2,0,"LEA","school bus driver",10.512
+50019,"occupations",9,"trash_collector",16.012,2.3,1,"LEA","trash collector",13.712
+50019,"occupations",10,"artist",19.912,3.9,1,"LEA","artist",16.012
+50019,"occupations",11,"doula",22.612,2.7,0,"LEA","doula",19.912
+50019,"occupations",12,"preacher",32.512,9.9,1,"LEA","preacher",22.612
+50019,"occupations",13,"farmer",34.512,2,1,"LEA","farmer",32.512
+50019,"occupations",14,"massage_therapist",39.412,4.9,1,"LEA","massage therapist",34.512
+50019,"occupations",15,"physical_therapist",44.112,4.7,0,"LEA","physical therapist",39.412
+50019,"occupations",16,"occupational_therapist",45.212,1.1,0,"LEA","occupational therapist",44.112
+50019,"occupations",17,"consultant",54.812,9.59999999999999,1,"LEA","consultant",45.212
+50019,"occupations",18,"director",61.312,6.5,0,"LEA","director",54.812
+50019,"occupations",19,"representative",72.512,11.2,1,"LEA","representative",61.312
+50019,"occupations",20,"senator",76.612,4.09999999999999,0,"LEA","senator",72.512
+50019,"occupations",21,"pharmacist",82.012,5.40000000000001,1,"LEA","pharmacist",76.612
+50019,"occupations",22,"cashier",84.112,2.09999999999999,0,"LEA","cashier",82.012
+50019,"occupations",23,"bartender",86.012,1.90000000000001,1,"LEA","bartender",84.112
+50019,"occupations",24,"server",87.112,1.09999999999999,0,"LEA","server",86.012
+50019,"occupations",25,"hostess",88.412,1.30000000000001,0,"LEA","hostess",87.112
+50019,"occupations",26,"receptionist",91.912,3.5,0,"LEA","receptionist",88.412
+50019,"occupations",27,"chef",95.512,3.59999999999999,1,"LEA","chef",91.912
+50019,"occupations",28,"house_cleaner",100.712,5.2,0,"LEA","house cleaner",95.512
+50019,"occupations",29,"security_officer",109.112,8.39999999999999,1,"LEA","security officer",100.712
+50019,"occupations",30,"life_guard",125.012,15.9,1,"LEA","life guard",109.112
+50019,"occupations",31,"coach",132.012,7,0,"LEA","coach",125.012
+50019,"occupations",32,"personal_trainer",132.912,0.900000000000006,0,"LEA","personal trainer",132.012
+50019,"occupations",33,"maintenance_person",137.512,4.59999999999999,1,"LEA","maintenance person",132.912
+50019,"occupations",34,"IT_help_desk",140.912,3.40000000000001,1,"LEA","IT help desk",137.512
+50019,"occupations",35,"software_developer",144.812,3.90000000000001,0,"LEA","software developer",140.912
+50019,"occupations",36,"marketing_person",149.012,4.19999999999999,0,"LEA","marketing person",144.812
+50019,"occupations",37,"social_media_specialist",154.112,5.09999999999999,0,"LEA","social media specialist",149.012
+50019,"occupations",38,"sex_worker",159.412,5.30000000000001,1,"LEA","sex worker",154.112
+50019,"occupations",39,"landscaper",162.812,3.40000000000001,1,"LEA","landscaper",159.412
+50019,"occupations",40,"mover",172.312,9.5,0,"LEA","mover",162.812
+50019,"occupations",41,"truck_driver",174.812,2.5,0,"LEA","truck driver",172.312
+50019,"occupations",42,"train_conductor",177.012,2.19999999999999,0,"LEA","train conductor",174.812
+50020,"occupations",1,"firefighter",4.421,4.421,2,"LEA","firefighter",NA
+50020,"occupations",2,"policeman",5.821,1.4,0,"LEA","policeman",4.421
+50020,"occupations",3,"doctor",7.321,1.5,1,"LEA","doctor",5.821
+50020,"occupations",4,"lawyer",9.021,1.7,0,"LEA","lawyer",7.321
+50020,"occupations",5,"accountant",11.221,2.2,0,"LEA","accountant",9.021
+50020,"occupations",6,"photographer",12.921,1.7,1,"LEA","photographer",11.221
+50020,"occupations",7,"director",14.621,1.7,0,"LEA","director",12.921
+50020,"occupations",8,"garbage_man",16.821,2.2,1,"LEA","garbage man",14.621
+50020,"occupations",9,"office_worker",20.821,4,1,"LEA","office worker",16.821
+50020,"occupations",10,"retail_worker",22.521,1.7,0,"LEA","retail worker",20.821
+50020,"occupations",11,"manager",24.421,1.9,1,"LEA","manager",22.521
+50020,"occupations",12,"gas_station_clerk",26.621,2.2,1,"LEA","gas station clerk",24.421
+50020,"occupations",13,"zoologist",34.821,8.2,1,"LEA","zoologist",26.621
+50020,"occupations",14,"biologist",36.921,2.1,0,"LEA","biologist",34.821
+50020,"occupations",15,"cafeteria_worker",40.621,3.7,1,"LEA","cafeteria worker",36.921
+50020,"occupations",16,"chef",42.721,2.09999999999999,0,"LEA","chef",40.621
+50020,"occupations",17,"professional_athlete",48.921,6.2,1,"LEA","professional athlete",42.721
+50020,"occupations",18,"coach",51.521,2.6,0,"LEA","coach",48.921
+50020,"occupations",19,"teacher",56.321,4.8,1,"LEA","teacher",51.521
+50020,"occupations",20,"counselor",58.821,2.5,1,"LEA","counselor",56.321
+50020,"occupations",21,"director",63.821,5,1,"LEA","director",58.821
+50020,"occupations",22,"receptionist",83.521,19.7,1,"LEA","receptionist",63.821
+50020,"occupations",23,"dentist",85.521,2,1,"LEA","dentist",83.521
+50020,"occupations",24,"orthodontist",86.721,1.2,0,"LEA","orthodontist",85.521
+50020,"occupations",25,"fashion_designer",95.821,9.09999999999999,1,"LEA","fashion designer",86.721
+50020,"occupations",26,"artist",99.721,3.90000000000001,0,"LEA","artist",95.821
+50020,"occupations",27,"butcher",120.221,20.5,1,"LEA","butcher",99.721
+50020,"occupations",28,"fisherman",141.621,21.4,0,"LEA","fisherman",120.221
+50020,"occupations",29,"cosmetologist",158.721,17.1,1,"LEA","cosmetologist",141.621
+50020,"occupations",30,"nail_tech",161.321,2.59999999999999,0,"LEA","nail tech",158.721
+50020,"occupations",31,"painter",164.921,3.59999999999999,1,"LEA","painter",161.321
+50022,"occupations",1,"nurse",3.325,3.325,2,"LEA","nurse",NA
+50022,"occupations",2,"doctor",4.825,1.5,0,"LEA","doctor",3.325
+50022,"occupations",3,"teacher",6.525,1.7,1,"LEA","teacher",4.825
+50022,"occupations",4,"lawyer",8.625,2.1,1,"LEA","lawyer",6.525
+50022,"occupations",5,"football_player",10.825,2.2,1,"LEA","football player",8.625
+50022,"occupations",6,"basketball_player",13.025,2.2,0,"LEA","basketball player",10.825
+50022,"occupations",7,"baseball_player",15.225,2.2,0,"LEA","baseball player",13.025
+50022,"occupations",8,"janitor",17.525,2.3,1,"LEA","janitor",15.225
+50022,"occupations",9,"secretary",20.425,2.9,1,"LEA","secretary",17.525
+50022,"occupations",10,"president",23.025,2.6,1,"LEA","president",20.425
+50022,"occupations",11,"senator",24.525,1.5,0,"LEA","senator",23.025
+50022,"occupations",12,"congressman",26.725,2.2,0,"LEA","congressman",24.525
+50022,"occupations",13,"police_officer",31.125,4.4,1,"LEA","police officer",26.725
+50022,"occupations",14,"fireman",33.525,2.4,0,"LEA","fireman",31.125
+50022,"occupations",15,"cook",37.925,4.4,1,"LEA","cook",33.525
+50022,"occupations",16,"waitress",40.225,2.3,0,"LEA","waitress",37.925
+50022,"occupations",17,"conductor",45.525,5.3,1,"LEA","conductor",40.225
+50022,"occupations",18,"musician",48.825,3.3,1,"LEA","musician",45.525
+50022,"occupations",19,"electrician",50.625,1.8,1,"LEA","electrician",48.825
+50022,"occupations",20,"pipefitter",53.025,2.4,0,"LEA","pipefitter",50.625
+50022,"occupations",21,"architect",57.225,4.2,1,"LEA","architect",53.025
+50022,"occupations",22,"construction_worker",59.125,1.9,0,"LEA","construction worker",57.225
+50022,"occupations",23,"taxi_driver",64.825,5.7,1,"LEA","taxi driver",59.125
+50022,"occupations",24,"radiologist",68.325,3.5,1,"LEA","radiologist",64.825
+50022,"occupations",25,"salesman",75.625,7.3,1,"LEA","salesman",68.325
+50022,"occupations",26,"hair_stylist",90.425,14.8,1,"LEA","hair stylist",75.625
+50022,"occupations",27,"makeup_artist",93.525,3.10000000000001,0,"LEA","makeup artist",90.425
+50022,"occupations",28,"tailor",96.125,2.59999999999999,0,"LEA","tailor",93.525
+50022,"occupations",29,"camera_man",101.825,5.7,1,"LEA","camera man",96.125
+50022,"occupations",30,"governor",106.925,5.09999999999999,1,"LEA","governor",101.825
+50022,"occupations",31,"mayor",109.625,2.7,0,"LEA","mayor",106.925
+50022,"occupations",32,"designer",124.625,15,1,"LEA","designer",109.625
+50022,"occupations",33,"scientist",129.425,4.80000000000001,1,"LEA","scientist",124.625
+50022,"occupations",34,"vice_president",147.925,18.5,1,"LEA","vice president",129.425
+50022,"occupations",35,"preacher",159.825,11.9,1,"LEA","preacher",147.925
+50022,"occupations",36,"soldier",166.825,7,1,"LEA","soldier",159.825
+50022,"occupations",37,"therapist",174.825,8,1,"LEA","therapist",166.825
+50022,"occupations",38,"life_coach",178.325,3.5,1,"LEA","life coach",174.825
+50023,"occupations",1,"nurse",3.073,3.073,2,"LEA","nurse",NA
+50023,"occupations",2,"doctor",6.673,3.6,0,"LEA","doctor",3.073
+50023,"occupations",3,"assistant",9.873,3.2,0,"LEA","assistant",6.673
+50023,"occupations",4,"teacher",12.673,2.8,0,"LEA","teacher",9.873
+50023,"occupations",5,"president",16.373,3.7,1,"LEA","president",12.673
+50023,"occupations",6,"director",19.373,3,0,"LEA","director",16.373
+50023,"occupations",7,"actor",22.873,3.5,1,"LEA","actor",19.373
+50023,"occupations",8,"artist",27.673,4.8,0,"LEA","artist",22.873
+50023,"occupations",9,"janitor",33.373,5.7,1,"LEA","janitor",27.673
+50023,"occupations",10,"ballerina",45.973,12.6,1,"LEA","ballerina",33.373
+50023,"occupations",11,"scientist",50.373,4.4,0,"LEA","scientist",45.973
+50023,"occupations",12,"student",55.273,4.90000000000001,0,"LEA","student",50.373
+50023,"occupations",13,"cook",61.273,6,0,"LEA","cook",55.273
+50023,"occupations",14,"hair_dresser",66.773,5.49999999999999,1,"LEA","hair dresser",61.273
+50023,"occupations",15,"nail_technician",71.273,4.5,0,"LEA","nail technician",66.773
+50023,"occupations",16,"clerk",77.073,5.8,0,"LEA","clerk",71.273
+50023,"occupations",17,"farmer",81.973,4.90000000000001,1,"LEA","farmer",77.073
+50023,"occupations",18,"salesperson",90.973,9,1,"LEA","salesperson",81.973
+50023,"occupations",19,"pharmacist",96.873,5.90000000000001,0,"LEA","pharmacist",90.973
+50023,"occupations",20,"technician",111.573,14.7,0,"LEA","technician",96.873
+50023,"occupations",21,"waitress",114.473,2.90000000000001,1,"LEA","waitress",111.573
+50023,"occupations",22,"gas_attendant",119.573,5.09999999999999,1,"LEA","gas attendant",114.473
+50023,"occupations",23,"lawyer",127.473,7.90000000000001,1,"LEA","lawyer",119.573
+50023,"occupations",24,"judge",130.873,3.39999999999999,0,"LEA","judge",127.473
+50023,"occupations",25,"CFO",140.273,9.40000000000001,1,"LEA","CFO",130.873
+50023,"occupations",26,"CEO",147.273,7,0,"LEA","CEO",140.273
+50023,"occupations",27,"news_photographer",153.273,6,1,"LEA","news photographer",147.273
+50023,"occupations",28,"vice_president",156.673,3.40000000000001,1,"LEA","vice president",153.273
+50023,"occupations",29,"public_relations_representative",176.873,20.2,0,"LEA","public relations representative",156.673
+50024,"occupations",1,"salesman",2.71,2.71,2,"LEA","salesman",NA
+50024,"occupations",2,"lawyer",4.11,1.4,1,"LEA","lawyer",2.71
+50024,"occupations",3,"caterer",5.41,1.3,1,"LEA","caterer",4.11
+50024,"occupations",4,"safety_and_health_specialist",7.71,2.3,1,"LEA","safety and health specialist",5.41
+50024,"occupations",5,"dietician",10.01,2.3,0,"LEA","dietician",7.71
+50024,"occupations",6,"nurse",11.41,1.4,1,"LEA","nurse",10.01
+50024,"occupations",7,"doctor",12.71,1.3,0,"LEA","doctor",11.41
+50024,"occupations",8,"pediatrician",14.21,1.5,0,"LEA","pediatrician",12.71
+50024,"occupations",9,"oncologist",15.91,1.7,0,"LEA","oncologist",14.21
+50024,"occupations",10,"gynecologist",17.91,2,0,"LEA","gynecologist",15.91
+50024,"occupations",11,"business_marketing",22.11,4.2,1,"LEA","business marketing",17.91
+50024,"occupations",12,"payroll",24.51,2.4,0,"LEA","payroll administrator",22.11
+50024,"occupations",13,"fast_food_worker",29.01,4.5,1,"LEA","fast food worker",24.51
+50024,"occupations",14,"retail_worker",32.91,3.9,0,"LEA","retail worker",29.01
+50024,"occupations",15,"trash_man",37.01,4.1,1,"LEA","trash man",32.91
+50024,"occupations",16,"cable_digger",41.11,4.1,1,"LEA","cable digger",37.01
+50024,"occupations",17,"electrician",45.11,4,0,"LEA","electrician",41.11
+50024,"occupations",18,"bus_driver",49.11,4,1,"LEA","bus driver",45.11
+50024,"occupations",19,"taxi_driver",51.41,2.3,0,"LEA","taxi driver",49.11
+50024,"occupations",20,"uber_driver",54.11,2.7,0,"LEA","uber driver",51.41
+50024,"occupations",21,"restaurant_owner",58.81,4.7,1,"LEA","restaurant owner",54.11
+50024,"occupations",22,"bar_owner",61.81,3,0,"LEA","bar owner",58.81
+50024,"occupations",23,"tree_trimmer",66.71,4.89999999999999,1,"LEA","tree trimmer",61.81
+50024,"occupations",24,"wildlife_rehabilitator_protector",70.71,4,1,"LEA","wildlife rehabilitator protector",66.71
+50024,"occupations",25,"animal_protection_agency",76.31,5.60000000000001,0,"LEA","animal protection agency",70.71
+50024,"occupations",26,"animal_shelter_worker",82.21,5.89999999999999,0,"LEA","animal shelter worker",76.31
+50024,"occupations",27,"pet_groomer",91.21,9,0,"LEA","pet groomer",82.21
+50024,"occupations",28,"UPS_worker",98.71,7.5,1,"LEA","UPS worker",91.21
+50024,"occupations",29,"pharmaceutical_worker",104.41,5.7,1,"LEA","pharmaceutical worker",98.71
+50024,"occupations",30,"pharmacist",108.91,4.5,0,"LEA","pharmacist",104.41
+50024,"occupations",31,"warehouse_employee",113.61,4.7,1,"LEA","warehouse employee",108.91
+50024,"occupations",32,"jailer",122.81,9.2,1,"LEA","jailer",113.61
+50024,"occupations",33,"cop",125.41,2.59999999999999,0,"LEA","cop",122.81
+50024,"occupations",34,"fireman",127.61,2.2,0,"LEA","fireman",125.41
+50024,"occupations",35,"sanitation_department",130.11,2.50000000000001,1,"LEA","sanitation department",127.61
+50024,"occupations",36,"paramedic",140.71,10.6,1,"LEA","paramedic",130.11
+50024,"occupations",37,"pilot",144.31,3.59999999999999,1,"LEA","pilot",140.71
+50024,"occupations",38,"foot_doctor",157.81,13.5,1,"LEA","foot doctor",144.31
+50024,"occupations",39,"EMT_doctor",162.21,4.40000000000001,0,"LEA","EMT doctor",157.81
+50024,"occupations",40,"overseas_coordinator",170.51,8.29999999999998,1,"LEA","overseas coordinator",162.21
+50024,"occupations",41,"air_traffic_control",175.51,5,1,"LEA","air traffic control",170.51
+50025,"occupations",1,"hair_stylist",3.278,3.278,2,"LEA","hair stylist",NA
+50025,"occupations",2,"neuroscientist",5.978,2.7,1,"LEA","neuroscientist",3.278
+50025,"occupations",3,"researcher",7.578,1.6,0,"LEA","researcher",5.978
+50025,"occupations",4,"doctor",10.278,2.7,0,"LEA","doctor",7.578
+50025,"occupations",5,"surgeon",11.578,1.3,0,"LEA","surgeon",10.278
+50025,"occupations",6,"nurse",13.378,1.8,0,"LEA","nurse",11.578
+50025,"occupations",7,"physician_assistant",14.978,1.6,0,"LEA","physician assistant",13.378
+50025,"occupations",8,"nurse_practitioner",17.578,2.6,0,"LEA","nurse practitioner",14.978
+50025,"occupations",9,"pharmacist",24.178,6.6,0,"LEA","pharmacist",17.578
+50025,"occupations",10,"engineer",26.378,2.2,1,"LEA","engineer",24.178
+50025,"occupations",11,"hair_stylist",32.878,6.5,1,"LEA","hair stylist",26.378
+50025,"occupations",12,"taxidermist",36.878,4,1,"LEA","taxidermist",32.878
+50025,"occupations",13,"tax_person",39.778,2.9,0,"LEA","tax person",36.878
+50025,"occupations",14,"retail_associate",43.678,3.9,1,"LEA","retail associate",39.778
+50025,"occupations",15,"wine_maker",45.578,1.90000000000001,1,"LEA","wine maker",43.678
+50025,"occupations",16,"lawyer",48.978,3.4,1,"LEA","lawyer",45.578
+50025,"occupations",17,"attorney",50.978,2,0,"LEA","attorney",48.978
+50025,"occupations",18,"car_maker",56.078,5.1,1,"LEA","car maker",50.978
+50025,"occupations",19,"factory_worker",57.278,1.2,1,"LEA","factory worker",56.078
+50025,"occupations",20,"mailman",59.678,2.4,1,"LEA","mailman",57.278
+50025,"occupations",21,"sewer",63.678,4,1,"LEA","sewer worker",59.678
+50025,"occupations",22,"farmer",67.378,3.7,1,"LEA","farmer",63.678
+50025,"occupations",23,"truck_driver",69.278,1.90000000000001,1,"LEA","truck driver",67.378
+50025,"occupations",24,"teacher",71.978,2.69999999999999,1,"LEA","teacher",69.278
+50025,"occupations",25,"principal",75.278,3.30000000000001,0,"LEA","principal",71.978
+50025,"occupations",26,"lawyer",78.078,2.8,1,"LEA","lawyer",75.278
+50025,"occupations",27,"mayor",79.178,1.09999999999999,1,"LEA","mayor",78.078
+50025,"occupations",28,"senator",80.878,1.7,0,"LEA","senator",79.178
+50025,"occupations",29,"president",83.378,2.5,0,"LEA","president",80.878
+50025,"occupations",30,"store_owner",86.478,3.09999999999999,1,"LEA","store owner",83.378
+50025,"occupations",31,"hostess",90.978,4.5,1,"LEA","hostess",86.478
+50025,"occupations",32,"waitress",92.378,1.40000000000001,0,"LEA","waitress",90.978
+50025,"occupations",33,"manager",94.178,1.8,0,"LEA","manager",92.378
+50025,"occupations",34,"construction_worker",97.878,3.7,1,"LEA","construction worker",94.178
+50025,"occupations",35,"taste_tester",103.278,5.40000000000001,1,"LEA","taste tester",97.878
+50025,"occupations",36,"cashier",108.978,5.69999999999999,1,"LEA","cashier",103.278
+50025,"occupations",37,"stockist",111.678,2.7,1,"LEA","stockist",108.978
+50025,"occupations",38,"janitor",120.278,8.60000000000001,1,"LEA","janitor",111.678
+50025,"occupations",39,"bus_driver",124.078,3.8,1,"LEA","bus driver",120.278
+50025,"occupations",40,"factory_worker",125.378,1.3,1,"LEA","factory worker",124.078
+50025,"occupations",41,"pediatrician",138.478,13.1,1,"LEA","pediatrician",125.378
+50025,"occupations",42,"psychologist",139.878,1.39999999999998,1,"LEA","psychologist",138.478
+50025,"occupations",43,"therapist",141.278,1.40000000000001,0,"LEA","therapist",139.878
+50025,"occupations",44,"student",147.078,5.80000000000001,1,"LEA","student",141.278
+50025,"occupations",45,"researcher",157.378,10.3,1,"LEA","researcher",147.078
+50025,"occupations",46,"scientist",159.478,2.10000000000002,0,"LEA","scientist",157.378
+50025,"occupations",47,"florist",162.678,3.19999999999999,1,"LEA","florist",159.478
+50025,"occupations",48,"ring_maker",165.178,2.5,0,"LEA","ring maker",162.678
+50025,"occupations",49,"DJ",166.778,1.59999999999999,0,"LEA","DJ",165.178
+50025,"occupations",50,"baker",168.478,1.70000000000002,0,"LEA","baker",166.778
+50025,"occupations",51,"photographer",172.178,3.69999999999999,0,"LEA","photographer",168.478
+50025,"occupations",52,"videographer",174.278,2.09999999999999,0,"LEA","videographer",172.178
+50026,"occupations",1,"doctor",3.15,3.15,2,"LEA","doctor",NA
+50026,"occupations",2,"engineer",4.35,1.2,1,"LEA","engineer",3.15
+50026,"occupations",3,"janitor",5.75,1.4,1,"LEA","janitor",4.35
+50026,"occupations",4,"nurse",7.35,1.6,1,"LEA","nurse",5.75
+50026,"occupations",5,"optometrist",8.35,1,1,"LEA","optometrist",7.35
+50026,"occupations",6,"professor",10.25,1.9,1,"LEA","professor",8.35
+50026,"occupations",7,"archaeologist",11.65,1.4,1,"LEA","archaeologist",10.25
+50026,"occupations",8,"anthropologist",13.15,1.5,0,"LEA","anthropologist",11.65
+50026,"occupations",9,"artist",14.75,1.6,1,"LEA","artist",13.15
+50026,"occupations",10,"construction_worker",16.05,1.3,1,"LEA","construction worker",14.75
+50026,"occupations",11,"cook",18.35,2.3,1,"LEA","cook",16.05
+50026,"occupations",12,"server",20.85,2.5,0,"LEA","server",18.35
+50026,"occupations",13,"dishwasher",23.25,2.4,0,"LEA","dishwasher",20.85
+50026,"occupations",14,"waitress",24.75,1.5,0,"LEA","waitress",23.25
+50026,"occupations",15,"telemarketer",27.75,3,1,"LEA","telemarketer",24.75
+50026,"occupations",16,"train_conductor",31.65,3.9,1,"LEA","train conductor",27.75
+50026,"occupations",17,"programmer",36.05,4.4,1,"LEA","programmer",31.65
+50026,"occupations",18,"coder",37.25,1.2,0,"LEA","coder",36.05
+50026,"occupations",19,"renderer",39.15,1.9,0,"LEA","renderer",37.25
+50026,"occupations",20,"mathematician",41.75,2.6,0,"LEA","mathematician",39.15
+50026,"occupations",21,"astronomer",43.85,2.1,0,"LEA","astronomer",41.75
+50026,"occupations",22,"instructor",48.25,4.4,1,"LEA","instructor",43.85
+50026,"occupations",23,"coach",58.05,9.8,0,"LEA","coach",48.25
+50026,"occupations",24,"technician",65.25,7.2,1,"LEA","technician",58.05
+50026,"occupations",25,"sculptor",75.25,10,1,"LEA","sculptor",65.25
+50026,"occupations",26,"comedian",83.85,8.59999999999999,1,"LEA","comedian",75.25
+50026,"occupations",27,"author",85.65,1.80000000000001,1,"LEA","author",83.85
+50026,"occupations",28,"musician",88.05,2.39999999999999,1,"LEA","musician",85.65
+50026,"occupations",29,"bus_driver",92.65,4.60000000000001,1,"LEA","bus driver",88.05
+50026,"occupations",30,"news_reporter",98.55,5.89999999999999,1,"LEA","news reporter",92.65
+50026,"occupations",31,"journalist",99.65,1.10000000000001,0,"LEA","journalist",98.55
+50026,"occupations",32,"reviewer",113.65,14,0,"LEA","reviewer",99.65
+50026,"occupations",33,"editor",119.15,5.5,0,"LEA","editor",113.65
+50026,"occupations",34,"lyricist",122.65,3.5,1,"LEA","lyricist",119.15
+50026,"occupations",35,"composer",128.25,5.59999999999999,0,"LEA","composer",122.65
+50026,"occupations",36,"conductor",129.35,1.09999999999999,0,"LEA","conductor",128.25
+50026,"occupations",37,"radiologist",140.05,10.7,1,"LEA","radiologist",129.35
+50026,"occupations",38,"cosmologist",145.05,5,1,"LEA","cosmologist",140.05
+50026,"occupations",39,"beautician",147.45,2.39999999999998,1,"LEA","beautician",145.05
+50026,"occupations",40,"hair_dresser",150.35,2.90000000000001,0,"LEA","hair dresser",147.45
+50026,"occupations",41,"barber",155.55,5.20000000000002,0,"LEA","barber",150.35
+50026,"occupations",42,"politician",167.85,12.3,1,"LEA","politician",155.55
+50026,"occupations",43,"adviser",173.95,6.09999999999999,0,"LEA","adviser",167.85
+50027,"occupations",1,"teacher",2.737,2.737,2,"LEA","teacher",NA
+50027,"occupations",2,"janitor",4.137,1.4,0,"LEA","janitor",2.737
+50027,"occupations",3,"principal",5.737,1.6,0,"LEA","principal",4.137
+50027,"occupations",4,"lunch_lady",7.237,1.5,0,"LEA","lunch lady",5.737
+50027,"occupations",5,"librarian",10.037,2.8,0,"LEA","librarian",7.237
+50027,"occupations",6,"police_officer",16.637,6.6,1,"LEA","police officer",10.037
+50027,"occupations",7,"firefighter",17.937,1.3,0,"LEA","firefighter",16.637
+50027,"occupations",8,"mailman",19.237,1.3,1,"LEA","mailman",17.937
+50027,"occupations",9,"recreational_therapist",23.337,4.1,1,"LEA","recreational therapist",19.237
+50027,"occupations",10,"occupational_therapist",25.337,2,0,"LEA","occupational therapist",23.337
+50027,"occupations",11,"doctor",33.037,7.7,0,"LEA","doctor",25.337
+50027,"occupations",12,"physical_therapist",34.537,1.5,0,"LEA","physical therapist",33.037
+50027,"occupations",13,"optometrist",42.037,7.5,0,"LEA","optometrist",34.537
+50027,"occupations",14,"anesthesiologist",45.037,3,0,"LEA","anesthesiologist",42.037
+50027,"occupations",15,"surgeon",49.837,4.8,0,"LEA","surgeon",45.037
+50027,"occupations",16,"radiologist",53.037,3.2,0,"LEA","radiologist",49.837
+50027,"occupations",17,"x_ray_technician",56.737,3.7,0,"LEA","x ray technician",53.037
+50027,"occupations",18,"small_motors_technician",58.637,1.9,1,"LEA","small motors technician",56.737
+50027,"occupations",19,"plumber",61.637,3,0,"LEA","plumber",58.637
+50027,"occupations",20,"electrician",63.537,1.9,0,"LEA","electrician",61.637
+50027,"occupations",21,"pipefitter",76.037,12.5,0,"LEA","pipefitter",63.537
+50027,"occupations",22,"truck_driver",84.137,8.09999999999999,0,"LEA","truck driver",76.037
+50027,"occupations",23,"nurse",106.037,21.9,1,"LEA","nurse",84.137
+50027,"occupations",24,"receptionist",110.437,4.39999999999999,1,"LEA","receptionist",106.037
+50027,"occupations",25,"assistant",113.837,3.40000000000001,0,"LEA","assistant",110.437
+50027,"occupations",26,"coach",117.337,3.5,1,"LEA","coach",113.837
+50027,"occupations",27,"professional_basketball_player",131.437,14.1,0,"LEA","professional basketball player",117.337
+50027,"occupations",28,"professional_football_player",133.537,2.09999999999999,0,"LEA","professional football player",131.437
+50027,"occupations",29,"professional_baseball",135.037,1.5,0,"LEA","professional baseball",133.537
+50027,"occupations",30,"professional_hockey_player",136.737,1.69999999999999,0,"LEA","professional hockey player",135.037
+50027,"occupations",31,"counselor",147.437,10.7,1,"LEA","counselor",136.737
+50027,"occupations",32,"adviser",149.137,1.69999999999999,0,"LEA","adviser",147.437
+50027,"occupations",33,"life_coach",153.337,4.19999999999999,0,"LEA","life coach",149.137
+50027,"occupations",34,"therapist",158.237,4.90000000000001,0,"LEA","therapist",153.337
+50027,"occupations",35,"vacation_planner",163.237,5,0,"LEA","vacation planner",158.237
+50027,"occupations",36,"oncologist",170.237,7,1,"LEA","oncologist",163.237
+50027,"occupations",37,"ophthalmologist",176.637,6.40000000000001,1,"LEA","ophthalmologist",170.237
+50029,"occupations",1,"accounting",2.7115,2.7115,2,"LEA","accounting",NA
+50029,"occupations",2,"sales",5.6115,2.9,0,"LEA","sales",2.7115
+50029,"occupations",3,"realty",13.7115,8.1,0,"LEA","realty",5.6115
+50029,"occupations",4,"mowing_lawns",28.7115,15,1,"LEA","mowing lawns",13.7115
+50029,"occupations",5,"insurance",33.4115,4.7,1,"LEA","insurance",28.7115
+50029,"occupations",6,"psychologist",52.6115,19.2,1,"LEA","psychologist",33.4115
+50029,"occupations",7,"librarian",64.1115,11.5,1,"LEA","librarian",52.6115
+50029,"occupations",8,"pilot",81.5115,17.4,1,"LEA","pilot",64.1115
+50029,"occupations",9,"professional_athlete",97.5115,16,1,"LEA","professional athlete",81.5115
+50029,"occupations",10,"manager",160.5115,63,1,"LEA","manager",97.5115
+50029,"occupations",11,"CEO",164.3115,3.79999999999998,0,"LEA","CEO",160.5115
+50029,"occupations",12,"CFO",168.4115,4.09999999999999,0,"LEA","CFO",164.3115
+50030,"occupations",1,"doctor",2.30171966,2.30171966,2,"LEA","doctor",NA
+50030,"occupations",2,"lawyer",3.70171966,1.4,1,"LEA","lawyer",2.30171966
+50030,"occupations",3,"teacher",5.10171966,1.4,1,"LEA","teacher",3.70171966
+50030,"occupations",4,"plumber",6.70171966,1.6,1,"LEA","plumber",5.10171966
+50030,"occupations",5,"cab_driver",8.10171966,1.4,1,"LEA","cab driver",6.70171966
+50030,"occupations",6,"researcher",12.50171966,4.4,1,"LEA","researcher",8.10171966
+50030,"occupations",7,"nurse",16.00171966,3.5,1,"LEA","nurse",12.50171966
+50030,"occupations",8,"technician",18.20171966,2.2,0,"LEA","technician",16.00171966
+50030,"occupations",9,"electrician",19.70171966,1.5,1,"LEA","electrician",18.20171966
+50030,"occupations",10,"professor",24.40171966,4.7,1,"LEA","professor",19.70171966
+50030,"occupations",11,"barista",29.90171966,5.5,1,"LEA","barista",24.40171966
+50030,"occupations",12,"bartender",31.20171966,1.3,0,"LEA","bartender",29.90171966
+50030,"occupations",13,"chef",33.90171966,2.7,0,"LEA","chef",31.20171966
+50030,"occupations",14,"server",35.30171966,1.40000000000001,0,"LEA","server",33.90171966
+50030,"occupations",15,"dietician",39.30171966,4,1,"LEA","dietician",35.30171966
+50030,"occupations",16,"surgeon",41.50171966,2.2,1,"LEA","surgeon",39.30171966
+50030,"occupations",17,"instructor",58.00171966,16.5,1,"LEA","instructor",41.50171966
+50030,"occupations",18,"life_guard",60.60171966,2.6,0,"LEA","life guard",58.00171966
+50030,"occupations",19,"beautician",72.00171966,11.4,1,"LEA","beautician",60.60171966
+50030,"occupations",20,"designer",73.90171966,1.89999999999999,1,"LEA","designer",72.00171966
+50030,"occupations",21,"architect",75.50171966,1.60000000000001,0,"LEA","architect",73.90171966
+50030,"occupations",22,"librarian",77.80171966,2.3,1,"LEA","librarian",75.50171966
+50030,"occupations",23,"tailor",84.90171966,7.09999999999999,1,"LEA","tailor",77.80171966
+50030,"occupations",24,"truck_driver",92.30171966,7.40000000000001,1,"LEA","truck driver",84.90171966
+50030,"occupations",25,"engineer",95.00171966,2.7,1,"LEA","engineer",92.30171966
+50030,"occupations",26,"businessman",98.60171966,3.59999999999999,1,"LEA","businessman",95.00171966
+50030,"occupations",27,"accountant",105.4017197,6.80000004,0,"LEA","accountant",98.60171966
+50030,"occupations",28,"actuary",108.3017197,2.90000000000001,0,"LEA","actuary",105.4017197
+50030,"occupations",29,"mortician",111.6017197,3.3,1,"LEA","mortician",108.3017197
+50030,"occupations",30,"pathologist",118.0017197,6.39999999999999,0,"LEA","pathologist",111.6017197
+50030,"occupations",31,"judge",121.4017197,3.40000000000001,1,"LEA","judge",118.0017197
+50030,"occupations",32,"CEO",133.6017197,12.2,1,"LEA","CEO",121.4017197
+50030,"occupations",33,"student",152.3017197,18.7,1,"LEA","student",133.6017197
+50030,"occupations",34,"construction_worker",166.2017197,13.9,1,"LEA","construction worker",152.3017197
+50030,"occupations",35,"police_officer",168.5017197,2.29999999999998,1,"LEA","police officer",166.2017197
+50030,"occupations",36,"sheriff",176.3017197,7.80000000000001,0,"LEA","sheriff",168.5017197
+50030,"occupations",37,"baler",177.7017197,1.40000000000001,0,"LEA","baler",176.3017197
+50030,"occupations",38,"counselor",180.1017197,2.39999999999998,1,"LEA","counselor",177.7017197
+50031,"occupations",1,"optometrist",2.6276,2.6276,2,"LEA","optometrist",NA
+50031,"occupations",2,"doctor",3.9276,1.3,0,"LEA","doctor",2.6276
+50031,"occupations",3,"dentist",5.2276,1.3,0,"LEA","dentist",3.9276
+50031,"occupations",4,"psychologist",6.6276,1.4,0,"LEA","psychologist",5.2276
+50031,"occupations",5,"lawyer",8.3276,1.7,1,"LEA","lawyer",6.6276
+50031,"occupations",6,"politician",9.8276,1.5,0,"LEA","politician",8.3276
+50031,"occupations",7,"server",11.8276,2,1,"LEA","server",9.8276
+50031,"occupations",8,"grill_cook",13.4276,1.6,0,"LEA","grill cook",11.8276
+50031,"occupations",9,"dish_tanker",15.4276,2,0,"LEA","dish tanker",13.4276
+50031,"occupations",10,"prep_cook",17.6276,2.2,0,"LEA","prep cook",15.4276
+50031,"occupations",11,"engineer",19.5276,1.9,1,"LEA","engineer",17.6276
+50031,"occupations",12,"nurse",21.5276,2,1,"LEA","nurse",19.5276
+50031,"occupations",13,"anesthesiologist",23.0276,1.5,0,"LEA","anesthesiologist",21.5276
+50031,"occupations",14,"plumber",25.5276,2.5,1,"LEA","plumber",23.0276
+50031,"occupations",15,"electrician",26.9276,1.4,0,"LEA","electrician",25.5276
+50031,"occupations",16,"barista",29.3276,2.4,1,"LEA","barista",26.9276
+50031,"occupations",17,"translator",32.5276,3.2,1,"LEA","translator",29.3276
+50031,"occupations",18,"artist",39.0276,6.5,1,"LEA","artist",32.5276
+50031,"occupations",19,"game_designer",41.4276,2.4,0,"LEA","game designer",39.0276
+50031,"occupations",20,"veterinarian",47.9276,6.5,1,"LEA","veterinarian",41.4276
+50031,"occupations",21,"breeder",51.5276,3.6,0,"LEA","breeder",47.9276
+50031,"occupations",22,"farmer",52.9276,1.4,0,"LEA","farmer",51.5276
+50031,"occupations",23,"factory_worker",58.4276,5.5,1,"LEA","factory worker",52.9276
+50031,"occupations",24,"electrician",64.8276,6.40000000000001,1,"LEA","electrician",58.4276
+50031,"occupations",25,"phlebotomist",76.8276,12,1,"LEA","phlebotomist",64.8276
+50031,"occupations",26,"nurse_practitioner",82.5276,5.7,0,"LEA","nurse practitioner",76.8276
+50031,"occupations",27,"physician_assistant",84.9276,2.39999999999999,0,"LEA","physician assistant",82.5276
+50031,"occupations",28,"receptionist",92.2276,7.3,1,"LEA","receptionist",84.9276
+50031,"occupations",29,"salesperson",95.0276,2.80000000000001,0,"LEA","salesperson",92.2276
+50031,"occupations",30,"marketing",98.1276,3.09999999999999,0,"LEA","marketing",95.0276
+50031,"occupations",31,"journalist",104.9276,6.8,1,"LEA","journalist",98.1276
+50031,"occupations",32,"photographer",107.2276,2.3,0,"LEA","photographer",104.9276
+50031,"occupations",33,"news_anchor",111.1276,3.90000000000001,0,"LEA","news anchor",107.2276
+50031,"occupations",34,"delivery_person",115.3276,4.2,1,"LEA","delivery person",111.1276
+50031,"occupations",35,"teacher",121.0276,5.7,1,"LEA","teacher",115.3276
+50031,"occupations",36,"babysitter",124.1276,3.09999999999999,0,"LEA","babysitter",121.0276
+50031,"occupations",37,"firefighter",130.8276,6.69999999999999,1,"LEA","firefighter",124.1276
+50031,"occupations",38,"police",135.1276,4.30000000000001,0,"LEA","police",130.8276
+50031,"occupations",39,"bank_teller",140.4276,5.30000000000001,1,"LEA","bank teller",135.1276
+50031,"occupations",40,"personal_trainer",149.5276,9.09999999999999,1,"LEA","personal trainer",140.4276
+50031,"occupations",41,"therapist",151.6276,2.09999999999999,1,"LEA","therapist",149.5276
+50031,"occupations",42,"chocolatier",157.0276,5.40000000000001,1,"LEA","chocolatier",151.6276
+50031,"occupations",43,"mediator",163.7276,6.69999999999999,1,"LEA","mediator",157.0276
+50031,"occupations",44,"construction_worker",167.9276,4.20000000000002,1,"LEA","construction worker",163.7276
+50031,"occupations",45,"EMT",172.5276,4.59999999999999,1,"LEA","EMT",167.9276
+50031,"occupations",46,"certified_nursing_assistant",177.9276,5.40000000000001,1,"LEA","certified nursing assistant",172.5276
+50032,"occupations",1,"lawyer",3.5162,3.5162,2,"LEA","lawyer",NA
+50032,"occupations",2,"doctor",4.8162,1.3,1,"LEA","doctor",3.5162
+50032,"occupations",3,"construction_worker",7.0162,2.2,1,"LEA","construction worker",4.8162
+50032,"occupations",4,"teacher",8.7162,1.7,1,"LEA","teacher",7.0162
+50032,"occupations",5,"psychologist",12.0162,3.3,1,"LEA","psychologist",8.7162
+50032,"occupations",6,"neuroscientist",16.3162,4.3,0,"LEA","neuroscientist",12.0162
+50032,"occupations",7,"researcher",18.8162,2.5,0,"LEA","researcher",16.3162
+50032,"occupations",8,"cook",24.8162,6,1,"LEA","cook",18.8162
+50032,"occupations",9,"chef",26.9162,2.1,0,"LEA","chef",24.8162
+50032,"occupations",10,"taxi_driver",30.7162,3.8,1,"LEA","taxi driver",26.9162
+50032,"occupations",11,"IT_manager",34.7162,4,1,"LEA","IT manager",30.7162
+50032,"occupations",12,"gym_teacher",41.8162,7.1,1,"LEA","gym teacher",34.7162
+50032,"occupations",13,"nurse",47.3162,5.5,1,"LEA","nurse",41.8162
+50032,"occupations",14,"psychiatrist",49.5162,2.2,0,"LEA","psychiatrist",47.3162
+50032,"occupations",15,"lawyer",52.9162,3.40000000000001,1,"LEA","lawyer",49.5162
+50032,"occupations",16,"CEO",58.8162,5.9,1,"LEA","CEO",52.9162
+50032,"occupations",17,"manager",61.0162,2.2,1,"LEA","manager",58.8162
+50032,"occupations",18,"babysitter",74.8162,13.8,1,"LEA","babysitter",61.0162
+50032,"occupations",19,"cleaner",78.1162,3.30000000000001,0,"LEA","cleaner",74.8162
+50032,"occupations",20,"bus_driver",82.8162,4.69999999999999,1,"LEA","bus driver",78.1162
+50032,"occupations",21,"tour_guide",95.7162,12.9,1,"LEA","tour guide",82.8162
+50032,"occupations",22,"ferry_driver",102.1162,6.40000000000001,1,"LEA","ferry driver",95.7162
+50032,"occupations",23,"railroad_worker",107.5162,5.39999999999999,1,"LEA","railroad worker",102.1162
+50032,"occupations",24,"waiter",113.8162,6.3,1,"LEA","waiter",107.5162
+50032,"occupations",25,"waitress",115.2162,1.40000000000001,0,"LEA","waitress",113.8162
+50032,"occupations",26,"tutor",125.8162,10.6,1,"LEA","tutor",115.2162
+50032,"occupations",27,"mathematician",146.8162,21,1,"LEA","mathematician",125.8162
+50032,"occupations",28,"nutritionist",154.6162,7.79999999999998,1,"LEA","nutritionist",146.8162
+50032,"occupations",29,"counselor",158.1162,3.5,1,"LEA","counselor",154.6162
+50032,"occupations",30,"director",161.1162,3,1,"LEA","director",158.1162
+50032,"occupations",31,"actor",162.2162,1.09999999999999,0,"LEA","actor",161.1162
+50032,"occupations",32,"producer",164.1162,1.90000000000001,0,"LEA","producer",162.2162
+50032,"occupations",33,"conductor",174.0162,9.90000000000001,1,"LEA","conductor",164.1162
+50033,"occupations",1,"athlete",4.862,4.862,2,"LEA","athlete",NA
+50033,"occupations",2,"student",5.962,1.1,0,"LEA","student",4.862
+50033,"occupations",3,"assistant",8.062,2.1,1,"LEA","assistant",5.962
+50033,"occupations",4,"doctor",8.862,0.800000000000001,0,"LEA","doctor",8.062
+50033,"occupations",5,"manager",11.662,2.8,0,"LEA","manager",8.862
+50033,"occupations",6,"bagger",14.362,2.7,0,"LEA","bagger",11.662
+50033,"occupations",7,"mechanic",16.862,2.5,1,"LEA","mechanic",14.362
+50033,"occupations",8,"pilot",18.962,2.1,0,"LEA","pilot",16.862
+50033,"occupations",9,"military",21.862,2.9,0,"LEA","military officer",18.962
+50033,"occupations",10,"organizer",27.362,5.5,1,"LEA","organizer",21.862
+50033,"occupations",11,"lawyer",30.962,3.6,1,"LEA","lawyer",27.362
+50033,"occupations",12,"firefighter",32.762,1.8,1,"LEA","firefighter",30.962
+50033,"occupations",13,"trainer",37.762,5,1,"LEA","trainer",32.762
+50033,"occupations",14,"musician",40.662,2.9,1,"LEA","musician",37.762
+50033,"occupations",15,"artist",42.562,1.9,1,"LEA","artist",40.662
+50033,"occupations",16,"archaeologist",48.562,6,1,"LEA","archaeologist",42.562
+50033,"occupations",17,"mathematician",51.362,2.8,1,"LEA","mathematician",48.562
+50033,"occupations",18,"engineer",53.262,1.9,0,"LEA","engineer",51.362
+50033,"occupations",19,"chemical_engineer",57.462,4.2,0,"LEA","chemical engineer",53.262
+50033,"occupations",20,"radiologist",64.962,7.5,0,"LEA","radiologist",57.462
+50033,"occupations",21,"statistician",67.162,2.2,1,"LEA","statistician",64.962
+50033,"occupations",22,"stockbroker",70.762,3.59999999999999,0,"LEA","stockbroker",67.162
+50033,"occupations",23,"retail",75.262,4.5,1,"LEA","retail",70.762
+50033,"occupations",24,"cashier",76.562,1.3,0,"LEA","cashier",75.262
+50033,"occupations",25,"marketer",79.362,2.8,0,"LEA","marketer",76.562
+50033,"occupations",26,"actor",82.862,3.5,1,"LEA","actor",79.362
+50033,"occupations",27,"director",88.462,5.60000000000001,0,"LEA","director",82.862
+50033,"occupations",28,"nanny",92.562,4.09999999999999,1,"LEA","nanny",88.462
+50033,"occupations",29,"babysitter",94.162,1.60000000000001,0,"LEA","babysitter",92.562
+50033,"occupations",30,"dog_walker",96.162,2,0,"LEA","dog walker",94.162
+50033,"occupations",31,"caretaker",101.562,5.39999999999999,0,"LEA","caretaker",96.162
+50033,"occupations",32,"research_assistant",108.162,6.60000000000001,1,"LEA","research assistant",101.562
+50033,"occupations",33,"athletic_director",111.962,3.8,1,"LEA","athletic director",108.162
+50033,"occupations",34,"teacher",113.962,2,0,"LEA","teacher",111.962
+50033,"occupations",35,"custodian",115.262,1.3,0,"LEA","custodian",113.962
+50033,"occupations",36,"police",118.262,3,0,"LEA","police",115.262
+50033,"occupations",37,"therapist",129.662,11.4,0,"LEA","therapist",118.262
+50033,"occupations",38,"physical_therapist",131.362,1.69999999999999,0,"LEA","physical therapist",129.662
+50033,"occupations",39,"pharmaceutical_practitioner",136.962,5.59999999999999,1,"LEA","pharmaceutical practitioner",131.362
+50033,"occupations",40,"nurse",142.062,5.10000000000002,0,"LEA","nurse",136.962
+50033,"occupations",41,"mechanical_engineer",150.362,8.29999999999998,1,"LEA","mechanical engineer",142.062
+50033,"occupations",42,"butler",155.162,4.80000000000001,1,"LEA","butler",150.362
+50033,"occupations",43,"safety_director",162.162,7,1,"LEA","safety director",155.162
+50033,"occupations",44,"bagger",168.062,5.90000000000001,1,"LEA","bagger",162.162
+50033,"occupations",45,"retail_manager",170.962,2.89999999999998,0,"LEA","retail manager",168.062
+50033,"occupations",46,"chef",178.162,7.20000000000002,1,"LEA","chef",170.962
+50034,"occupations",1,"doctor",3.1321,3.1321,2,"LEA","doctor",NA
+50034,"occupations",2,"lawyer",4.3321,1.2,1,"LEA","lawyer",3.1321
+50034,"occupations",3,"nurse",5.6321,1.3,1,"LEA","nurse",4.3321
+50034,"occupations",4,"artist",7.2321,1.6,1,"LEA","artist",5.6321
+50034,"occupations",5,"teacher",8.6321,1.4,0,"LEA","teacher",7.2321
+50034,"occupations",6,"principal",10.0321,1.4,0,"LEA","principal",8.6321
+50034,"occupations",7,"engineer",11.9321,1.9,1,"LEA","engineer",10.0321
+50034,"occupations",8,"homemaker",14.4321,2.5,1,"LEA","homemaker",11.9321
+50034,"occupations",9,"interior_designer",16.0321,1.6,1,"LEA","interior designer",14.4321
+50034,"occupations",10,"construction_worker",17.7321,1.7,1,"LEA","construction worker",16.0321
+50034,"occupations",11,"accountant",19.8321,2.1,1,"LEA","accountant",17.7321
+50034,"occupations",12,"electrician",21.0321,1.2,1,"LEA","electrician",19.8321
+50034,"occupations",13,"firefighter",22.4321,1.4,1,"LEA","firefighter",21.0321
+50034,"occupations",14,"police_officer",23.8321,1.4,0,"LEA","police officer",22.4321
+50034,"occupations",15,"actress",26.6321,2.8,1,"LEA","actress",23.8321
+50034,"occupations",16,"director",27.9321,1.3,0,"LEA","director",26.6321
+50034,"occupations",17,"social_worker",31.9321,4,1,"LEA","social worker",27.9321
+50034,"occupations",18,"psychologist",32.9321,1,0,"LEA","psychologist",31.9321
+50034,"occupations",19,"therapist",34.5321,1.6,0,"LEA","therapist",32.9321
+50034,"occupations",20,"journalist",36.7321,2.2,1,"LEA","journalist",34.5321
+50034,"occupations",21,"producer",39.0321,2.3,1,"LEA","producer",36.7321
+50034,"occupations",22,"biologist",41.5321,2.5,1,"LEA","biologist",39.0321
+50034,"occupations",23,"management",46.7321,5.2,1,"LEA","management",41.5321
+50034,"occupations",24,"salesperson",49.2321,2.5,1,"LEA","salesperson",46.7321
+50034,"occupations",25,"mailman",51.2321,2,1,"LEA","mailman",49.2321
+50034,"occupations",26,"musician",57.9321,6.7,1,"LEA","musician",51.2321
+50034,"occupations",27,"zookeeper",65.8321,7.9,1,"LEA","zookeeper",57.9321
+50034,"occupations",28,"bank_teller",72.1321,6.3,1,"LEA","bank teller",65.8321
+50034,"occupations",29,"chef",77.2321,5.10000000000001,1,"LEA","chef",72.1321
+50034,"occupations",30,"pharmacist",78.9321,1.7,1,"LEA","pharmacist",77.2321
+50034,"occupations",31,"cashier",84.4321,5.5,1,"LEA","cashier",78.9321
+50034,"occupations",32,"conductor",91.7321,7.3,1,"LEA","conductor",84.4321
+50034,"occupations",33,"bartender",93.9321,2.2,1,"LEA","bartender",91.7321
+50034,"occupations",34,"receptionist",102.7321,8.8,1,"LEA","receptionist",93.9321
+50034,"occupations",35,"truck_driver",119.1321,16.4,1,"LEA","truck driver",102.7321
+50034,"occupations",36,"trainer",129.3321,10.2,1,"LEA","trainer",119.1321
+50034,"occupations",37,"babysitter",136.2321,6.90000000000001,1,"LEA","babysitter",129.3321
+50034,"occupations",38,"art_collector",160.9321,24.7,1,"LEA","art collector",136.2321
+50034,"occupations",39,"writer",173.4321,12.5,1,"LEA","writer",160.9321
+50034,"occupations",40,"publisher",175.8321,2.40000000000001,0,"LEA","publisher",173.4321
+50036,"occupations",1,"welder",2.575,2.575,2,"LEA","welder",NA
+50036,"occupations",2,"policeman",4.175,1.6,1,"LEA","policeman",2.575
+50036,"occupations",3,"fireman",5.175,1,0,"LEA","fireman",4.175
+50036,"occupations",4,"professor",7.375,2.2,1,"LEA","professor",5.175
+50036,"occupations",5,"teacher",8.775,1.4,0,"LEA","teacher",7.375
+50036,"occupations",6,"kindergarten_teacher",10.975,2.2,0,"LEA","kindergarten teacher",8.775
+50036,"occupations",7,"nurse",13.175,2.2,1,"LEA","nurse",10.975
+50036,"occupations",8,"daycare_counselor",16.675,3.5,0,"LEA","daycare counselor",13.175
+50036,"occupations",9,"psychiatrist",18.975,2.3,1,"LEA","psychiatrist",16.675
+50036,"occupations",10,"psychologist",19.975,1,0,"LEA","psychologist",18.975
+50036,"occupations",11,"proctologist",23.875,3.9,0,"LEA","proctologist",19.975
+50036,"occupations",12,"ophthalmologist",25.275,1.4,0,"LEA","ophthalmologist",23.875
+50036,"occupations",13,"optometrist",26.775,1.5,0,"LEA","optometrist",25.275
+50036,"occupations",14,"entomologist",29.775,3,0,"LEA","entomologist",26.775
+50036,"occupations",15,"etymologist",30.675,0.900000000000002,0,"LEA","etymologist",29.775
+50036,"occupations",16,"carpenter",37.275,6.6,1,"LEA","carpenter",30.675
+50036,"occupations",17,"construction_worker",42.675,5.4,1,"LEA","construction worker",37.275
+50036,"occupations",18,"cyclist",46.175,3.5,1,"LEA","cyclist",42.675
+50036,"occupations",19,"professional_sports_player",49.375,3.2,0,"LEA","professional sports player",46.175
+50036,"occupations",20,"actor",53.675,4.3,1,"LEA","actor",49.375
+50036,"occupations",21,"actress",54.275,0.600000000000001,0,"LEA","actress",53.675
+50036,"occupations",22,"photographer",59.675,5.4,1,"LEA","photographer",54.275
+50036,"occupations",23,"artist",61.775,2.1,0,"LEA","artist",59.675
+50036,"occupations",24,"painter",62.875,1.1,0,"LEA","painter",61.775
+50036,"occupations",25,"contractor",68.875,6,1,"LEA","contractor",62.875
+50036,"occupations",26,"programmer",70.375,1.5,1,"LEA","programmer",68.875
+50036,"occupations",27,"engineer",72.975,2.59999999999999,0,"LEA","engineer",70.375
+50036,"occupations",28,"computer_engineer",73.575,0.600000000000009,0,"LEA","computer engineer",72.975
+50036,"occupations",29,"electrician",74.675,1.09999999999999,0,"LEA","electrician",73.575
+50036,"occupations",30,"electrical_engineer",75.575,0.900000000000006,0,"LEA","electrical engineer",74.675
+50036,"occupations",31,"mechanical_engineer",78.675,3.09999999999999,0,"LEA","mechanical engineer",75.575
+50036,"occupations",32,"mechanist",80.475,1.8,0,"LEA","mechanist",78.675
+50036,"occupations",33,"machinist",81.175,0.700000000000003,0,"LEA","machinist",80.475
+50036,"occupations",34,"car_salesman",85.075,3.90000000000001,1,"LEA","car salesman",81.175
+50036,"occupations",35,"phone_salesman",90.875,5.8,0,"LEA","phone salesman",85.075
+50036,"occupations",36,"retail_person",97.275,6.40000000000001,0,"LEA","retail person",90.875
+50036,"occupations",37,"officer",99.375,2.09999999999999,1,"LEA","officer",97.275
+50036,"occupations",38,"mall_cop",100.175,0.799999999999997,0,"LEA","mall cop",99.375
+50036,"occupations",39,"soldier",103.275,3.10000000000001,0,"LEA","soldier",100.175
+50036,"occupations",40,"general",105.375,2.09999999999999,0,"LEA","general",103.275
+50036,"occupations",41,"tailor",107.375,2,1,"LEA","tailor",105.375
+50036,"occupations",42,"spy",109.175,1.8,0,"LEA","spy",107.375
+50036,"occupations",43,"mathematician",113.575,4.40000000000001,1,"LEA","mathematician",109.175
+50036,"occupations",44,"safety_inspector",120.675,7.09999999999999,1,"LEA","safety inspector",113.575
+50036,"occupations",45,"data_analyst",125.875,5.2,1,"LEA","data analyst",120.675
+50036,"occupations",46,"developer",132.975,7.09999999999999,0,"LEA","developer",125.875
+50036,"occupations",47,"gardener",134.975,2,1,"LEA","gardener",132.975
+50036,"occupations",48,"funeral_home_manager",141.275,6.30000000000001,1,"LEA","funeral home manager",134.975
+50036,"occupations",49,"surgeon",146.975,5.69999999999999,1,"LEA","surgeon",141.275
+50036,"occupations",50,"doctor",152.175,5.20000000000002,0,"LEA","doctor",146.975
+50036,"occupations",51,"lab_technician",170.475,18.3,0,"LEA","lab technician",152.175
+50036,"occupations",52,"scientist",172.275,1.80000000000001,0,"LEA","scientist",170.475
+50036,"occupations",53,"geologist",173.575,1.29999999999998,0,"LEA","geologist",172.275
+50036,"occupations",54,"climatologist",177.975,4.40000000000001,0,"LEA","climatologist",173.575
+50036,"occupations",55,"weatherman",180.275,2.30000000000001,1,"LEA","weatherman",177.975
+198,"OCCUPATIONS",1,"Nurse",4.176470588,4.176470588,NA,"HJT","Nurse",NA
+198,"OCCUPATIONS",2,"Doctor",5.705882353,1.529411765,NA,"HJT","Doctor",4.176470588
+198,"OCCUPATIONS",3,"Accountant",7.823529412,2.117647059,NA,"HJT","Accountant",5.705882353
+198,"OCCUPATIONS",4,"Manager",13.23529412,5.411764708,NA,"HJT","Manager",7.823529412
+198,"OCCUPATIONS",5,"Supervisor",15.82352941,2.58823529,NA,"HJT","Supervisor",13.23529412
+198,"OCCUPATIONS",6,"Baker",21.17647059,5.35294118,NA,"HJT","Baker",15.82352941
+198,"OCCUPATIONS",7,"Chef",24.64705882,3.47058823,NA,"HJT","Chef",21.17647059
+198,"OCCUPATIONS",8,"Associate",27.47058824,2.82352942,NA,"HJT","Associate",24.64705882
+198,"OCCUPATIONS",9,"Radiologist",34.35294118,6.88235294,NA,"HJT","Radiologist",27.47058824
+198,"OCCUPATIONS",10,"Anesthesiologist",40.47058824,6.11764706,NA,"HJT","Anesthesiologist",34.35294118
+198,"OCCUPATIONS",11,"Cardiologist",44.88235294,4.4117647,NA,"HJT","Cardiologist",40.47058824
+198,"OCCUPATIONS",12,"Oncologist",50.82352941,5.94117647,NA,"HJT","Oncologist",44.88235294
+198,"OCCUPATIONS",13,"Obstetrician",55.88235294,5.05882353,NA,"HJT","Obstetrician",50.82352941
+198,"OCCUPATIONS",14,"Practitioner",74.05882353,18.17647059,NA,"HJT","Practitioner",55.88235294
+198,"OCCUPATIONS",15,"Attorney",87.52941176,13.47058823,NA,"HJT","Attorney",74.05882353
+198,"OCCUPATIONS",16,"Lawyer",95.47058824,7.94117648,NA,"HJT","Lawyer",87.52941176
+198,"OCCUPATIONS",17,"Carpenter",117.2941176,21.82352936,NA,"HJT","Carpenter",95.47058824
+198,"OCCUPATIONS",18,"Entrepreneur",139.4117647,22.1176471,NA,"HJT","Entrepreneur",117.2941176
+198,"OCCUPATIONS",19,"Business",152.7647059,13.3529412,NA,"HJT","Business",139.4117647
+198,"OCCUPATIONS",20,"Journalist",161.8235294,9.05882350000002,NA,"HJT","Journalist",152.7647059
+198,"OCCUPATIONS",21,"Artist",172.2352941,10.4117647,NA,"HJT","Artist",161.8235294
+198,"OCCUPATIONS",22,"Actor",176.1764706,3.94117649999998,NA,"HJT","Actor",172.2352941
+285,"OCCUPATIONS",1,"Teacher",1.294117647,1.294117647,NA,"HJT","Teacher",NA
+285,"OCCUPATIONS",2,"Farmer",3.632352941,2.338235294,NA,"HJT","Farmer",1.294117647
+285,"OCCUPATIONS",3,"Doctor",4.632352941,1,NA,"HJT","Doctor",3.632352941
+285,"OCCUPATIONS",4,"Nurse",6.970588235,2.338235294,NA,"HJT","Nurse",4.632352941
+285,"OCCUPATIONS",5,"Mechanic",9.955882353,2.985294118,NA,"HJT","Mechanic",6.970588235
+285,"OCCUPATIONS",6,"Cowboy",14.63235294,4.676470587,NA,"HJT","Cowboy",9.955882353
+285,"OCCUPATIONS",7,"Manager",25.29411765,10.66176471,NA,"HJT","Manager",14.63235294
+285,"OCCUPATIONS",8,"Fireman",38.29411765,13,NA,"HJT","Fireman",25.29411765
+285,"OCCUPATIONS",9,"Engineer",46.27941176,7.98529411,NA,"HJT","Engineer",38.29411765
+285,"OCCUPATIONS",10,"Pilot",52.97058824,6.69117648,NA,"HJT","Pilot",46.27941176
+285,"OCCUPATIONS",11,"Manager",64.91176471,11.94117647,NA,"HJT","Manager",52.97058824
+285,"OCCUPATIONS",12,"Therapist",81.26470588,16.35294117,NA,"HJT","Therapist",64.91176471
+285,"OCCUPATIONS",13,"Dentist",89.29411765,8.02941177000001,NA,"HJT","Dentist",81.26470588
+285,"OCCUPATIONS",14,"Surgeon",96.63235294,7.33823529,NA,"HJT","Surgeon",89.29411765
+285,"OCCUPATIONS",15,"Technician",110.9411765,14.30882356,NA,"HJT","Technician",96.63235294
+285,"OCCUPATIONS",16,"Athlete",119.8970588,8.9558823,NA,"HJT","Athlete",110.9411765
+285,"OCCUPATIONS",17,"Driver",132.6029412,12.7058824,NA,"HJT","Driver",119.8970588
+285,"OCCUPATIONS",18,"Carpenter",145.6176471,13.0147059,NA,"HJT","Carpenter",132.6029412
+285,"OCCUPATIONS",19,"Electrician",151.9411765,6.32352940000001,NA,"HJT","Electrician",145.6176471
+285,"OCCUPATIONS",20,"Teller",166.6323529,14.6911764,NA,"HJT","Teller",151.9411765
+285,"OCCUPATIONS",21,"Bartender",170.6176471,3.9852942,NA,"HJT","Bartender",166.6323529
+285,"OCCUPATIONS",22,"Accountant",178.2794118,7.66176469999999,NA,"HJT","Accountant",170.6176471
+288,"OCCUPATIONS",1,"Lawyer",4.632352941,4.632352941,NA,"HJT","Lawyer",NA
+288,"OCCUPATIONS",2,"Stripper",5.955882353,1.323529412,NA,"HJT","Stripper",4.632352941
+288,"OCCUPATIONS",3,"Dentist",9.294117647,3.338235294,NA,"HJT","Dentist",5.955882353
+288,"OCCUPATIONS",4,"Doctor",13.63235294,4.338235293,NA,"HJT","Doctor",9.294117647
+288,"OCCUPATIONS",5,"Dancer",14.95588235,1.32352941,NA,"HJT","Dancer",13.63235294
+288,"OCCUPATIONS",6,"Singer",17.63235294,2.67647059,NA,"HJT","Singer",14.95588235
+288,"OCCUPATIONS",7,"Consultant",19.27941176,1.64705882,NA,"HJT","Consultant",17.63235294
+288,"OCCUPATIONS",8,"Psychologist",24.60294118,5.32352942,NA,"HJT","Psychologist",19.27941176
+288,"OCCUPATIONS",9,"Receptionist",28.60294118,4,NA,"HJT","Receptionist",24.60294118
+288,"OCCUPATIONS",10,"Firefighter",37.94117647,9.33823529,NA,"HJT","Firefighter",28.60294118
+288,"OCCUPATIONS",11,"Policeman",40.92647059,2.98529412,NA,"HJT","Policeman",37.94117647
+288,"OCCUPATIONS",12,"Guard",43.92647059,3,NA,"HJT","Guard",40.92647059
+288,"OCCUPATIONS",13,"Chef",51.30882353,7.38235294,NA,"HJT","Chef",43.92647059
+288,"OCCUPATIONS",14,"Garbage",52.94117647,1.63235294,NA,"HJT","Garbage Man",51.30882353
+288,"OCCUPATIONS",15,"Accountant",57.94117647,5,NA,"HJT","Accountant",52.94117647
+288,"OCCUPATIONS",16,"Janitor",65.29411765,7.35294118,NA,"HJT","Janitor",57.94117647
+288,"OCCUPATIONS",17,"Architect",71.27941176,5.98529411,NA,"HJT","Architect",65.29411765
+288,"OCCUPATIONS",18,"Worker",73.23529412,1.95588236,NA,"HJT","Worker",71.27941176
+288,"OCCUPATIONS",19,"Teacher",80.95588235,7.72058822999999,NA,"HJT","Teacher",73.23529412
+288,"OCCUPATIONS",20,"Professor",82.61764706,1.66176471,NA,"HJT","Professor",80.95588235
+288,"OCCUPATIONS",21,"Politician",88.27941176,5.66176470000001,NA,"HJT","Politician",82.61764706
+288,"OCCUPATIONS",22,"Athlete",96.29411765,8.01470589,NA,"HJT","Athlete",88.27941176
+288,"OCCUPATIONS",23,"Salesman",104.9558824,8.66176474999999,NA,"HJT","Salesman",96.29411765
+288,"OCCUPATIONS",24,"Designer",130.25,25.2941176,NA,"HJT","Designer",104.9558824
+288,"OCCUPATIONS",25,"Landscaper",142.2794118,12.0294118,NA,"HJT","Landscaper",130.25
+288,"OCCUPATIONS",26,"Artist",149.2941176,7.0147058,NA,"HJT","Artist",142.2794118
+288,"OCCUPATIONS",27,"Musician",155.9558824,6.66176480000001,NA,"HJT","Musician",149.2941176
+288,"OCCUPATIONS",28,"Babysitter",160.9411765,4.9852941,NA,"HJT","Babysitter",155.9558824
+288,"OCCUPATIONS",29,"Taster",173.9411765,13,NA,"HJT","Taster",160.9411765
+288,"OCCUPATIONS",30,"Brewer",179.9411765,6,NA,"HJT","Brewer",173.9411765
+297,"OCCUPATIONS",1,"Teacher",-0.235294118,-0.235294118,NA,"HJT","Teacher",NA
+297,"OCCUPATIONS",2,"Doctor",2.044117647,2.279411765,NA,"HJT","Doctor",-0.235294118
+297,"OCCUPATIONS",3,"Psychologist",2.367647059,0.323529412,NA,"HJT","Psychologist",2.044117647
+297,"OCCUPATIONS",4,"Farmer",7.044117647,4.676470588,NA,"HJT","Farmer",2.367647059
+297,"OCCUPATIONS",5,"Prostitute",8.926470588,1.882352941,NA,"HJT","Prostitute",7.044117647
+297,"OCCUPATIONS",6,"Optometrist",13.64705882,4.720588232,NA,"HJT","Optometrist",8.926470588
+297,"OCCUPATIONS",7,"Ophthalmologist",17.80882353,4.16176471,NA,"HJT","Ophthalmologist",13.64705882
+297,"OCCUPATIONS",8,"Pediatrician",22.08823529,4.27941176,NA,"HJT","Pediatrician",17.80882353
+297,"OCCUPATIONS",9,"Veterinarian",27.88235294,5.79411765,NA,"HJT","Veterinarian",22.08823529
+297,"OCCUPATIONS",10,"Babysitter",28.92647059,1.04411765,NA,"HJT","Babysitter",27.88235294
+297,"OCCUPATIONS",11,"Student",30.76470588,1.83823529,NA,"HJT","Student",28.92647059
+297,"OCCUPATIONS",12,"Taxi Driver",33.64705882,2.88235294,NA,"HJT","Taxi Driver",30.76470588
+297,"OCCUPATIONS",13,"Driver",35.64705882,2,NA,"HJT","Driver",33.64705882
+297,"OCCUPATIONS",14,"Associate",37.52941176,1.88235294,NA,"HJT","Associate",35.64705882
+297,"OCCUPATIONS",15,"Stockbroker",40.36764706,2.8382353,NA,"HJT","Stockbroker",37.52941176
+297,"OCCUPATIONS",16,"Banker",42.97058824,2.60294118,NA,"HJT","Banker",40.36764706
+297,"OCCUPATIONS",17,"Physicist",51.20588235,8.23529411,NA,"HJT","Physicist",42.97058824
+297,"OCCUPATIONS",18,"Scientist",53.20588235,2,NA,"HJT","Scientist",51.20588235
+297,"OCCUPATIONS",19,"Professor",58.20588235,5,NA,"HJT","Professor",53.20588235
+297,"OCCUPATIONS",20,"Garbage",60.64705882,2.44117647,NA,"HJT","Garbage Man",58.20588235
+297,"OCCUPATIONS",21,"Trainer",65.64705882,5,NA,"HJT","Trainer",60.64705882
+297,"OCCUPATIONS",22,"Weatherperson",67.52941176,1.88235294,NA,"HJT","Weatherperson",65.64705882
+297,"OCCUPATIONS",23,"Reporter",71.08823529,3.55882353,NA,"HJT","Reporter",67.52941176
+297,"OCCUPATIONS",24,"Anchor",74.08823529,3,NA,"HJT","Anchor",71.08823529
+297,"OCCUPATIONS",25,"Writer",78.04411765,3.95588236,NA,"HJT","Writer",74.08823529
+297,"OCCUPATIONS",26,"Artist",79.76470588,1.72058822999999,NA,"HJT","Artist",78.04411765
+297,"OCCUPATIONS",27,"Painter",80.76470588,1,NA,"HJT","Painter",79.76470588
+297,"OCCUPATIONS",28,"Technician",88.41176471,7.64705883000001,NA,"HJT","Technician",80.76470588
+297,"OCCUPATIONS",29,"Manager",100.7647059,12.35294119,NA,"HJT","Manager",88.41176471
+297,"OCCUPATIONS",30,"Supervisor",103.9264706,3.16176470000001,NA,"HJT","Supervisor",100.7647059
+297,"OCCUPATIONS",31,"Attendant",106.25,2.3235294,NA,"HJT","Attendant",103.9264706
+297,"OCCUPATIONS",32,"Pilot",111.3235294,5.0735294,NA,"HJT","Pilot",106.25
+297,"OCCUPATIONS",33,"Nurse",118.3235294,7,NA,"HJT","Nurse",111.3235294
+297,"OCCUPATIONS",34,"Technician",121.5294118,3.20588240000001,NA,"HJT","Technician",118.3235294
+297,"OCCUPATIONS",35,"Performer",133.9264706,12.3970588,NA,"HJT","Performer",121.5294118
+297,"OCCUPATIONS",36,"Artist",135.8088235,1.8823529,NA,"HJT","Artist",133.9264706
+297,"OCCUPATIONS",37,"Investigator",140.1323529,4.32352940000001,NA,"HJT","Investigator",135.8088235
+297,"OCCUPATIONS",38,"Counselor",145.6911765,5.55882360000001,NA,"HJT","Counselor",140.1323529
+297,"OCCUPATIONS",39,"Retailer",161.4852941,15.7941176,NA,"HJT","Retailer",145.6911765
+297,"OCCUPATIONS",40,"Importer",166.8088235,5.32352939999998,NA,"HJT","Importer",161.4852941
+297,"OCCUPATIONS",41,"Reporter",185.8088235,19,NA,"HJT","Reporter",166.8088235
+386,"OCCUPATIONS",1,"Dentist",2.235294118,2.235294118,NA,"HJT","Dentist",NA
+386,"OCCUPATIONS",2,"Therapist",3.117647059,0.882352941,NA,"HJT","Therapist",2.235294118
+386,"OCCUPATIONS",3,"Hygienist",13,9.882352941,NA,"HJT","Hygienist",3.117647059
+386,"OCCUPATIONS",4,"Optometrist",23.35294118,10.35294118,NA,"HJT","Optometrist",13
+386,"OCCUPATIONS",5,"Secretary",28.29411765,4.94117647,NA,"HJT","Secretary",23.35294118
+386,"OCCUPATIONS",6,"Entrepreneur",33.88235294,5.58823529,NA,"HJT","Entrepreneur",28.29411765
+386,"OCCUPATIONS",7,"Athlete",45.23529412,11.35294118,NA,"HJT","Athlete",33.88235294
+386,"OCCUPATIONS",8,"Policeman",47.94117647,2.70588235,NA,"HJT","Policeman",45.23529412
+386,"OCCUPATIONS",9,"FBI",62.11764706,14.17647059,NA,"HJT","FBI",47.94117647
+386,"OCCUPATIONS",10,"Teacher",74.23529412,12.11764706,NA,"HJT","Teacher",62.11764706
+386,"OCCUPATIONS",11,"Coach",82.17647059,7.94117646999999,NA,"HJT","Coach",74.23529412
+386,"OCCUPATIONS",12,"Technician",86.11764706,3.94117647,NA,"HJT","Technician",82.17647059
+386,"OCCUPATIONS",13,"Priest",108.7058824,22.58823534,NA,"HJT","Priest",86.11764706
+386,"OCCUPATIONS",14,"Dancer",119.7058824,11,NA,"HJT","Dancer",108.7058824
+386,"OCCUPATIONS",15,"Wood Smith",127.2941176,7.58823520000001,NA,"HJT","Wood Smith",119.7058824
+386,"OCCUPATIONS",16,"Carpenter",131.2941176,3.99999999999999,NA,"HJT","Carpenter",127.2941176
+386,"OCCUPATIONS",17,"Chef",142.6470588,11.3529412,NA,"HJT","Chef",131.2941176
+386,"OCCUPATIONS",18,"Manager",144.2352941,1.58823530000001,NA,"HJT","Manager",142.6470588
+386,"OCCUPATIONS",19,"Worker",148.9411765,4.70588240000001,NA,"HJT","Worker",144.2352941
+386,"OCCUPATIONS",20,"Psychologist",165.8823529,16.9411764,NA,"HJT","Psychologist",148.9411765
+386,"OCCUPATIONS",21,"Mathematician",175.4117647,9.52941179999999,NA,"HJT","Mathematician",165.8823529
+391,"OCCUPATIONS",1,"Teacher",7.176470588,7.176470588,NA,"HJT","Teacher",NA
+391,"OCCUPATIONS",2,"Doctor",10.52941176,3.352941172,NA,"HJT","Doctor",7.176470588
+391,"OCCUPATIONS",3,"Therapist",15.29411765,4.76470589,NA,"HJT","Therapist",10.52941176
+391,"OCCUPATIONS",4,"Manager",34.17647059,18.88235294,NA,"HJT","Manager",15.29411765
+391,"OCCUPATIONS",5,"Clerk",40.88235294,6.70588235,NA,"HJT","Clerk",34.17647059
+391,"OCCUPATIONS",6,"Broadcaster",51.29411765,10.41176471,NA,"HJT","Broadcaster",40.88235294
+391,"OCCUPATIONS",7,"Host",58.17647059,6.88235294,NA,"HJT","Host",51.29411765
+391,"OCCUPATIONS",8,"Producer",65.70588235,7.52941176,NA,"HJT","Producer",58.17647059
+391,"OCCUPATIONS",9,"Singer",73.52941176,7.82352941000001,NA,"HJT","Singer",65.70588235
+391,"OCCUPATIONS",10,"Actor",77.88235294,4.35294118,NA,"HJT","Actor",73.52941176
+391,"OCCUPATIONS",11,"Accountant",83.11764706,5.23529411999999,NA,"HJT","Accountant",77.88235294
+391,"OCCUPATIONS",12,"Advisor",90,6.88235294,NA,"HJT","Advisor",83.11764706
+391,"OCCUPATIONS",13,"Trainer",107,17,NA,"HJT","Trainer",90
+391,"OCCUPATIONS",14,"Agent",120.4117647,13.4117647,NA,"HJT","Agent",107
+391,"OCCUPATIONS",15,"Analyst",152.6470588,32.2352941,NA,"HJT","Analyst",120.4117647
+391,"OCCUPATIONS",16,"Salesman",164.8235294,12.1764706,NA,"HJT","Salesman",152.6470588
+391,"OCCUPATIONS",17,"Principal",199.4705882,34.6470588,NA,"HJT","Principal",164.8235294
+393,"OCCUPATIONS",1,"Doctor",0.838235294,0.838235294,NA,"HJT","Doctor",NA
+393,"OCCUPATIONS",2,"Engineer",2.911764706,2.073529412,NA,"HJT","Engineer",0.838235294
+393,"OCCUPATIONS",3,"Teacher",6.220588235,3.308823529,NA,"HJT","Teacher",2.911764706
+393,"OCCUPATIONS",4,"Worker",6.823529412,0.602941177,NA,"HJT","Worker",6.220588235
+393,"OCCUPATIONS",5,"Plumber",13.52941176,6.705882348,NA,"HJT","Plumber",6.823529412
+393,"OCCUPATIONS",6,"Manager",18.52941176,5,NA,"HJT","Manager",13.52941176
+393,"OCCUPATIONS",7,"Owner",25.14705882,6.61764706,NA,"HJT","Owner",18.52941176
+393,"OCCUPATIONS",8,"Realtor",26.52941176,1.38235294,NA,"HJT","Realtor",25.14705882
+393,"OCCUPATIONS",9,"Worker",36.36764706,9.8382353,NA,"HJT","Worker",26.52941176
+393,"OCCUPATIONS",10,"Electrician",44.29411765,7.92647058999999,NA,"HJT","Electrician",36.36764706
+393,"OCCUPATIONS",11,"Mechanic",48.22058824,3.92647059,NA,"HJT","Mechanic",44.29411765
+393,"OCCUPATIONS",12,"Cashier",51.52941176,3.30882352,NA,"HJT","Cashier",48.22058824
+393,"OCCUPATIONS",13,"Stockbroker",56.36764706,4.8382353,NA,"HJT","Stockbroker",51.52941176
+393,"OCCUPATIONS",14,"Nurse",70.14705882,13.77941176,NA,"HJT","Nurse",56.36764706
+393,"OCCUPATIONS",15,"Surgeon",72.91176471,2.76470589,NA,"HJT","Surgeon",70.14705882
+393,"OCCUPATIONS",16,"Manufacturer",84.98529412,12.07352941,NA,"HJT","Manufacturer",72.91176471
+393,"OCCUPATIONS",17,"Builder",101.5294118,16.54411768,NA,"HJT","Builder",84.98529412
+393,"OCCUPATIONS",18,"Worker",109.6764706,8.1470588,NA,"HJT","Worker",101.5294118
+393,"OCCUPATIONS",19,"Policeman",115.3676471,5.6911765,NA,"HJT","Policeman",109.6764706
+393,"OCCUPATIONS",20,"FBI",120.7647059,5.3970588,NA,"HJT","FBI",115.3676471
+393,"OCCUPATIONS",21,"Cia",121.7647059,1,NA,"HJT","Cia",120.7647059
+393,"OCCUPATIONS",22,"President",122.9117647,1.14705880000001,NA,"HJT","President",121.7647059
+393,"OCCUPATIONS",23,"Accountant",144.6029412,21.6911765,NA,"HJT","Accountant",122.9117647
+393,"OCCUPATIONS",24,"Librarian",150.9117647,6.30882349999999,NA,"HJT","Librarian",144.6029412
+393,"OCCUPATIONS",25,"Cabdriver",159.6029412,8.69117650000001,NA,"HJT","Cabdriver",150.9117647
+393,"OCCUPATIONS",26,"Chauffer",162.9852941,3.3823529,NA,"HJT","Chauffer",159.6029412
+393,"OCCUPATIONS",27,"Athlete",171.5294118,8.54411769999999,NA,"HJT","Athlete",162.9852941
+393,"OCCUPATIONS",28,"Counselor",180.9117647,9.3823529,NA,"HJT","Counselor",171.5294118
+475,"OCCUPATIONS",1,"Lawyer",1.455882353,1.455882353,NA,"HJT","Lawyer",NA
+475,"OCCUPATIONS",2,"Doctor",2.455882353,1,NA,"HJT","Doctor",1.455882353
+475,"OCCUPATIONS",3,"Trash",8.014705882,5.558823529,NA,"HJT","Trashman",2.455882353
+475,"OCCUPATIONS",4,"Plumber",9.235294118,1.220588236,NA,"HJT","Plumber",8.014705882
+475,"OCCUPATIONS",5,"Teacher",10.23529412,1.000000002,NA,"HJT","Teacher",9.235294118
+475,"OCCUPATIONS",6,"Professor",13.79411765,3.55882353,NA,"HJT","Professor",10.23529412
+475,"OCCUPATIONS",7,"Cop",17.11764706,3.32352941,NA,"HJT","Cop",13.79411765
+475,"OCCUPATIONS",8,"Investigator",18.13235294,1.01470588,NA,"HJT","Investigator",17.11764706
+475,"OCCUPATIONS",9,"Technician",28.57352941,10.44117647,NA,"HJT","Technician",18.13235294
+475,"OCCUPATIONS",10,"Attorney",36.01470588,7.44117647,NA,"HJT","Attorney",28.57352941
+475,"OCCUPATIONS",11,"Marketer",43.01470588,7,NA,"HJT","Marketer",36.01470588
+475,"OCCUPATIONS",12,"Journalist",43.57352941,0.558823529999998,NA,"HJT","Journalist",43.01470588
+475,"OCCUPATIONS",13,"Publicist",47.13235294,3.55882353,NA,"HJT","Publicist",43.57352941
+475,"OCCUPATIONS",14,"Anchorman",52.79411765,5.66176471,NA,"HJT","Anchorman",47.13235294
+475,"OCCUPATIONS",15,"FBI",60.11764706,7.32352941000001,NA,"HJT","FBI",52.79411765
+475,"OCCUPATIONS",16,"Cia",64.11764706,3.99999999999999,NA,"HJT","CIA",60.11764706
+475,"OCCUPATIONS",17,"Singer",66.45588235,2.33823529,NA,"HJT","Singer",64.11764706
+475,"OCCUPATIONS",18,"Dancer",67.45588235,1,NA,"HJT","Dancer",66.45588235
+475,"OCCUPATIONS",19,"Actor",70.67647059,3.22058824,NA,"HJT","Actor",67.45588235
+475,"OCCUPATIONS",20,"Writer",72.45588235,1.77941176,NA,"HJT","Writer",70.67647059
+475,"OCCUPATIONS",21,"Scientist",75.79411765,3.33823530000001,NA,"HJT","Scientist",72.45588235
+475,"OCCUPATIONS",22,"Astronaut",80.79411765,5,NA,"HJT","Astronaut",75.79411765
+475,"OCCUPATIONS",23,"Carpenter",93.79411765,13,NA,"HJT","Carpenter",80.79411765
+475,"OCCUPATIONS",24,"Worker",96.58823529,2.79411764,NA,"HJT","Worker",93.79411765
+475,"OCCUPATIONS",25,"Vendor",102.7941176,6.20588231000001,NA,"HJT","Vendor",96.58823529
+475,"OCCUPATIONS",26,"Administrator",109.9117647,7.1176471,NA,"HJT","Administrator",102.7941176
+475,"OCCUPATIONS",27,"Principal",112.7941176,2.8823529,NA,"HJT","Principal",109.9117647
+475,"OCCUPATIONS",28,"President",114.7941176,2,NA,"HJT","President",112.7941176
+475,"OCCUPATIONS",29,"Bodyguard",122.5735294,7.77941179999999,NA,"HJT","Bodyguard",114.7941176
+475,"OCCUPATIONS",30,"DJ",127.3382353,4.7647059,NA,"HJT","DJ",122.5735294
+475,"OCCUPATIONS",31,"Host",139.6911765,12.3529412,NA,"HJT","Host",127.3382353
+475,"OCCUPATIONS",32,"Psychiatrist",142.9117647,3.22058819999998,NA,"HJT","Psychiatrist",139.6911765
+475,"OCCUPATIONS",33,"Psychologist",146.1323529,3.22058820000001,NA,"HJT","Psychologist",142.9117647
+475,"OCCUPATIONS",34,"Biologist",151.7941176,5.66176469999999,NA,"HJT","Biologist",146.1323529
+475,"OCCUPATIONS",35,"Scientist",153.5882353,1.79411770000002,NA,"HJT","Scientist",151.7941176
+475,"OCCUPATIONS",36,"Navy",162.8970588,9.30882349999999,NA,"HJT","Navy",153.5882353
+475,"OCCUPATIONS",37,"Army",163.8970588,1,NA,"HJT","Army",162.8970588
+475,"OCCUPATIONS",38,"Military",164.6911765,0.794117700000015,NA,"HJT","Military",163.8970588
+475,"OCCUPATIONS",39,"Marines",169.2352941,4.54411759999999,NA,"HJT","Marines",164.6911765
+475,"OCCUPATIONS",40,"Mailman",175.2352941,6,NA,"HJT","Mailman",169.2352941
+475,"OCCUPATIONS",41,"Manufacturer",178.1323529,2.8970588,NA,"HJT","Manufacturer",175.2352941
+479,"OCCUPATIONS",1,"Artist",2.735294118,2.735294118,NA,"HJT","Artist",NA
+479,"OCCUPATIONS",2,"Teacher",7.411764706,4.676470588,NA,"HJT","Teacher",2.735294118
+479,"OCCUPATIONS",3,"Doctor",9.735294118,2.323529412,NA,"HJT","Doctor",7.411764706
+479,"OCCUPATIONS",4,"Actor",13.05882353,3.323529412,NA,"HJT","Actor",9.735294118
+479,"OCCUPATIONS",5,"Director",16.08823529,3.02941176,NA,"HJT","Director",13.05882353
+479,"OCCUPATIONS",6,"Producer",18.08823529,2,NA,"HJT","Producer",16.08823529
+479,"OCCUPATIONS",7,"Worker",20.14705882,2.05882353,NA,"HJT","Worker",18.08823529
+479,"OCCUPATIONS",8,"Pathologist",23.85294118,3.70588236,NA,"HJT","Pathologist",20.14705882
+479,"OCCUPATIONS",9,"Audiologist",30.11764706,6.26470588,NA,"HJT","Audiologist",23.85294118
+479,"OCCUPATIONS",10,"Senator",36.41176471,6.29411765,NA,"HJT","Senator",30.11764706
+479,"OCCUPATIONS",11,"Representative",41.14705882,4.73529411,NA,"HJT","Representative",36.41176471
+479,"OCCUPATIONS",12,"President",44.76470588,3.61764706,NA,"HJT","President",41.14705882
+479,"OCCUPATIONS",13,"Secretary",51.76470588,7,NA,"HJT","Secretary",44.76470588
+479,"OCCUPATIONS",14,"Cabinet",57.85294118,6.0882353,NA,"HJT","Cabinet",51.76470588
+479,"OCCUPATIONS",15,"Treasurer",64.76470588,6.91176469999999,NA,"HJT","Treasurer",57.85294118
+479,"OCCUPATIONS",16,"Owner",72.14705882,7.38235294,NA,"HJT","Owner",64.76470588
+479,"OCCUPATIONS",17,"Auditor",78.41176471,6.26470589,NA,"HJT","Auditor",72.14705882
+479,"OCCUPATIONS",18,"Accountant",83.11764706,4.70588235,NA,"HJT","Accountant",78.41176471
+479,"OCCUPATIONS",19,"Advisor",85.17647059,2.05882353,NA,"HJT","Advisor",83.11764706
+479,"OCCUPATIONS",20,"Stockbroker",92.47058824,7.29411765,NA,"HJT","Stockbroker",85.17647059
+479,"OCCUPATIONS",21,"Curator",97.14705882,4.67647058,NA,"HJT","Curator",92.47058824
+479,"OCCUPATIONS",22,"Guard",116.1470588,18.99999998,NA,"HJT","Guard",97.14705882
+479,"OCCUPATIONS",23,"Police",124.4117647,8.26470590000001,NA,"HJT","Police",116.1470588
+479,"OCCUPATIONS",24,"Fireman",126.4117647,2,NA,"HJT","Fireman",124.4117647
+479,"OCCUPATIONS",25,"Nurse",130.0588235,3.64705879999998,NA,"HJT","Nurse",126.4117647
+479,"OCCUPATIONS",26,"Surgeon",132.4117647,2.3529412,NA,"HJT","Surgeon",130.0588235
+479,"OCCUPATIONS",27,"Anesthesiologist",137.8235294,5.41176470000002,NA,"HJT","Anesthesiologist",132.4117647
+479,"OCCUPATIONS",28,"Psychiatrist",144.7941176,6.97058819999998,NA,"HJT","Psychiatrist",137.8235294
+479,"OCCUPATIONS",29,"Psychologist",150.4705882,5.67647060000002,NA,"HJT","Psychologist",144.7941176
+479,"OCCUPATIONS",30,"Counselor",154.7647059,4.29411769999999,NA,"HJT","Counselor",150.4705882
+479,"OCCUPATIONS",31,"Therapist",159.4411765,4.67647060000002,NA,"HJT","Therapist",154.7647059
+479,"OCCUPATIONS",32,"Server",164.7352941,5.29411759999999,NA,"HJT","Server",159.4411765
+479,"OCCUPATIONS",33,"Waitress",167.7647059,3.02941179999999,NA,"HJT","Waitress",164.7352941
+479,"OCCUPATIONS",34,"Hostess",171.4117647,3.6470588,NA,"HJT","Hostess",167.7647059
+479,"OCCUPATIONS",35,"Manager",176.4117647,5,NA,"HJT","Manager",171.4117647
+481,"OCCUPATIONS",1,"Teacher",1.647058824,1.647058824,NA,"HJT","Teacher",NA
+481,"OCCUPATIONS",2,"President",4.117647059,2.470588235,NA,"HJT","President",1.647058824
+481,"OCCUPATIONS",3,"Secretary",14.05882353,9.941176471,NA,"HJT","Secretary",4.117647059
+481,"OCCUPATIONS",4,"Engineer",17.11764706,3.05882353,NA,"HJT","Engineer",14.05882353
+481,"OCCUPATIONS",5,"Doctor",36.94117647,19.82352941,NA,"HJT","Doctor",17.11764706
+481,"OCCUPATIONS",6,"Nurse",39.23529412,2.29411765,NA,"HJT","Nurse",36.94117647
+481,"OCCUPATIONS",7,"Researcher",43.76470588,4.52941176,NA,"HJT","Researcher",39.23529412
+481,"OCCUPATIONS",8,"Assistant",45.41176471,1.64705883,NA,"HJT","Assistant",43.76470588
+481,"OCCUPATIONS",9,"Recruiter",55.05882353,9.64705882,NA,"HJT","Recruiter",45.41176471
+481,"OCCUPATIONS",10,"Therapist",58.05882353,3,NA,"HJT","Therapist",55.05882353
+481,"OCCUPATIONS",11,"Minister",61.35294118,3.29411765,NA,"HJT","Minister",58.05882353
+481,"OCCUPATIONS",12,"Representative",63.82352941,2.47058823,NA,"HJT","Representative",61.35294118
+481,"OCCUPATIONS",13,"Buyer",76.23529412,12.41176471,NA,"HJT","Buyer",63.82352941
+481,"OCCUPATIONS",14,"Trader",78.94117647,2.70588235,NA,"HJT","Trader",76.23529412
+481,"OCCUPATIONS",15,"Consultant",81.88235294,2.94117647,NA,"HJT","Consultant",78.94117647
+481,"OCCUPATIONS",16,"Manager",92.58823529,10.70588235,NA,"HJT","Manager",81.88235294
+481,"OCCUPATIONS",17,"Pool",99.35294118,6.76470589,NA,"HJT","Pool",92.58823529
+481,"OCCUPATIONS",18,"Lifeguard",101.7647059,2.41176471999999,NA,"HJT","Lifeguard",99.35294118
+481,"OCCUPATIONS",19,"Instructor",109.4117647,7.64705880000001,NA,"HJT","Instructor",101.7647059
+481,"OCCUPATIONS",20,"Entrepreneur",117.1764706,7.7647059,NA,"HJT","Entrepreneur",109.4117647
+481,"OCCUPATIONS",21,"Manager",124,6.8235294,NA,"HJT","Manager",117.1764706
+481,"OCCUPATIONS",22,"CEO",131.8235294,7.82352940000001,NA,"HJT","CEO",124
+481,"OCCUPATIONS",23,"Advertiser",135.7647059,3.94117649999998,NA,"HJT","Advertiser",131.8235294
+481,"OCCUPATIONS",24,"Manager",139.7058824,3.94117650000001,NA,"HJT","Manager",135.7647059
+481,"OCCUPATIONS",25,"Accountant",144.7647059,5.05882349999999,NA,"HJT","Accountant",139.7058824
+481,"OCCUPATIONS",26,"Stockbroker",151,6.2352941,NA,"HJT","Stockbroker",144.7647059
+481,"OCCUPATIONS",27,"Worker",159.5882353,8.58823530000001,NA,"HJT","Worker",151
+481,"OCCUPATIONS",28,"Manager",170.8823529,11.2941176,NA,"HJT","Manager",159.5882353
+481,"OCCUPATIONS",29,"Writer",179.9411765,9.05882360000001,NA,"HJT","Writer",170.8823529
+484,"OCCUPATIONS",1,"Engineer",1.411764706,1.411764706,NA,"HJT","Engineer",NA
+484,"OCCUPATIONS",2,"Doctor",3.735294118,2.323529412,NA,"HJT","Doctor",1.411764706
+484,"OCCUPATIONS",3,"Nurse",12.05882353,8.323529412,NA,"HJT","Nurse",3.735294118
+484,"OCCUPATIONS",4,"Doctor",14.47058824,2.41176471,NA,"HJT","Doctor",12.05882353
+484,"OCCUPATIONS",5,"Surgeon",18.41176471,3.94117647,NA,"HJT","Surgeon",14.47058824
+484,"OCCUPATIONS",6,"Teacher",23.41176471,5,NA,"HJT","Teacher",18.41176471
+484,"OCCUPATIONS",7,"Principal",25.76470588,2.35294117,NA,"HJT","Principal",23.41176471
+484,"OCCUPATIONS",8,"Worker",31.14705882,5.38235294,NA,"HJT","Worker",25.76470588
+484,"OCCUPATIONS",9,"Janitor",35.41176471,4.26470589,NA,"HJT","Janitor",31.14705882
+484,"OCCUPATIONS",10,"Gardener",47.08823529,11.67647058,NA,"HJT","Gardener",35.41176471
+484,"OCCUPATIONS",11,"Photographer",51.79411765,4.70588236,NA,"HJT","Photographer",47.08823529
+484,"OCCUPATIONS",12,"Painter",55.41176471,3.61764706,NA,"HJT","Painter",51.79411765
+484,"OCCUPATIONS",13,"Carpenter",58.76470588,3.35294117,NA,"HJT","Carpenter",55.41176471
+484,"OCCUPATIONS",14,"Sculpture",64.76470588,5.99999999999999,NA,"HJT","Sculpture",58.76470588
+484,"OCCUPATIONS",15,"Secretary",71.76470588,7,NA,"HJT","Secretary",64.76470588
+484,"OCCUPATIONS",16,"Assistant",76.76470588,5,NA,"HJT","Assistant",71.76470588
+484,"OCCUPATIONS",17,"Actor",83.05882353,6.29411765,NA,"HJT","Actor",76.76470588
+484,"OCCUPATIONS",18,"Chauffer",88.08823529,5.02941176,NA,"HJT","Chauffer",83.05882353
+484,"OCCUPATIONS",19,"Interpreter",95.11764706,7.02941177,NA,"HJT","Interpreter",88.08823529
+484,"OCCUPATIONS",20,"Lawyer",103.7352941,8.61764704000001,NA,"HJT","Lawyer",95.11764706
+484,"OCCUPATIONS",21,"Attendant",104.5,0.764705899999996,NA,"HJT","Attendant",103.7352941
+484,"OCCUPATIONS",22,"Pilot",111.0588235,6.5588235,NA,"HJT","Pilot",104.5
+484,"OCCUPATIONS",23,"Guard",126.4705882,15.4117647,NA,"HJT","Guard",111.0588235
+484,"OCCUPATIONS",24,"Policemen",133.7647059,7.2941177,NA,"HJT","Policemen",126.4705882
+484,"OCCUPATIONS",25,"Anthropologist",160.1470588,26.3823529,NA,"HJT","Anthropologist",133.7647059
+484,"OCCUPATIONS",26,"Dietitian",170.7647059,10.6176471,NA,"HJT","Dietitian",160.1470588
+484,"OCCUPATIONS",27,"Coroner",176.4411765,5.67647060000002,NA,"HJT","Coroner",170.7647059
+487,"OCCUPATIONS",1,"Nurse",2.235294118,2.235294118,NA,"HJT","Nurse",NA
+487,"OCCUPATIONS",2,"Doctor",2.941176471,0.705882353,NA,"HJT","Doctor",2.235294118
+487,"OCCUPATIONS",3,"Dentist",5.647058824,2.705882353,NA,"HJT","Dentist",2.941176471
+487,"OCCUPATIONS",4,"Orthodontist",6.176470588,0.529411764,NA,"HJT","Orthodontist",5.647058824
+487,"OCCUPATIONS",5,"Chiropractor",9.176470588,3,NA,"HJT","Chiropractor",6.176470588
+487,"OCCUPATIONS",6,"Technician",17.58823529,8.411764702,NA,"HJT","Technician",9.176470588
+487,"OCCUPATIONS",7,"Teacher",22.64705882,5.05882353,NA,"HJT","Teacher",17.58823529
+487,"OCCUPATIONS",8,"Professor",24.05882353,1.41176471,NA,"HJT","Professor",22.64705882
+487,"OCCUPATIONS",9,"Engineer",27.35294118,3.29411765,NA,"HJT","Engineer",24.05882353
+487,"OCCUPATIONS",10,"Accountant",35.76470588,8.4117647,NA,"HJT","Accountant",27.35294118
+487,"OCCUPATIONS",11,"Drafter",41.64705882,5.88235294,NA,"HJT","Drafter",35.76470588
+487,"OCCUPATIONS",12,"Technician",47.11764706,5.47058824,NA,"HJT","Technician",41.64705882
+487,"OCCUPATIONS",13,"Radiologist",54.17647059,7.05882353,NA,"HJT","Radiologist",47.11764706
+487,"OCCUPATIONS",14,"Urologist",65.47058824,11.29411765,NA,"HJT","Urologist",54.17647059
+487,"OCCUPATIONS",15,"Worker",76.58823529,11.11764705,NA,"HJT","Worker",65.47058824
+487,"OCCUPATIONS",16,"Salesman",79.35294118,2.76470589,NA,"HJT","Salesman",76.58823529
+487,"OCCUPATIONS",17,"Singer",86.23529412,6.88235294,NA,"HJT","Singer",79.35294118
+487,"OCCUPATIONS",18,"Songwriter",87.76470588,1.52941175999999,NA,"HJT","Songwriter",86.23529412
+487,"OCCUPATIONS",19,"Diver",97.41176471,9.64705883000001,NA,"HJT","Diver",87.76470588
+487,"OCCUPATIONS",20,"Swimmer",103.8235294,6.41176469,NA,"HJT","Swimmer",97.41176471
+487,"OCCUPATIONS",21,"Janitor",127.6470588,23.8235294,NA,"HJT","Janitor",103.8235294
+487,"OCCUPATIONS",22,"Principal",132.0588235,4.41176469999999,NA,"HJT","Principal",127.6470588
+487,"OCCUPATIONS",23,"Dean",136.5294118,4.4705883,NA,"HJT","Dean",132.0588235
+487,"OCCUPATIONS",24,"Picker",167.1764706,30.6470588,NA,"HJT","Picker",136.5294118
+487,"OCCUPATIONS",25,"Farmer",173.9411765,6.76470590000002,NA,"HJT","Farmer",167.1764706
+487,"OCCUPATIONS",26,"Seamstress",182.7647059,8.82352939999998,NA,"HJT","Seamstress",173.9411765
+488,"OCCUPATIONS",1,"Psychologist",1.941176471,1.941176471,NA,"HJT","Psychologist",NA
+488,"OCCUPATIONS",2,"Teacher",7.117647059,5.176470588,NA,"HJT","Teacher",1.941176471
+488,"OCCUPATIONS",3,"Manager",10.11764706,3.000000001,NA,"HJT","Manager",7.117647059
+488,"OCCUPATIONS",4,"Salesperson",18.94117647,8.82352941,NA,"HJT","Salesperson",10.11764706
+488,"OCCUPATIONS",5,"Student",22.11764706,3.17647059,NA,"HJT","Student",18.94117647
+488,"OCCUPATIONS",6,"Waiter",25.35294118,3.23529412,NA,"HJT","Waiter",22.11764706
+488,"OCCUPATIONS",7,"Server",27.35294118,2,NA,"HJT","Server",25.35294118
+488,"OCCUPATIONS",8,"Manager",32.11764706,4.76470588,NA,"HJT","Manager",27.35294118
+488,"OCCUPATIONS",9,"Receptionist",34.94117647,2.82352941,NA,"HJT","Receptionist",32.11764706
+488,"OCCUPATIONS",10,"Secretary",38.64705882,3.70588235,NA,"HJT","Secretary",34.94117647
+488,"OCCUPATIONS",11,"Lawyer",42.35294118,3.70588236,NA,"HJT","Lawyer",38.64705882
+488,"OCCUPATIONS",12,"Attorney",43.23529412,0.882352939999997,NA,"HJT","Attorney",42.35294118
+488,"OCCUPATIONS",13,"President",51.64705882,8.4117647,NA,"HJT","President",43.23529412
+488,"OCCUPATIONS",14,"CEO",56.05882353,4.41176471,NA,"HJT","CEO",51.64705882
+488,"OCCUPATIONS",15,"Editor",59.35294118,3.29411765,NA,"HJT","Editor",56.05882353
+488,"OCCUPATIONS",16,"Writer",61.35294118,2,NA,"HJT","Writer",59.35294118
+488,"OCCUPATIONS",17,"Columnist",62.23529412,0.882352939999997,NA,"HJT","Columnist",61.35294118
+488,"OCCUPATIONS",18,"Actress",67.11764706,4.88235294,NA,"HJT","Actress",62.23529412
+488,"OCCUPATIONS",19,"Actor",69.35294118,2.23529412000001,NA,"HJT","Actor",67.11764706
+488,"OCCUPATIONS",20,"Singer",71.35294118,2,NA,"HJT","Singer",69.35294118
+488,"OCCUPATIONS",21,"Dancer",72.35294118,1,NA,"HJT","Dancer",71.35294118
+488,"OCCUPATIONS",22,"Entertainer",75.17647059,2.82352940999999,NA,"HJT","Entertainer",72.35294118
+488,"OCCUPATIONS",23,"Principal",79.64705882,4.47058823,NA,"HJT","Principal",75.17647059
+488,"OCCUPATIONS",24,"Vice Principal",82.47058824,2.82352942,NA,"HJT","Vice Principal",79.64705882
+488,"OCCUPATIONS",25,"Owner",84.29411765,1.82352941000001,NA,"HJT","Owner",82.47058824
+488,"OCCUPATIONS",26,"Banker",91.35294118,7.05882353,NA,"HJT","Banker",84.29411765
+488,"OCCUPATIONS",27,"Accountant",92.17647059,0.823529409999992,NA,"HJT","Accountant",91.35294118
+488,"OCCUPATIONS",28,"Rabbi",101.5882353,9.41176471,NA,"HJT","Rabbi",92.17647059
+488,"OCCUPATIONS",29,"Priest",102.3529412,0.76470590000001,NA,"HJT","Priest",101.5882353
+488,"OCCUPATIONS",30,"Dean",106.5294118,4.1764706,NA,"HJT","Dean",102.3529412
+488,"OCCUPATIONS",31,"Pathologist",119.2941176,12.7647058,NA,"HJT","Pathologist",106.5294118
+488,"OCCUPATIONS",32,"Doctor",123.3529412,4.0588236,NA,"HJT","Doctor",119.2941176
+488,"OCCUPATIONS",33,"Pediatrician",126.1764706,2.8235294,NA,"HJT","Pediatrician",123.3529412
+488,"OCCUPATIONS",34,"Oncologist",129.6470588,3.47058819999999,NA,"HJT","Oncologist",126.1764706
+488,"OCCUPATIONS",35,"Optometrist",133.1764706,3.52941179999999,NA,"HJT","Optometrist",129.6470588
+488,"OCCUPATIONS",36,"Cardiologist",139.9411765,6.76470590000002,NA,"HJT","Cardiologist",133.1764706
+488,"OCCUPATIONS",37,"Neurologist",144.1764706,4.23529409999998,NA,"HJT","Neurologist",139.9411765
+488,"OCCUPATIONS",38,"Printer",153.1176471,8.94117650000001,NA,"HJT","Printer",144.1764706
+488,"OCCUPATIONS",39,"Engineer",155.8823529,2.7647058,NA,"HJT","Engineer",153.1176471
+488,"OCCUPATIONS",40,"Hairdresser",168.9411765,13.0588236,NA,"HJT","Hairdresser",155.8823529
+488,"OCCUPATIONS",41,"Artist",173.4705882,4.5294117,NA,"HJT","Artist",168.9411765
+488,"OCCUPATIONS",42,"Relations",179,5.52941179999999,NA,"HJT","Relations",173.4705882
+491,"OCCUPATIONS",1,"Dentist",0.705882353,0.705882353,NA,"HJT","Dentist",NA
+491,"OCCUPATIONS",2,"Mayor",5.529411765,4.823529412,NA,"HJT","Mayor",0.705882353
+491,"OCCUPATIONS",3,"Garbage",6.058823529,0.529411764,NA,"HJT","Garbageman",5.529411765
+491,"OCCUPATIONS",4,"Teacher",10.70588235,4.647058821,NA,"HJT","Teacher",6.058823529
+491,"OCCUPATIONS",5,"Student",12.70588235,2,NA,"HJT","Student",10.70588235
+491,"OCCUPATIONS",6,"Therapist",16.88235294,4.17647059,NA,"HJT","Therapist",12.70588235
+491,"OCCUPATIONS",7,"Businessman",19.05882353,2.17647059,NA,"HJT","Businessman",16.88235294
+491,"OCCUPATIONS",8,"Star",26.05882353,7,NA,"HJT","Star",19.05882353
+491,"OCCUPATIONS",9,"Manager",31.41176471,5.35294118,NA,"HJT","Manager",26.05882353
+491,"OCCUPATIONS",10,"CEO",46.35294118,14.94117647,NA,"HJT","CEO",31.41176471
+491,"OCCUPATIONS",11,"Entrepreneur",49.64705882,3.29411764,NA,"HJT","Entrepreneur",46.35294118
+491,"OCCUPATIONS",12,"Waitress",58.29411765,8.64705883,NA,"HJT","Waitress",49.64705882
+491,"OCCUPATIONS",13,"Cook",61.94117647,3.64705882,NA,"HJT","Cook",58.29411765
+491,"OCCUPATIONS",14,"Psychiatrist",67.64705882,5.70588235,NA,"HJT","Psychiatrist",61.94117647
+491,"OCCUPATIONS",15,"Merchandising",73.23529412,5.58823530000001,NA,"HJT","Merchandising",67.64705882
+491,"OCCUPATIONS",16,"Designer",79.29411765,6.05882353,NA,"HJT","Designer",73.23529412
+491,"OCCUPATIONS",17,"Model",82.52941176,3.23529411,NA,"HJT","Model",79.29411765
+491,"OCCUPATIONS",18,"Writer",88.11764706,5.58823529999999,NA,"HJT","Writer",82.52941176
+491,"OCCUPATIONS",19,"Columnist",90.88235294,2.76470588000001,NA,"HJT","Columnist",88.11764706
+491,"OCCUPATIONS",20,"Unemployed",99.47058824,8.58823529999999,NA,"HJT","Unemployed",90.88235294
+491,"OCCUPATIONS",21,"Manager",102.7058824,3.23529416,NA,"HJT","Manager",99.47058824
+491,"OCCUPATIONS",22,"Assistant",114.8823529,12.1764705,NA,"HJT","Assistant",102.7058824
+491,"OCCUPATIONS",23,"Doctor",124.1176471,9.2352942,NA,"HJT","Doctor",114.8823529
+491,"OCCUPATIONS",24,"Nurse",126.5294118,2.41176470000001,NA,"HJT","Nurse",124.1176471
+491,"OCCUPATIONS",25,"Taster",128.0588235,1.52941169999998,NA,"HJT","Taster",126.5294118
+491,"OCCUPATIONS",26,"Priest",135.1176471,7.05882360000001,NA,"HJT","Priest",128.0588235
+491,"OCCUPATIONS",27,"Cashier",145.7058824,10.5882353,NA,"HJT","Cashier",135.1176471
+491,"OCCUPATIONS",28,"President",152.8823529,7.17647049999999,NA,"HJT","President",145.7058824
+491,"OCCUPATIONS",29,"Congressman",155.0588235,2.17647059999999,NA,"HJT","Congressman",152.8823529
+491,"OCCUPATIONS",30,"Supervisor",161.4705882,6.41176470000002,NA,"HJT","Supervisor",155.0588235
+491,"OCCUPATIONS",31,"Relations",169,7.52941179999999,NA,"HJT","Relations",161.4705882
+491,"OCCUPATIONS",32,"Artist",175.6470588,6.6470588,NA,"HJT","Artist",169
+578,"OCCUPATIONS",1,"Dentist",2.176470588,2.176470588,NA,"HJT","Dentist",NA
+578,"OCCUPATIONS",2,"Lawyer",4.529411765,2.352941177,NA,"HJT","Lawyer",2.176470588
+578,"OCCUPATIONS",3,"Teacher",7.176470588,2.647058823,NA,"HJT","Teacher",4.529411765
+578,"OCCUPATIONS",4,"Clown",9.882352941,2.705882353,NA,"HJT","Clown",7.176470588
+578,"OCCUPATIONS",5,"Audiologist",10.76470588,0.882352938999999,NA,"HJT","Audiologist",9.882352941
+578,"OCCUPATIONS",6,"Paralegal",20.47058824,9.70588236,NA,"HJT","Paralegal",10.76470588
+578,"OCCUPATIONS",7,"Hygienist",23,2.52941176,NA,"HJT","Hygienist",20.47058824
+578,"OCCUPATIONS",8,"Secretary",31.11764706,8.11764706,NA,"HJT","Secretary",23
+578,"OCCUPATIONS",9,"Principal",34.47058824,3.35294118,NA,"HJT","Principal",31.11764706
+578,"OCCUPATIONS",10,"Driver",37.11764706,2.64705882,NA,"HJT","Driver",34.47058824
+578,"OCCUPATIONS",11,"Entrepreneur",44.41176471,7.29411765,NA,"HJT","Entrepreneur",37.11764706
+578,"OCCUPATIONS",12,"Chef",49.23529412,4.82352941,NA,"HJT","Chef",44.41176471
+578,"OCCUPATIONS",13,"Taxi Driver",53.76470588,4.52941176,NA,"HJT","Taxi Driver",49.23529412
+578,"OCCUPATIONS",14,"Audiologist",59.76470588,6,NA,"HJT","Audiologist",53.76470588
+578,"OCCUPATIONS",15,"Planner",67.41176471,7.64705883,NA,"HJT","Planner",59.76470588
+578,"OCCUPATIONS",16,"Doctor",75.11764706,7.70588235,NA,"HJT","Doctor",67.41176471
+578,"OCCUPATIONS",17,"Surgeon",77.82352941,2.70588235000001,NA,"HJT","Surgeon",75.11764706
+578,"OCCUPATIONS",18,"Policeman",80.11764706,2.29411764999999,NA,"HJT","Policeman",77.82352941
+578,"OCCUPATIONS",19,"Daycare",87,6.88235294,NA,"HJT","Daycare Worker",80.11764706
+578,"OCCUPATIONS",20,"Engineer",95.82352941,8.82352941000001,NA,"HJT","Engineer",87
+578,"OCCUPATIONS",21,"Professor",101.4705882,5.64705878999999,NA,"HJT","Professor",95.82352941
+578,"OCCUPATIONS",22,"Psychologist",113.4117647,11.9411765,NA,"HJT","Psychologist",101.4705882
+578,"OCCUPATIONS",23,"Driver",122.4117647,9,NA,"HJT","Driver",113.4117647
+578,"OCCUPATIONS",24,"Coordinator",126.6470588,4.23529409999999,NA,"HJT","Coordinator",122.4117647
+578,"OCCUPATIONS",25,"Mother",135.5294118,8.882353,NA,"HJT","Mother",126.6470588
+578,"OCCUPATIONS",26,"Father",138.1764706,2.6470588,NA,"HJT","Father",135.5294118
+578,"OCCUPATIONS",27,"Advisor",144.8235294,6.64705880000002,NA,"HJT","Advisor",138.1764706
+578,"OCCUPATIONS",28,"Stockbroker",162.4117647,17.5882353,NA,"HJT","Stockbroker",144.8235294
+578,"OCCUPATIONS",29,"Waitress",171.8235294,9.41176470000002,NA,"HJT","Waitress",162.4117647
+578,"OCCUPATIONS",30,"Busser",176.5294118,4.70588239999998,NA,"HJT","Busser",171.8235294
+578,"OCCUPATIONS",31,"Dishwasher",179.7647059,3.2352941,NA,"HJT","Dishwasher",176.5294118
+580,"OCCUPATIONS",1,"Nurse",0.794117647,0.794117647,NA,"HJT","Nurse",NA
+580,"OCCUPATIONS",2,"Doctor",2.426470588,1.632352941,NA,"HJT","Doctor",0.794117647
+580,"OCCUPATIONS",3,"Lawyer",5.426470588,3,NA,"HJT","Lawyer",2.426470588
+580,"OCCUPATIONS",4,"Teacher",7.058823529,1.632352941,NA,"HJT","Teacher",5.426470588
+580,"OCCUPATIONS",5,"Owner",12.48529412,5.426470591,NA,"HJT","Owner",7.058823529
+580,"OCCUPATIONS",6,"Agent",20.38235294,7.89705882,NA,"HJT","Agent",12.48529412
+580,"OCCUPATIONS",7,"Manicurist",29.95588235,9.57352941,NA,"HJT","Manicurist",20.38235294
+580,"OCCUPATIONS",8,"Stripper",34.69117647,4.73529412,NA,"HJT","Stripper",29.95588235
+580,"OCCUPATIONS",9,"Masseuse",38.05882353,3.36764706,NA,"HJT","Masseuse",34.69117647
+580,"OCCUPATIONS",10,"Haircutter",41.58823529,3.52941176,NA,"HJT","Haircutter",38.05882353
+580,"OCCUPATIONS",11,"Secretary",47.32352941,5.73529412,NA,"HJT","Secretary",41.58823529
+580,"OCCUPATIONS",12,"Accountant",49.95588235,2.63235294,NA,"HJT","Accountant",47.32352941
+580,"OCCUPATIONS",13,"Banker",54.42647059,4.47058824,NA,"HJT","Banker",49.95588235
+580,"OCCUPATIONS",14,"Repairman",57.85294118,3.42647059,NA,"HJT","Repairman",54.42647059
+580,"OCCUPATIONS",15,"Janitor",63.05882353,5.20588235,NA,"HJT","Janitor",57.85294118
+580,"OCCUPATIONS",16,"Garbage",67.58823529,4.52941176,NA,"HJT","Garbage Man",63.05882353
+580,"OCCUPATIONS",17,"Actor",74.79411765,7.20588236,NA,"HJT","Actor",67.58823529
+580,"OCCUPATIONS",18,"Singer",76.42647059,1.63235293999999,NA,"HJT","Singer",74.79411765
+580,"OCCUPATIONS",19,"Model",78.79411765,2.36764706000001,NA,"HJT","Model",76.42647059
+580,"OCCUPATIONS",20,"Athlete",82.11764706,3.32352940999999,NA,"HJT","Athlete",78.79411765
+580,"OCCUPATIONS",21,"Salesman",109.2205882,27.10294114,NA,"HJT","Salesman",82.11764706
+580,"OCCUPATIONS",22,"Storeowner",128.5882353,19.3676471,NA,"HJT","Storeowner",109.2205882
+580,"OCCUPATIONS",23,"Veterinarian",138.2205882,9.6323529,NA,"HJT","Veterinarian",128.5882353
+580,"OCCUPATIONS",24,"Astronaut",144.3235294,6.1029412,NA,"HJT","Astronaut",138.2205882
+580,"OCCUPATIONS",25,"Policeman",146.4852941,2.16176469999999,NA,"HJT","Policeman",144.3235294
+580,"OCCUPATIONS",26,"Fireman",150.6911765,4.20588240000001,NA,"HJT","Fireman",146.4852941
+580,"OCCUPATIONS",27,"Magician",160.6911765,10,NA,"HJT","Magician",150.6911765
+580,"OCCUPATIONS",28,"Coordinator",165.3823529,4.69117639999999,NA,"HJT","Coordinator",160.6911765
+580,"OCCUPATIONS",29,"Designer",171.75,6.3676471,NA,"HJT","Designer",165.3823529
+580,"OCCUPATIONS",30,"Advertiser",179.9558824,8.20588240000001,NA,"HJT","Advertiser",171.75
+582,"OCCUPATIONS",1,"Doctor",0.220588235,0.220588235,NA,"HJT","Doctor",NA
+582,"OCCUPATIONS",2,"Teacher",0.823529412,0.602941177,NA,"HJT","Teacher",0.220588235
+582,"OCCUPATIONS",3,"Dentist",4.426470588,3.602941176,NA,"HJT","Dentist",0.823529412
+582,"OCCUPATIONS",4,"Banker",10.22058824,5.794117652,NA,"HJT","Banker",4.426470588
+582,"OCCUPATIONS",5,"Lawyer",26.22058824,16,NA,"HJT","Lawyer",10.22058824
+582,"OCCUPATIONS",6,"Nurse",32.61764706,6.39705882,NA,"HJT","Nurse",26.22058824
+582,"OCCUPATIONS",7,"Psychologist",38.83823529,6.22058823,NA,"HJT","Psychologist",32.61764706
+582,"OCCUPATIONS",8,"Engineer",51.42647059,12.5882353,NA,"HJT","Engineer",38.83823529
+582,"OCCUPATIONS",9,"Scientist",59.02941176,7.60294117,NA,"HJT","Scientist",51.42647059
+582,"OCCUPATIONS",10,"Astronaut",61.63235294,2.60294118,NA,"HJT","Astronaut",59.02941176
+582,"OCCUPATIONS",11,"Worker",66.05882353,4.42647059,NA,"HJT","Worker",61.63235294
+582,"OCCUPATIONS",12,"Secretary",90.02941176,23.97058823,NA,"HJT","Secretary",66.05882353
+582,"OCCUPATIONS",13,"Principal",94.02941176,4,NA,"HJT","Principal",90.02941176
+582,"OCCUPATIONS",14,"Cashier",100.8235294,6.79411764,NA,"HJT","Cashier",94.02941176
+582,"OCCUPATIONS",15,"Manager",102.8235294,2,NA,"HJT","Manager",100.8235294
+582,"OCCUPATIONS",16,"Optometrist",116.2352941,13.4117647,NA,"HJT","Optometrist",102.8235294
+582,"OCCUPATIONS",17,"Entrepreneur",153.8382353,37.6029412,NA,"HJT","Entrepreneur",116.2352941
+582,"OCCUPATIONS",18,"Chef",174.0147059,20.1764706,NA,"HJT","Chef",153.8382353
+582,"OCCUPATIONS",19,"Actor",183.6176471,9.6029412,NA,"HJT","Actor",174.0147059
+587,"OCCUPATIONS",1,"Doctor",0.838235294,0.838235294,NA,"HJT","Doctor",NA
+587,"OCCUPATIONS",2,"Lawyer",2.838235294,2,NA,"HJT","Lawyer",0.838235294
+587,"OCCUPATIONS",3,"Psychiatrist",4.985294118,2.147058824,NA,"HJT","Psychiatrist",2.838235294
+587,"OCCUPATIONS",4,"Dentist",8.529411765,3.544117647,NA,"HJT","Dentist",4.985294118
+587,"OCCUPATIONS",5,"Nurse",11.14705882,2.617647055,NA,"HJT","Nurse",8.529411765
+587,"OCCUPATIONS",6,"Firefighter",12.98529412,1.8382353,NA,"HJT","Firefighter",11.14705882
+587,"OCCUPATIONS",7,"Policeman",14.36764706,1.38235294,NA,"HJT","Policeman",12.98529412
+587,"OCCUPATIONS",8,"FBI",19.91176471,5.54411765,NA,"HJT","FBI",14.36764706
+587,"OCCUPATIONS",9,"Investigator",25.27941176,5.36764705,NA,"HJT","Investigator",19.91176471
+587,"OCCUPATIONS",10,"Accountant",35.60294118,10.32352942,NA,"HJT","Accountant",25.27941176
+587,"OCCUPATIONS",11,"Taxi Driver",44.29411765,8.69117647,NA,"HJT","Taxi Driver",35.60294118
+587,"OCCUPATIONS",12,"Driver",46.98529412,2.69117647,NA,"HJT","Driver",44.29411765
+587,"OCCUPATIONS",13,"Manager",47.42647059,0.441176470000002,NA,"HJT","Manager",46.98529412
+587,"OCCUPATIONS",14,"Secretary",58.91176471,11.48529412,NA,"HJT","Secretary",47.42647059
+587,"OCCUPATIONS",15,"Manager",61.35294118,2.44117647,NA,"HJT","Manager",58.91176471
+587,"OCCUPATIONS",16,"Associate",71.05882353,9.70588235,NA,"HJT","Associate",61.35294118
+587,"OCCUPATIONS",17,"Biologist",81.75,10.69117647,NA,"HJT","Biologist",71.05882353
+587,"OCCUPATIONS",18,"Psychologist",88.98529412,7.23529412000001,NA,"HJT","Psychologist",81.75
+587,"OCCUPATIONS",19,"Philosopher",94.29411765,5.30882353,NA,"HJT","Philosopher",88.98529412
+587,"OCCUPATIONS",20,"Analyst",101.75,7.45588235,NA,"HJT","Analyst",94.29411765
+587,"OCCUPATIONS",21,"Pharmacist",108.2941176,6.54411760000001,NA,"HJT","Pharmacist",101.75
+587,"OCCUPATIONS",22,"Baker",118.1470588,9.85294119999999,NA,"HJT","Baker",108.2941176
+587,"OCCUPATIONS",23,"Entrepreneur",119.2794118,1.13235300000001,NA,"HJT","Entrepreneur",118.1470588
+587,"OCCUPATIONS",24,"Journalist",134.6029412,15.3235294,NA,"HJT","Journalist",119.2794118
+587,"OCCUPATIONS",25,"Garbage",137.2941176,2.69117639999999,NA,"HJT","Garbage Man",134.6029412
+587,"OCCUPATIONS",26,"Pilot",144.1470588,6.8529412,NA,"HJT","Pilot",137.2941176
+587,"OCCUPATIONS",27,"Estate",155.9852941,11.8382353,NA,"HJT","Estate",144.1470588
+587,"OCCUPATIONS",28,"Worker",161.8235294,5.83823530000001,NA,"HJT","Worker",155.9852941
+587,"OCCUPATIONS",29,"Teacher",166.5294118,4.70588239999998,NA,"HJT","Teacher",161.8235294
+587,"OCCUPATIONS",30,"Librarian",171.9117647,5.3823529,NA,"HJT","Librarian",166.5294118
+587,"OCCUPATIONS",31,"Counselor",182.1323529,10.2205882,NA,"HJT","Counselor",171.9117647
+597,"OCCUPATIONS",1,"Janitor",4,4,NA,"HJT","Janitor",NA
+597,"OCCUPATIONS",2,"Accountant",5.25,1.25,NA,"HJT","Accountant",4
+597,"OCCUPATIONS",3,"Executive",7.5,2.25,NA,"HJT","Executive",5.25
+597,"OCCUPATIONS",4,"Vendor",11.5,4,NA,"HJT","Vendor",7.5
+597,"OCCUPATIONS",5,"Lawnmower",15.25,3.75,NA,"HJT","Lawnmower",11.5
+597,"OCCUPATIONS",6,"Actress",19,3.75,NA,"HJT","Actress",15.25
+597,"OCCUPATIONS",7,"Actor",20.5,1.5,NA,"HJT","Actor",19
+597,"OCCUPATIONS",8,"FBI",25.5,5,NA,"HJT","FBI",20.5
+597,"OCCUPATIONS",9,"Policeman",27.5,2,NA,"HJT","Policeman",25.5
+597,"OCCUPATIONS",10,"Celebrity",35.5,8,NA,"HJT","Celebrity",27.5
+597,"OCCUPATIONS",11,"Attorney",46.75,11.25,NA,"HJT","Attorney",35.5
+597,"OCCUPATIONS",12,"Paralegal",49.5,2.75,NA,"HJT","Paralegal",46.75
+597,"OCCUPATIONS",13,"Therapist",53.5,4,NA,"HJT","Therapist",49.5
+597,"OCCUPATIONS",14,"Psychologist",55.75,2.25,NA,"HJT","Psychologist",53.5
+597,"OCCUPATIONS",15,"Sociologist",59,3.25,NA,"HJT","Sociologist",55.75
+597,"OCCUPATIONS",16,"Biologist",64.5,5.5,NA,"HJT","Biologist",59
+597,"OCCUPATIONS",17,"Fireman",73,8.5,NA,"HJT","Fireman",64.5
+597,"OCCUPATIONS",18,"Worker",75,2,NA,"HJT","Worker",73
+597,"OCCUPATIONS",19,"Tollbooth",82.25,7.25,NA,"HJT","Tollbooth",75
+597,"OCCUPATIONS",20,"Athlete",91,8.75,NA,"HJT","Athlete",82.25
+597,"OCCUPATIONS",21,"Athlete",93.5,2.5,NA,"HJT","Athlete",91
+597,"OCCUPATIONS",22,"Accountant",107.25,13.75,NA,"HJT","Accountant",93.5
+597,"OCCUPATIONS",23,"Scientist",123.5,16.25,NA,"HJT","Scientist",107.25
+597,"OCCUPATIONS",24,"Chemist",128,4.5,NA,"HJT","Chemist",123.5
+597,"OCCUPATIONS",25,"Explorer",131.75,3.75,NA,"HJT","Explorer",128
+597,"OCCUPATIONS",26,"Writer",143.25,11.5,NA,"HJT","Writer",131.75
+597,"OCCUPATIONS",27,"Director",145.75,2.5,NA,"HJT","Director",143.25
+597,"OCCUPATIONS",28,"Producer",147.75,2,NA,"HJT","Producer",145.75
+597,"OCCUPATIONS",29,"Agent",157.5,9.75,NA,"HJT","Agent",147.75
+597,"OCCUPATIONS",30,"President",162.5,5,NA,"HJT","President",157.5
+597,"OCCUPATIONS",31,"Senator",168,5.5,NA,"HJT","Senator",162.5
+597,"OCCUPATIONS",32,"Doctor",178.25,10.25,NA,"HJT","Doctor",168
+681,"OCCUPATIONS",1,"Teacher",0.294117647,0.294117647,NA,"HJT","Teacher",NA
+681,"OCCUPATIONS",2,"Judge",2.970588235,2.676470588,NA,"HJT","Judge",0.294117647
+681,"OCCUPATIONS",3,"Lawyer",3.632352941,0.661764706,NA,"HJT","Lawyer",2.970588235
+681,"OCCUPATIONS",4,"Rabbi",5.970588235,2.338235294,NA,"HJT","Rabbi",3.632352941
+681,"OCCUPATIONS",5,"Priest",7.632352941,1.661764706,NA,"HJT","Priest",5.970588235
+681,"OCCUPATIONS",6,"Nurse",9.970588235,2.338235294,NA,"HJT","Nurse",7.632352941
+681,"OCCUPATIONS",7,"Orthodontist",11.60294118,1.632352945,NA,"HJT","Orthodontist",9.970588235
+681,"OCCUPATIONS",8,"Designer",15.95588235,4.35294117,NA,"HJT","Designer",11.60294118
+681,"OCCUPATIONS",9,"Arranger",21.58823529,5.63235294,NA,"HJT","Arranger",15.95588235
+681,"OCCUPATIONS",10,"Planner",25.26470588,3.67647059,NA,"HJT","Planner",21.58823529
+681,"OCCUPATIONS",11,"Florist",28.29411765,3.02941177,NA,"HJT","Florist",25.26470588
+681,"OCCUPATIONS",12,"Dressmaker",30.94117647,2.64705882,NA,"HJT","Dressmaker",28.29411765
+681,"OCCUPATIONS",13,"Tailor",36.63235294,5.69117647,NA,"HJT","Tailor",30.94117647
+681,"OCCUPATIONS",14,"Surgeon",37.26470588,0.632352940000004,NA,"HJT","Surgeon",36.63235294
+681,"OCCUPATIONS",15,"Attorney",43.95588235,6.69117647,NA,"HJT","Attorney",37.26470588
+681,"OCCUPATIONS",16,"Cacantor",47.95588235,4,NA,"HJT","Cacantor",43.95588235
+681,"OCCUPATIONS",17,"Waiter",52.63235294,4.67647058999999,NA,"HJT","Waiter",47.95588235
+681,"OCCUPATIONS",18,"Attendant",53.25,0.617647060000003,NA,"HJT","Attendant",52.63235294
+681,"OCCUPATIONS",19,"Student",58.29411765,5.04411765,NA,"HJT","Student",53.25
+681,"OCCUPATIONS",20,"Professor",60.61764706,2.32352941000001,NA,"HJT","Professor",58.29411765
+681,"OCCUPATIONS",21,"Babysitter",62.94117647,2.32352941,NA,"HJT","Babysitter",60.61764706
+681,"OCCUPATIONS",22,"Bartender",68.25,5.30882353,NA,"HJT","Bartender",62.94117647
+681,"OCCUPATIONS",23,"Analyst",73.25,5,NA,"HJT","Analyst",68.25
+681,"OCCUPATIONS",24,"Policeman",77.92647059,4.67647058999999,NA,"HJT","Policeman",73.25
+681,"OCCUPATIONS",25,"Firefighter",81.94117647,4.01470588000001,NA,"HJT","Firefighter",77.92647059
+681,"OCCUPATIONS",26,"EMT",88.64705882,6.70588235,NA,"HJT","EMT",81.94117647
+681,"OCCUPATIONS",27,"Hacker",92.58823529,3.94117647,NA,"HJT","Hacker",88.64705882
+681,"OCCUPATIONS",28,"Dealer",97.23529412,4.64705883000001,NA,"HJT","Dealer",92.58823529
+681,"OCCUPATIONS",29,"Pharmacist",106.2794118,9.04411768,NA,"HJT","Pharmacist",97.23529412
+681,"OCCUPATIONS",30,"Designer",109.9117647,3.6323529,NA,"HJT","Designer",106.2794118
+681,"OCCUPATIONS",31,"Manager",115.2647059,5.35294119999999,NA,"HJT","Manager",109.9117647
+681,"OCCUPATIONS",32,"Salesclerk",128.2794118,13.0147059,NA,"HJT","Salesclerk",115.2647059
+681,"OCCUPATIONS",33,"Librarian",133.6176471,5.33823530000001,NA,"HJT","Librarian",128.2794118
+681,"OCCUPATIONS",34,"Musician",137.9558824,4.33823530000001,NA,"HJT","Musician",133.6176471
+681,"OCCUPATIONS",35,"Dancer",140.2941176,2.33823519999999,NA,"HJT","Dancer",137.9558824
+681,"OCCUPATIONS",36,"Artist",141.6323529,1.33823530000001,NA,"HJT","Artist",140.2941176
+681,"OCCUPATIONS",37,"Actor",143.9705882,2.33823530000001,NA,"HJT","Actor",141.6323529
+681,"OCCUPATIONS",38,"Comedian",148.9558824,4.9852942,NA,"HJT","Comedian",143.9705882
+681,"OCCUPATIONS",39,"Poet",153.3088235,4.35294109999998,NA,"HJT","Poet",148.9558824
+681,"OCCUPATIONS",40,"Writer",156.6323529,3.32352940000001,NA,"HJT","Writer",153.3088235
+681,"OCCUPATIONS",41,"Telemarketer",168.6029412,11.9705883,NA,"HJT","Telemarketer",156.6323529
+681,"OCCUPATIONS",42,"Plastic Surgeon",184.25,15.6470588,NA,"HJT","Plastic Surgeon",168.6029412
+683,"OCCUPATIONS",1,"Wrangler",4.470588235,4.470588235,NA,"HJT","Wrangler",NA
+683,"OCCUPATIONS",2,"Doctor",9.352941176,4.882352941,NA,"HJT","Doctor",4.470588235
+683,"OCCUPATIONS",3,"Prostitute",13.41176471,4.058823534,NA,"HJT","Prostitute",9.352941176
+683,"OCCUPATIONS",4,"Pimp",18.82352941,5.4117647,NA,"HJT","Pimp",13.41176471
+683,"OCCUPATIONS",5,"Lawyer",21.35294118,2.52941177,NA,"HJT","Lawyer",18.82352941
+683,"OCCUPATIONS",6,"Director",28.52941176,7.17647058,NA,"HJT","Director",21.35294118
+683,"OCCUPATIONS",7,"Worker",34.29411765,5.76470589,NA,"HJT","Worker",28.52941176
+683,"OCCUPATIONS",8,"Superintendent",48.47058824,14.17647059,NA,"HJT","Superintendent",34.29411765
+683,"OCCUPATIONS",9,"Principal",52.64705882,4.17647058,NA,"HJT","Principal",48.47058824
+683,"OCCUPATIONS",10,"Teacher",55.11764706,2.47058824,NA,"HJT","Teacher",52.64705882
+683,"OCCUPATIONS",11,"Professor",55.64705882,0.529411759999995,NA,"HJT","Professor",55.11764706
+683,"OCCUPATIONS",12,"Bum",63,7.35294118,NA,"HJT","Bum",55.64705882
+683,"OCCUPATIONS",13,"Athlete",70.23529412,7.23529412000001,NA,"HJT","Athlete",63
+683,"OCCUPATIONS",14,"Author",95.35294118,25.11764706,NA,"HJT","Author",70.23529412
+683,"OCCUPATIONS",15,"Secretary",98.64705882,3.29411764,NA,"HJT","Secretary",95.35294118
+683,"OCCUPATIONS",16,"Host",106.4705882,7.82352938,NA,"HJT","Host",98.64705882
+683,"OCCUPATIONS",17,"Athlete",111.7058824,5.2352942,NA,"HJT","Athlete",106.4705882
+683,"OCCUPATIONS",18,"Coach",122.4705882,10.7647058,NA,"HJT","Coach",111.7058824
+683,"OCCUPATIONS",19,"Athlete",125,2.52941180000001,NA,"HJT","Athlete",122.4705882
+683,"OCCUPATIONS",20,"Coach",128.9411765,3.94117650000001,NA,"HJT","Coach",125
+683,"OCCUPATIONS",21,"Psychic",153.1176471,24.1764706,NA,"HJT","Psychic",128.9411765
+683,"OCCUPATIONS",22,"Herder",159.7058824,6.58823530000001,NA,"HJT","Herder",153.1176471
+683,"OCCUPATIONS",23,"Miner",169.5882353,9.8823529,NA,"HJT","Miner",159.7058824
+683,"OCCUPATIONS",24,"Millworker",170.7647059,1.17647059999999,NA,"HJT","Millworker",169.5882353
+683,"OCCUPATIONS",25,"Optometrist",182.1764706,11.4117647,NA,"HJT","Optometrist",170.7647059
+689,"OCCUPATIONS",1,"Doctor",1.294117647,1.294117647,NA,"HJT","Doctor",NA
+689,"OCCUPATIONS",2,"Lawyer",5.294117647,4,NA,"HJT","Lawyer",1.294117647
+689,"OCCUPATIONS",3,"Janitor",7.955882353,2.661764706,NA,"HJT","Janitor",5.294117647
+689,"OCCUPATIONS",4,"Student",9.955882353,2,NA,"HJT","Student",7.955882353
+689,"OCCUPATIONS",5,"Teacher",11.61764706,1.661764707,NA,"HJT","Teacher",9.955882353
+689,"OCCUPATIONS",6,"Doormen",16.29411765,4.67647059,NA,"HJT","Doormen",11.61764706
+689,"OCCUPATIONS",7,"Scientist",19.94117647,3.64705882,NA,"HJT","Scientist",16.29411765
+689,"OCCUPATIONS",8,"Bondsman",26.60294118,6.66176471,NA,"HJT","Bondsman",19.94117647
+689,"OCCUPATIONS",9,"Sales",34.63235294,8.02941176,NA,"HJT","Sales",26.60294118
+689,"OCCUPATIONS",10,"President",38.61764706,3.98529412000001,NA,"HJT","President",34.63235294
+689,"OCCUPATIONS",11,"Mechanic",46.95588235,8.33823529,NA,"HJT","Mechanic",38.61764706
+689,"OCCUPATIONS",12,"Computer Technician",52.26470588,5.30882353,NA,"HJT","Computer Technician",46.95588235
+689,"OCCUPATIONS",13,"Cashier",59.29411765,7.02941177,NA,"HJT","Cashier",52.26470588
+689,"OCCUPATIONS",14,"Deliveryman",60.92647059,1.63235294,NA,"HJT","Deliveryman",59.29411765
+689,"OCCUPATIONS",15,"Golfer",67.63235294,6.70588235,NA,"HJT","Golfer",60.92647059
+689,"OCCUPATIONS",16,"Miner",69.27941176,1.64705882,NA,"HJT","Miner",67.63235294
+689,"OCCUPATIONS",17,"Musician",74.29411765,5.01470589,NA,"HJT","Musician",69.27941176
+689,"OCCUPATIONS",18,"Juggler",77.29411765,3,NA,"HJT","Juggler",74.29411765
+689,"OCCUPATIONS",19,"Performer",80.25,2.95588235,NA,"HJT","Performer",77.29411765
+689,"OCCUPATIONS",20,"Star",84.61764706,4.36764706,NA,"HJT","Star",80.25
+689,"OCCUPATIONS",21,"Handler",89.58823529,4.97058823,NA,"HJT","Handler",84.61764706
+689,"OCCUPATIONS",22,"Therapist",95.61764706,6.02941177,NA,"HJT","Therapist",89.58823529
+689,"OCCUPATIONS",23,"Lawyer",102.2941176,6.67647054000001,NA,"HJT","Lawyer",95.61764706
+689,"OCCUPATIONS",24,"Doctor",104.2941176,2,NA,"HJT","Doctor",102.2941176
+689,"OCCUPATIONS",25,"Conductor",116.2794118,11.9852942,NA,"HJT","Conductor",104.2941176
+689,"OCCUPATIONS",26,"Managers",122.9558824,6.67647059999999,NA,"HJT","Managers",116.2794118
+689,"OCCUPATIONS",27,"Supervisor",125.9411765,2.9852941,NA,"HJT","Supervisor",122.9558824
+689,"OCCUPATIONS",28,"Construction",131.6029412,5.66176470000001,NA,"HJT","Construction",125.9411765
+689,"OCCUPATIONS",29,"Plumber",139.2941176,7.69117639999999,NA,"HJT","Plumber",131.6029412
+689,"OCCUPATIONS",30,"Woodworker",144.9411765,5.64705890000002,NA,"HJT","Woodworker",139.2941176
+689,"OCCUPATIONS",31,"Worker",146.9264706,1.98529409999998,NA,"HJT","Worker",144.9411765
+689,"OCCUPATIONS",32,"Miner",151.9705882,5.04411760000002,NA,"HJT","Miner",146.9264706
+689,"OCCUPATIONS",33,"Weaver",155.8823529,3.91176469999999,NA,"HJT","Weaver",151.9705882
+689,"OCCUPATIONS",34,"Maker",165.2352941,9.3529412,NA,"HJT","Maker",155.8823529
+689,"OCCUPATIONS",35,"Instructor",174.1029412,8.8676471,NA,"HJT","Instructor",165.2352941
+693,"OCCUPATIONS",1,"Dietetics",3.176470588,3.176470588,NA,"HJT","Dietetics",NA
+693,"OCCUPATIONS",2,"Doctor",6.323529412,3.147058824,NA,"HJT","Doctor",3.176470588
+693,"OCCUPATIONS",3,"Nurse",10.70588235,4.382352938,NA,"HJT","Nurse",6.323529412
+693,"OCCUPATIONS",4,"Farmer",14.32352941,3.61764706,NA,"HJT","Farmer",10.70588235
+693,"OCCUPATIONS",5,"Firefighter",17.41176471,3.0882353,NA,"HJT","Firefighter",14.32352941
+693,"OCCUPATIONS",6,"Policeman",20.26470588,2.85294117,NA,"HJT","Policeman",17.41176471
+693,"OCCUPATIONS",7,"Coach",26.70588235,6.44117647,NA,"HJT","Coach",20.26470588
+693,"OCCUPATIONS",8,"Dentist",32.94117647,6.23529412,NA,"HJT","Dentist",26.70588235
+693,"OCCUPATIONS",9,"Pediatrician",35.02941176,2.08823529,NA,"HJT","Pediatrician",32.94117647
+693,"OCCUPATIONS",10,"Driver",47.02941176,12,NA,"HJT","Driver",35.02941176
+693,"OCCUPATIONS",11,"Garbage",54.41176471,7.38235295,NA,"HJT","Garbage Man",47.02941176
+693,"OCCUPATIONS",12,"Teacher",56.94117647,2.52941176,NA,"HJT","Teacher",54.41176471
+693,"OCCUPATIONS",13,"Chemist",60.94117647,4,NA,"HJT","Chemist",56.94117647
+693,"OCCUPATIONS",14,"Biologist",63.17647059,2.23529412,NA,"HJT","Biologist",60.94117647
+693,"OCCUPATIONS",15,"Astronaut",68.17647059,4.99999999999999,NA,"HJT","Astronaut",63.17647059
+693,"OCCUPATIONS",16,"Botanist",83.55882353,15.38235294,NA,"HJT","Botanist",68.17647059
+693,"OCCUPATIONS",17,"Teachers Assistant",97.73529412,14.17647059,NA,"HJT","Teachers Assistant",83.55882353
+693,"OCCUPATIONS",18,"Therapist",102.7352941,4.99999998,NA,"HJT","Therapist",97.73529412
+693,"OCCUPATIONS",19,"Athlete",106.0588235,3.3235294,NA,"HJT","Athlete",102.7352941
+693,"OCCUPATIONS",20,"Engineer",122.5588235,16.5,NA,"HJT","Engineer",106.0588235
+693,"OCCUPATIONS",21,"Business",126.5588235,4,NA,"HJT","Business",122.5588235
+693,"OCCUPATIONS",22,"Hygienist",132.5588235,5.99999999999999,NA,"HJT","Hygienist",126.5588235
+693,"OCCUPATIONS",23,"Surgeon",135.3235294,2.76470590000002,NA,"HJT","Surgeon",132.5588235
+693,"OCCUPATIONS",24,"Banker",142.3235294,7,NA,"HJT","Banker",135.3235294
+693,"OCCUPATIONS",25,"Buyer",144.7058824,2.38235299999999,NA,"HJT","Buyer",142.3235294
+693,"OCCUPATIONS",26,"Babysitter",149.7941176,5.08823519999999,NA,"HJT","Babysitter",144.7058824
+693,"OCCUPATIONS",27,"Psychologist",161.4117647,11.6176471,NA,"HJT","Psychologist",149.7941176
+693,"OCCUPATIONS",28,"Technician",188.7941176,27.3823529,NA,"HJT","Technician",161.4117647
+783,"OCCUPATIONS",1,"Student",6.941176471,6.941176471,NA,"HJT","Student",NA
+783,"OCCUPATIONS",2,"Businessman",22.41176471,15.470588239,NA,"HJT","Businessman",6.941176471
+783,"OCCUPATIONS",3,"Trading",32.05882353,9.64705882,NA,"HJT","Trading",22.41176471
+783,"OCCUPATIONS",4,"Exporting",34.17647059,2.11764706,NA,"HJT","Exporting",32.05882353
+783,"OCCUPATIONS",5,"Importing",37.17647059,3,NA,"HJT","Importing",34.17647059
+783,"OCCUPATIONS",6,"Electronics",40.41176471,3.23529412,NA,"HJT","Electronics",37.17647059
+783,"OCCUPATIONS",7,"Computer",49.17647059,8.76470588,NA,"HJT","Computer",40.41176471
+783,"OCCUPATIONS",8,"Office",60.41176471,11.23529412,NA,"HJT","Office",49.17647059
+783,"OCCUPATIONS",9,"Fishing",75.94117647,15.52941176,NA,"HJT","Fishing",60.41176471
+783,"OCCUPATIONS",10,"Fighting",91.05882353,15.11764706,NA,"HJT","Fighting",75.94117647
+783,"OCCUPATIONS",11,"Athlete",93.76470588,2.70588235,NA,"HJT","Athlete",91.05882353
+783,"OCCUPATIONS",12,"Riding",115.8235294,22.05882352,NA,"HJT","Riding",93.76470588
+783,"OCCUPATIONS",13,"Hunting",180.9411765,65.1176471,NA,"HJT","Hunting",115.8235294
+784,"OCCUPATIONS",1,"Doctor",-1.117647059,-1.117647059,NA,"HJT","Doctor",NA
+784,"OCCUPATIONS",2,"Teacher",0.294117647,1.411764706,NA,"HJT","Teacher",-1.117647059
+784,"OCCUPATIONS",3,"Nurse",3.470588235,3.176470588,NA,"HJT","Nurse",0.294117647
+784,"OCCUPATIONS",4,"Therapist",0.411764706,-3.058823529,NA,"HJT","Therapist",3.470588235
+784,"OCCUPATIONS",5,"Agent",6.352941176,5.94117647,NA,"HJT","Agent",0.411764706
+784,"OCCUPATIONS",6,"Waitress",12.70588235,6.352941174,NA,"HJT","Waitress",6.352941176
+784,"OCCUPATIONS",7,"Actor",16.47058824,3.76470589,NA,"HJT","Actor",12.70588235
+784,"OCCUPATIONS",8,"Professor",15.52941176,-0.941176480000001,NA,"HJT","Professor",16.47058824
+784,"OCCUPATIONS",9,"Manager",22.29411765,6.76470589,NA,"HJT","Manager",15.52941176
+784,"OCCUPATIONS",10,"Technician",19.23529412,-3.05882353,NA,"HJT","Technician",22.29411765
+784,"OCCUPATIONS",11,"Secretary",37.11764706,17.88235294,NA,"HJT","Secretary",19.23529412
+784,"OCCUPATIONS",12,"Chiropractor",45.35294118,8.23529412,NA,"HJT","Chiropractor",37.11764706
+784,"OCCUPATIONS",13,"Oncologist",49.52941176,4.17647058,NA,"HJT","Oncologist",45.35294118
+784,"OCCUPATIONS",14,"Neurologist",55.94117647,6.41176471,NA,"HJT","Neurologist",49.52941176
+784,"OCCUPATIONS",15,"Surgeon",62.82352941,6.88235294,NA,"HJT","Surgeon",55.94117647
+784,"OCCUPATIONS",16,"Pediatrician",72.35294118,9.52941177,NA,"HJT","Pediatrician",62.82352941
+784,"OCCUPATIONS",17,"Therapist",76.82352941,4.47058823,NA,"HJT","Therapist",72.35294118
+784,"OCCUPATIONS",18,"Athlete",85.05882353,8.23529411999999,NA,"HJT","Athlete",76.82352941
+784,"OCCUPATIONS",19,"Anchor",96.94117647,11.88235294,NA,"HJT","Anchor",85.05882353
+784,"OCCUPATIONS",20,"Janitor",106.2941176,9.35294113,NA,"HJT","Janitor",96.94117647
+784,"OCCUPATIONS",21,"Electrician",106.9411765,0.64705889999999,NA,"HJT","Electrician",106.2941176
+784,"OCCUPATIONS",22,"Employee",121.7058824,14.7647059,NA,"HJT","Employee",106.9411765
+784,"OCCUPATIONS",23,"Owner",119.6470588,-2.0588236,NA,"HJT","Owner",121.7058824
+784,"OCCUPATIONS",24,"Worker",130.1764706,10.5294118,NA,"HJT","Worker",119.6470588
+784,"OCCUPATIONS",25,"Chef",142.0588235,11.8823529,NA,"HJT","Chef",130.1764706
+784,"OCCUPATIONS",26,"Baker",143.4705882,1.41176470000002,NA,"HJT","Baker",142.0588235
+784,"OCCUPATIONS",27,"Cashier",152.2941176,8.82352939999998,NA,"HJT","Cashier",143.4705882
+784,"OCCUPATIONS",28,"Designer",167.3529412,15.0588236,NA,"HJT","Designer",152.2941176
+784,"OCCUPATIONS",29,"Coach",175.4705882,8.117647,NA,"HJT","Coach",167.3529412
+784,"OCCUPATIONS",30,"Manager",178.7647059,3.29411769999999,NA,"HJT","Manager",175.4705882
+786,"OCCUPATIONS",1,"Librarian",4.617647059,4.617647059,NA,"HJT","Librarian",NA
+786,"OCCUPATIONS",2,"Deliveryman",7.602941176,2.985294117,NA,"HJT","Deliveryman",4.617647059
+786,"OCCUPATIONS",3,"Sportscaster",13.26470588,5.661764704,NA,"HJT","Sportscaster",7.602941176
+786,"OCCUPATIONS",4,"Lawyer",20.63235294,7.36764706,NA,"HJT","Lawyer",13.26470588
+786,"OCCUPATIONS",5,"Doctor",24.63235294,4,NA,"HJT","Doctor",20.63235294
+786,"OCCUPATIONS",6,"Therapist",26.26470588,1.63235294,NA,"HJT","Therapist",24.63235294
+786,"OCCUPATIONS",7,"Lifeguard",36.27941176,10.01470588,NA,"HJT","Lifeguard",26.26470588
+786,"OCCUPATIONS",8,"Janitor",41.29411765,5.01470589,NA,"HJT","Janitor",36.27941176
+786,"OCCUPATIONS",9,"Chef",45.30882353,4.01470588,NA,"HJT","Chef",41.29411765
+786,"OCCUPATIONS",10,"Attendant",50.55882353,5.25,NA,"HJT","Attendant",45.30882353
+786,"OCCUPATIONS",11,"Writer",73.63235294,23.07352941,NA,"HJT","Writer",50.55882353
+786,"OCCUPATIONS",12,"Teacher",76.29411765,2.66176471,NA,"HJT","Teacher",73.63235294
+786,"OCCUPATIONS",13,"Businessman",80.60294118,4.30882353,NA,"HJT","Businessman",76.29411765
+786,"OCCUPATIONS",14,"Psychologist",88.60294118,8,NA,"HJT","Psychologist",80.60294118
+786,"OCCUPATIONS",15,"Psychiatrist",96.60294118,8,NA,"HJT","Psychiatrist",88.60294118
+786,"OCCUPATIONS",16,"Pimp",106.9705882,10.36764702,NA,"HJT","Pimp",96.60294118
+786,"OCCUPATIONS",17,"Singer",115.6323529,8.66176470000001,NA,"HJT","Singer",106.9705882
+786,"OCCUPATIONS",18,"Dancer",117.6323529,2,NA,"HJT","Dancer",115.6323529
+786,"OCCUPATIONS",19,"Waitress",119.9558824,2.32352949999999,NA,"HJT","Waitress",117.6323529
+786,"OCCUPATIONS",20,"Waiter",123.6323529,3.67647050000001,NA,"HJT","Waiter",119.9558824
+786,"OCCUPATIONS",21,"Hostess",131.2941176,7.66176469999999,NA,"HJT","Hostess",123.6323529
+786,"OCCUPATIONS",22,"Designer",140.25,8.95588240000001,NA,"HJT","Designer",131.2941176
+786,"OCCUPATIONS",23,"Actor",144.9705882,4.72058820000001,NA,"HJT","Actor",140.25
+786,"OCCUPATIONS",24,"Actress",147.2941176,2.32352939999998,NA,"HJT","Actress",144.9705882
+786,"OCCUPATIONS",25,"Producer",152.9558824,5.66176480000001,NA,"HJT","Producer",147.2941176
+786,"OCCUPATIONS",26,"Director",155.9558824,3,NA,"HJT","Director",152.9558824
+786,"OCCUPATIONS",27,"Plumber",162.2941176,6.33823519999999,NA,"HJT","Plumber",155.9558824
+786,"OCCUPATIONS",28,"Landlord",165.6176471,3.32352950000001,NA,"HJT","Landlord",162.2941176
+786,"OCCUPATIONS",29,"Engineer",174.9558824,9.33823530000001,NA,"HJT","Engineer",165.6176471
+786,"OCCUPATIONS",30,"Consultant",178.9264706,3.97058819999998,NA,"HJT","Consultant",174.9558824
+787,"OCCUPATIONS",1,"Police",28.70588235,28.70588235,NA,"HJT","Police",NA
+787,"OCCUPATIONS",2,"Teacher",31.23529412,2.52941177,NA,"HJT","Teacher",28.70588235
+787,"OCCUPATIONS",3,"Student",33.23529412,2,NA,"HJT","Student",31.23529412
+787,"OCCUPATIONS",4,"Soldier",38.23529412,5,NA,"HJT","Soldier",33.23529412
+787,"OCCUPATIONS",5,"Prostitute",46.82352941,8.58823529,NA,"HJT","Prostitute",38.23529412
+787,"OCCUPATIONS",6,"Secretary",61.29411765,14.47058824,NA,"HJT","Secretary",46.82352941
+787,"OCCUPATIONS",7,"Businessman",65.35294118,4.05882353,NA,"HJT","Businessman",61.29411765
+787,"OCCUPATIONS",8,"Firefighter",73.35294118,8,NA,"HJT","Firefighter",65.35294118
+787,"OCCUPATIONS",9,"Doctor",79.70588235,6.35294116999999,NA,"HJT","Doctor",73.35294118
+787,"OCCUPATIONS",10,"Nurse",81.17647059,1.47058824,NA,"HJT","Nurse",79.70588235
+787,"OCCUPATIONS",11,"Engineer",92.29411765,11.11764706,NA,"HJT","Engineer",81.17647059
+787,"OCCUPATIONS",12,"Mason",99.17647059,6.88235293999999,NA,"HJT","Mason",92.29411765
+787,"OCCUPATIONS",13,"Trainer",113.2352941,14.05882351,NA,"HJT","Trainer",99.17647059
+787,"OCCUPATIONS",14,"Custodian",120.2941176,7.0588235,NA,"HJT","Custodian",113.2352941
+787,"OCCUPATIONS",15,"Librarian",125.2941176,5,NA,"HJT","Librarian",120.2941176
+787,"OCCUPATIONS",16,"Musician",130.7647059,5.47058829999999,NA,"HJT","Musician",125.2941176
+787,"OCCUPATIONS",17,"Scientist",136.2941176,5.5294117,NA,"HJT","Scientist",130.7647059
+787,"OCCUPATIONS",18,"Assistant",141.0588235,4.7647059,NA,"HJT","Assistant",136.2941176
+787,"OCCUPATIONS",19,"Cook",150.6470588,9.58823530000001,NA,"HJT","Cook",141.0588235
+787,"OCCUPATIONS",20,"Assistant",156.4117647,5.7647059,NA,"HJT","Assistant",150.6470588
+787,"OCCUPATIONS",21,"Salesman",161.7058824,5.29411770000002,NA,"HJT","Salesman",156.4117647
+787,"OCCUPATIONS",22,"Waiter",168.7058824,7,NA,"HJT","Waiter",161.7058824
+787,"OCCUPATIONS",23,"Actor",171.1764706,2.47058819999998,NA,"HJT","Actor",168.7058824
+787,"OCCUPATIONS",24,"Thief",177.1764706,6,NA,"HJT","Thief",171.1764706
+797,"OCCUPATIONS",1,"Accountant",-1.014705882,-1.014705882,NA,"HJT","Accountant",NA
+797,"OCCUPATIONS",2,"Teacher",3.352941176,4.367647058,NA,"HJT","Teacher",-1.014705882
+797,"OCCUPATIONS",3,"Architect",32.89705882,29.544117644,NA,"HJT","Architect",3.352941176
+797,"OCCUPATIONS",4,"Director",36.79411765,3.89705883,NA,"HJT","Director",32.89705882
+797,"OCCUPATIONS",5,"Athlete",40.69117647,3.89705882,NA,"HJT","Athlete",36.79411765
+797,"OCCUPATIONS",6,"Dealer",50.52941176,9.83823529,NA,"HJT","Dealer",40.69117647
+797,"OCCUPATIONS",7,"Marketing",60.44117647,9.91176471,NA,"HJT","Marketing",50.52941176
+797,"OCCUPATIONS",8,"Manager",64.35294118,3.91176471,NA,"HJT","Manager",60.44117647
+797,"OCCUPATIONS",9,"Representative",62.42647059,-1.92647059,NA,"HJT","Representative",64.35294118
+797,"OCCUPATIONS",10,"Doctor",73.80882353,11.38235294,NA,"HJT","Doctor",62.42647059
+797,"OCCUPATIONS",11,"Nurse",75.26470588,1.45588235,NA,"HJT","Nurse",73.80882353
+797,"OCCUPATIONS",12,"Professor",80.44117647,5.17647059000001,NA,"HJT","Professor",75.26470588
+797,"OCCUPATIONS",13,"Hacker",92.70588235,12.26470588,NA,"HJT","Hacker",80.44117647
+797,"OCCUPATIONS",14,"Designer",98.25,5.54411765,NA,"HJT","Designer",92.70588235
+797,"OCCUPATIONS",15,"Nasa",110.7205882,12.4705882,NA,"HJT","Nasa",98.25
+797,"OCCUPATIONS",16,"Astronaut",112.4411765,1.7205883,NA,"HJT","Astronaut",110.7205882
+797,"OCCUPATIONS",17,"Firefighter",117.0735294,4.6323529,NA,"HJT","Firefighter",112.4411765
+797,"OCCUPATIONS",18,"Policeman",120.4411765,3.3676471,NA,"HJT","Policeman",117.0735294
+797,"OCCUPATIONS",19,"Worker",122.3382353,1.8970588,NA,"HJT","Worker",120.4411765
+797,"OCCUPATIONS",20,"Golfer",130.8970588,8.5588235,NA,"HJT","Golfer",122.3382353
+797,"OCCUPATIONS",21,"Driver",137.8970588,7,NA,"HJT","Driver",130.8970588
+797,"OCCUPATIONS",22,"Owner",144.8088235,6.91176469999999,NA,"HJT","Owner",137.8970588
+797,"OCCUPATIONS",23,"CEO",147.1764706,2.3676471,NA,"HJT","CEO",144.8088235
+797,"OCCUPATIONS",24,"Manager",150.7941176,3.617647,NA,"HJT","Manager",147.1764706
+797,"OCCUPATIONS",25,"Clerk",158.2647059,7.4705883,NA,"HJT","Clerk",150.7941176
+797,"OCCUPATIONS",26,"Bagboy",165.3529412,7.08823530000001,NA,"HJT","Bagboy",158.2647059
+797,"OCCUPATIONS",27,"Homeless",169.8970588,4.54411759999999,NA,"HJT","Homeless Person",165.3529412
+797,"OCCUPATIONS",28,"Manufacturer",179.0735294,9.17647060000002,NA,"HJT","Manufacturer",169.8970588
+896,"OCCUPATIONS",1,"Teacher",1.352941176,1.352941176,NA,"HJT","Teacher",NA
+896,"OCCUPATIONS",2,"Student",3.352941176,2,NA,"HJT","Student",1.352941176
+896,"OCCUPATIONS",3,"Intern",5.558823529,2.205882353,NA,"HJT","Intern",3.352941176
+896,"OCCUPATIONS",4,"Doctor",8.558823529,3,NA,"HJT","Doctor",5.558823529
+896,"OCCUPATIONS",5,"Lawyer",9.558823529,1,NA,"HJT","Lawyer",8.558823529
+896,"OCCUPATIONS",6,"Dentist",10.55882353,1.000000001,NA,"HJT","Dentist",9.558823529
+896,"OCCUPATIONS",7,"Orthodontist",12.32352941,1.76470588,NA,"HJT","Orthodontist",10.55882353
+896,"OCCUPATIONS",8,"Therapist",16.94117647,4.61764706,NA,"HJT","Therapist",12.32352941
+896,"OCCUPATIONS",9,"Psychologist",19.32352941,2.38235294,NA,"HJT","Psychologist",16.94117647
+896,"OCCUPATIONS",10,"Therapist",23.08823529,3.76470588,NA,"HJT","Therapist",19.32352941
+896,"OCCUPATIONS",11,"Decorator",29.08823529,6,NA,"HJT","Decorator",23.08823529
+896,"OCCUPATIONS",12,"Director",30.88235294,1.79411765,NA,"HJT","Director",29.08823529
+896,"OCCUPATIONS",13,"Stockbroker",36.32352941,5.44117647,NA,"HJT","Stockbroker",30.88235294
+896,"OCCUPATIONS",14,"Actor",38.76470588,2.44117647,NA,"HJT","Actor",36.32352941
+896,"OCCUPATIONS",15,"CEO",49.5,10.73529412,NA,"HJT","CEO",38.76470588
+896,"OCCUPATIONS",16,"Storeowner",54.52941176,5.02941176,NA,"HJT","Storeowner",49.5
+896,"OCCUPATIONS",17,"Clerk",61.08823529,6.55882353,NA,"HJT","Clerk",54.52941176
+896,"OCCUPATIONS",18,"Secretary",68.94117647,7.85294118,NA,"HJT","Secretary",61.08823529
+896,"OCCUPATIONS",19,"Manager",71.91176471,2.97058824,NA,"HJT","Manager",68.94117647
+896,"OCCUPATIONS",20,"Advisor",79.29411765,7.38235294,NA,"HJT","Advisor",71.91176471
+896,"OCCUPATIONS",21,"Producer",88.14705882,8.85294116999999,NA,"HJT","Producer",79.29411765
+896,"OCCUPATIONS",22,"Consultant",99.88235294,11.73529412,NA,"HJT","Consultant",88.14705882
+896,"OCCUPATIONS",23,"Technician",103.8823529,3.99999996,NA,"HJT","Technician",99.88235294
+896,"OCCUPATIONS",24,"Surgeon",118.3529412,14.4705883,NA,"HJT","Surgeon",103.8823529
+896,"OCCUPATIONS",25,"Paramedic",121.9411765,3.58823529999999,NA,"HJT","Paramedic",118.3529412
+896,"OCCUPATIONS",26,"EMT",123.0294118,1.08823530000001,NA,"HJT","EMT",121.9411765
+896,"OCCUPATIONS",27,"Gynecologist",133.3235294,10.2941176,NA,"HJT","Gynecologist",123.0294118
+896,"OCCUPATIONS",28,"Podiatrist",139.7352941,6.41176469999999,NA,"HJT","Podiatrist",133.3235294
+896,"OCCUPATIONS",29,"Babysitter",150.7352941,11,NA,"HJT","Babysitter",139.7352941
+896,"OCCUPATIONS",30,"Speaker",156.6764706,5.94117649999998,NA,"HJT","Speaker",150.7352941
+896,"OCCUPATIONS",31,"Assistant",167.2647059,10.5882353,NA,"HJT","Assistant",156.6764706
+896,"OCCUPATIONS",32,"Athlete",175.6764706,8.41176469999999,NA,"HJT","Athlete",167.2647059
+997,"OCCUPATIONS",1,"Doctor",3.735294118,3.735294118,NA,"HJT","Doctor",NA
+997,"OCCUPATIONS",2,"Lawyer",11.73529412,8.000000002,NA,"HJT","Lawyer",3.735294118
+997,"OCCUPATIONS",3,"Carpenter",12.76470588,1.02941176,NA,"HJT","Carpenter",11.73529412
+997,"OCCUPATIONS",4,"Worker",16.14705882,3.38235294,NA,"HJT","Worker",12.76470588
+997,"OCCUPATIONS",5,"Groundskeeper",25.11764706,8.97058824,NA,"HJT","Groundskeeper",16.14705882
+997,"OCCUPATIONS",6,"Chef",33.38235294,8.26470588,NA,"HJT","Chef",25.11764706
+997,"OCCUPATIONS",7,"Painter",41.41176471,8.02941177,NA,"HJT","Painter",33.38235294
+997,"OCCUPATIONS",8,"Sculptor",46.08823529,4.67647058,NA,"HJT","Sculptor",41.41176471
+997,"OCCUPATIONS",9,"Pilot",51.73529412,5.64705883,NA,"HJT","Pilot",46.08823529
+997,"OCCUPATIONS",10,"Astronaut",56.76470588,5.02941176,NA,"HJT","Astronaut",51.73529412
+997,"OCCUPATIONS",11,"Attendant",66.5,9.73529412,NA,"HJT","Attendant",56.76470588
+997,"OCCUPATIONS",12,"Fireman",71.73529412,5.23529412000001,NA,"HJT","Fireman",66.5
+997,"OCCUPATIONS",13,"Policeman",75.76470588,4.02941175999999,NA,"HJT","Policeman",71.73529412
+997,"OCCUPATIONS",14,"Secretary",80.76470588,5,NA,"HJT","Secretary",75.76470588
+997,"OCCUPATIONS",15,"Actor",86.05882353,5.29411765,NA,"HJT","Actor",80.76470588
+997,"OCCUPATIONS",16,"Actress",87.41176471,1.35294118,NA,"HJT","Actress",86.05882353
+997,"OCCUPATIONS",17,"Star",90.08823529,2.67647058,NA,"HJT","Star",87.41176471
+997,"OCCUPATIONS",18,"Fluffer",94.41176471,4.32352942,NA,"HJT","Fluffer",90.08823529
+997,"OCCUPATIONS",19,"Assistant",98.52941176,4.11764705,NA,"HJT","Assistant",94.41176471
+997,"OCCUPATIONS",20,"Gravedigger",107.7941176,9.26470584,NA,"HJT","Gravedigger",98.52941176
+997,"OCCUPATIONS",21,"Butler",115.7352941,7.9411765,NA,"HJT","Butler",107.7941176
+997,"OCCUPATIONS",22,"Maid",117.3823529,1.6470588,NA,"HJT","Maid",115.7352941
+997,"OCCUPATIONS",23,"Hostess",122.4117647,5.02941180000001,NA,"HJT","Hostess",117.3823529
+997,"OCCUPATIONS",24,"Server",123.7352941,1.3235294,NA,"HJT","Server",122.4117647
+997,"OCCUPATIONS",25,"Driver",125.8235294,2.08823529999999,NA,"HJT","Driver",123.7352941
+997,"OCCUPATIONS",26,"Assistant",132.8235294,7.00000000000001,NA,"HJT","Assistant",125.8235294
+997,"OCCUPATIONS",27,"Clown",140.1176471,7.29411769999999,NA,"HJT","Clown",132.8235294
+997,"OCCUPATIONS",28,"Prostitute",160.4411765,20.3235294,NA,"HJT","Prostitute",140.1176471
+997,"OCCUPATIONS",29,"Pimp",164.3823529,3.94117639999999,NA,"HJT","Pimp",160.4411765
+997,"OCCUPATIONS",30,"Stripper",168.0882353,3.70588240000001,NA,"HJT","Stripper",164.3823529
+997,"OCCUPATIONS",31,"Bouncer",173.4117647,5.32352939999998,NA,"HJT","Bouncer",168.0882353
+997,"OCCUPATIONS",32,"Bartender",174.4411765,1.02941180000002,NA,"HJT","Bartender",173.4117647
+997,"OCCUPATIONS",33,"Janitor",184.4117647,9.97058819999998,NA,"HJT","Janitor",174.4411765

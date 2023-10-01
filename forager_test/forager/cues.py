@@ -5,6 +5,7 @@ import nltk
 from functools import lru_cache
 from itertools import product as iterprod
 import re
+from tqdm import tqdm
 
 '''
 
@@ -73,6 +74,7 @@ def create_history_variables(fluency_list, labels, sim_matrix, freq_matrix, phon
                 phon_history.append(phon_matrix[currentwordindex,:])
 
     return sim_list, sim_history, freq_list, freq_history,phon_list, phon_history
+    
 
 def get_labels_and_frequencies(path_to_frequencies):
     '''
@@ -166,20 +168,12 @@ class phonology_funcs:
             Returns: 
                 (1) phonological_matrix: phonological similarity matrix (NxN np.array)
         '''
-        N = len(labels)
-        phonological_matrix = np.zeros(N * N)
         labels = [re.sub('[^a-zA-Z]+', '', str(v)) for v in labels]
-        import time
-        start_time = time.time()
-        print("Calculating phonemes ...")
-        labels = [phonology_funcs.wordbreak(v)[0] for v in labels]
-        print("--- Ran for %s seconds ---" % (time.time() - start_time))
-        word_combos = list(iterprod(labels,labels))
-        print("Calculating Similarities")
-        for i, combo in enumerate(word_combos):
-            if i % 1000 == 0 and i != 0:
-                print(i)
-            phonological_matrix[i] = phonology_funcs.normalized_edit_distance(combo[0],combo[1])
-        phonological_matrix = phonological_matrix.reshape((N,N))
-
-        return phonological_matrix
+        sim = np.zeros((len(labels), len(labels)))
+        for i in tqdm(range(len(labels))):
+            for j in range(i):
+                sim[i, j] = phonology_funcs.normalized_edit_distance(phonology_funcs.wordbreak(labels[i])[0], phonology_funcs.wordbreak(labels[j])[0])
+        sim = sim + sim.T
+        np.fill_diagonal(sim, 1)
+        return sim
+        

@@ -1,6 +1,11 @@
 import numpy as np
 from scipy import stats
 import statistics
+from scipy.optimize import curve_fit
+import difflib
+from sung_SVD import calculate_svd_clusters, gtom_clusters
+import pandas as pd
+
 
 '''
 Methods for calculating switches in Semantic Foraging methods.
@@ -56,7 +61,72 @@ def switch_simdrop(fluency_list, semantic_similarity):
 
     return simdrop
 
-def switch_troyer(fluency_list,norms):
+def switch_norms_categorical(fluency_list,norms):
+    '''
+    Hills et al. 2015 categorical switches where a switch is predicted if the category of the current word is different than the shared category of the previous two words
+
+    Args:
+        fluency_list (list, size = L): fluency list to predict switches on
+        norms (dataframe, size = L x 2): dataframe of norms data matching animals to a categorical classification
+    Returns:
+        categorical (list, size = L): a list of switches, where 0 = no switch, 1 = switch, 2 = boundary case
+    '''
+    df = pd.DataFrame({'item': fluency_list, 'designation': [-1] * len(fluency_list)})
+
+    items_in_norms = norms['Item'].values.tolist()
+
+    def find_most_recent_one_index(lst, index):
+        for i in range(index - 1, -1, -1):
+            if lst[i] == 1 or lst[i] == 2:
+                return i
+        return index # if no 1s or 2s are found, return the current index
+
+    for i, row in df.iterrows():
+        if i == 0:
+            df.at[i, 'designation'] = 2
+        elif i == 1:
+            # find category of previous word
+            prev_word = df.loc[i - 1, 'item']
+            closest_match = difflib.get_close_matches(prev_word, items_in_norms, n=1)
+            prev_word = closest_match[0] if len(closest_match) > 0 else prev_word
+            
+            prev_word_cats = norms[norms['Item'] == prev_word]['Category'].iloc[0] if prev_word in items_in_norms else 'notinnorms'
+            
+            # find category of current word
+            current_word = row['item']
+            closest_match = difflib.get_close_matches(current_word, items_in_norms, n=1)
+            current_word = closest_match[0] if len(closest_match) > 0 else current_word
+            current_word_cats = norms[norms['Item'] == current_word]['Category'].iloc[0] if current_word in items_in_norms else 'notinnorms'
+            
+            # check if they share a category
+            if any(cat in current_word_cats for cat in prev_word_cats):
+                df.at[i, 'designation'] = 0
+            else:
+                df.at[i, 'designation'] = 1
+        else:
+            
+            prev_one = find_most_recent_one_index(df['designation'], i)
+            cluster = df.loc[prev_one:i, :]
+            prev_words = norms[norms['Item'].isin(cluster['item'])]
+            prev_cats = prev_words.groupby('Item', group_keys=False)['Category'].apply(list).to_dict()
+            
+            all_shared_cats = set.intersection(*[set(cats) for cats in prev_cats.values()]) if len(prev_cats) > 0 else set()
+            # find category of current word
+            current_word = row['item']
+            closest_match = difflib.get_close_matches(current_word, items_in_norms, n=1)
+            current_word = closest_match[0] if len(closest_match) > 0 else current_word
+            current_word_cats = norms[norms['Item'] == current_word]['Category'].iloc[0] if current_word in items_in_norms else 'notinnorms'
+            
+            if any(cat in current_word_cats for cat in all_shared_cats):
+                df.at[i, 'designation'] = 0
+            else:
+                df.at[i, 'designation'] = 1
+    
+    # return the designations
+    categorical_designations = df['designation'].values.tolist()
+    return categorical_designations
+
+def switch_norms(fluency_list,norms):
     '''
         Switch Method Based on Troyer Norms from Troyer, A. K., Moscovitch, M., & Winocur, G. (1997).
 
@@ -67,25 +137,35 @@ def switch_troyer(fluency_list,norms):
         Returns:
             troyer (list, size = L): a list of switches, where 0 = no switch, 1 = switch, 2 = boundary case
     '''
-    troyer = []
+    norm_designation = []
 
     for k in range(len(fluency_list)):
         if k > 0:
             item1 = fluency_list[k]
             item2 = fluency_list[k-1]
-            category1 = norms[norms['Animal'] == item1]['Category'].values.tolist()
-            category2 = norms[norms['Animal'] == item2]['Category'].values.tolist()
+            items_in_norms = norms['Item'].values.tolist()
+            # find closest match to item1 and item2 in norms
+            # often, this will be an exact match, but if not, we want to find the closest match
+            # so that we can assign the category of the closest match to item1 and item2
+            # e.g., grapes -> grape
+            # if difflib returns an empty list, then there is no close match, and we just use the original item
+            
+            item1 = difflib.get_close_matches(item1, items_in_norms, n=1)[0] if len(difflib.get_close_matches(item1, items_in_norms, n = 1)) > 0 else item1
+            item2 = difflib.get_close_matches(item2, items_in_norms, n=1)[0] if len(difflib.get_close_matches(item2, items_in_norms, n = 1)) > 0 else item2
+
+            category1 = norms[norms['Item'] == item1]['Category'].values.tolist()
+            category2 = norms[norms['Item'] == item2]['Category'].values.tolist()
 
             if len(list(set(category1) & set(category2)))== 0:
-                troyer.append(1)
+                norm_designation.append(1)
 
             else:
-                troyer.append(0)
+                norm_designation.append(0)
 
         else:
-            troyer.append(2)
+            norm_designation.append(2)
     
-    return troyer
+    return norm_designation
 
 def switch_multimodal(fluency_list,semantic_similarity,phonological_similarity,alpha):
     '''
@@ -182,4 +262,68 @@ def switch_delta(fluency_list, semantic_similarity, rise_thresh, fall_thresh):
         previousState = currentState
 
     return switchVector
+
+def switch_svd_gtom(fluency_list, svd_clusters, gtom_threshold):
+    """
+        SVD-GTOM Switch Method proposed by Sung et al. (2013)
+        
+        Args:
+            fluency_list (list, size = L): fluency list to predict switches on
+            svd_clusters (list, size = L): a list of svd clusters for each word in the fluency list, obtained via calculate_svd_clusters
+            gtom_threshold (float): threshold for GTOM clustering
+
+        Returns:
+            a list, size L, of switches, where 0 = no switch, 1 = switch, 2 = boundary case
+    """
+    
+    cluster_vector = [] 
+    # loop through list of words
+    for i in range(len(fluency_list)):
+        if i >0:
+            wordpair = (fluency_list[i], fluency_list[i - 1])
+            # check if wordpair is clustered
+            if gtom_clusters(word_clusters=svd_clusters, target_words=wordpair, threshold=gtom_threshold):
+                cluster_vector += [0]
+            else:
+                cluster_vector += [1]
+        else:
+            cluster_vector += [2]
+    return cluster_vector
+
+def exponential_curve(x, c, m):
+    return c * (1 - np.exp(-m * x))
+
+def fit_exponential_curve(reaction_times):
+    x = np.arange(1, len(reaction_times)+1)
+    # Adjusted initial parameter guesses
+    c_guess = max(reaction_times)  # Set initial guess for c to the maximum data value
+    m_guess = 0.01
+
+    # Parameter bounds
+    parameter_bounds = ([0, 0], [2 * max(reaction_times), 1])  # Constrain c to [0, 2 * max(y)] and m to [0, 1]
+
+    # Fit the curve
+    popt, _ = curve_fit(exponential_curve, x, reaction_times, p0=[c_guess, m_guess], bounds=parameter_bounds, maxfev=10000)
+
+    # Fit the exponential curve to the data
+    
+    fitted_curve = exponential_curve(x, *popt)
+
+    # Calculate slope differences and classifications
+    classifications = np.zeros(len(x))
+    for i in range(len(x)):
+        if i == 0:
+            classifications[i] = 2
+        else:
+            fitted_slope_difference = fitted_curve[i] - fitted_curve[i - 1]
+            raw_slope_difference = reaction_times[i] - reaction_times[i - 1]
+            if fitted_slope_difference > raw_slope_difference:
+                # fitted RT is higher than raw RT
+                classifications[i] = 0
+            else:
+                # fitted RT is lower than raw RT
+                classifications[i] = 1
+                
+    return classifications.tolist()
+
 

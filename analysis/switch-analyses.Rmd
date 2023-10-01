@@ -1,0 +1,634 @@
+---
+title: "preliminary_scripts"
+output: html_document
+date: "2023-04-05"
+---
+
+# load packages
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(ggthemes)
+library(stringdist)
+library(lme4)
+library(lmerTest)
+library(broom.mixed)
+setwd(here::here())
+getwd()
+```
+
+# import empirical data
+
+```{r}
+data = read_csv("data/fluency-switch.csv")
+
+#View(data %>% filter(ID == 11750 & type_of_trial == "attention" & !is.na(response)) %>% select(response, current_pair, attention)) 
+
+trials = data %>% filter(type_of_trial == "comparison") %>% mutate(cluster = tolower(cluster))
+length(unique(trials$ID))
+```
+
+# exclusions
+
+```{r}
+## filter out IDs with incomplete data
+
+insufficient_trials = trials %>%
+  group_by(ID, domain, subject) %>%
+  count() %>% 
+  group_by(ID, domain) %>%
+  count()%>%
+  filter(n != 6)
+
+trials = trials %>%
+  filter(!(ID %in% insufficient_trials$ID))
+
+## filter based on attention checks
+
+attention = data %>% filter(type_of_trial == "attention" & !is.na(response)) %>%
+  separate(current_pair, into = c("prev", "current"), sep = ",") %>%
+  mutate(attn_corr = ifelse((stringdist(tolower(response), prev, method = "lv") < 2 ) | 
+                              (stringdist(tolower(response), current, method = "lv") < 2 ), 1, 0))
+
+ID_attn = attention %>%
+  group_by(ID) %>%
+  summarise(n_correct = sum(attn_corr))
+
+insufficient_attentions = ID_attn %>%
+  filter(n_correct < 15 & n_correct >0)
+
+trials = trials %>%
+  filter(!(ID %in% insufficient_attentions$ID)) %>%
+  mutate(response = as.numeric(response)) 
+
+## FINAL SAMPLE ##
+
+length(trials %>% pull(ID) %>% unique())
+
+nonfirst_trials = trials %>%
+  filter(response!= 2)
+```
+
+# import switch method predictions
+
+```{r}
+foods = read_csv("forager_test/output/foods_forager/switch_results.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "foods")
+
+animals = read_csv("forager_test/output/animals_forager/switch_results.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "animals")
+
+occupations = read_csv("forager_test/output/occupations_forager/switch_results.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "occupations")
+
+all_domains = rbind(animals, foods, occupations)
+```
+
+# merge with ratings
+
+```{r}
+# get mean cluster-switch designations across all IDs for specific subject
+
+trials_agg = nonfirst_trials %>%
+  mutate(current_pair = str_replace(current_pair, "hello", cluster)) %>%
+  group_by(subject, domain, response_number, current_pair) %>%
+  summarise(mean_response = mean(response),
+            num_responses = n())
+
+trials_agg = trials_agg %>% 
+  left_join(all_domains) %>%
+  filter(!is.na(cluster))
+```
+
+## plot
+
+```{r}
+# further aggregate for plotting
+
+plot_agg = nonfirst_trials %>%
+  mutate(current_pair = str_replace(current_pair, "hello", cluster)) %>%
+  group_by(domain, current_pair) %>%
+  summarise(mean_response = mean(response),
+            num_responses = n()) %>%
+  mutate(current_pair = str_replace(current_pair, ", ", "-"))
+
+
+plot_agg %>%
+  ggplot(aes(x = mean_response, fill = domain)) +
+  geom_density(alpha = 0.4)+
+  labs(title = "Distribution of Mean Scores for Different Word Pairs",
+       x = "",
+       y = "mean score") +
+  theme_minimal()+
+  scale_fill_excel()+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1.5)),
+        axis.title = element_text(size =rel(2)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
+```
+
+
+
+## plot: ratings with lexical similarity
+```{r}
+food_lexical = read_csv("forager_test/output/foods_forager/lexical_results.csv") %>% mutate(domain = "foods")
+animal_lexical = read_csv("forager_test/output/animals_forager/lexical_results.csv")%>% mutate(domain = "animals")
+occupation_lexical = read_csv("forager_test/output/occupations_forager/lexical_results.csv")%>% mutate(domain = "occupations")
+
+all_lexical = rbind(food_lexical, animal_lexical, occupation_lexical) %>% 
+  mutate(prev = lag(Fluency_Item))%>%
+  mutate(current_pair = paste(prev,Fluency_Item, sep = "-")) 
+
+
+plot_all_lexical = all_lexical%>%
+  left_join(plot_agg) %>% 
+  filter(!is.na(mean_response))
+
+plot_all_lexical %>%
+  ggplot(aes(x = Phonological_Similarity, y =mean_response, group = domain, color = domain )) +
+  geom_point(alpha = 0.1)+
+  geom_smooth(method = "lm")+
+  ylim(0,1)+
+  labs(title = "mean cluster-switch scores",
+       x = "phonological similarity",
+       y = "mean score") +
+  theme_minimal()+
+  scale_color_gdocs()+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1.5)),
+        axis.title = element_text(size =rel(2)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
+
+```
+
+# model functions
+
+```{r}
+# Function to clean column names by replacing special characters with underscores
+clean_column_names <- function(column_names) {
+  str_replace_all(column_names, "[^[:alnum:] ]", "_")
+}
+
+# Define a function to fit the glmer model for each cleaned predictor column
+fit_model <- function(df, column, type, dv, var_cutoff) {
+  
+  # calculate variance of the column
+  
+  var_col = var(df[column])
+  
+  if (var_col > var_cutoff) {
+    
+    if(type == "glmer"){
+      model_formula <- as.formula(paste(dv, " ~ ", column, "+ (1 | subject)"))
+      model <- glmer(model_formula, data = df, family = binomial)
+      estimate <- fixef(model)[column]
+      
+
+      }
+    else if(type == "lmer") {
+      model_formula <- as.formula(paste(dv, " ~ ", column, "+ (1 | subject)"))
+      model <- lmer(model_formula, data = df)
+      estimate <- fixef(model)[column]
+    }
+    else {
+      ## subject-level model
+      model_formula <- as.formula(paste(dv, " ~ ", column))
+      model <- lm(model_formula, data = df)
+      estimate <- coef(model)[column]
+    }
+    
+     
+    
+    aic <- AIC(model)
+    bic <- BIC(model)
+    r_squared <- MuMIn::r.squaredGLMM(model)[1]
+    log_likelihood <- as.numeric(logLik(model))
+    n_obs <- nobs(model)
+    
+    tibble(
+      Predictor = column,
+      Fixed_Effect = estimate,
+      AIC = aic,
+      BIC = bic,
+      R_squared = r_squared,
+      Log_Likelihood = log_likelihood,
+      N_Observations = n_obs
+    )
+    }
+    else{
+       NULL
+      
+    }
+}
+
+
+```
+
+# predicting ratings
+
+```{r}
+my_data <- trials_agg %>% ungroup() %>% select(subject, domain, mean_response, simdrop:exp) %>% ungroup() %>%
+  mutate(norms_associative = ifelse(is.na(norms_associative), 0, norms_associative),
+         norms_categorical = ifelse(is.na(norms_categorical), 0, norms_categorical))%>%
+  filter(!is.na(simdrop))# grouping at the level of subject (list)
+
+# Get the list of predictor variables (columns) from the dataframe
+predictor_columns <- setdiff(names(my_data), c("mean_response", "subject", "domain"))
+
+# Clean predictor column names in the dataframe
+cleaned_data <- my_data %>%
+  rename_with(clean_column_names, .cols = predictor_columns)
+
+# Get the list of predictor variables (columns) from the dataframe
+predictor_columns <- setdiff(names(cleaned_data), c("mean_response", "subject", "domain"))
+
+
+model_results <- cleaned_data %>%
+  group_by(domain) %>%
+  summarise(model = map(setNames(predictor_columns, predictor_columns), 
+                        ~ fit_model(df = cur_data(), column = .x, type = "lmer", dv = "mean_response", 
+                                   var_cutoff = .049)))%>%
+  unnest(cols = c(model)) %>%
+  mutate(across(Log_Likelihood:N_Observations, ~ as.vector(.))) 
+
+best_rating_models = model_results %>% 
+  mutate(Predictor = ifelse(Predictor == "norms_associative", "associative", 
+                            ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
+  separate(Predictor, sep = "_", into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val" )) %>%
+  group_by(domain, Predictor) %>% 
+  slice_max(R_squared) %>%
+  arrange(domain, desc(R_squared))
+
+## plot this pattern
+
+best_rating_models %>%
+  ggplot(aes(x = domain, y = R_squared, group = Predictor, fill = Predictor))+
+  geom_col(position = "dodge")+
+  labs(title = "Explained Variance in Behavioral Ratings",
+       x = "",
+       y = "R squared") +
+  theme_minimal()+
+  scale_fill_gdocs()+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1.5)),
+        axis.title = element_text(size =rel(2)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
+
+```
+
+# self-generated predictions
+
+```{r}
+
+# input the LEA participant designations
+
+LEA_animals = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_animals_RTs.csv") %>%
+  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
+
+LEA_foods = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_foods_RTs.csv") %>%
+  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
+
+LEA_occupations = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_occupations_RTs.csv") %>%
+  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
+
+
+LEA_data = rbind(LEA_animals, LEA_foods, LEA_occupations)
+
+  
+behavioral_designations = trials_agg %>% mutate(subject = as.numeric(subject)) %>% filter(subject > 5000) %>%
+  mutate(norms_associative = ifelse(is.na(norms_associative), 0, norms_associative),
+         norms_categorical = ifelse(is.na(norms_categorical), 0, norms_categorical))%>%
+  left_join(LEA_data)
+
+my_data <- behavioral_designations %>% ungroup() %>% 
+  select(subject, domain, participant_designated_switch, simdrop:exp) %>% 
+  ungroup() %>%
+  filter(!is.na(simdrop))# grouping at the level of subject (list)
+
+# Get the list of predictor variables (columns) from the dataframe
+predictor_columns <- setdiff(names(my_data), c("participant_designated_switch", "subject", "domain"))
+
+# Clean predictor column names in the dataframe
+cleaned_data <- my_data %>%
+  rename_with(clean_column_names, .cols = predictor_columns)
+
+# Get the list of predictor variables (columns) from the dataframe
+predictor_columns <- setdiff(names(cleaned_data), c("participant_designated_switch", "subject", "domain"))
+
+
+model_results <- cleaned_data %>%
+  group_by(domain) %>%
+  summarise(model = map(setNames(predictor_columns, predictor_columns), 
+                        ~ fit_model(df = cur_data(), column = .x, type = "glmer", dv = "participant_designated_switch", 
+                                   var_cutoff = .049)))%>%
+  unnest(cols = c(model)) %>%
+  mutate(across(Log_Likelihood:N_Observations, ~ as.vector(.))) 
+
+LEA_models = model_results %>% 
+  mutate(Predictor = ifelse(Predictor == "norms_associative", "associative", 
+                            ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
+  separate(Predictor, sep = "_", into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val" )) %>%
+  group_by(domain, Predictor) %>% 
+  slice_max(R_squared) %>%
+  arrange(domain, desc(R_squared))
+
+
+LEA_models %>%
+  ggplot(aes(x = domain, y = R_squared, group = Predictor, fill = Predictor))+
+  geom_col(position = "dodge")+
+  labs(title = "Explained Variance for Participant Designations",
+       x = "",
+       y = "R squared") +
+  theme_minimal()+
+  scale_fill_gdocs()+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1.5)),
+        axis.title = element_text(size =rel(2)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
+
+
+```
+
+# individual differences
+
+```{r}
+subject_model_results <- cleaned_data %>%
+  group_by(domain, subject) %>%
+  summarise(model = map(setNames(predictor_columns, predictor_columns), 
+                        ~ {
+                          fit_model(df = cur_data(), column = .x, type = "subject", dv = "participant_designated_switch", 
+                                    var_cutoff = .049)
+                        })) %>%
+  unnest(cols = c(model)) %>%
+  mutate(across(Log_Likelihood:N_Observations, ~ as.vector(.))) 
+
+top_subjects = subject_model_results %>% 
+  group_by(subject, domain) %>% 
+  slice_max(R_squared) 
+
+top_methods = top_subjects%>%
+  group_by(Predictor) %>%
+  count()
+
+```
+
+
+# idio stuff
+
+```{r}
+
+## we want to see how "idiosyncratic" a response is based on how many people rated it as a cluster or switch
+
+LEA_data_idio = rbind(LEA_animals, LEA_foods, LEA_occupations)
+
+idio_data = nonfirst_trials %>% filter(subject > 5000) %>%
+  mutate(current_pair = str_replace(current_pair, "hello", cluster),
+         subject = as.character(subject)) %>%
+  group_by(domain, subject, response_number, current_pair, response) %>%
+  summarize(N = n())%>%
+  pivot_wider(names_from = response, values_from = N) %>%
+  rename(cluster_N = "0", switch_N = "1") %>% mutate(across(c(cluster_N, switch_N), ~coalesce(., 0))) %>%
+  left_join(LEA_data_idio %>% mutate(subject = as.character(subject)))%>%
+  mutate(idiosyncratic = ifelse(participant_designated_switch == 0, (switch_N / (cluster_N + switch_N)), 
+                               (cluster_N / (cluster_N + switch_N)))) %>%
+  filter(!is.na(idiosyncratic))
+
+## total N per list
+
+View(idio_data %>% mutate(N = cluster_N + switch_N) %>% select(subject, N) %>% ungroup() %>% select(subject, N)%>% unique())
+
+## mean idio score
+LEA_idio = idio_data %>% group_by(domain, subject) %>%
+  summarise(avg_idio = mean(idiosyncratic),
+            items = n()) %>%
+  mutate(domain = as.factor(domain))
+
+## do people who produce more idiosyncratic responses produce more items?
+items_lm = lm(data = LEA_idio, items ~ avg_idio*domain)
+summary(items_lm)
+car::Anova(items_lm)
+sjPlot::plot_model(items_lm, type="int")
+
+# are people more or less idiosyncratic across domains?
+idio_data %>% 
+  group_by(domain) %>%
+  summarise(avg_idio = mean(idiosyncratic),
+            items = n())
+
+# are people who are more idiosyncratic use lexical cues differently?
+
+idio_lexical = idio_data %>% 
+  mutate(current_pair = str_replace(current_pair, ", ", "-"))%>%
+  rename(Subject = "subject") %>% mutate(Subject = as.character(Subject)) %>%
+  left_join(all_lexical %>% mutate(Subject = as.character(Subject))) %>%
+  pivot_longer(names_to = "cue", cols=c(Semantic_Similarity, Phonological_Similarity, Frequency_Value))
+
+idio_lexical_model = lmer(data = idio_lexical, idiosyncratic ~ cue*value*domain + (domain|Subject))
+summary(idio_lexical_model)
+car::Anova(idio_lexical_model)
+
+
+```
+
+## plot
+
+```{r}
+idio_lexical_agg = idio_lexical %>%
+  group_by(domain, Subject, cue) %>%
+  summarise(avg_idio = mean(idiosyncratic, na.rm = TRUE),
+            avg_val = mean(value, na.rm = TRUE))
+
+
+idio_lexical %>%
+  filter(cue == "Frequency_Value") %>%
+  ggplot(aes(x = value, y =idiosyncratic, group = domain, color = domain )) +
+  geom_point(alpha = 0.1)+
+  geom_smooth(method = "lm")+
+  ylim(0,1)+
+  labs(title = "",
+       x = "log frequency",
+       y = "idiosyncratic score") +
+  theme_minimal()+
+  scale_color_gdocs()+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1.5)),
+        axis.title = element_text(size =rel(2)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
+
+```
+
+
+# correlations
+
+```{r}
+library(corrplot)
+
+# Assuming your dataframe is named df
+# Calculate the variance of each column
+df = my_data[, 6:141] 
+column_variances <- apply(df, 2, var)
+
+# Identify constant columns (variance == 0)
+constant_columns <- names(column_variances[column_variances < 0.1])
+
+# Remove constant columns from the dataframe
+df_filtered <- df[, !(names(df) %in% constant_columns)]
+
+# Calculate the correlation matrix
+cor_matrix <- cor(df_filtered)
+
+# Create a correlation plot
+corrplot(cor_matrix, method = "color", type = "lower", order = "hclust", tl.col = "black",tl.cex = 0.5)
+
+correlations <- df %>%
+  select(-norms) %>%
+  summarise_all(~ cor(.x, df$norms)) %>%
+  unlist()
+
+# Find the names of columns with highest correlation
+top_correlated_columns <- names(sort(correlations, decreasing = TRUE))
+
+# Print the top correlated column names
+print(top_correlated_columns[1:10])
+
+
+```
+
+# strategies
+
+```{r}
+strategies = data %>% 
+  filter(ID %in% trials$ID) %>%
+  filter(type_of_trial == "demo"  & str_detect(response, '^\\{"Q0":"')) %>%
+  filter(row_number() %% 2 != 0)%>%
+  mutate(response = str_extract(response, '(?<=Q0":").*?(?=")')) %>%
+  select(ID,response)
+```
+
+
+
+# demographic data
+
+```{r}
+demo = data %>%
+  filter(ID %in% trials$ID) %>%
+  filter(type_of_trial == "demo" | type_of_trial == "english")
+
+# deal with age learned english
+not_english = demo %>%
+  filter(!is.na(first_language))
+
+first_language = not_english %>%
+  group_by(first_language) %>%
+  count()
+
+age_learned = not_english %>%
+  mutate(clean_age_learned = str_extract(age_learned, "\\d+\\.?\\d*") %>% 
+              as.numeric())
+
+al_av = age_learned %>%
+  filter(!is.na(clean_age_learned)) %>%
+  summarise(age_learned_average = mean(clean_age_learned))
+age_learned_av = al_av$age_learned_average[1]
+
+al_sd = age_learned %>%
+  filter(!is.na(clean_age_learned)) %>%
+  summarise(age_learned_stdev = sd(clean_age_learned))
+age_learned_sd = al_sd$age_learned_stdev[1]
+
+over_age_4 = age_learned %>%
+  filter(clean_age_learned > 4)
+n_over_age_4 = nrow(over_age_4)
+
+trials = trials %>%
+  filter(!(ID %in% over_age_4$ID))
+
+demo = demo %>%
+  filter(ID %in% trials$ID)
+
+# final number IDs
+n_IDs = nrow(trials %>%
+  group_by(ID) %>%
+  count())
+
+# rest of demographics
+age_gen_ed = demo %>%
+  filter(!is.na(age)) %>%
+  filter(!str_detect(education, "[^[:digit:].]"))
+
+age_av = mean(age_gen_ed$age)
+age_sd = sd(age_gen_ed$age)
+
+education_av = mean(as.numeric(age_gen_ed$education))
+education_sd = sd(as.numeric(age_gen_ed$education))
+
+genders = age_gen_ed %>%
+  group_by(gender) %>%
+  count()
+
+race = demo %>%
+  filter(!is.na(race)) %>%
+  group_by(race) %>%
+  count()
+
+eth_hand_alert_eng = demo %>%
+  filter(!is.na(english))
+
+ethnicity = eth_hand_alert_eng %>%
+  group_by(ethnicity) %>%
+  count()
+
+hand = eth_hand_alert_eng %>%
+  group_by(hand) %>%
+  count()
+
+alert = eth_hand_alert_eng %>%
+  group_by(alert) %>%
+  count()
+
+english = eth_hand_alert_eng %>%
+  group_by(english) %>%
+  count()
+
+non_sona = trials %>%
+  filter(sona_id == 1) %>%
+  group_by(ID) %>%
+  count()
+nrow(non_sona)
+```
+
+# extra: adding RTs to columns
+
+```{r}
+file = readxl::read_excel("../forager_test/data/fluency_lists/reed_animals.xlsx") %>%
+  group_by(subject) %>%
+  mutate(response_number = row_number(),
+         lagRT = lag(response_onset_time),
+    IRT = response_onset_time - lagRT) %>%
+  mutate(IRT = ifelse(is.na(IRT),response_onset_time, IRT))
+
+write.csv(file, "../forager_test/data/fluency_lists/reed_animals_RTs.csv", row.names = FALSE)
+```
