@@ -38,7 +38,7 @@ Workflow:
 
 # Global Variables
 models = ['static','dynamic','pstatic','pdynamic','all']
-switch_methods = ['simdrop','multimodal','norms','delta','svd', 'exp','all']
+switch_methods = ['simdrop','multimodal','norms','delta','svd', 'exp', 'multimodaldelta', 'all']
 
 #Methods
 
@@ -66,7 +66,7 @@ def calculate_switch(switch, fluency_list, rt_list, svd_cluster_dict, semantic_s
     2. Return set of switches, including parameter value, if required
 
     switch_methods are the following:
-    switch_methods = ['simdrop','multimodal','norms','delta','svd', 'exp', 'all']
+    switch_methods = ['simdrop','multimodal','norms','delta','svd', 'exp', 'multimodaldelta', 'all']
     '''
     switch_names = []
     switch_vecs = []
@@ -75,16 +75,16 @@ def calculate_switch(switch, fluency_list, rt_list, svd_cluster_dict, semantic_s
         ex_str = "Specified switch method is invalid. Switch method must be one of the following: {switch}".format(switch=switch_methods)
         raise Exception(ex_str)
 
-    if switch == switch_methods[0] or switch == switch_methods[6]:
+    if switch == switch_methods[0] or switch == switch_methods[7]:
         switch_names.append(switch_methods[0])
         switch_vecs.append(switch_simdrop(fluency_list, semantic_similarity))
 
-    if switch == switch_methods[1] or switch == switch_methods[6]:
+    if switch == switch_methods[1] or switch == switch_methods[7]:
         for i, a in enumerate(alpha):
             switch_names.append('multimodal_alpha={alpha}'.format(alpha=a))
             switch_vecs.append(switch_multimodal(fluency_list, semantic_similarity, phon_similarity, a))
 
-    if (switch == switch_methods[2] or switch == switch_methods[6]) and domain in ['animals','foods']:
+    if (switch == switch_methods[2] or switch == switch_methods[7]) and domain in ['animals','foods']:
         
         if domain == 'animals':
             switch_names.append("norms_associative")
@@ -97,13 +97,13 @@ def calculate_switch(switch, fluency_list, rt_list, svd_cluster_dict, semantic_s
             switch_names.append("norms_categorical")
             switch_vecs.append(switch_norms_categorical(fluency_list,norms[1]))
 
-    if switch == switch_methods[3] or switch == switch_methods[6]:
+    if switch == switch_methods[3] or switch == switch_methods[7]:
         for i, r in enumerate(rise):
             for j, f in enumerate(fall):
                 switch_names.append("delta_rise={rise}_fall={fall}".format(rise=r,fall=f))
                 switch_vecs.append(switch_delta(fluency_list, semantic_similarity, r, f))
     
-    if switch == switch_methods[4] or switch == switch_methods[6]:
+    if switch == switch_methods[4] or switch == switch_methods[7]:
         
         gtom = np.arange(0, 1, 0.1)
         for i, c in enumerate(np.arange(0, 1.1, 0.1)):
@@ -113,9 +113,16 @@ def calculate_switch(switch, fluency_list, rt_list, svd_cluster_dict, semantic_s
                 switch_names.append("svd_cosine={cosine}_gtom={gtom}".format(cosine=c,gtom=g))
                 switch_vecs.append(switch_svd_gtom(fluency_list, svd_clusters_i, g))
     
-    if switch == switch_methods[5] or switch == switch_methods[6]:
+    if switch == switch_methods[5] or switch == switch_methods[7]:
         switch_names.append(switch_methods[5])
         switch_vecs.append(fit_exponential_curve(rt_list))
+    
+    if switch == switch_methods[6] or switch == switch_methods[7]:
+        for i, a in enumerate(alpha):
+            for i, r in enumerate(rise):
+                for j, f in enumerate(fall):
+                    switch_names.append("multimodaldelta_alpha={alpha}_rise={rise}_fall={fall}".format(alpha=a,rise=r,fall=f))
+                    switch_vecs.append(switch_multimodaldelta(fluency_list, semantic_similarity, phon_similarity, r, f, a))
             
     return switch_names, switch_vecs
 

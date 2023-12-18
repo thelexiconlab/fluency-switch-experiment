@@ -1,5 +1,5 @@
 ---
-title: "preliminary_scripts"
+title: "individual clusters analyses"
 output: html_document
 date: "2023-04-05"
 ---
@@ -15,21 +15,242 @@ library(lme4)
 library(lmerTest)
 library(broom.mixed)
 setwd(here::here())
+library(boot)
 getwd()
 ```
 
-# import empirical data
+# define model functions
+
+```{r}
+# Function to clean column names by replacing special characters with underscores
+clean_column_names <- function(column_names) {
+  str_replace_all(column_names, "[^[:alnum:] ]", "_")
+}
+
+n_bootstrap = 1000
+
+
+calculate_bootstrap_r_squared <- function(data, type, n_bootstrap, formula) {
+  # Define an empty vector to store R-squared values
+  r_squared_values <- numeric(n_bootstrap)
+  
+  # Calculate R-squared for each bootstrap sample
+  for (i in 1:n_bootstrap) {
+    # Generate random indices with replacement
+    indices <- sample(nrow(data), replace = TRUE)
+    
+    # Subset data using the random indices
+    sampled_data <- data[indices, ]
+
+    # Fit your model using the sampled data
+    if(type == "glmer"){
+      model <- eval(bquote(glmer(.(formula), data = .(substitute(sampled_data)), family = binomial)))
+      # Calculate R-squared and store it in the vector
+      r_squared_values[i] <- MuMIn::r.squaredGLMM(model)[4]
+                                                         
+      }
+    else{
+      model <- lmer(formula, data = sampled_data)
+      # Calculate R-squared and store it in the vector
+      r_squared_values[i] <- MuMIn::r.squaredGLMM(model)[2]
+      }  
+    
+  }
+  
+  # Calculate confidence intervals of R-squared values
+  ci_r_squared <- quantile(r_squared_values, c(0.025, 0.975))
+  
+  return(ci_r_squared)
+}
+    
+  
+
+# Define a function to fit the glmer model for each cleaned predictor column
+fit_model <- function(df, column, type, dv, var_cutoff) {
+  
+  # calculate variance of the column
+
+  var_col = var(df[column])
+  
+  if (var_col > var_cutoff) {
+    
+    if(type == "glmer"){
+      model_formula <- as.formula(paste(dv, " ~ ", column, "+ (1 | subject)"))
+      model <- glmer(model_formula, data = df, family = binomial)
+      estimate <- fixef(model)[column]
+      
+      r_squared <- MuMIn::r.squaredGLMM(model)[4] # conditional delta R-squared
+      ci_r_squared <- calculate_bootstrap_r_squared(data = df, type, n_bootstrap = n_bootstrap, formula = model_formula)
+      
+      }
+    else { #if(type == "lmer") {
+      model_formula <- as.formula(paste(dv, " ~ ", column, "+ (1 | subject)"))
+
+      model <- lmer(model_formula, data = df)
+      estimate <- fixef(model)[column]
+      r_squared <- MuMIn::r.squaredGLMM(model)[2] # conditional R-squared
+      ci_r_squared <- calculate_bootstrap_r_squared(data = df, type, n_bootstrap = n_bootstrap, formula = model_formula)
+    }
+   
+  
+    aic <- AIC(model)
+    bic <- BIC(model)
+    
+    log_likelihood <- as.numeric(logLik(model))
+    n_obs <- nobs(model)
+    
+    result <- tibble(
+      Predictor = column,
+      Fixed_Effect = estimate,
+      AIC = aic,
+      BIC = bic,
+      R_squared = r_squared,
+      Log_Likelihood = log_likelihood,
+      N_Observations = n_obs,
+      R_squared_CI_lower = ci_r_squared[1],  # Lower bound of CI
+      R_squared_CI_upper = ci_r_squared[2]   # Upper bound of CI
+    )
+    
+    return(result)
+    }
+    else{
+       return(NULL)
+    }
+}
+
+
+```
+
+# import switch method predictions
+
+```{r}
+foods = read_csv("forager_test/output/foods_forager/switch_results.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "foods")
+
+animals = read_csv("forager_test/output/animals_forager/switch_results.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "animals")
+
+occupations = read_csv("forager_test/output/occupations_forager/switch_results.csv") %>%
+  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
+  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
+  rename(subject = Subject, cluster = Fluency_Item) %>%
+  mutate(subject = as.character(subject))%>%
+  mutate(domain = "occupations")
+
+all_domains = rbind(animals, foods, occupations)
+```
+
+# individual designations
+## import individual designations
+
+```{r}
+
+# input the LEA participant designations
+
+LEA_animals = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_animals_RTs.csv") %>%
+  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
+
+LEA_foods = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_foods_RTs.csv") %>%
+  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
+
+LEA_occupations = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_occupations_RTs.csv") %>%
+  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
+
+
+LEA_data = rbind(LEA_animals, LEA_foods, LEA_occupations) %>%
+  left_join(all_domains %>% mutate(subject = as.numeric(subject)) %>% filter(subject > 5000)) %>%
+  mutate(norms_associative = ifelse(is.na(norms_associative), 0, norms_associative),
+         norms_categorical = ifelse(is.na(norms_categorical), 0, norms_categorical))%>%
+  filter(!is.na(simdrop))
+  
+```
+
+## predict individual designations
+```{r}
+
+# Get the list of predictor variables (columns) from the dataframe
+LEA_predictor_columns <- setdiff(names(LEA_data), c("participant_designated_switch", "subject", "domain",
+                                                    "response_number", "cluster"))
+
+# Clean predictor column names in the dataframe
+LEA_cleaned_data <- LEA_data %>%
+  rename_with(clean_column_names, .cols = LEA_predictor_columns)
+
+# Get the list of predictor variables (columns) from the dataframe
+LEA_predictor_columns <- setdiff(names(LEA_cleaned_data), c("participant_designated_switch", "subject", "domain",
+                                                    "response_number", "cluster"))
+
+glmer_model_results <- LEA_cleaned_data %>%
+  filter(participant_designated_switch != 2) %>%
+  group_by(domain) %>%
+  summarise(model = map(setNames(LEA_predictor_columns, LEA_predictor_columns), 
+                        ~ fit_model(df = cur_data(), 
+                                    column = .x, type = "glmer", dv = "participant_designated_switch", 
+                                   var_cutoff = .015)))
+
+individual_model_results = glmer_model_results %>% unnest()
+
+individual_model_results_table = individual_model_results %>% 
+  mutate(Predictor = ifelse(Predictor == "norms_associative", "associative", 
+                            ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
+  separate(Predictor, sep = "_", 
+           into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val", "param3", "p3_0", "p3_val")) %>%
+  group_by(domain, Predictor) %>% 
+  slice_max(R_squared) %>%
+  arrange(domain, desc(R_squared))
+
+
+
+```
+
+
+# rater designations
+
+## import rater data
 
 ```{r}
 data = read_csv("data/fluency-switch.csv")
 
-#View(data %>% filter(ID == 11750 & type_of_trial == "attention" & !is.na(response)) %>% select(response, current_pair, attention)) 
+sona_IDs= data %>% filter(!is.na(sona_id)) %>% select(ID) %>%distinct() %>% pull(ID)
+
+data = data %>% mutate(population = ifelse(ID %in% sona_IDs, "sona", "prolific"))
+prolific_IDs = data %>% filter(population == "prolific") %>% select(ID) %>% distinct() %>% pull(ID)
+
+
+data_prolific_duplicates <- data %>%
+  filter(type_of_trial == "prolific_id") %>%
+  select(ID, response, recorded_at) %>% distinct() %>%
+  separate(response, into = c("id", "prolific_id"), sep = ":") %>%
+  mutate(prolific_id = gsub("[\\\\{}\"]", "", prolific_id)) %>%
+  mutate(prolific_id = str_replace(prolific_id, "@.*", "")) %>%
+  group_by(prolific_id) %>%
+  mutate(min_recorded_at = min(recorded_at)) %>%
+  ungroup() %>%
+  filter(recorded_at != min_recorded_at) %>%
+  select(ID) %>%
+  distinct() %>% pull(ID)
+
+final_prolific_IDs = prolific_IDs[!prolific_IDs %in% data_prolific_duplicates]
+  
+
+data = data %>% 
+  filter(ID %in% c(sona_IDs, final_prolific_IDs))
+  
+length(unique(data$ID))
 
 trials = data %>% filter(type_of_trial == "comparison") %>% mutate(cluster = tolower(cluster))
 length(unique(trials$ID))
 ```
 
-# exclusions
+## apply exclusions
 
 ```{r}
 ## filter out IDs with incomplete data
@@ -66,38 +287,71 @@ trials = trials %>%
 
 length(trials %>% pull(ID) %>% unique())
 
+actual_sample_IDs = trials %>% pull(ID) %>% unique()
+
 nonfirst_trials = trials %>%
   filter(response!= 2)
 ```
 
-# import switch method predictions
+## demographics
 
 ```{r}
-foods = read_csv("forager_test/output/foods_forager/switch_results.csv") %>%
-  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
-  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
-  rename(subject = Subject, cluster = Fluency_Item) %>%
-  mutate(subject = as.character(subject))%>%
-  mutate(domain = "foods")
+demo_data = data %>% filter(type_of_trial == "demo") %>%
+  filter(ID %in% actual_sample_IDs)
 
-animals = read_csv("forager_test/output/animals_forager/switch_results.csv") %>%
-  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
-  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
-  rename(subject = Subject, cluster = Fluency_Item) %>%
-  mutate(subject = as.character(subject))%>%
-  mutate(domain = "animals")
+age_data = demo_data[grep('^\\{"Age', demo_data$response), ] %>%
+  separate(response, into = c("Age", "Gender", "Education"), sep = ",") %>%
+  mutate(
+    Age = gsub("[^0-9]+", "", Age),          # Remove non-numeric characters from Age
+    Gender = tolower(gsub('.*:"(.*)"', '\\1', Gender)),  # Extract the value between quotes in Gender
+    Education = gsub("[^0-9]+", "", Education) # Remove non-numeric characters from Education
+  )%>%
+  mutate(
+    Age = as.numeric(na_if(Age, "")),       # Replace empty cells in Age with NA
+    Gender = na_if(Gender, ""), # Replace empty cells in Gender with NA
+    Education = as.numeric(na_if(Education, "")) # Replace empty cells in Education with NA
+  ) %>%
+  mutate(Education = ifelse(Education  == 1415, 14.5, Education))%>%
+  mutate(Gender = ifelse(Gender %in% c("he/him", "male", "make", "make ", "man", "m"), "men",
+                         ifelse(Gender %in% c("female", "female ", "women", "woman"), "women",
+                                ifelse(Gender %in% c("transgender male", "transgender"), "transgender", Gender))))
+## AGE ##
+age_data %>% summarize(m = mean(Age, na.rm = TRUE), sd = sd(Age, na.rm = TRUE))
 
-occupations = read_csv("forager_test/output/occupations_forager/switch_results.csv") %>%
-  rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
-  pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
-  rename(subject = Subject, cluster = Fluency_Item) %>%
-  mutate(subject = as.character(subject))%>%
-  mutate(domain = "occupations")
+## GENDER ##
+age_data %>% group_by(Gender) %>% 
+  summarize(count = n()) %>%
+   mutate(percent = count / sum(count) * 100)
 
-all_domains = rbind(animals, foods, occupations)
+## EDUCATION ##
+age_data %>% summarize(m = mean(Education, na.rm = TRUE), sd = sd(Education, na.rm = TRUE))
+
+
+## RACE ##
+race_data = demo_data[grep('^\\{"Race', demo_data$response), ]%>%
+  filter(grepl('^\\{"Race', response)) %>%
+  mutate(
+    Race = gsub('.*\\["(.*?)\\"]}', '\\1', response)
+  ) %>%
+  select(-response) %>%
+  select(ID, Race) %>%
+  mutate(RaceCat = ifelse(Race %in% c("White/Caucasian"), "White", 
+                                   ifelse(Race %in% c("Black/African American"), "Black", 
+                                          ifelse(Race %in% c("Asian"), "Asian", 
+                                                 ifelse(Race %in% c("American Indian/Alaskan Native"), 
+                                                        "American Indian/Alaskan Native",
+                                                        "More/Other")))))
+
+race_data %>%
+  group_by(RaceCat) %>% 
+  summarize(count = n()) %>%
+   mutate(percent = count / sum(count) * 100)
+
+
+
 ```
 
-# merge with ratings
+## merge with model predictions
 
 ```{r}
 # get mean cluster-switch designations across all IDs for specific subject
@@ -111,38 +365,8 @@ trials_agg = nonfirst_trials %>%
 trials_agg = trials_agg %>% 
   left_join(all_domains) %>%
   filter(!is.na(cluster))
+
 ```
-
-## plot
-
-```{r}
-# further aggregate for plotting
-
-plot_agg = nonfirst_trials %>%
-  mutate(current_pair = str_replace(current_pair, "hello", cluster)) %>%
-  group_by(domain, current_pair) %>%
-  summarise(mean_response = mean(response),
-            num_responses = n()) %>%
-  mutate(current_pair = str_replace(current_pair, ", ", "-"))
-
-
-plot_agg %>%
-  ggplot(aes(x = mean_response, fill = domain)) +
-  geom_density(alpha = 0.4)+
-  labs(title = "Distribution of Mean Scores for Different Word Pairs",
-       x = "",
-       y = "mean score") +
-  theme_minimal()+
-  scale_fill_excel()+
-  theme(plot.background = element_rect(
-    color = "white"),
-    strip.text.x = element_text(size =rel(2)),
-        axis.text = element_text(size =rel(1.5)),
-        axis.title = element_text(size =rel(2)),
-        plot.title = element_text(hjust = .5, size = rel(1.2)))
-```
-
-
 
 ## plot: ratings with lexical similarity
 ```{r}
@@ -152,22 +376,38 @@ occupation_lexical = read_csv("forager_test/output/occupations_forager/lexical_r
 
 all_lexical = rbind(food_lexical, animal_lexical, occupation_lexical) %>% 
   mutate(prev = lag(Fluency_Item))%>%
-  mutate(current_pair = paste(prev,Fluency_Item, sep = "-")) 
+  mutate(current_pair = paste(prev,Fluency_Item, sep = ", ")) %>%
+  mutate(prev_freq = lag(Frequency_Value)) %>%
+  rowwise()%>%
+  mutate(avg_freq = sum(Frequency_Value, prev_freq)/2)
 
+plot_agg = nonfirst_trials %>%
+  mutate(current_pair = str_replace(current_pair, "hello", cluster)) %>%
+  group_by(domain, current_pair) %>%
+  summarise(mean_response = mean(response),
+            num_responses = n())
 
 plot_all_lexical = all_lexical%>%
   left_join(plot_agg) %>% 
-  filter(!is.na(mean_response))
+  filter(!is.na(mean_response)) %>% 
+  mutate(Frequency_Value_scaled = avg_freq/10) %>%
+  rename(`semantic similarity` = Semantic_Similarity,
+         `phonological similarity` = Phonological_Similarity,
+         `word frequency` = Frequency_Value_scaled) %>%
+  pivot_longer(names_to = "cue", cols = c(`semantic similarity`, `phonological similarity`, `word frequency`))%>%
+  mutate(cue = as.factor(cue),
+         cue = fct_relevel(cue, "semantic similarity", "phonological similarity", "word frequency"))
 
 plot_all_lexical %>%
-  ggplot(aes(x = Phonological_Similarity, y =mean_response, group = domain, color = domain )) +
+  ggplot(aes(x = value, y =mean_response, group = domain, color = domain )) +
   geom_point(alpha = 0.1)+
   geom_smooth(method = "lm")+
   ylim(0,1)+
-  labs(title = "mean cluster-switch scores",
-       x = "phonological similarity",
-       y = "mean score") +
+  labs(title = "",
+       x = "mean lexical values",
+       y = "mean rating of word pairs") +
   theme_minimal()+
+  facet_wrap(~cue)+
   scale_color_gdocs()+
   theme(plot.background = element_rect(
     color = "white"),
@@ -176,225 +416,91 @@ plot_all_lexical %>%
         axis.title = element_text(size =rel(2)),
         plot.title = element_text(hjust = .5, size = rel(1.2)))
 
-```
+## ratings lexical model
 
-# model functions
+ratings_lexical_model_semantic = lmer(data = plot_all_lexical %>% filter(cue == "semantic similarity"),
+                             mean_response ~ value*domain + (1 | Subject))
+car::Anova(ratings_lexical_model_semantic)
+summary(ratings_lexical_model_semantic)
 
-```{r}
-# Function to clean column names by replacing special characters with underscores
-clean_column_names <- function(column_names) {
-  str_replace_all(column_names, "[^[:alnum:] ]", "_")
-}
+ratings_lexical_model_phon = lmer(data = plot_all_lexical %>% filter(cue == "phonological similarity"),
+                             mean_response ~ value*domain + (1 | Subject))
+car::Anova(ratings_lexical_model_phon)
+summary(ratings_lexical_model_phon)
 
-# Define a function to fit the glmer model for each cleaned predictor column
-fit_model <- function(df, column, type, dv, var_cutoff) {
-  
-  # calculate variance of the column
-  
-  var_col = var(df[column])
-  
-  if (var_col > var_cutoff) {
-    
-    if(type == "glmer"){
-      model_formula <- as.formula(paste(dv, " ~ ", column, "+ (1 | subject)"))
-      model <- glmer(model_formula, data = df, family = binomial)
-      estimate <- fixef(model)[column]
-      
+ratings_lexical_model_frequency = lmer(data = plot_all_lexical %>% filter(cue == "word frequency"),
+                             mean_response ~ value*domain + (value | Subject))
+summary(ratings_lexical_model_frequency)
 
-      }
-    else if(type == "lmer") {
-      model_formula <- as.formula(paste(dv, " ~ ", column, "+ (1 | subject)"))
-      model <- lmer(model_formula, data = df)
-      estimate <- fixef(model)[column]
-    }
-    else {
-      ## subject-level model
-      model_formula <- as.formula(paste(dv, " ~ ", column))
-      model <- lm(model_formula, data = df)
-      estimate <- coef(model)[column]
-    }
-    
-     
-    
-    aic <- AIC(model)
-    bic <- BIC(model)
-    r_squared <- MuMIn::r.squaredGLMM(model)[1]
-    log_likelihood <- as.numeric(logLik(model))
-    n_obs <- nobs(model)
-    
-    tibble(
-      Predictor = column,
-      Fixed_Effect = estimate,
-      AIC = aic,
-      BIC = bic,
-      R_squared = r_squared,
-      Log_Likelihood = log_likelihood,
-      N_Observations = n_obs
-    )
-    }
-    else{
-       NULL
-      
-    }
-}
 
 
 ```
 
-# predicting ratings
+
+## predicting ratings
 
 ```{r}
-my_data <- trials_agg %>% ungroup() %>% select(subject, domain, mean_response, simdrop:exp) %>% ungroup() %>%
-  mutate(norms_associative = ifelse(is.na(norms_associative), 0, norms_associative),
-         norms_categorical = ifelse(is.na(norms_categorical), 0, norms_categorical))%>%
-  filter(!is.na(simdrop))# grouping at the level of subject (list)
-
-# Get the list of predictor variables (columns) from the dataframe
-predictor_columns <- setdiff(names(my_data), c("mean_response", "subject", "domain"))
-
-# Clean predictor column names in the dataframe
-cleaned_data <- my_data %>%
-  rename_with(clean_column_names, .cols = predictor_columns)
-
-# Get the list of predictor variables (columns) from the dataframe
-predictor_columns <- setdiff(names(cleaned_data), c("mean_response", "subject", "domain"))
-
-
-model_results <- cleaned_data %>%
-  group_by(domain) %>%
-  summarise(model = map(setNames(predictor_columns, predictor_columns), 
-                        ~ fit_model(df = cur_data(), column = .x, type = "lmer", dv = "mean_response", 
-                                   var_cutoff = .049)))%>%
-  unnest(cols = c(model)) %>%
-  mutate(across(Log_Likelihood:N_Observations, ~ as.vector(.))) 
-
-best_rating_models = model_results %>% 
-  mutate(Predictor = ifelse(Predictor == "norms_associative", "associative", 
-                            ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
-  separate(Predictor, sep = "_", into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val" )) %>%
-  group_by(domain, Predictor) %>% 
-  slice_max(R_squared) %>%
-  arrange(domain, desc(R_squared))
-
-## plot this pattern
-
-best_rating_models %>%
-  ggplot(aes(x = domain, y = R_squared, group = Predictor, fill = Predictor))+
-  geom_col(position = "dodge")+
-  labs(title = "Explained Variance in Behavioral Ratings",
-       x = "",
-       y = "R squared") +
-  theme_minimal()+
-  scale_fill_gdocs()+
-  theme(plot.background = element_rect(
-    color = "white"),
-    strip.text.x = element_text(size =rel(2)),
-        axis.text = element_text(size =rel(1.5)),
-        axis.title = element_text(size =rel(2)),
-        plot.title = element_text(hjust = .5, size = rel(1.2)))
-
-```
-
-# self-generated predictions
-
-```{r}
-
-# input the LEA participant designations
-
-LEA_animals = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_animals_RTs.csv") %>%
-  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
-
-LEA_foods = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_foods_RTs.csv") %>%
-  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
-
-LEA_occupations = read_csv("/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/fluency_lists/reed_occupations_RTs.csv") %>%
-  filter(subject > 5000) %>% select(domain, subject, participant_designated_switch, response_number)
-
-
-LEA_data = rbind(LEA_animals, LEA_foods, LEA_occupations)
-
-  
-behavioral_designations = trials_agg %>% mutate(subject = as.numeric(subject)) %>% filter(subject > 5000) %>%
-  mutate(norms_associative = ifelse(is.na(norms_associative), 0, norms_associative),
-         norms_categorical = ifelse(is.na(norms_categorical), 0, norms_categorical))%>%
-  left_join(LEA_data)
-
-my_data <- behavioral_designations %>% ungroup() %>% 
-  select(subject, domain, participant_designated_switch, simdrop:exp) %>% 
+rater_data <- trials_agg %>% 
   ungroup() %>%
-  filter(!is.na(simdrop))# grouping at the level of subject (list)
+  mutate(norms_associative = ifelse(is.na(norms_associative), 0, norms_associative),
+         norms_categorical = ifelse(is.na(norms_categorical), 0, norms_categorical))%>%
+  filter(!is.na(simdrop))
 
 # Get the list of predictor variables (columns) from the dataframe
-predictor_columns <- setdiff(names(my_data), c("participant_designated_switch", "subject", "domain"))
+rater_predictor_columns <- setdiff(names(rater_data), c("mean_response", "subject", "domain", "response_number",
+                                                  "current_pair", "num_responses", "cluster"))
 
 # Clean predictor column names in the dataframe
-cleaned_data <- my_data %>%
-  rename_with(clean_column_names, .cols = predictor_columns)
+rater_cleaned_data <- rater_data %>%
+  rename_with(clean_column_names, .cols = rater_predictor_columns)
 
 # Get the list of predictor variables (columns) from the dataframe
-predictor_columns <- setdiff(names(cleaned_data), c("participant_designated_switch", "subject", "domain"))
+rater_predictor_columns <- setdiff(names(rater_cleaned_data), c("mean_response", "subject", "domain", "response_number",
+                                                  "current_pair", "num_responses", "cluster"))
 
 
-model_results <- cleaned_data %>%
+rater_model_results <- rater_cleaned_data %>%
   group_by(domain) %>%
-  summarise(model = map(setNames(predictor_columns, predictor_columns), 
-                        ~ fit_model(df = cur_data(), column = .x, type = "glmer", dv = "participant_designated_switch", 
-                                   var_cutoff = .049)))%>%
-  unnest(cols = c(model)) %>%
-  mutate(across(Log_Likelihood:N_Observations, ~ as.vector(.))) 
+  summarise(
+    model = map(setNames(rater_predictor_columns, rater_predictor_columns), 
+                ~ fit_model(df = cur_data(), column = .x, type = "lmer", dv = "mean_response", 
+                            var_cutoff = .015))
+  )
 
-LEA_models = model_results %>% 
+rater_model_results_unnested = rater_model_results %>% unnest()
+
+best_rating_models = rater_model_results_unnested %>% 
   mutate(Predictor = ifelse(Predictor == "norms_associative", "associative", 
-                            ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
-  separate(Predictor, sep = "_", into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val" )) %>%
+                        ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
+  separate(Predictor, sep = "_", into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val", "param3", "p3_0", "p3_val")) %>%
+  filter(Predictor != "exp")%>%
   group_by(domain, Predictor) %>% 
   slice_max(R_squared) %>%
   arrange(domain, desc(R_squared))
 
-
-LEA_models %>%
-  ggplot(aes(x = domain, y = R_squared, group = Predictor, fill = Predictor))+
-  geom_col(position = "dodge")+
-  labs(title = "Explained Variance for Participant Designations",
-       x = "",
-       y = "R squared") +
-  theme_minimal()+
-  scale_fill_gdocs()+
-  theme(plot.background = element_rect(
-    color = "white"),
-    strip.text.x = element_text(size =rel(2)),
-        axis.text = element_text(size =rel(1.5)),
-        axis.title = element_text(size =rel(2)),
-        plot.title = element_text(hjust = .5, size = rel(1.2)))
-
-
 ```
 
-# individual differences
+## exploratory: predict individual with rater
 
 ```{r}
-subject_model_results <- cleaned_data %>%
-  group_by(domain, subject) %>%
-  summarise(model = map(setNames(predictor_columns, predictor_columns), 
-                        ~ {
-                          fit_model(df = cur_data(), column = .x, type = "subject", dv = "participant_designated_switch", 
-                                    var_cutoff = .049)
-                        })) %>%
-  unnest(cols = c(model)) %>%
-  mutate(across(Log_Likelihood:N_Observations, ~ as.vector(.))) 
 
-top_subjects = subject_model_results %>% 
-  group_by(subject, domain) %>% 
-  slice_max(R_squared) 
+exploratory_data = LEA_cleaned_data %>%
+  mutate(subject = as.character(subject)) %>%
+  select(domain, subject, cluster, participant_designated_switch, response_number ) %>%
+  left_join((trials_agg %>% select(domain, subject, cluster, mean_response, response_number ))) %>%
+  filter(!is.na(mean_response))
 
-top_methods = top_subjects%>%
-  group_by(Predictor) %>%
-  count()
-
+exploratory_lm = glmer(data = exploratory_data, participant_designated_switch ~ mean_response + (mean_response|subject),
+                       family = binomial)
+summary(exploratory_lm)
+MuMIn::r.squaredGLMM(exploratory_lm)
 ```
 
 
-# idio stuff
+
+# idiosyncratic score analysis
+
+## compute transition scores
 
 ```{r}
 
@@ -416,61 +522,60 @@ idio_data = nonfirst_trials %>% filter(subject > 5000) %>%
 
 ## total N per list
 
-View(idio_data %>% mutate(N = cluster_N + switch_N) %>% select(subject, N) %>% ungroup() %>% select(subject, N)%>% unique())
-
-## mean idio score
-LEA_idio = idio_data %>% group_by(domain, subject) %>%
-  summarise(avg_idio = mean(idiosyncratic),
-            items = n()) %>%
-  mutate(domain = as.factor(domain))
-
-## do people who produce more idiosyncratic responses produce more items?
-items_lm = lm(data = LEA_idio, items ~ avg_idio*domain)
-summary(items_lm)
-car::Anova(items_lm)
-sjPlot::plot_model(items_lm, type="int")
-
-# are people more or less idiosyncratic across domains?
-idio_data %>% 
-  group_by(domain) %>%
-  summarise(avg_idio = mean(idiosyncratic),
-            items = n())
-
-# are people who are more idiosyncratic use lexical cues differently?
-
-idio_lexical = idio_data %>% 
-  mutate(current_pair = str_replace(current_pair, ", ", "-"))%>%
-  rename(Subject = "subject") %>% mutate(Subject = as.character(Subject)) %>%
-  left_join(all_lexical %>% mutate(Subject = as.character(Subject))) %>%
-  pivot_longer(names_to = "cue", cols=c(Semantic_Similarity, Phonological_Similarity, Frequency_Value))
-
-idio_lexical_model = lmer(data = idio_lexical, idiosyncratic ~ cue*value*domain + (domain|Subject))
-summary(idio_lexical_model)
-car::Anova(idio_lexical_model)
-
+total_n = idio_data %>% mutate(N = cluster_N + switch_N) %>% select(subject, N) %>% ungroup() %>% select(subject, N)%>% unique()
+mean(total_n$N)
+sd(total_n$N)
 
 ```
 
+## lexical markers
+```{r}
+# are people who are more idiosyncratic use lexical cues differently? YES
+
+idio_lexical = idio_data %>% 
+  #mutate(current_pair = str_replace(current_pair, ", ", "-"))%>%
+  rename(Subject = "subject") %>% mutate(Subject = as.character(Subject)) %>%
+  left_join(all_lexical %>% mutate(Subject = as.character(Subject))) %>%
+  mutate(Frequency_Value_scaled = avg_freq/10) %>%
+  rename(`semantic similarity` = Semantic_Similarity,
+         `phonological similarity` = Phonological_Similarity,
+         `word frequency` = Frequency_Value_scaled) %>%
+  pivot_longer(names_to = "cue", cols = c(`semantic similarity`, `phonological similarity`, `word frequency`))%>%
+  mutate(cue = as.factor(cue),
+         cue = fct_relevel(cue, "semantic similarity", "phonological similarity", "word frequency"))
+
+
+
+idio_lexical_semantic = lmer(data = idio_lexical %>% filter(cue == "semantic similarity"), 
+                          idiosyncratic ~ value*domain + (domain|Subject))
+summary(idio_lexical_semantic)
+car::Anova(idio_lexical_semantic)
+
+idio_lexical_phonological = lmer(data = idio_lexical %>% filter(cue == "phonological similarity"), 
+                          idiosyncratic ~ value*domain + (domain|Subject))
+summary(idio_lexical_phonological)
+car::Anova(idio_lexical_phonological)
+
+idio_lexical_frequency = lmer(data = idio_lexical %>% filter(cue == "word frequency"), 
+                          idiosyncratic ~ value*domain + (domain|Subject))
+summary(idio_lexical_frequency)
+car::Anova(idio_lexical_frequency)
+
+
+
 ## plot
 
-```{r}
-idio_lexical_agg = idio_lexical %>%
-  group_by(domain, Subject, cue) %>%
-  summarise(avg_idio = mean(idiosyncratic, na.rm = TRUE),
-            avg_val = mean(value, na.rm = TRUE))
-
-
 idio_lexical %>%
-  filter(cue == "Frequency_Value") %>%
   ggplot(aes(x = value, y =idiosyncratic, group = domain, color = domain )) +
   geom_point(alpha = 0.1)+
   geom_smooth(method = "lm")+
   ylim(0,1)+
   labs(title = "",
-       x = "log frequency",
+       x = "lexical values",
        y = "idiosyncratic score") +
   theme_minimal()+
   scale_color_gdocs()+
+  facet_wrap(~cue)+
   theme(plot.background = element_rect(
     color = "white"),
     strip.text.x = element_text(size =rel(2)),
@@ -478,43 +583,225 @@ idio_lexical %>%
         axis.title = element_text(size =rel(2)),
         plot.title = element_text(hjust = .5, size = rel(1.2)))
 
+
+```
+
+## idio distribution
+
+```{r}
+LEA_idio = idio_data %>% group_by(domain, subject) %>%
+  summarise(avg_idio = mean(idiosyncratic),
+            items = n()) %>%
+  mutate(domain = as.factor(domain))
+
+LEA_idio %>%
+  ggplot(aes(x=avg_idio, group = domain, fill = domain)) +
+  geom_density(alpha = 0.4)+
+  labs(title = "Distribution of Individual-Level Idiosyncratic Scores for Different Domains",
+       x = "individual idiosyncratic score",
+       y = "density") +
+  theme_minimal()+
+  scale_fill_excel()+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1.5)),
+        axis.title = element_text(size =rel(2)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
 ```
 
 
-# correlations
+## domain consistency
 
 ```{r}
-library(corrplot)
-
-# Assuming your dataframe is named df
-# Calculate the variance of each column
-df = my_data[, 6:141] 
-column_variances <- apply(df, 2, var)
-
-# Identify constant columns (variance == 0)
-constant_columns <- names(column_variances[column_variances < 0.1])
-
-# Remove constant columns from the dataframe
-df_filtered <- df[, !(names(df) %in% constant_columns)]
-
-# Calculate the correlation matrix
-cor_matrix <- cor(df_filtered)
-
-# Create a correlation plot
-corrplot(cor_matrix, method = "color", type = "lower", order = "hclust", tl.col = "black",tl.cex = 0.5)
-
-correlations <- df %>%
-  select(-norms) %>%
-  summarise_all(~ cor(.x, df$norms)) %>%
-  unlist()
-
-# Find the names of columns with highest correlation
-top_correlated_columns <- names(sort(correlations, decreasing = TRUE))
-
-# Print the top correlated column names
-print(top_correlated_columns[1:10])
+## are people consistently idiosyncratic across domains?
+## can you predict a score of a person on a new domain based on their score from an existing domain? YES
 
 
+LEA_idio = idio_data %>% group_by(domain, subject) %>%
+  summarise(avg_idio = mean(idiosyncratic),
+            items = n()) %>%
+  mutate(domain = as.factor(domain))
+
+domain_idio_agg = LEA_idio %>%
+  select(subject, domain, avg_idio) %>%
+  pivot_wider(names_from = domain, values_from = avg_idio)
+
+# Step 2: Train your original models and get Rsquared
+model_animals_foods <- summary(lm(animals ~ foods, data = domain_idio_agg))$r.squared
+model_animals_occupations <- summary(lm(animals ~ occupations, data = domain_idio_agg))$r.squared
+
+model_foods_animals <- summary(lm(foods ~ animals, data = domain_idio_agg))$r.squared
+model_foods_occupations <- summary(lm(foods ~ occupations, data = domain_idio_agg))$r.squared
+
+model_occupations_animals <- summary(lm(occupations ~ animals, data = domain_idio_agg))$r.squared
+model_occupations_foods <- summary(lm(occupations ~ foods, data = domain_idio_agg))$r.squared
+
+# Set seed for reproducibility
+set.seed(123)
+
+# Assuming 'domains' is a vector of domain names
+domains <- c("animals", "foods", "occupations")
+
+# Initialize a matrix to store R-squared values
+num_permutations <- 1000
+r_squared_values <- matrix(NA, nrow = num_permutations * length(domains), ncol = 3)
+
+row_counter <- 1
+
+for (constant_column in domains) {
+  
+  shuffled_columns = domains[domains != constant_column]
+
+  for (i in 1:num_permutations) {
+    
+    shuffled_column_1 = sample(domain_idio_agg %>% pull(shuffled_columns[1]))
+    shuffled_column_2 = sample(domain_idio_agg %>% pull(shuffled_columns[2]))
+
+    df_shuffled = domain_idio_agg %>% select(subject, constant_column)%>%
+      cbind(shuffled_column_1, shuffled_column_2)
+      
+    formula1 = paste(constant_column, "~ shuffled_column_1")
+    formula2 = paste(constant_column, "~ shuffled_column_2")
+  
+    
+    model_1 <- lm(formula1, data = df_shuffled)
+    model_2 <- lm(formula2,  data = df_shuffled)
+  
+    r_squared_values[row_counter, 1] <- constant_column
+    r_squared_values[row_counter, 2] <- summary(model_1)$r.squared
+    r_squared_values[row_counter, 3] <- summary(model_2)$r.squared
+  
+    row_counter <- row_counter + 1
+  }
+}
+
+
+r_squared_values = as.data.frame(r_squared_values)
+
+animals_data = r_squared_values %>% filter(V1 == "animals") %>%
+  pivot_longer(names_to = "model", cols = V2:V3) %>%
+  mutate(datatype = "permuted")%>%
+  rbind(data.frame(V1 = "animals", model = "V2", value= model_animals_foods, datatype = "original"), 
+                   data.frame(V1 = "animals", model = "V3", value= model_animals_occupations, datatype = "original") )%>%
+  mutate(value = as.numeric(value), model = as.factor(model), datatype = as.factor(datatype))%>%
+  mutate(model = ifelse(model == "V2", "animals ~ foods", "animals ~ occupations"))
+
+foods_data = r_squared_values %>% filter(V1 == "foods") %>%
+  pivot_longer(names_to = "model", cols = V2:V3) %>%
+  mutate(datatype = "permuted")%>%
+  rbind(data.frame(V1 = "foods", model = "V2", value= model_foods_animals, datatype = "original"), 
+                   data.frame(V1 = "foods", model = "V3", value= model_foods_occupations, datatype = "original") )%>%
+  mutate(value = as.numeric(value), model = as.factor(model), datatype = as.factor(datatype))%>%
+  mutate(model = ifelse(model == "V2", "foods ~ animals", "foods ~ occupations"))
+
+occupations_data = r_squared_values %>% filter(V1 == "occupations") %>%
+  pivot_longer(names_to = "model", cols = V2:V3) %>%
+  mutate(datatype = "permuted")%>%
+  rbind(data.frame(V1 = "occupations", model = "V2", value= model_occupations_animals, datatype = "original"), 
+                data.frame(V1 = "occupations", model = "V3", value= model_occupations_foods, datatype = "original") )%>%
+  mutate(value = as.numeric(value), model = as.factor(model), datatype = as.factor(datatype))%>%
+  mutate(model = ifelse(model == "V2", "occupations ~ animals", "occupations ~ foods"))
+
+combined_data= rbind(animals_data, foods_data, occupations_data)  %>%
+  rename(domain = "V1")
+
+ggplot(combined_data, aes(x = value, fill = model)) +
+  geom_histogram(binwidth = 0.01, position = "dodge") +
+  facet_wrap(~domain, ncol = 1, scales = "free_y") +
+  geom_vline(data = combined_data %>% filter(datatype == "original"), 
+             aes(xintercept = value, color = model), linetype = "dashed") +
+  labs(x = "R-squared", y = "Frequency") +
+  theme_minimal()
+
+
+
+# Calculate the mean of shuffled R-squared values
+permutation_test <- combined_data %>%
+  group_by(domain, model) %>%
+  summarise(p_value = {
+    obs_value <- value[datatype == "original"]
+    permuted_values <- value[datatype == "permuted"]
+    formatted_p_value <- sprintf("%.6e", sum(permuted_values >= obs_value) / length(permuted_values))
+    as.numeric(formatted_p_value)  # Convert back to numeric
+  })
+
+```
+
+## cluster/switch size
+
+```{r}
+
+## mean idio score
+LEA_idio = idio_data %>% group_by(domain, subject) %>%
+  summarise(avg_idio = mean(idiosyncratic),
+            items = n()) %>%
+  mutate(domain = as.factor(domain))
+
+## do people who produce more idiosyncratic responses produce more items?: NO
+items_lm = lm(data = LEA_idio, items ~ avg_idio*domain)
+summary(items_lm)
+car::Anova(items_lm)
+
+LEA_idio %>%
+ggplot(aes(x= items, y = avg_idio, group = domain, color = domain)) +
+  geom_point() +
+  geom_smooth(method = "lm")+
+  theme_minimal()+
+  scale_color_gdocs()+
+  labs(x = "number of items", y = "participant idiosyncratic score")+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1)),
+        axis.title = element_text(size =rel(1.5)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
+
+## are clusters and switches different
+
+cluster_info = rbind((read_csv("forager_test/output/foods_forager/individual_descriptive_stats.csv") %>%
+  mutate(domain = "foods") %>% 
+  filter(Switch_Method %in% c("multimodaldelta_alpha=0.7000000000000001_rise=1.0_fall=0.5"))), 
+  (read_csv("forager_test/output/animals_forager/individual_descriptive_stats.csv") %>%
+  mutate(domain = "animals") %>% 
+  filter(Switch_Method %in% c("multimodaldelta_alpha=0.8_rise=1.0_fall=0.25"))), 
+  (read_csv("forager_test/output/occupations_forager/individual_descriptive_stats.csv") %>%
+  mutate(domain = "occupations") %>% 
+  filter(Switch_Method %in% c("multimodaldelta_alpha=0.9_rise=0.75_fall=0.0")))) %>%
+  rename(subject = "Subject") %>%
+  mutate(subject = as.character(subject)) %>%
+  mutate(Switch_Method = ifelse(Switch_Method == "norms_associative", "associative", 
+                                "multimodal_delta")) %>%
+  dplyr::select(subject, Switch_Method, Number_of_Switches, Cluster_Size_mean, domain)
+
+LEA_idio_clusters = LEA_idio %>% left_join(cluster_info) %>% mutate(n_clusters = Number_of_Switches + 1)
+
+idio_cluster_model = lm(data = LEA_idio_clusters, 
+                        avg_idio ~ Cluster_Size_mean*domain)
+summary(idio_cluster_model)
+car::Anova(idio_cluster_model)
+
+idio_switch_model = lm(data =LEA_idio_clusters , 
+                       avg_idio ~ n_clusters*domain)
+summary(idio_switch_model)
+car::Anova(idio_switch_model)
+
+LEA_idio_clusters %>%
+ggplot(aes(x= n_clusters, y = avg_idio, group = domain, color = domain)) +
+  geom_point() +
+  geom_smooth(method = "lm")+
+  theme_minimal()+
+  scale_color_gdocs()+
+  labs(x = "number of clusters", y = "participant idiosyncratic score")+
+  theme(plot.background = element_rect(
+    color = "white"),
+    strip.text.x = element_text(size =rel(2)),
+        axis.text = element_text(size =rel(1)),
+        axis.title = element_text(size =rel(1.5)),
+        plot.title = element_text(hjust = .5, size = rel(1.2)))
+
+
+  
 ```
 
 # strategies
@@ -530,105 +817,3 @@ strategies = data %>%
 
 
 
-# demographic data
-
-```{r}
-demo = data %>%
-  filter(ID %in% trials$ID) %>%
-  filter(type_of_trial == "demo" | type_of_trial == "english")
-
-# deal with age learned english
-not_english = demo %>%
-  filter(!is.na(first_language))
-
-first_language = not_english %>%
-  group_by(first_language) %>%
-  count()
-
-age_learned = not_english %>%
-  mutate(clean_age_learned = str_extract(age_learned, "\\d+\\.?\\d*") %>% 
-              as.numeric())
-
-al_av = age_learned %>%
-  filter(!is.na(clean_age_learned)) %>%
-  summarise(age_learned_average = mean(clean_age_learned))
-age_learned_av = al_av$age_learned_average[1]
-
-al_sd = age_learned %>%
-  filter(!is.na(clean_age_learned)) %>%
-  summarise(age_learned_stdev = sd(clean_age_learned))
-age_learned_sd = al_sd$age_learned_stdev[1]
-
-over_age_4 = age_learned %>%
-  filter(clean_age_learned > 4)
-n_over_age_4 = nrow(over_age_4)
-
-trials = trials %>%
-  filter(!(ID %in% over_age_4$ID))
-
-demo = demo %>%
-  filter(ID %in% trials$ID)
-
-# final number IDs
-n_IDs = nrow(trials %>%
-  group_by(ID) %>%
-  count())
-
-# rest of demographics
-age_gen_ed = demo %>%
-  filter(!is.na(age)) %>%
-  filter(!str_detect(education, "[^[:digit:].]"))
-
-age_av = mean(age_gen_ed$age)
-age_sd = sd(age_gen_ed$age)
-
-education_av = mean(as.numeric(age_gen_ed$education))
-education_sd = sd(as.numeric(age_gen_ed$education))
-
-genders = age_gen_ed %>%
-  group_by(gender) %>%
-  count()
-
-race = demo %>%
-  filter(!is.na(race)) %>%
-  group_by(race) %>%
-  count()
-
-eth_hand_alert_eng = demo %>%
-  filter(!is.na(english))
-
-ethnicity = eth_hand_alert_eng %>%
-  group_by(ethnicity) %>%
-  count()
-
-hand = eth_hand_alert_eng %>%
-  group_by(hand) %>%
-  count()
-
-alert = eth_hand_alert_eng %>%
-  group_by(alert) %>%
-  count()
-
-english = eth_hand_alert_eng %>%
-  group_by(english) %>%
-  count()
-
-non_sona = trials %>%
-  filter(sona_id == 1) %>%
-  group_by(ID) %>%
-  count()
-nrow(non_sona)
-```
-
-# extra: adding RTs to columns
-
-```{r}
-file = readxl::read_excel("../forager_test/data/fluency_lists/reed_animals.xlsx") %>%
-  group_by(subject) %>%
-  mutate(response_number = row_number(),
-         lagRT = lag(response_onset_time),
-    IRT = response_onset_time - lagRT) %>%
-  mutate(IRT = ifelse(is.na(IRT),response_onset_time, IRT))
-
-write.csv(file, "../forager_test/data/fluency_lists/reed_animals_RTs.csv", row.names = FALSE)
-```

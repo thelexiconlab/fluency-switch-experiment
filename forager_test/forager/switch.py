@@ -90,37 +90,45 @@ def switch_norms_categorical(fluency_list,norms):
             closest_match = difflib.get_close_matches(prev_word, items_in_norms, n=1)
             prev_word = closest_match[0] if len(closest_match) > 0 else prev_word
             
-            prev_word_cats = norms[norms['Item'] == prev_word]['Category'].iloc[0] if prev_word in items_in_norms else 'notinnorms'
+            prev_word_cats = norms[norms['Item'] == prev_word]['Category'].tolist() if prev_word in items_in_norms else 'notinnorms'
+            #print("cat for {} is {}".format(prev_word, prev_word_cats))
             
             # find category of current word
             current_word = row['item']
             closest_match = difflib.get_close_matches(current_word, items_in_norms, n=1)
             current_word = closest_match[0] if len(closest_match) > 0 else current_word
-            current_word_cats = norms[norms['Item'] == current_word]['Category'].iloc[0] if current_word in items_in_norms else 'notinnorms'
+            current_word_cats = norms[norms['Item'] == current_word]['Category'].tolist() if current_word in items_in_norms else 'notinnorms'
+            #print("cat for {} is {}".format(current_word, current_word_cats))
             
             # check if they share a category
             if any(cat in current_word_cats for cat in prev_word_cats):
                 df.at[i, 'designation'] = 0
+                #print("shared category")
             else:
                 df.at[i, 'designation'] = 1
+                #print("different category")
         else:
             
             prev_one = find_most_recent_one_index(df['designation'], i)
             cluster = df.loc[prev_one:i, :]
             prev_words = norms[norms['Item'].isin(cluster['item'])]
             prev_cats = prev_words.groupby('Item', group_keys=False)['Category'].apply(list).to_dict()
+            #print("cat for {} is {}".format(prev_words, prev_cats))
             
             all_shared_cats = set.intersection(*[set(cats) for cats in prev_cats.values()]) if len(prev_cats) > 0 else set()
             # find category of current word
             current_word = row['item']
             closest_match = difflib.get_close_matches(current_word, items_in_norms, n=1)
             current_word = closest_match[0] if len(closest_match) > 0 else current_word
-            current_word_cats = norms[norms['Item'] == current_word]['Category'].iloc[0] if current_word in items_in_norms else 'notinnorms'
+            current_word_cats = norms[norms['Item'] == current_word]['Category'].tolist() if current_word in items_in_norms else 'notinnorms'
+            #print("cat for {} is {}".format(current_word, current_word_cats))
             
             if any(cat in current_word_cats for cat in all_shared_cats):
                 df.at[i, 'designation'] = 0
+                #print("shared category")
             else:
                 df.at[i, 'designation'] = 1
+                #print("different category")
     
     # return the designations
     categorical_designations = df['designation'].values.tolist()
@@ -199,6 +207,75 @@ def switch_multimodal(fluency_list,semantic_similarity,phonological_similarity,a
             multimodalsimdrop.append(2)
 
     return multimodalsimdrop
+
+def switch_multimodaldelta(fluency_list, semantic_similarity, phonological_similarity, rise_thresh, fall_thresh, alpha):
+    '''
+        Delta Similarity Switch Method proposed by Nancy Lundin & Peter Todd. 
+        
+        Args:
+            fluency_list (list, size = L): fluency list to predict switches on
+            semantic_similarity (list, size = L): a list of semantic similarities between items in the fluency list, obtained via create_history_variables
+            rise_thresh (float): after a switch occurs, the threshold that the increase in z-scored similarity must exceed to be a cluster  
+            fall_thresh (float): while in a cluster, the threshold that the decrease in z-scored similarity must exceed to be a switch
+
+        Returns:
+            a list, size L, of switches, where 0 = no switch, 1 = switch, 2 = boundary case
+    '''
+    if rise_thresh > 1 or rise_thresh < 0:
+        raise Exception("Rise Threshold parameter must be within range [0,1]")
+
+    if fall_thresh > 1 or fall_thresh < 0:
+        raise Exception("Fall Threshold parameter must be within range [0,1]")
+    
+    if alpha > 1 or alpha < 0:
+        raise Exception("Alpha parameter must be within range [0,1]")
+    
+    simphon = alpha * np.array(semantic_similarity) + (1 - alpha) * np.array(phonological_similarity)
+
+    switchVector = [2] # first item designated with 2
+
+    # obtain consecutive semantic similarities b/w responses
+    # z-score similarities within participant
+    similaritiesZ = stats.zscore(simphon[1:])
+    medianSim = statistics.median(similaritiesZ)
+    meanSim = 0
+    similaritiesZ = np.concatenate(([np.nan], similaritiesZ))
+
+    # define subject level threshold = median (zscored similarities)
+    # firstSwitchSimThreshold = meanSim
+    firstSwitchSimThreshold = medianSim
+    # for second item, if similarity < median, then switch, else cluster
+    if similaritiesZ[1] < firstSwitchSimThreshold:
+        switchVector.append(1)
+    else:
+        switchVector.append(0)
+
+    currentState = switchVector[1]
+    previousState = currentState
+
+    # for all other items:
+    for n in range(1,len(fluency_list)-1):
+    #   consider n-1, n, n+1 items
+        
+        simPrecedingToCurrentWord = similaritiesZ[n]
+        
+        simCurrentToNextWord = similaritiesZ[n+1]
+        if previousState == 0: #if previous state was a cluster
+            if fall_thresh < (simPrecedingToCurrentWord - simCurrentToNextWord): # similarity diff fell more than threshold
+                currentState = 1 # switch
+            else:
+                currentState = 0 # cluster
+        else: # previous state was a switch
+            if rise_thresh < (simCurrentToNextWord - simPrecedingToCurrentWord): # similarity diff is greater than our rise threshold
+                currentState = 0 # cluster
+            else:
+                currentState = 1 # switch
+
+        switchVector.append(currentState)
+        previousState = currentState
+
+    return switchVector
+
 
 def switch_delta(fluency_list, semantic_similarity, rise_thresh, fall_thresh):
     '''
@@ -308,6 +385,7 @@ def fit_exponential_curve(reaction_times):
     # Fit the exponential curve to the data
     
     fitted_curve = exponential_curve(x, *popt)
+    #print("Fitted curve: ", fitted_curve)
 
     # Calculate slope differences and classifications
     classifications = np.zeros(len(x))
@@ -323,7 +401,22 @@ def fit_exponential_curve(reaction_times):
             else:
                 # fitted RT is lower than raw RT
                 classifications[i] = 1
-                
+         
     return classifications.tolist()
 
+# fit_exponential_curve([0, 3.941, 6.041, 8.041, 10.041, 12.441, 14.441, 16.441, 18.441, 21.641, 
+#                23.541, 27.441, 32.741, 35.641, 38.541, 40.741, 42.841, 44.941, 47.241, 
+#                49.641, 52.141, 55.041, 57.841, 60.841, 64.541, 69.141, 73.841, 76.641, 
+#                80.041, 82.841, 85.141, 87.741, 93.041, 109.741, 113.141, 116.341, 
+#                120.141, 125.741, 131.741, 133.941, 141.141, 143.441, 150.041, 155.141, 
+#                158.541, 160.741, 163.741, 166.541])
 
+# animalnormspath =  '../data/norms/animals_snafu_scheme_vocab.csv'
+# switch_norms_categorical(["snake", "lion", "ox", "monkey", "fish", "shrimp", "octopus", 
+#                    "shark", "alligator", "crocodile", "frog", "gorilla", "horse", 
+#                    "cow", "pig", "chicken", "rabbit", "squirrel", "bear", "cheetah", 
+#                    "giraffe", "elephant", "dolphin", "lizard", "jellyfish", "zebra", 
+#                    "gazelle", "deer", "fox", "coyote", "wolf", "elephant", "whale", 
+#                    "porcupine", "peacock", "chicken", "turkey", "owl", "eagle", "eel", 
+#                    "platypus", "donkey", "mouse", "dog", "cat", "ferret", "guinea pig", 
+#                    "hamster"], pd.read_csv(animalnormspath, encoding="unicode-escape"))

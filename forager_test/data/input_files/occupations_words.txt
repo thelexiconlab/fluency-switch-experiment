@@ -1,1991 +1,1991 @@
-50001	lawyer	3.841
-50001	doctor	5.541
-50001	researcher	8.441
-50001	social worker	18.041
-50001	politician	25.641
-50001	writer	31.441
-50001	singer	33.741
-50001	musician	35.341
-50001	chef	42.341
-50001	secretary	47.341
-50001	nurse	59.041
-50001	audiologist	65.941
-50001	speech pathologist	72.141
-50001	teacher	77.041
-50001	seamstress	87.141
-50001	actor	90.741
-50001	cashier	104.141
-50001	professor	124.841
-50001	construction worker	133.441
-50001	manager	142.741
-50001	firefighter	159.341
-50001	police	162.541
-50001	surgeon	175.041
-50002	doctor	2.641
-50002	officer	3.341
-50002	police officer	4.441
-50002	emt	7.941
-50002	secretary	9.441
-50002	athlete	13.891
-50002	teacher	15.441
-50002	fireman	17.141
-50002	librarian	17.941
-50002	physical therapist	23.041
-50002	clinical psychologist	24.341
-50002	lab worker	26.641
-50002	engineer	29.841
-50002	computer technician	32.041
-50002	business person	37.891
-50002	travel agent	41.841
-50002	real estate	43.041
-50002	realtor	46.891
-50002	pilot	50.941
-50002	attendant	53.141
-50002	nurse	55.341
-50002	professor	62.341
-50002	mayor	75.441
-50002	dancer	88.491
-50002	artist	89.241
-50002	post office worker	97.041
-50002	security guard	103.541
-50002	driver	110.241
-50002	housekeeper	113.541
-50002	plumber	116.441
-50002	manager	124.241
-50002	waiter	125.441
-50002	wait staff	126.441
-50002	cook	130.041
-50002	floor worker	134.141
-50002	craftsperson	145.991
-50002	electrician	152.541
-50002	customer service representative	161.841
-50002	cashier	168.241
-50002	zoologist	174.241
-50003	lawyer	4.801
-50003	doctor	6.001
-50003	surgeon	7.301
-50003	psychologist	8.701
-50003	counselor	10.101
-50003	janitor	12.501
-50003	secretary	15.301
-50003	clerk	16.801
-50003	salesperson	19.001
-50003	manager	20.801
-50003	teacher	22.801
-50003	lunch lady	27.501
-50003	truck driver	30.101
-50003	lab technician	35.501
-50003	engineer	42.701
-50003	architect	44.501
-50003	physical therapist	65.801
-50003	dermatologist	68.901
-50003	audiologist	71.701
-50003	accountant	81.601
-50003	oncologist	92.301
-50003	chef	99.101
-50003	artist	105.201
-50003	animator	107.201
-50003	director	109.001
-50003	producer	109.901
-50003	actor	111.401
-50003	musician	118.701
-50003	professional sports player	124.801
-50003	gardener	136.701
-50003	construction	147.801
-50003	uber driver	152.201
-50003	student	157.701
-50003	retail salesman	171.701
-50004	teacher	2.844
-50004	excavator	4.544
-50004	doctor	6.844
-50004	soldier	12.144
-50004	librarian	13.844
-50004	curator	15.344
-50004	dentist	19.344
-50004	surgeon	22.044
-50004	professor	25.844
-50004	brick layer	29.244
-50004	businessman	38.544
-50004	executive	42.644
-50004	president	46.144
-50004	senator	48.844
-50004	singer	58.844
-50004	actor	60.644
-50004	director	63.544
-50004	set dresser	66.844
-50004	tailor	73.744
-50004	spy	75.744
-50004	dancer	88.244
-50004	carpenter	91.544
-50004	plumber	93.344
-50004	cabinet maker	97.944
-50004	designer	107.444
-50004	model	110.044
-50004	marine biologist	129.144
-50004	film archivist	134.744
-50004	private manuscript consultant	138.844
-50004	locksmith	150.944
-50004	farmer	158.044
-50004	antiques dealer	164.244
-50006	consultant	3.784
-50006	fashion designer	7.084
-50006	doctor	10.084
-50006	lawyer	11.684
-50006	judge	13.184
-50006	police officer	14.484
-50006	firefighter	15.984
-50006	mayor	18.084
-50006	governor	19.184
-50006	president	20.184
-50006	congressman	21.384
-50006	garbage man	24.984
-50006	nurse	27.184
-50006	bank teller	30.684
-50006	ceo	32.784
-50006	coo	34.084
-50006	cfo	34.984
-50006	associate	45.584
-50006	cashier	55.884
-50006	cook	57.284
-50006	waiter	59.584
-50006	waitress	60.484
-50006	scientist	70.784
-50006	marine biologist	76.884
-50006	chemist	80.084
-50006	computer programmer	84.584
-50006	musician	100.084
-50006	artist	101.884
-50006	teacher	115.184
-50006	principal	116.384
-50006	custodian	118.884
-50006	manager	125.784
-50006	financial adviser	132.684
-50006	academic advisor	140.084
-50006	dean	149.284
-50006	professor	151.084
-50006	social worker	156.384
-50006	marine	171.584
-50007	police officer	4.303
-50007	fireman	6.803
-50007	doctor	9.203
-50007	nurse	11.503
-50007	physical therapist	14.003
-50007	receptionist	18.303
-50007	teacher	23.403
-50007	professor	26.403
-50007	writer	33.503
-50007	journalist	37.903
-50007	eye doctor	41.803
-50007	podiatrist	49.403
-50007	veterinarian	52.203
-50007	dietician	57.303
-50007	fitness instructor	62.803
-50007	ear nose and throat specialist	73.603
-50007	military officer	80.203
-50007	psychiatrist	87.803
-50007	it person	94.303
-50007	book editor	99.603
-50007	factory worker	105.703
-50007	chauffeur	111.903
-50007	bus driver	120.103
-50007	president	131.903
-50007	government worker	142.503
-50007	athlete	152.403
-50007	computer programmer	160.803
-50007	cartographer	168.803
-50007	chemist	173.403
-50007	researcher	180.503
-50008	receptionist	5.672
-50008	elevator operator	9.072
-50008	door person	11.572
-50008	doctor	16.172
-50008	nurse	16.872
-50008	nurse assistant	21.872
-50008	firefighter	28.172
-50008	police	29.772
-50008	tax collector	36.872
-50008	accountant	40.172
-50008	dentist	49.272
-50008	professor	54.972
-50008	administrative assistant	64.672
-50008	teacher	80.872
-50008	teacher aid	82.372
-50008	principal	84.172
-50008	grocer	90.172
-50008	cashier	103.372
-50008	technician	119.172
-50008	welder	123.772
-50008	maintenance person	125.772
-50008	cook	130.772
-50008	factory worker	150.272
-50008	therapist	161.672
-50008	gas station attendant	173.572
-50010	doctor	2.652
-50010	teacher	3.552
-50010	professor	5.152
-50010	ceo	7.452
-50010	cfo	8.752
-50010	accountant	10.552
-50010	auditor	13.152
-50010	writer	15.452
-50010	author	16.652
-50010	producer	17.752
-50010	actor	19.152
-50010	musician	20.852
-50010	scientist	25.952
-50010	volunteer	29.752
-50010	manager	35.952
-50010	marketer	37.652
-50010	advertiser	38.952
-50010	salesperson	42.152
-50010	customer service	46.552
-50010	trainer	51.352
-50010	tutor	54.152
-50010	owner	57.552
-50010	supervisor	63.852
-50010	risk manager	66.052
-50010	assistant	75.052
-50010	mechanic	81.252
-50010	engineer	82.952
-50010	zookeeper	91.252
-50010	soldier	103.252
-50010	general	105.552
-50010	priest	109.952
-50010	real estate agent	119.352
-50010	agent	123.552
-50010	security	126.352
-50010	police officer	128.352
-50010	front desk attendant	138.252
-50010	valet	142.652
-50010	chef	150.752
-50010	sous chef	152.352
-50010	waiter	156.052
-50010	waitress	156.652
-50010	host	164.152
-50010	busboy	168.052
-50010	cleaning lady	176.052
-50011	doctor	2.727
-50011	lawyer	3.427
-50011	pharmacist	4.727
-50011	sales manager	6.527
-50011	sales representative	7.927
-50011	accountant	10.027
-50011	biologist	12.727
-50011	researcher	14.527
-50011	president	18.727
-50011	waitress	22.827
-50011	paleontologist	29.027
-50011	orthodontist	32.827
-50011	dental hygienist	35.527
-50011	dentist	36.827
-50011	policeman	42.327
-50011	taxi driver	45.327
-50011	agent	55.827
-50011	athlete	57.427
-50011	stockbroker	68.727
-50011	speech pathologist	74.527
-50011	mri technician	77.327
-50011	architect	82.627
-50011	construction worker	88.027
-50011	excavator	98.127
-50011	appraiser	101.427
-50011	assistant	113.527
-50011	receptionist	118.527
-50011	student	124.827
-50011	beautician	134.727
-50011	publisher	143.627
-50011	editor	145.727
-50011	journalist	151.827
-50011	reporter	154.027
-50011	anchor	157.727
-50011	fisherman	162.627
-50011	colonel	169.527
-50011	sergeant	170.127
-50011	adviser	176.427
-50012	dog walker	2.94
-50012	sales manager	5.04
-50012	physical therapist	6.74
-50012	nurse	8.74
-50012	doctor	10.04
-50012	anesthesiologist	11.64
-50012	event manager	19.34
-50012	nurse anesthetist	22.84
-50012	photographer	26.14
-50012	painter	28.24
-50012	dancer	30.44
-50012	fitness educator	34.34
-50012	architect	38.44
-50012	engineer	40.04
-50012	swim coach	42.74
-50012	basketball coach	44.94
-50012	football coach	47.24
-50012	gymnast	50.04
-50012	journalist	57.54
-50012	writer	59.34
-50012	editor	61.04
-50012	designer	73.14
-50012	landscaper	75.34
-50012	data analyst	80.64
-50012	psychologist	83.04
-50012	counselor	85.34
-50012	professor	89.14
-50012	teacher	91.74
-50012	real estate agent	111.94
-50012	occupational therapist	126.24
-50012	recreational therapist	128.64
-50012	paramedic	134.44
-50012	dance instructor	160.14
-50012	financial analyst	166.64
-50013	farmer	4.32
-50013	musician	6.92
-50013	it manager	14.02
-50013	program manager	17.32
-50013	math teacher	20.62
-50013	principal	23.82
-50013	dean	27.02
-50013	jazz band arranger	31.42
-50013	composer	35.62
-50013	trombone player	39.82
-50013	flute player	43.92
-50013	conductor	47.52
-50013	animal rights activist	51.92
-50013	leader of an organization	59.92
-50013	religious or spiritual leader	65.92
-50013	rabbi	71.52
-50013	priest	74.42
-50013	minister	77.52
-50013	social studies teacher	83.42
-50013	dog walker	90.12
-50013	language arts teacher	94.52
-50013	therapist	100.42
-50013	psychiatrist	103.72
-50013	psychologist	108.12
-50013	lawn mower	113.82
-50013	landlord	121.72
-50013	housekeeper	125.42
-50013	agent	133.52
-50013	manager	138.42
-50013	baseball player	144.22
-50013	athlete	149.82
-50013	figure skater	153.72
-50013	basketball player	161.52
-50013	psychic	177.12
-50014	researcher	4.273
-50014	scientist	4.973
-50014	teacher	5.973
-50014	professor	7.773
-50014	technician	10.173
-50014	librarian	14.973
-50014	shop owner	17.173
-50014	shopkeeper	18.573
-50014	manager	22.873
-50014	construction worker	31.473
-50014	architect	33.373
-50014	foreman	37.273
-50014	police officer	40.673
-50014	firefighter	42.373
-50014	traffic cop	57.173
-50014	sheriff	60.473
-50014	president	63.473
-50014	senator	64.873
-50014	house member	69.173
-50014	representative	72.573
-50014	cabinet member	76.773
-50014	journalist	79.973
-50014	writer	83.273
-50014	blogger	85.773
-50014	actor	93.073
-50014	actress	94.273
-50014	director	96.173
-50014	producer	96.973
-50014	accountant	101.173
-50014	auditor	102.373
-50014	cheese maker	104.773
-50014	farmer	105.873
-50014	tax preparer	113.073
-50014	secretary	120.473
-50014	ceo	125.173
-50014	cfo	126.073
-50014	consultant	129.373
-50014	chef	136.573
-50014	waitress	137.973
-50014	hostess	138.773
-50014	busboy	140.673
-50014	bartender	142.073
-50014	bar back	144.073
-50014	dancer	146.373
-50014	musician	147.873
-50014	piano player	150.373
-50014	jazz musician	152.773
-50014	rock musician	153.873
-50014	singer	155.873
-50014	roadie	159.273
-50014	actor	164.673
-50014	theater actor	166.273
-50014	theater manager	170.773
-50014	usher	173.473
-50014	security	177.873
-50016	doctor	3.381
-50016	lawyer	4.981
-50016	physical therapist	7.181
-50016	professional athlete	9.481
-50016	teacher	11.781
-50016	taxi driver	16.881
-50016	truck driver	19.781
-50016	garbage man	23.681
-50016	postal worker	27.281
-50016	priest	31.281
-50016	volunteer	36.181
-50016	president	45.081
-50016	government official	47.581
-50016	mayor	49.881
-50016	secretary	52.581
-50016	chief executive officer	55.881
-50016	accountant	59.381
-50016	chef	62.081
-50016	supervisor	67.981
-50016	yoga instructor	72.881
-50016	nurse	78.781
-50016	pharmacist	80.681
-50016	delivery driver	86.381
-50016	receptionist	98.381
-50016	janitor	100.781
-50016	undertaker	103.481
-50016	telemarketer	113.381
-50016	movie star	118.681
-50016	musician	120.581
-50016	artist	126.581
-50016	mathematician	130.181
-50016	commissioner of the nba	144.381
-50016	sports agent	148.881
-50016	fireman	160.181
-50016	policeman	161.881
-50016	social worker	166.181
-50016	coach	171.681
-50016	therapist	176.781
-50017	scientist	4.287
-50017	doctor	6.287
-50017	teacher	8.187
-50017	athlete	9.987
-50017	astronomer	16.287
-50017	astronaut	18.887
-50017	welder	25.287
-50017	construction worker	29.687
-50017	blogger	32.587
-50017	musician	33.687
-50017	therapist	38.087
-50017	psychiatrist	41.087
-50017	nurse	43.087
-50017	student	46.987
-50017	nanny	55.487
-50017	president	58.787
-50017	king	60.187
-50017	clerk	67.187
-50017	librarian	68.887
-50017	paleontologist	70.887
-50017	radiologist	75.987
-50017	respiratory therapist	78.487
-50017	fisherman	83.287
-50017	hunter	85.787
-50017	singer	91.587
-50017	painter	93.487
-50017	trapeze artist	99.487
-50017	comedian	103.587
-50017	public speaker	107.187
-50017	event planner	111.987
-50017	truck driver	118.787
-50017	mathematician	127.587
-50017	entomologist	137.387
-50017	writer	143.087
-50017	vagabond	149.287
-50017	cashier	161.187
-50017	waiter	163.587
-50017	cook	167.387
-50017	brewer	172.987
-50017	sommelier	176.187
-50018	doctor	3.794
-50018	teacher	5.994
-50018	analyst	13.794
-50018	writer	15.894
-50018	psychologist	19.094
-50018	psychiatrist	21.194
-50018	neurologist	24.094
-50018	podiatrist	26.394
-50018	oncologist	28.694
-50018	proctologist	31.194
-50018	nurse	36.794
-50018	secretary	39.694
-50018	designer	51.294
-50018	artist	55.794
-50018	preacher	58.794
-50018	entrepreneur	74.094
-50018	coach	80.694
-50018	accountant	93.194
-50018	marketer	98.894
-50018	financial adviser	102.794
-50018	supply chain manager	109.894
-50018	lineman	123.394
-50018	janitor	126.094
-50018	principal	128.094
-50018	counselor	130.394
-50018	professor	142.294
-50018	singer	151.094
-50019	firefighter	4.012
-50019	police officer	5.012
-50019	teacher	6.612
-50019	principal	7.412
-50019	secretary	8.112
-50019	nurse	9.812
-50019	counselor	10.512
-50019	school bus driver	13.712
-50019	trash collector	16.012
-50019	artist	19.912
-50019	doula	22.612
-50019	preacher	32.512
-50019	farmer	34.512
-50019	massage therapist	39.412
-50019	physical therapist	44.112
-50019	occupational therapist	45.212
-50019	consultant	54.812
-50019	director	61.312
-50019	representative	72.512
-50019	senator	76.612
-50019	pharmacist	82.012
-50019	cashier	84.112
-50019	bartender	86.012
-50019	server	87.112
-50019	hostess	88.412
-50019	receptionist	91.912
-50019	chef	95.512
-50019	house cleaner	100.712
-50019	security officer	109.112
-50019	life guard	125.012
-50019	coach	132.012
-50019	personal trainer	132.912
-50019	maintenance person	137.512
-50019	it help desk	140.912
-50019	software developer	144.812
-50019	marketing person	149.012
-50019	social media specialist	154.112
-50019	sex worker	159.412
-50019	landscaper	162.812
-50019	mover	172.312
-50019	truck driver	174.812
-50019	train conductor	177.012
-50020	firefighter	4.421
-50020	policeman	5.821
-50020	doctor	7.321
-50020	lawyer	9.021
-50020	accountant	11.221
-50020	photographer	12.921
-50020	director	14.621
-50020	garbage man	16.821
-50020	office worker	20.821
-50020	retail worker	22.521
-50020	manager	24.421
-50020	gas station clerk	26.621
-50020	zoologist	34.821
-50020	biologist	36.921
-50020	cafeteria worker	40.621
-50020	chef	42.721
-50020	professional athlete	48.921
-50020	coach	51.521
-50020	teacher	56.321
-50020	counselor	58.821
-50020	director	63.821
-50020	receptionist	83.521
-50020	dentist	85.521
-50020	orthodontist	86.721
-50020	fashion designer	95.821
-50020	artist	99.721
-50020	butcher	120.221
-50020	fisherman	141.621
-50020	cosmetologist	158.721
-50020	nail tech	161.321
-50020	painter	164.921
-50022	nurse	3.325
-50022	doctor	4.825
-50022	teacher	6.525
-50022	lawyer	8.625
-50022	football player	10.825
-50022	basketball player	13.025
-50022	baseball player	15.225
-50022	janitor	17.525
-50022	secretary	20.425
-50022	president	23.025
-50022	senator	24.525
-50022	congressman	26.725
-50022	police officer	31.125
-50022	fireman	33.525
-50022	cook	37.925
-50022	waitress	40.225
-50022	conductor	45.525
-50022	musician	48.825
-50022	electrician	50.625
-50022	pipefitter	53.025
-50022	architect	57.225
-50022	construction worker	59.125
-50022	taxi driver	64.825
-50022	radiologist	68.325
-50022	salesman	75.625
-50022	hair stylist	90.425
-50022	makeup artist	93.525
-50022	tailor	96.125
-50022	camera man	101.825
-50022	governor	106.925
-50022	mayor	109.625
-50022	designer	124.625
-50022	scientist	129.425
-50022	vice president	147.925
-50022	preacher	159.825
-50022	soldier	166.825
-50022	therapist	174.825
-50022	life coach	178.325
-50023	nurse	3.073
-50023	doctor	6.673
-50023	assistant	9.873
-50023	teacher	12.673
-50023	president	16.373
-50023	director	19.373
-50023	actor	22.873
-50023	artist	27.673
-50023	janitor	33.373
-50023	ballerina	45.973
-50023	scientist	50.373
-50023	student	55.273
-50023	cook	61.273
-50023	hair dresser	66.773
-50023	nail technician	71.273
-50023	clerk	77.073
-50023	farmer	81.973
-50023	salesperson	90.973
-50023	pharmacist	96.873
-50023	technician	111.573
-50023	waitress	114.473
-50023	gas attendant	119.573
-50023	lawyer	127.473
-50023	judge	130.873
-50023	cfo	140.273
-50023	ceo	147.273
-50023	news photographer	153.273
-50023	vice president	156.673
-50023	public relations representative	176.873
-50024	salesman	2.71
-50024	lawyer	4.11
-50024	caterer	5.41
-50024	safety and health specialist	7.71
-50024	dietician	10.01
-50024	nurse	11.41
-50024	doctor	12.71
-50024	pediatrician	14.21
-50024	oncologist	15.91
-50024	gynecologist	17.91
-50024	business marketing	22.11
-50024	payroll administrator	24.51
-50024	fast food worker	29.01
-50024	retail worker	32.91
-50024	trash man	37.01
-50024	cable digger	41.11
-50024	electrician	45.11
-50024	bus driver	49.11
-50024	taxi driver	51.41
-50024	uber driver	54.11
-50024	restaurant owner	58.81
-50024	bar owner	61.81
-50024	tree trimmer	66.71
-50024	wildlife rehabilitator protector	70.71
-50024	animal protection agency	76.31
-50024	animal shelter worker	82.21
-50024	pet groomer	91.21
-50024	ups worker	98.71
-50024	pharmaceutical worker	104.41
-50024	pharmacist	108.91
-50024	warehouse employee	113.61
-50024	jailer	122.81
-50024	cop	125.41
-50024	fireman	127.61
-50024	sanitation department	130.11
-50024	paramedic	140.71
-50024	pilot	144.31
-50024	foot doctor	157.81
-50024	emt doctor	162.21
-50024	overseas coordinator	170.51
-50024	air traffic control	175.51
-50025	hair stylist	3.278
-50025	neuroscientist	5.978
-50025	researcher	7.578
-50025	doctor	10.278
-50025	surgeon	11.578
-50025	nurse	13.378
-50025	physician assistant	14.978
-50025	nurse practitioner	17.578
-50025	pharmacist	24.178
-50025	engineer	26.378
-50025	hair stylist	32.878
-50025	taxidermist	36.878
-50025	tax person	39.778
-50025	retail associate	43.678
-50025	wine maker	45.578
-50025	lawyer	48.978
-50025	attorney	50.978
-50025	car maker	56.078
-50025	factory worker	57.278
-50025	mailman	59.678
-50025	sewer worker	63.678
-50025	farmer	67.378
-50025	truck driver	69.278
-50025	teacher	71.978
-50025	principal	75.278
-50025	lawyer	78.078
-50025	mayor	79.178
-50025	senator	80.878
-50025	president	83.378
-50025	store owner	86.478
-50025	hostess	90.978
-50025	waitress	92.378
-50025	manager	94.178
-50025	construction worker	97.878
-50025	taste tester	103.278
-50025	cashier	108.978
-50025	stockist	111.678
-50025	janitor	120.278
-50025	bus driver	124.078
-50025	factory worker	125.378
-50025	pediatrician	138.478
-50025	psychologist	139.878
-50025	therapist	141.278
-50025	student	147.078
-50025	researcher	157.378
-50025	scientist	159.478
-50025	florist	162.678
-50025	ring maker	165.178
-50025	dj	166.778
-50025	baker	168.478
-50025	photographer	172.178
-50025	videographer	174.278
-50026	doctor	3.15
-50026	engineer	4.35
-50026	janitor	5.75
-50026	nurse	7.35
-50026	optometrist	8.35
-50026	professor	10.25
-50026	archaeologist	11.65
-50026	anthropologist	13.15
-50026	artist	14.75
-50026	construction worker	16.05
-50026	cook	18.35
-50026	server	20.85
-50026	dishwasher	23.25
-50026	waitress	24.75
-50026	telemarketer	27.75
-50026	train conductor	31.65
-50026	programmer	36.05
-50026	coder	37.25
-50026	renderer	39.15
-50026	mathematician	41.75
-50026	astronomer	43.85
-50026	instructor	48.25
-50026	coach	58.05
-50026	technician	65.25
-50026	sculptor	75.25
-50026	comedian	83.85
-50026	author	85.65
-50026	musician	88.05
-50026	bus driver	92.65
-50026	news reporter	98.55
-50026	journalist	99.65
-50026	reviewer	113.65
-50026	editor	119.15
-50026	lyricist	122.65
-50026	composer	128.25
-50026	conductor	129.35
-50026	radiologist	140.05
-50026	cosmologist	145.05
-50026	beautician	147.45
-50026	hair dresser	150.35
-50026	barber	155.55
-50026	politician	167.85
-50026	adviser	173.95
-50027	teacher	2.737
-50027	janitor	4.137
-50027	principal	5.737
-50027	lunch lady	7.237
-50027	librarian	10.037
-50027	police officer	16.637
-50027	firefighter	17.937
-50027	mailman	19.237
-50027	recreational therapist	23.337
-50027	occupational therapist	25.337
-50027	doctor	33.037
-50027	physical therapist	34.537
-50027	optometrist	42.037
-50027	anesthesiologist	45.037
-50027	surgeon	49.837
-50027	radiologist	53.037
-50027	x ray technician	56.737
-50027	small motors technician	58.637
-50027	plumber	61.637
-50027	electrician	63.537
-50027	pipefitter	76.037
-50027	truck driver	84.137
-50027	nurse	106.037
-50027	receptionist	110.437
-50027	assistant	113.837
-50027	coach	117.337
-50027	professional basketball player	131.437
-50027	professional football player	133.537
-50027	professional baseball	135.037
-50027	professional hockey player	136.737
-50027	counselor	147.437
-50027	adviser	149.137
-50027	life coach	153.337
-50027	therapist	158.237
-50027	vacation planner	163.237
-50027	oncologist	170.237
-50027	ophthalmologist	176.637
-50029	accounting	2.7115
-50029	sales	5.6115
-50029	realty	13.7115
-50029	mowing lawns	28.7115
-50029	insurance	33.4115
-50029	psychologist	52.6115
-50029	librarian	64.1115
-50029	pilot	81.5115
-50029	professional athlete	97.5115
-50029	manager	160.5115
-50029	ceo	164.3115
-50029	cfo	168.4115
-50030	doctor	2.30171966
-50030	lawyer	3.70171966
-50030	teacher	5.10171966
-50030	plumber	6.70171966
-50030	cab driver	8.10171966
-50030	researcher	12.50171966
-50030	nurse	16.00171966
-50030	technician	18.20171966
-50030	electrician	19.70171966
-50030	professor	24.40171966
-50030	barista	29.90171966
-50030	bartender	31.20171966
-50030	chef	33.90171966
-50030	server	35.30171966
-50030	dietician	39.30171966
-50030	surgeon	41.50171966
-50030	instructor	58.00171966
-50030	life guard	60.60171966
-50030	beautician	72.00171966
-50030	designer	73.90171966
-50030	architect	75.50171966
-50030	librarian	77.80171966
-50030	tailor	84.90171966
-50030	truck driver	92.30171966
-50030	engineer	95.00171966
-50030	businessman	98.60171966
-50030	accountant	105.4017197
-50030	actuary	108.3017197
-50030	mortician	111.6017197
-50030	pathologist	118.0017197
-50030	judge	121.4017197
-50030	ceo	133.6017197
-50030	student	152.3017197
-50030	construction worker	166.2017197
-50030	police officer	168.5017197
-50030	sheriff	176.3017197
-50030	baler	177.7017197
-50030	counselor	180.1017197
-50031	optometrist	2.6276
-50031	doctor	3.9276
-50031	dentist	5.2276
-50031	psychologist	6.6276
-50031	lawyer	8.3276
-50031	politician	9.8276
-50031	server	11.8276
-50031	grill cook	13.4276
-50031	dish tanker	15.4276
-50031	prep cook	17.6276
-50031	engineer	19.5276
-50031	nurse	21.5276
-50031	anesthesiologist	23.0276
-50031	plumber	25.5276
-50031	electrician	26.9276
-50031	barista	29.3276
-50031	translator	32.5276
-50031	artist	39.0276
-50031	game designer	41.4276
-50031	veterinarian	47.9276
-50031	breeder	51.5276
-50031	farmer	52.9276
-50031	factory worker	58.4276
-50031	electrician	64.8276
-50031	phlebotomist	76.8276
-50031	nurse practitioner	82.5276
-50031	physician assistant	84.9276
-50031	receptionist	92.2276
-50031	salesperson	95.0276
-50031	marketing	98.1276
-50031	journalist	104.9276
-50031	photographer	107.2276
-50031	news anchor	111.1276
-50031	delivery person	115.3276
-50031	teacher	121.0276
-50031	babysitter	124.1276
-50031	firefighter	130.8276
-50031	police	135.1276
-50031	bank teller	140.4276
-50031	personal trainer	149.5276
-50031	therapist	151.6276
-50031	chocolatier	157.0276
-50031	mediator	163.7276
-50031	construction worker	167.9276
-50031	emt	172.5276
-50031	certified nursing assistant	177.9276
-50032	lawyer	3.5162
-50032	doctor	4.8162
-50032	construction worker	7.0162
-50032	teacher	8.7162
-50032	psychologist	12.0162
-50032	neuroscientist	16.3162
-50032	researcher	18.8162
-50032	cook	24.8162
-50032	chef	26.9162
-50032	taxi driver	30.7162
-50032	it manager	34.7162
-50032	gym teacher	41.8162
-50032	nurse	47.3162
-50032	psychiatrist	49.5162
-50032	lawyer	52.9162
-50032	ceo	58.8162
-50032	manager	61.0162
-50032	babysitter	74.8162
-50032	cleaner	78.1162
-50032	bus driver	82.8162
-50032	tour guide	95.7162
-50032	ferry driver	102.1162
-50032	railroad worker	107.5162
-50032	waiter	113.8162
-50032	waitress	115.2162
-50032	tutor	125.8162
-50032	mathematician	146.8162
-50032	nutritionist	154.6162
-50032	counselor	158.1162
-50032	director	161.1162
-50032	actor	162.2162
-50032	producer	164.1162
-50032	conductor	174.0162
-50033	athlete	4.862
-50033	student	5.962
-50033	assistant	8.062
-50033	doctor	8.862
-50033	manager	11.662
-50033	bagger	14.362
-50033	mechanic	16.862
-50033	pilot	18.962
-50033	military officer	21.862
-50033	organizer	27.362
-50033	lawyer	30.962
-50033	firefighter	32.762
-50033	trainer	37.762
-50033	musician	40.662
-50033	artist	42.562
-50033	archaeologist	48.562
-50033	mathematician	51.362
-50033	engineer	53.262
-50033	chemical engineer	57.462
-50033	radiologist	64.962
-50033	statistician	67.162
-50033	stockbroker	70.762
-50033	retail	75.262
-50033	cashier	76.562
-50033	marketer	79.362
-50033	actor	82.862
-50033	director	88.462
-50033	nanny	92.562
-50033	babysitter	94.162
-50033	dog walker	96.162
-50033	caretaker	101.562
-50033	research assistant	108.162
-50033	athletic director	111.962
-50033	teacher	113.962
-50033	custodian	115.262
-50033	police	118.262
-50033	therapist	129.662
-50033	physical therapist	131.362
-50033	pharmaceutical practitioner	136.962
-50033	nurse	142.062
-50033	mechanical engineer	150.362
-50033	butler	155.162
-50033	safety director	162.162
-50033	bagger	168.062
-50033	retail manager	170.962
-50033	chef	178.162
-50034	doctor	3.1321
-50034	lawyer	4.3321
-50034	nurse	5.6321
-50034	artist	7.2321
-50034	teacher	8.6321
-50034	principal	10.0321
-50034	engineer	11.9321
-50034	homemaker	14.4321
-50034	interior designer	16.0321
-50034	construction worker	17.7321
-50034	accountant	19.8321
-50034	electrician	21.0321
-50034	firefighter	22.4321
-50034	police officer	23.8321
-50034	actress	26.6321
-50034	director	27.9321
-50034	social worker	31.9321
-50034	psychologist	32.9321
-50034	therapist	34.5321
-50034	journalist	36.7321
-50034	producer	39.0321
-50034	biologist	41.5321
-50034	management	46.7321
-50034	salesperson	49.2321
-50034	mailman	51.2321
-50034	musician	57.9321
-50034	zookeeper	65.8321
-50034	bank teller	72.1321
-50034	chef	77.2321
-50034	pharmacist	78.9321
-50034	cashier	84.4321
-50034	conductor	91.7321
-50034	bartender	93.9321
-50034	receptionist	102.7321
-50034	truck driver	119.1321
-50034	trainer	129.3321
-50034	babysitter	136.2321
-50034	art collector	160.9321
-50034	writer	173.4321
-50034	publisher	175.8321
-50036	welder	2.575
-50036	policeman	4.175
-50036	fireman	5.175
-50036	professor	7.375
-50036	teacher	8.775
-50036	kindergarten teacher	10.975
-50036	nurse	13.175
-50036	daycare counselor	16.675
-50036	psychiatrist	18.975
-50036	psychologist	19.975
-50036	proctologist	23.875
-50036	ophthalmologist	25.275
-50036	optometrist	26.775
-50036	entomologist	29.775
-50036	etymologist	30.675
-50036	carpenter	37.275
-50036	construction worker	42.675
-50036	cyclist	46.175
-50036	professional sports player	49.375
-50036	actor	53.675
-50036	actress	54.275
-50036	photographer	59.675
-50036	artist	61.775
-50036	painter	62.875
-50036	contractor	68.875
-50036	programmer	70.375
-50036	engineer	72.975
-50036	computer engineer	73.575
-50036	electrician	74.675
-50036	electrical engineer	75.575
-50036	mechanical engineer	78.675
-50036	mechanist	80.475
-50036	machinist	81.175
-50036	car salesman	85.075
-50036	phone salesman	90.875
-50036	retail person	97.275
-50036	officer	99.375
-50036	mall cop	100.175
-50036	soldier	103.275
-50036	general	105.375
-50036	tailor	107.375
-50036	spy	109.175
-50036	mathematician	113.575
-50036	safety inspector	120.675
-50036	data analyst	125.875
-50036	developer	132.975
-50036	gardener	134.975
-50036	funeral home manager	141.275
-50036	surgeon	146.975
-50036	doctor	152.175
-50036	lab technician	170.475
-50036	scientist	172.275
-50036	geologist	173.575
-50036	climatologist	177.975
-50036	weatherman	180.275
-198	nurse	4.176470588
-198	doctor	5.705882353
-198	accountant	7.823529412
-198	manager	13.23529412
-198	supervisor	15.82352941
-198	baker	21.17647059
-198	chef	24.64705882
-198	associate	27.47058824
-198	radiologist	34.35294118
-198	anesthesiologist	40.47058824
-198	cardiologist	44.88235294
-198	oncologist	50.82352941
-198	obstetrician	55.88235294
-198	practitioner	74.05882353
-198	attorney	87.52941176
-198	lawyer	95.47058824
-198	carpenter	117.2941176
-198	entrepreneur	139.4117647
-198	business	152.7647059
-198	journalist	161.8235294
-198	artist	172.2352941
-198	actor	176.1764706
-285	teacher	1.294117647
-285	farmer	3.632352941
-285	doctor	4.632352941
-285	nurse	6.970588235
-285	mechanic	9.955882353
-285	cowboy	14.63235294
-285	manager	25.29411765
-285	fireman	38.29411765
-285	engineer	46.27941176
-285	pilot	52.97058824
-285	manager	64.91176471
-285	therapist	81.26470588
-285	dentist	89.29411765
-285	surgeon	96.63235294
-285	technician	110.9411765
-285	athlete	119.8970588
-285	driver	132.6029412
-285	carpenter	145.6176471
-285	electrician	151.9411765
-285	teller	166.6323529
-285	bartender	170.6176471
-285	accountant	178.2794118
-288	lawyer	4.632352941
-288	stripper	5.955882353
-288	dentist	9.294117647
-288	doctor	13.63235294
-288	dancer	14.95588235
-288	singer	17.63235294
-288	consultant	19.27941176
-288	psychologist	24.60294118
-288	receptionist	28.60294118
-288	firefighter	37.94117647
-288	policeman	40.92647059
-288	guard	43.92647059
-288	chef	51.30882353
-288	garbage man	52.94117647
-288	accountant	57.94117647
-288	janitor	65.29411765
-288	architect	71.27941176
-288	worker	73.23529412
-288	teacher	80.95588235
-288	professor	82.61764706
-288	politician	88.27941176
-288	athlete	96.29411765
-288	salesman	104.9558824
-288	designer	130.25
-288	landscaper	142.2794118
-288	artist	149.2941176
-288	musician	155.9558824
-288	babysitter	160.9411765
-288	taster	173.9411765
-288	brewer	179.9411765
-297	teacher	-0.235294118
-297	doctor	2.044117647
-297	psychologist	2.367647059
-297	farmer	7.044117647
-297	prostitute	8.926470588
-297	optometrist	13.64705882
-297	ophthalmologist	17.80882353
-297	pediatrician	22.08823529
-297	veterinarian	27.88235294
-297	babysitter	28.92647059
-297	student	30.76470588
-297	taxi driver	33.64705882
-297	driver	35.64705882
-297	associate	37.52941176
-297	stockbroker	40.36764706
-297	banker	42.97058824
-297	physicist	51.20588235
-297	scientist	53.20588235
-297	professor	58.20588235
-297	garbage man	60.64705882
-297	trainer	65.64705882
-297	weatherperson	67.52941176
-297	reporter	71.08823529
-297	anchor	74.08823529
-297	writer	78.04411765
-297	artist	79.76470588
-297	painter	80.76470588
-297	technician	88.41176471
-297	manager	100.7647059
-297	supervisor	103.9264706
-297	attendant	106.25
-297	pilot	111.3235294
-297	nurse	118.3235294
-297	technician	121.5294118
-297	performer	133.9264706
-297	artist	135.8088235
-297	investigator	140.1323529
-297	counselor	145.6911765
-297	retailer	161.4852941
-297	importer	166.8088235
-297	reporter	185.8088235
-386	dentist	2.235294118
-386	therapist	3.117647059
-386	hygienist	13.0
-386	optometrist	23.35294118
-386	secretary	28.29411765
-386	entrepreneur	33.88235294
-386	athlete	45.23529412
-386	policeman	47.94117647
-386	fbi	62.11764706
-386	teacher	74.23529412
-386	coach	82.17647059
-386	technician	86.11764706
-386	priest	108.7058824
-386	dancer	119.7058824
-386	wood smith	127.2941176
-386	carpenter	131.2941176
-386	chef	142.6470588
-386	manager	144.2352941
-386	worker	148.9411765
-386	psychologist	165.8823529
-386	mathematician	175.4117647
-391	teacher	7.176470588
-391	doctor	10.52941176
-391	therapist	15.29411765
-391	manager	34.17647059
-391	clerk	40.88235294
-391	broadcaster	51.29411765
-391	host	58.17647059
-391	producer	65.70588235
-391	singer	73.52941176
-391	actor	77.88235294
-391	accountant	83.11764706
-391	advisor	90.0
-391	trainer	107.0
-391	agent	120.4117647
-391	analyst	152.6470588
-391	salesman	164.8235294
-391	principal	199.4705882
-393	doctor	0.838235294
-393	engineer	2.911764706
-393	teacher	6.220588235
-393	worker	6.823529412
-393	plumber	13.52941176
-393	manager	18.52941176
-393	owner	25.14705882
-393	realtor	26.52941176
-393	worker	36.36764706
-393	electrician	44.29411765
-393	mechanic	48.22058824
-393	cashier	51.52941176
-393	stockbroker	56.36764706
-393	nurse	70.14705882
-393	surgeon	72.91176471
-393	manufacturer	84.98529412
-393	builder	101.5294118
-393	worker	109.6764706
-393	policeman	115.3676471
-393	fbi	120.7647059
-393	cia	121.7647059
-393	president	122.9117647
-393	accountant	144.6029412
-393	librarian	150.9117647
-393	cabdriver	159.6029412
-393	chauffer	162.9852941
-393	athlete	171.5294118
-393	counselor	180.9117647
-475	lawyer	1.455882353
-475	doctor	2.455882353
-475	trashman	8.014705882
-475	plumber	9.235294118
-475	teacher	10.23529412
-475	professor	13.79411765
-475	cop	17.11764706
-475	investigator	18.13235294
-475	technician	28.57352941
-475	attorney	36.01470588
-475	marketer	43.01470588
-475	journalist	43.57352941
-475	publicist	47.13235294
-475	anchorman	52.79411765
-475	fbi	60.11764706
-475	cia	64.11764706
-475	singer	66.45588235
-475	dancer	67.45588235
-475	actor	70.67647059
-475	writer	72.45588235
-475	scientist	75.79411765
-475	astronaut	80.79411765
-475	carpenter	93.79411765
-475	worker	96.58823529
-475	vendor	102.7941176
-475	administrator	109.9117647
-475	principal	112.7941176
-475	president	114.7941176
-475	bodyguard	122.5735294
-475	dj	127.3382353
-475	host	139.6911765
-475	psychiatrist	142.9117647
-475	psychologist	146.1323529
-475	biologist	151.7941176
-475	scientist	153.5882353
-475	navy	162.8970588
-475	army	163.8970588
-475	military	164.6911765
-475	marines	169.2352941
-475	mailman	175.2352941
-475	manufacturer	178.1323529
-479	artist	2.735294118
-479	teacher	7.411764706
-479	doctor	9.735294118
-479	actor	13.05882353
-479	director	16.08823529
-479	producer	18.08823529
-479	worker	20.14705882
-479	pathologist	23.85294118
-479	audiologist	30.11764706
-479	senator	36.41176471
-479	representative	41.14705882
-479	president	44.76470588
-479	secretary	51.76470588
-479	cabinet	57.85294118
-479	treasurer	64.76470588
-479	owner	72.14705882
-479	auditor	78.41176471
-479	accountant	83.11764706
-479	advisor	85.17647059
-479	stockbroker	92.47058824
-479	curator	97.14705882
-479	guard	116.1470588
-479	police	124.4117647
-479	fireman	126.4117647
-479	nurse	130.0588235
-479	surgeon	132.4117647
-479	anesthesiologist	137.8235294
-479	psychiatrist	144.7941176
-479	psychologist	150.4705882
-479	counselor	154.7647059
-479	therapist	159.4411765
-479	server	164.7352941
-479	waitress	167.7647059
-479	hostess	171.4117647
-479	manager	176.4117647
-481	teacher	1.647058824
-481	president	4.117647059
-481	secretary	14.05882353
-481	engineer	17.11764706
-481	doctor	36.94117647
-481	nurse	39.23529412
-481	researcher	43.76470588
-481	assistant	45.41176471
-481	recruiter	55.05882353
-481	therapist	58.05882353
-481	minister	61.35294118
-481	representative	63.82352941
-481	buyer	76.23529412
-481	trader	78.94117647
-481	consultant	81.88235294
-481	manager	92.58823529
-481	pool	99.35294118
-481	lifeguard	101.7647059
-481	instructor	109.4117647
-481	entrepreneur	117.1764706
-481	manager	124.0
-481	ceo	131.8235294
-481	advertiser	135.7647059
-481	manager	139.7058824
-481	accountant	144.7647059
-481	stockbroker	151.0
-481	worker	159.5882353
-481	manager	170.8823529
-481	writer	179.9411765
-484	engineer	1.411764706
-484	doctor	3.735294118
-484	nurse	12.05882353
-484	doctor	14.47058824
-484	surgeon	18.41176471
-484	teacher	23.41176471
-484	principal	25.76470588
-484	worker	31.14705882
-484	janitor	35.41176471
-484	gardener	47.08823529
-484	photographer	51.79411765
-484	painter	55.41176471
-484	carpenter	58.76470588
-484	sculpture	64.76470588
-484	secretary	71.76470588
-484	assistant	76.76470588
-484	actor	83.05882353
-484	chauffer	88.08823529
-484	interpreter	95.11764706
-484	lawyer	103.7352941
-484	attendant	104.5
-484	pilot	111.0588235
-484	guard	126.4705882
-484	policemen	133.7647059
-484	anthropologist	160.1470588
-484	dietitian	170.7647059
-484	coroner	176.4411765
-487	nurse	2.235294118
-487	doctor	2.941176471
-487	dentist	5.647058824
-487	orthodontist	6.176470588
-487	chiropractor	9.176470588
-487	technician	17.58823529
-487	teacher	22.64705882
-487	professor	24.05882353
-487	engineer	27.35294118
-487	accountant	35.76470588
-487	drafter	41.64705882
-487	technician	47.11764706
-487	radiologist	54.17647059
-487	urologist	65.47058824
-487	worker	76.58823529
-487	salesman	79.35294118
-487	singer	86.23529412
-487	songwriter	87.76470588
-487	diver	97.41176471
-487	swimmer	103.8235294
-487	janitor	127.6470588
-487	principal	132.0588235
-487	dean	136.5294118
-487	picker	167.1764706
-487	farmer	173.9411765
-487	seamstress	182.7647059
-488	psychologist	1.941176471
-488	teacher	7.117647059
-488	manager	10.11764706
-488	salesperson	18.94117647
-488	student	22.11764706
-488	waiter	25.35294118
-488	server	27.35294118
-488	manager	32.11764706
-488	receptionist	34.94117647
-488	secretary	38.64705882
-488	lawyer	42.35294118
-488	attorney	43.23529412
-488	president	51.64705882
-488	ceo	56.05882353
-488	editor	59.35294118
-488	writer	61.35294118
-488	columnist	62.23529412
-488	actress	67.11764706
-488	actor	69.35294118
-488	singer	71.35294118
-488	dancer	72.35294118
-488	entertainer	75.17647059
-488	principal	79.64705882
-488	vice principal	82.47058824
-488	owner	84.29411765
-488	banker	91.35294118
-488	accountant	92.17647059
-488	rabbi	101.5882353
-488	priest	102.3529412
-488	dean	106.5294118
-488	pathologist	119.2941176
-488	doctor	123.3529412
-488	pediatrician	126.1764706
-488	oncologist	129.6470588
-488	optometrist	133.1764706
-488	cardiologist	139.9411765
-488	neurologist	144.1764706
-488	printer	153.1176471
-488	engineer	155.8823529
-488	hairdresser	168.9411765
-488	artist	173.4705882
-488	relations	179.0
-491	dentist	0.705882353
-491	mayor	5.529411765
-491	garbageman	6.058823529
-491	teacher	10.70588235
-491	student	12.70588235
-491	therapist	16.88235294
-491	businessman	19.05882353
-491	star	26.05882353
-491	manager	31.41176471
-491	ceo	46.35294118
-491	entrepreneur	49.64705882
-491	waitress	58.29411765
-491	cook	61.94117647
-491	psychiatrist	67.64705882
-491	merchandising	73.23529412
-491	designer	79.29411765
-491	model	82.52941176
-491	writer	88.11764706
-491	columnist	90.88235294
-491	unemployed	99.47058824
-491	manager	102.7058824
-491	assistant	114.8823529
-491	doctor	124.1176471
-491	nurse	126.5294118
-491	taster	128.0588235
-491	priest	135.1176471
-491	cashier	145.7058824
-491	president	152.8823529
-491	congressman	155.0588235
-491	supervisor	161.4705882
-491	relations	169.0
-491	artist	175.6470588
-578	dentist	2.176470588
-578	lawyer	4.529411765
-578	teacher	7.176470588
-578	clown	9.882352941
-578	audiologist	10.76470588
-578	paralegal	20.47058824
-578	hygienist	23.0
-578	secretary	31.11764706
-578	principal	34.47058824
-578	driver	37.11764706
-578	entrepreneur	44.41176471
-578	chef	49.23529412
-578	taxi driver	53.76470588
-578	audiologist	59.76470588
-578	planner	67.41176471
-578	doctor	75.11764706
-578	surgeon	77.82352941
-578	policeman	80.11764706
-578	daycare worker	87.0
-578	engineer	95.82352941
-578	professor	101.4705882
-578	psychologist	113.4117647
-578	driver	122.4117647
-578	coordinator	126.6470588
-578	mother	135.5294118
-578	father	138.1764706
-578	advisor	144.8235294
-578	stockbroker	162.4117647
-578	waitress	171.8235294
-578	busser	176.5294118
-578	dishwasher	179.7647059
-580	nurse	0.794117647
-580	doctor	2.426470588
-580	lawyer	5.426470588
-580	teacher	7.058823529
-580	owner	12.48529412
-580	agent	20.38235294
-580	manicurist	29.95588235
-580	stripper	34.69117647
-580	masseuse	38.05882353
-580	haircutter	41.58823529
-580	secretary	47.32352941
-580	accountant	49.95588235
-580	banker	54.42647059
-580	repairman	57.85294118
-580	janitor	63.05882353
-580	garbage man	67.58823529
-580	actor	74.79411765
-580	singer	76.42647059
-580	model	78.79411765
-580	athlete	82.11764706
-580	salesman	109.2205882
-580	storeowner	128.5882353
-580	veterinarian	138.2205882
-580	astronaut	144.3235294
-580	policeman	146.4852941
-580	fireman	150.6911765
-580	magician	160.6911765
-580	coordinator	165.3823529
-580	designer	171.75
-580	advertiser	179.9558824
-582	doctor	0.220588235
-582	teacher	0.823529412
-582	dentist	4.426470588
-582	banker	10.22058824
-582	lawyer	26.22058824
-582	nurse	32.61764706
-582	psychologist	38.83823529
-582	engineer	51.42647059
-582	scientist	59.02941176
-582	astronaut	61.63235294
-582	worker	66.05882353
-582	secretary	90.02941176
-582	principal	94.02941176
-582	cashier	100.8235294
-582	manager	102.8235294
-582	optometrist	116.2352941
-582	entrepreneur	153.8382353
-582	chef	174.0147059
-582	actor	183.6176471
-587	doctor	0.838235294
-587	lawyer	2.838235294
-587	psychiatrist	4.985294118
-587	dentist	8.529411765
-587	nurse	11.14705882
-587	firefighter	12.98529412
-587	policeman	14.36764706
-587	fbi	19.91176471
-587	investigator	25.27941176
-587	accountant	35.60294118
-587	taxi driver	44.29411765
-587	driver	46.98529412
-587	manager	47.42647059
-587	secretary	58.91176471
-587	manager	61.35294118
-587	associate	71.05882353
-587	biologist	81.75
-587	psychologist	88.98529412
-587	philosopher	94.29411765
-587	analyst	101.75
-587	pharmacist	108.2941176
-587	baker	118.1470588
-587	entrepreneur	119.2794118
-587	journalist	134.6029412
-587	garbage man	137.2941176
-587	pilot	144.1470588
-587	estate	155.9852941
-587	worker	161.8235294
-587	teacher	166.5294118
-587	librarian	171.9117647
-587	counselor	182.1323529
-597	janitor	4.0
-597	accountant	5.25
-597	executive	7.5
-597	vendor	11.5
-597	lawnmower	15.25
-597	actress	19.0
-597	actor	20.5
-597	fbi	25.5
-597	policeman	27.5
-597	celebrity	35.5
-597	attorney	46.75
-597	paralegal	49.5
-597	therapist	53.5
-597	psychologist	55.75
-597	sociologist	59.0
-597	biologist	64.5
-597	fireman	73.0
-597	worker	75.0
-597	tollbooth	82.25
+50001	lawyer	0.0
+50001	doctor	3.841
+50001	researcher	5.541
+50001	social worker	8.441
+50001	politician	18.041
+50001	writer	25.641
+50001	singer	31.441
+50001	musician	33.741
+50001	chef	35.341
+50001	secretary	42.341
+50001	nurse	47.341
+50001	audiologist	59.041
+50001	speech pathologist	65.941
+50001	teacher	72.141
+50001	seamstress	77.041
+50001	actor	87.141
+50001	cashier	90.741
+50001	professor	104.141
+50001	construction worker	124.841
+50001	manager	133.441
+50001	firefighter	142.741
+50001	police	159.341
+50001	surgeon	162.541
+50002	doctor	0.0
+50002	officer	2.641
+50002	police officer	3.341
+50002	emt	4.441
+50002	secretary	7.941
+50002	athlete	9.441
+50002	teacher	13.891
+50002	fireman	15.441
+50002	librarian	17.141
+50002	physical therapist	17.941
+50002	clinical psychologist	23.041
+50002	lab worker	24.341
+50002	engineer	26.641
+50002	computer technician	29.841
+50002	business person	32.041
+50002	travel agent	37.891
+50002	real estate	41.841
+50002	realtor	43.041
+50002	pilot	46.891
+50002	attendant	50.941
+50002	nurse	53.141
+50002	professor	55.341
+50002	mayor	62.341
+50002	dancer	75.441
+50002	artist	88.491
+50002	post office worker	89.241
+50002	security guard	97.041
+50002	driver	103.541
+50002	housekeeper	110.241
+50002	plumber	113.541
+50002	manager	116.441
+50002	waiter	124.241
+50002	wait staff	125.441
+50002	cook	126.441
+50002	floor worker	130.041
+50002	craftsperson	134.141
+50002	electrician	145.991
+50002	customer service representative	152.541
+50002	cashier	161.841
+50002	zoologist	168.241
+50003	lawyer	0.0
+50003	doctor	4.801
+50003	surgeon	6.001
+50003	psychologist	7.301
+50003	counselor	8.701
+50003	janitor	10.101
+50003	secretary	12.501
+50003	clerk	15.301
+50003	salesperson	16.801
+50003	manager	19.001
+50003	teacher	20.801
+50003	lunch lady	22.801
+50003	truck driver	27.501
+50003	lab technician	30.101
+50003	engineer	35.501
+50003	architect	42.701
+50003	physical therapist	44.501
+50003	dermatologist	65.801
+50003	audiologist	68.901
+50003	accountant	71.701
+50003	oncologist	81.601
+50003	chef	92.301
+50003	artist	99.101
+50003	animator	105.201
+50003	director	107.201
+50003	producer	109.001
+50003	actor	109.901
+50003	musician	111.401
+50003	professional sports player	118.701
+50003	gardener	124.801
+50003	construction	136.701
+50003	uber driver	147.801
+50003	student	152.201
+50003	retail salesman	157.701
+50004	teacher	0.0
+50004	excavator	2.844
+50004	doctor	4.544
+50004	soldier	6.844
+50004	librarian	12.144
+50004	curator	13.844
+50004	dentist	15.344
+50004	surgeon	19.344
+50004	professor	22.044
+50004	brick layer	25.844
+50004	businessman	29.244
+50004	executive	38.544
+50004	president	42.644
+50004	senator	46.144
+50004	singer	48.844
+50004	actor	58.844
+50004	director	60.644
+50004	set dresser	63.544
+50004	tailor	66.844
+50004	spy	73.744
+50004	dancer	75.744
+50004	carpenter	88.244
+50004	plumber	91.544
+50004	cabinet maker	93.344
+50004	designer	97.944
+50004	model	107.444
+50004	marine biologist	110.044
+50004	film archivist	129.144
+50004	private manuscript consultant	134.744
+50004	locksmith	138.844
+50004	farmer	150.944
+50004	antiques dealer	158.044
+50006	consultant	0.0
+50006	fashion designer	3.784
+50006	doctor	7.084
+50006	lawyer	10.084
+50006	judge	11.684
+50006	police officer	13.184
+50006	firefighter	14.484
+50006	mayor	15.984
+50006	governor	18.084
+50006	president	19.184
+50006	congressman	20.184
+50006	garbage man	21.384
+50006	nurse	24.984
+50006	bank teller	27.184
+50006	ceo	30.684
+50006	coo	32.784
+50006	cfo	34.084
+50006	associate	34.984
+50006	cashier	45.584
+50006	cook	55.884
+50006	waiter	57.284
+50006	waitress	59.584
+50006	scientist	60.484
+50006	marine biologist	70.784
+50006	chemist	76.884
+50006	computer programmer	80.084
+50006	musician	84.584
+50006	artist	100.084
+50006	teacher	101.884
+50006	principal	115.184
+50006	custodian	116.384
+50006	manager	118.884
+50006	financial adviser	125.784
+50006	academic advisor	132.684
+50006	dean	140.084
+50006	professor	149.284
+50006	social worker	151.084
+50006	marine	156.384
+50007	police officer	0.0
+50007	fireman	4.303
+50007	doctor	6.803
+50007	nurse	9.203
+50007	physical therapist	11.503
+50007	receptionist	14.003
+50007	teacher	18.303
+50007	professor	23.403
+50007	writer	26.403
+50007	journalist	33.503
+50007	eye doctor	37.903
+50007	podiatrist	41.803
+50007	veterinarian	49.403
+50007	dietician	52.203
+50007	fitness instructor	57.303
+50007	ear nose and throat specialist	62.803
+50007	military officer	73.603
+50007	psychiatrist	80.203
+50007	it person	87.803
+50007	book editor	94.303
+50007	factory worker	99.603
+50007	chauffeur	105.703
+50007	bus driver	111.903
+50007	president	120.103
+50007	government worker	131.903
+50007	athlete	142.503
+50007	computer programmer	152.403
+50007	cartographer	160.803
+50007	chemist	168.803
+50007	researcher	173.403
+50008	receptionist	0.0
+50008	elevator operator	5.672
+50008	door person	9.072
+50008	doctor	11.572
+50008	nurse	16.172
+50008	nurse assistant	16.872
+50008	firefighter	21.872
+50008	police	28.172
+50008	tax collector	29.772
+50008	accountant	36.872
+50008	dentist	40.172
+50008	professor	49.272
+50008	administrative assistant	54.972
+50008	teacher	64.672
+50008	teacher aid	80.872
+50008	principal	82.372
+50008	grocer	84.172
+50008	cashier	90.172
+50008	technician	103.372
+50008	welder	119.172
+50008	maintenance person	123.772
+50008	cook	125.772
+50008	factory worker	130.772
+50008	therapist	150.272
+50008	gas station attendant	161.672
+50010	doctor	0.0
+50010	teacher	2.652
+50010	professor	3.552
+50010	ceo	5.152
+50010	cfo	7.452
+50010	accountant	8.752
+50010	auditor	10.552
+50010	writer	13.152
+50010	author	15.452
+50010	producer	16.652
+50010	actor	17.752
+50010	musician	19.152
+50010	scientist	20.852
+50010	volunteer	25.952
+50010	manager	29.752
+50010	marketer	35.952
+50010	advertiser	37.652
+50010	salesperson	38.952
+50010	customer service	42.152
+50010	trainer	46.552
+50010	tutor	51.352
+50010	owner	54.152
+50010	supervisor	57.552
+50010	risk manager	63.852
+50010	assistant	66.052
+50010	mechanic	75.052
+50010	engineer	81.252
+50010	zookeeper	82.952
+50010	soldier	91.252
+50010	general	103.252
+50010	priest	105.552
+50010	real estate agent	109.952
+50010	agent	119.352
+50010	security	123.552
+50010	police officer	126.352
+50010	front desk attendant	128.352
+50010	valet	138.252
+50010	chef	142.652
+50010	sous chef	150.752
+50010	waiter	152.352
+50010	waitress	156.052
+50010	host	156.652
+50010	busboy	164.152
+50010	cleaning lady	168.052
+50011	doctor	0.0
+50011	lawyer	2.727
+50011	pharmacist	3.427
+50011	sales manager	4.727
+50011	sales representative	6.527
+50011	accountant	7.927
+50011	biologist	10.027
+50011	researcher	12.727
+50011	president	14.527
+50011	waitress	18.727
+50011	paleontologist	22.827
+50011	orthodontist	29.027
+50011	dental hygienist	32.827
+50011	dentist	35.527
+50011	policeman	36.827
+50011	taxi driver	42.327
+50011	agent	45.327
+50011	athlete	55.827
+50011	stockbroker	57.427
+50011	speech pathologist	68.727
+50011	mri technician	74.527
+50011	architect	77.327
+50011	construction worker	82.627
+50011	excavator	88.027
+50011	appraiser	98.127
+50011	assistant	101.427
+50011	receptionist	113.527
+50011	student	118.527
+50011	beautician	124.827
+50011	publisher	134.727
+50011	editor	143.627
+50011	journalist	145.727
+50011	reporter	151.827
+50011	anchor	154.027
+50011	fisherman	157.727
+50011	colonel	162.627
+50011	sergeant	169.527
+50011	adviser	170.127
+50012	dog walker	0.0
+50012	sales manager	2.94
+50012	physical therapist	5.04
+50012	nurse	6.74
+50012	doctor	8.74
+50012	anesthesiologist	10.04
+50012	event manager	11.64
+50012	nurse anesthetist	19.34
+50012	photographer	22.84
+50012	painter	26.14
+50012	dancer	28.24
+50012	fitness educator	30.44
+50012	architect	34.34
+50012	engineer	38.44
+50012	swim coach	40.04
+50012	basketball coach	42.74
+50012	football coach	44.94
+50012	gymnast	47.24
+50012	journalist	50.04
+50012	writer	57.54
+50012	editor	59.34
+50012	designer	61.04
+50012	landscaper	73.14
+50012	data analyst	75.34
+50012	psychologist	80.64
+50012	counselor	83.04
+50012	professor	85.34
+50012	teacher	89.14
+50012	real estate agent	91.74
+50012	occupational therapist	111.94
+50012	recreational therapist	126.24
+50012	paramedic	128.64
+50012	dance instructor	134.44
+50012	financial analyst	160.14
+50013	farmer	0.0
+50013	musician	4.32
+50013	it manager	6.92
+50013	program manager	14.02
+50013	math teacher	17.32
+50013	principal	20.62
+50013	dean	23.82
+50013	jazz band arranger	27.02
+50013	composer	31.42
+50013	trombone player	35.62
+50013	flute player	39.82
+50013	conductor	43.92
+50013	animal rights activist	47.52
+50013	leader of an organization	51.92
+50013	religious or spiritual leader	59.92
+50013	rabbi	65.92
+50013	priest	71.52
+50013	minister	74.42
+50013	social studies teacher	77.52
+50013	dog walker	83.42
+50013	language arts teacher	90.12
+50013	therapist	94.52
+50013	psychiatrist	100.42
+50013	psychologist	103.72
+50013	lawn mower	108.12
+50013	landlord	113.82
+50013	housekeeper	121.72
+50013	agent	125.42
+50013	manager	133.52
+50013	baseball player	138.42
+50013	athlete	144.22
+50013	figure skater	149.82
+50013	basketball player	153.72
+50013	psychic	161.52
+50014	researcher	0.0
+50014	scientist	4.273
+50014	teacher	4.973
+50014	professor	5.973
+50014	technician	7.773
+50014	librarian	10.173
+50014	shop owner	14.973
+50014	shopkeeper	17.173
+50014	manager	18.573
+50014	construction worker	22.873
+50014	architect	31.473
+50014	foreman	33.373
+50014	police officer	37.273
+50014	firefighter	40.673
+50014	traffic cop	42.373
+50014	sheriff	57.173
+50014	president	60.473
+50014	senator	63.473
+50014	house member	64.873
+50014	representative	69.173
+50014	cabinet member	72.573
+50014	journalist	76.773
+50014	writer	79.973
+50014	blogger	83.273
+50014	actor	85.773
+50014	actress	93.073
+50014	director	94.273
+50014	producer	96.173
+50014	accountant	96.973
+50014	auditor	101.173
+50014	cheese maker	102.373
+50014	farmer	104.773
+50014	tax preparer	105.873
+50014	secretary	113.073
+50014	ceo	120.473
+50014	cfo	125.173
+50014	consultant	126.073
+50014	chef	129.373
+50014	waitress	136.573
+50014	hostess	137.973
+50014	busboy	138.773
+50014	bartender	140.673
+50014	bar back	142.073
+50014	dancer	144.073
+50014	musician	146.373
+50014	piano player	147.873
+50014	jazz musician	150.373
+50014	rock musician	152.773
+50014	singer	153.873
+50014	roadie	155.873
+50014	actor	159.273
+50014	theater actor	164.673
+50014	theater manager	166.273
+50014	usher	170.773
+50014	security	173.473
+50016	doctor	0.0
+50016	lawyer	3.381
+50016	physical therapist	4.981
+50016	professional athlete	7.181
+50016	teacher	9.481
+50016	taxi driver	11.781
+50016	truck driver	16.881
+50016	garbage man	19.781
+50016	postal worker	23.681
+50016	priest	27.281
+50016	volunteer	31.281
+50016	president	36.181
+50016	government official	45.081
+50016	mayor	47.581
+50016	secretary	49.881
+50016	chief executive officer	52.581
+50016	accountant	55.881
+50016	chef	59.381
+50016	supervisor	62.081
+50016	yoga instructor	67.981
+50016	nurse	72.881
+50016	pharmacist	78.781
+50016	delivery driver	80.681
+50016	receptionist	86.381
+50016	janitor	98.381
+50016	undertaker	100.781
+50016	telemarketer	103.481
+50016	movie star	113.381
+50016	musician	118.681
+50016	artist	120.581
+50016	mathematician	126.581
+50016	commissioner of the nba	130.181
+50016	sports agent	144.381
+50016	fireman	148.881
+50016	policeman	160.181
+50016	social worker	161.881
+50016	coach	166.181
+50016	therapist	171.681
+50017	scientist	0.0
+50017	doctor	4.287
+50017	teacher	6.287
+50017	athlete	8.187
+50017	astronomer	9.987
+50017	astronaut	16.287
+50017	welder	18.887
+50017	construction worker	25.287
+50017	blogger	29.687
+50017	musician	32.587
+50017	therapist	33.687
+50017	psychiatrist	38.087
+50017	nurse	41.087
+50017	student	43.087
+50017	nanny	46.987
+50017	president	55.487
+50017	king	58.787
+50017	clerk	60.187
+50017	librarian	67.187
+50017	paleontologist	68.887
+50017	radiologist	70.887
+50017	respiratory therapist	75.987
+50017	fisherman	78.487
+50017	hunter	83.287
+50017	singer	85.787
+50017	painter	91.587
+50017	trapeze artist	93.487
+50017	comedian	99.487
+50017	public speaker	103.587
+50017	event planner	107.187
+50017	truck driver	111.987
+50017	mathematician	118.787
+50017	entomologist	127.587
+50017	writer	137.387
+50017	vagabond	143.087
+50017	cashier	149.287
+50017	waiter	161.187
+50017	cook	163.587
+50017	brewer	167.387
+50017	sommelier	172.987
+50018	doctor	0.0
+50018	teacher	3.794
+50018	analyst	5.994
+50018	writer	13.794
+50018	psychologist	15.894
+50018	psychiatrist	19.094
+50018	neurologist	21.194
+50018	podiatrist	24.094
+50018	oncologist	26.394
+50018	proctologist	28.694
+50018	nurse	31.194
+50018	secretary	36.794
+50018	designer	39.694
+50018	artist	51.294
+50018	preacher	55.794
+50018	entrepreneur	58.794
+50018	coach	74.094
+50018	accountant	80.694
+50018	marketer	93.194
+50018	financial adviser	98.894
+50018	supply chain manager	102.794
+50018	lineman	109.894
+50018	janitor	123.394
+50018	principal	126.094
+50018	counselor	128.094
+50018	professor	130.394
+50018	singer	142.294
+50019	firefighter	0.0
+50019	police officer	4.012
+50019	teacher	5.012
+50019	principal	6.612
+50019	secretary	7.412
+50019	nurse	8.112
+50019	counselor	9.812
+50019	school bus driver	10.512
+50019	trash collector	13.712
+50019	artist	16.012
+50019	doula	19.912
+50019	preacher	22.612
+50019	farmer	32.512
+50019	massage therapist	34.512
+50019	physical therapist	39.412
+50019	occupational therapist	44.112
+50019	consultant	45.212
+50019	director	54.812
+50019	representative	61.312
+50019	senator	72.512
+50019	pharmacist	76.612
+50019	cashier	82.012
+50019	bartender	84.112
+50019	server	86.012
+50019	hostess	87.112
+50019	receptionist	88.412
+50019	chef	91.912
+50019	house cleaner	95.512
+50019	security officer	100.712
+50019	life guard	109.112
+50019	coach	125.012
+50019	personal trainer	132.012
+50019	maintenance person	132.912
+50019	it help desk	137.512
+50019	software developer	140.912
+50019	marketing person	144.812
+50019	social media specialist	149.012
+50019	sex worker	154.112
+50019	landscaper	159.412
+50019	mover	162.812
+50019	truck driver	172.312
+50019	train conductor	174.812
+50020	firefighter	0.0
+50020	policeman	4.421
+50020	doctor	5.821
+50020	lawyer	7.321
+50020	accountant	9.021
+50020	photographer	11.221
+50020	director	12.921
+50020	garbage man	14.621
+50020	office worker	16.821
+50020	retail worker	20.821
+50020	manager	22.521
+50020	gas station clerk	24.421
+50020	zoologist	26.621
+50020	biologist	34.821
+50020	cafeteria worker	36.921
+50020	chef	40.621
+50020	professional athlete	42.721
+50020	coach	48.921
+50020	teacher	51.521
+50020	counselor	56.321
+50020	director	58.821
+50020	receptionist	63.821
+50020	dentist	83.521
+50020	orthodontist	85.521
+50020	fashion designer	86.721
+50020	artist	95.821
+50020	butcher	99.721
+50020	fisherman	120.221
+50020	cosmetologist	141.621
+50020	nail tech	158.721
+50020	painter	161.321
+50022	nurse	0.0
+50022	doctor	3.325
+50022	teacher	4.825
+50022	lawyer	6.525
+50022	football player	8.625
+50022	basketball player	10.825
+50022	baseball player	13.025
+50022	janitor	15.225
+50022	secretary	17.525
+50022	president	20.425
+50022	senator	23.025
+50022	congressman	24.525
+50022	police officer	26.725
+50022	fireman	31.125
+50022	cook	33.525
+50022	waitress	37.925
+50022	conductor	40.225
+50022	musician	45.525
+50022	electrician	48.825
+50022	pipefitter	50.625
+50022	architect	53.025
+50022	construction worker	57.225
+50022	taxi driver	59.125
+50022	radiologist	64.825
+50022	salesman	68.325
+50022	hair stylist	75.625
+50022	makeup artist	90.425
+50022	tailor	93.525
+50022	camera man	96.125
+50022	governor	101.825
+50022	mayor	106.925
+50022	designer	109.625
+50022	scientist	124.625
+50022	vice president	129.425
+50022	preacher	147.925
+50022	soldier	159.825
+50022	therapist	166.825
+50022	life coach	174.825
+50023	nurse	0.0
+50023	doctor	3.073
+50023	assistant	6.673
+50023	teacher	9.873
+50023	president	12.673
+50023	director	16.373
+50023	actor	19.373
+50023	artist	22.873
+50023	janitor	27.673
+50023	ballerina	33.373
+50023	scientist	45.973
+50023	student	50.373
+50023	cook	55.273
+50023	hair dresser	61.273
+50023	nail technician	66.773
+50023	clerk	71.273
+50023	farmer	77.073
+50023	salesperson	81.973
+50023	pharmacist	90.973
+50023	technician	96.873
+50023	waitress	111.573
+50023	gas attendant	114.473
+50023	lawyer	119.573
+50023	judge	127.473
+50023	cfo	130.873
+50023	ceo	140.273
+50023	news photographer	147.273
+50023	vice president	153.273
+50023	public relations representative	156.673
+50024	salesman	0.0
+50024	lawyer	2.71
+50024	caterer	4.11
+50024	safety and health specialist	5.41
+50024	dietician	7.71
+50024	nurse	10.01
+50024	doctor	11.41
+50024	pediatrician	12.71
+50024	oncologist	14.21
+50024	gynecologist	15.91
+50024	business marketing	17.91
+50024	payroll administrator	22.11
+50024	fast food worker	24.51
+50024	retail worker	29.01
+50024	trash man	32.91
+50024	cable digger	37.01
+50024	electrician	41.11
+50024	bus driver	45.11
+50024	taxi driver	49.11
+50024	uber driver	51.41
+50024	restaurant owner	54.11
+50024	bar owner	58.81
+50024	tree trimmer	61.81
+50024	wildlife rehabilitator protector	66.71
+50024	animal protection agency	70.71
+50024	animal shelter worker	76.31
+50024	pet groomer	82.21
+50024	ups worker	91.21
+50024	pharmaceutical worker	98.71
+50024	pharmacist	104.41
+50024	warehouse employee	108.91
+50024	jailer	113.61
+50024	cop	122.81
+50024	fireman	125.41
+50024	sanitation department	127.61
+50024	paramedic	130.11
+50024	pilot	140.71
+50024	foot doctor	144.31
+50024	emt doctor	157.81
+50024	overseas coordinator	162.21
+50024	air traffic control	170.51
+50025	hair stylist	0.0
+50025	neuroscientist	3.278
+50025	researcher	5.978
+50025	doctor	7.578
+50025	surgeon	10.278
+50025	nurse	11.578
+50025	physician assistant	13.378
+50025	nurse practitioner	14.978
+50025	pharmacist	17.578
+50025	engineer	24.178
+50025	hair stylist	26.378
+50025	taxidermist	32.878
+50025	tax person	36.878
+50025	retail associate	39.778
+50025	wine maker	43.678
+50025	lawyer	45.578
+50025	attorney	48.978
+50025	car maker	50.978
+50025	factory worker	56.078
+50025	mailman	57.278
+50025	sewer worker	59.678
+50025	farmer	63.678
+50025	truck driver	67.378
+50025	teacher	69.278
+50025	principal	71.978
+50025	lawyer	75.278
+50025	mayor	78.078
+50025	senator	79.178
+50025	president	80.878
+50025	store owner	83.378
+50025	hostess	86.478
+50025	waitress	90.978
+50025	manager	92.378
+50025	construction worker	94.178
+50025	taste tester	97.878
+50025	cashier	103.278
+50025	stockist	108.978
+50025	janitor	111.678
+50025	bus driver	120.278
+50025	factory worker	124.078
+50025	pediatrician	125.378
+50025	psychologist	138.478
+50025	therapist	139.878
+50025	student	141.278
+50025	researcher	147.078
+50025	scientist	157.378
+50025	florist	159.478
+50025	ring maker	162.678
+50025	dj	165.178
+50025	baker	166.778
+50025	photographer	168.478
+50025	videographer	172.178
+50026	doctor	0.0
+50026	engineer	3.15
+50026	janitor	4.35
+50026	nurse	5.75
+50026	optometrist	7.35
+50026	professor	8.35
+50026	archaeologist	10.25
+50026	anthropologist	11.65
+50026	artist	13.15
+50026	construction worker	14.75
+50026	cook	16.05
+50026	server	18.35
+50026	dishwasher	20.85
+50026	waitress	23.25
+50026	telemarketer	24.75
+50026	train conductor	27.75
+50026	programmer	31.65
+50026	coder	36.05
+50026	renderer	37.25
+50026	mathematician	39.15
+50026	astronomer	41.75
+50026	instructor	43.85
+50026	coach	48.25
+50026	technician	58.05
+50026	sculptor	65.25
+50026	comedian	75.25
+50026	author	83.85
+50026	musician	85.65
+50026	bus driver	88.05
+50026	news reporter	92.65
+50026	journalist	98.55
+50026	reviewer	99.65
+50026	editor	113.65
+50026	lyricist	119.15
+50026	composer	122.65
+50026	conductor	128.25
+50026	radiologist	129.35
+50026	cosmologist	140.05
+50026	beautician	145.05
+50026	hair dresser	147.45
+50026	barber	150.35
+50026	politician	155.55
+50026	adviser	167.85
+50027	teacher	0.0
+50027	janitor	2.737
+50027	principal	4.137
+50027	lunch lady	5.737
+50027	librarian	7.237
+50027	police officer	10.037
+50027	firefighter	16.637
+50027	mailman	17.937
+50027	recreational therapist	19.237
+50027	occupational therapist	23.337
+50027	doctor	25.337
+50027	physical therapist	33.037
+50027	optometrist	34.537
+50027	anesthesiologist	42.037
+50027	surgeon	45.037
+50027	radiologist	49.837
+50027	x ray technician	53.037
+50027	small motors technician	56.737
+50027	plumber	58.637
+50027	electrician	61.637
+50027	pipefitter	63.537
+50027	truck driver	76.037
+50027	nurse	84.137
+50027	receptionist	106.037
+50027	assistant	110.437
+50027	coach	113.837
+50027	professional basketball player	117.337
+50027	professional football player	131.437
+50027	professional baseball	133.537
+50027	professional hockey player	135.037
+50027	counselor	136.737
+50027	adviser	147.437
+50027	life coach	149.137
+50027	therapist	153.337
+50027	vacation planner	158.237
+50027	oncologist	163.237
+50027	ophthalmologist	170.237
+50029	accounting	0.0
+50029	sales	2.7115
+50029	realty	5.6115
+50029	mowing lawns	13.7115
+50029	insurance	28.7115
+50029	psychologist	33.4115
+50029	librarian	52.6115
+50029	pilot	64.1115
+50029	professional athlete	81.5115
+50029	manager	97.5115
+50029	ceo	160.5115
+50029	cfo	164.3115
+50030	doctor	0.0
+50030	lawyer	2.30171966
+50030	teacher	3.70171966
+50030	plumber	5.10171966
+50030	cab driver	6.70171966
+50030	researcher	8.10171966
+50030	nurse	12.50171966
+50030	technician	16.00171966
+50030	electrician	18.20171966
+50030	professor	19.70171966
+50030	barista	24.40171966
+50030	bartender	29.90171966
+50030	chef	31.20171966
+50030	server	33.90171966
+50030	dietician	35.30171966
+50030	surgeon	39.30171966
+50030	instructor	41.50171966
+50030	life guard	58.00171966
+50030	beautician	60.60171966
+50030	designer	72.00171966
+50030	architect	73.90171966
+50030	librarian	75.50171966
+50030	tailor	77.80171966
+50030	truck driver	84.90171966
+50030	engineer	92.30171966
+50030	businessman	95.00171966
+50030	accountant	98.60171966
+50030	actuary	105.4017197
+50030	mortician	108.3017197
+50030	pathologist	111.6017197
+50030	judge	118.0017197
+50030	ceo	121.4017197
+50030	student	133.6017197
+50030	construction worker	152.3017197
+50030	police officer	166.2017197
+50030	sheriff	168.5017197
+50030	baler	176.3017197
+50030	counselor	177.7017197
+50031	optometrist	0.0
+50031	doctor	2.6276
+50031	dentist	3.9276
+50031	psychologist	5.2276
+50031	lawyer	6.6276
+50031	politician	8.3276
+50031	server	9.8276
+50031	grill cook	11.8276
+50031	dish tanker	13.4276
+50031	prep cook	15.4276
+50031	engineer	17.6276
+50031	nurse	19.5276
+50031	anesthesiologist	21.5276
+50031	plumber	23.0276
+50031	electrician	25.5276
+50031	barista	26.9276
+50031	translator	29.3276
+50031	artist	32.5276
+50031	game designer	39.0276
+50031	veterinarian	41.4276
+50031	breeder	47.9276
+50031	farmer	51.5276
+50031	factory worker	52.9276
+50031	electrician	58.4276
+50031	phlebotomist	64.8276
+50031	nurse practitioner	76.8276
+50031	physician assistant	82.5276
+50031	receptionist	84.9276
+50031	salesperson	92.2276
+50031	marketing	95.0276
+50031	journalist	98.1276
+50031	photographer	104.9276
+50031	news anchor	107.2276
+50031	delivery person	111.1276
+50031	teacher	115.3276
+50031	babysitter	121.0276
+50031	firefighter	124.1276
+50031	police	130.8276
+50031	bank teller	135.1276
+50031	personal trainer	140.4276
+50031	therapist	149.5276
+50031	chocolatier	151.6276
+50031	mediator	157.0276
+50031	construction worker	163.7276
+50031	emt	167.9276
+50031	certified nursing assistant	172.5276
+50032	lawyer	0.0
+50032	doctor	3.5162
+50032	construction worker	4.8162
+50032	teacher	7.0162
+50032	psychologist	8.7162
+50032	neuroscientist	12.0162
+50032	researcher	16.3162
+50032	cook	18.8162
+50032	chef	24.8162
+50032	taxi driver	26.9162
+50032	it manager	30.7162
+50032	gym teacher	34.7162
+50032	nurse	41.8162
+50032	psychiatrist	47.3162
+50032	lawyer	49.5162
+50032	ceo	52.9162
+50032	manager	58.8162
+50032	babysitter	61.0162
+50032	cleaner	74.8162
+50032	bus driver	78.1162
+50032	tour guide	82.8162
+50032	ferry driver	95.7162
+50032	railroad worker	102.1162
+50032	waiter	107.5162
+50032	waitress	113.8162
+50032	tutor	115.2162
+50032	mathematician	125.8162
+50032	nutritionist	146.8162
+50032	counselor	154.6162
+50032	director	158.1162
+50032	actor	161.1162
+50032	producer	162.2162
+50032	conductor	164.1162
+50033	athlete	0.0
+50033	student	4.862
+50033	assistant	5.962
+50033	doctor	8.062
+50033	manager	8.862
+50033	bagger	11.662
+50033	mechanic	14.362
+50033	pilot	16.862
+50033	military officer	18.962
+50033	organizer	21.862
+50033	lawyer	27.362
+50033	firefighter	30.962
+50033	trainer	32.762
+50033	musician	37.762
+50033	artist	40.662
+50033	archaeologist	42.562
+50033	mathematician	48.562
+50033	engineer	51.362
+50033	chemical engineer	53.262
+50033	radiologist	57.462
+50033	statistician	64.962
+50033	stockbroker	67.162
+50033	retail	70.762
+50033	cashier	75.262
+50033	marketer	76.562
+50033	actor	79.362
+50033	director	82.862
+50033	nanny	88.462
+50033	babysitter	92.562
+50033	dog walker	94.162
+50033	caretaker	96.162
+50033	research assistant	101.562
+50033	athletic director	108.162
+50033	teacher	111.962
+50033	custodian	113.962
+50033	police	115.262
+50033	therapist	118.262
+50033	physical therapist	129.662
+50033	pharmaceutical practitioner	131.362
+50033	nurse	136.962
+50033	mechanical engineer	142.062
+50033	butler	150.362
+50033	safety director	155.162
+50033	bagger	162.162
+50033	retail manager	168.062
+50033	chef	170.962
+50034	doctor	0.0
+50034	lawyer	3.1321
+50034	nurse	4.3321
+50034	artist	5.6321
+50034	teacher	7.2321
+50034	principal	8.6321
+50034	engineer	10.0321
+50034	homemaker	11.9321
+50034	interior designer	14.4321
+50034	construction worker	16.0321
+50034	accountant	17.7321
+50034	electrician	19.8321
+50034	firefighter	21.0321
+50034	police officer	22.4321
+50034	actress	23.8321
+50034	director	26.6321
+50034	social worker	27.9321
+50034	psychologist	31.9321
+50034	therapist	32.9321
+50034	journalist	34.5321
+50034	producer	36.7321
+50034	biologist	39.0321
+50034	management	41.5321
+50034	salesperson	46.7321
+50034	mailman	49.2321
+50034	musician	51.2321
+50034	zookeeper	57.9321
+50034	bank teller	65.8321
+50034	chef	72.1321
+50034	pharmacist	77.2321
+50034	cashier	78.9321
+50034	conductor	84.4321
+50034	bartender	91.7321
+50034	receptionist	93.9321
+50034	truck driver	102.7321
+50034	trainer	119.1321
+50034	babysitter	129.3321
+50034	art collector	136.2321
+50034	writer	160.9321
+50034	publisher	173.4321
+50036	welder	0.0
+50036	policeman	2.575
+50036	fireman	4.175
+50036	professor	5.175
+50036	teacher	7.375
+50036	kindergarten teacher	8.775
+50036	nurse	10.975
+50036	daycare counselor	13.175
+50036	psychiatrist	16.675
+50036	psychologist	18.975
+50036	proctologist	19.975
+50036	ophthalmologist	23.875
+50036	optometrist	25.275
+50036	entomologist	26.775
+50036	etymologist	29.775
+50036	carpenter	30.675
+50036	construction worker	37.275
+50036	cyclist	42.675
+50036	professional sports player	46.175
+50036	actor	49.375
+50036	actress	53.675
+50036	photographer	54.275
+50036	artist	59.675
+50036	painter	61.775
+50036	contractor	62.875
+50036	programmer	68.875
+50036	engineer	70.375
+50036	computer engineer	72.975
+50036	electrician	73.575
+50036	electrical engineer	74.675
+50036	mechanical engineer	75.575
+50036	mechanist	78.675
+50036	machinist	80.475
+50036	car salesman	81.175
+50036	phone salesman	85.075
+50036	retail person	90.875
+50036	officer	97.275
+50036	mall cop	99.375
+50036	soldier	100.175
+50036	general	103.275
+50036	tailor	105.375
+50036	spy	107.375
+50036	mathematician	109.175
+50036	safety inspector	113.575
+50036	data analyst	120.675
+50036	developer	125.875
+50036	gardener	132.975
+50036	funeral home manager	134.975
+50036	surgeon	141.275
+50036	doctor	146.975
+50036	lab technician	152.175
+50036	scientist	170.475
+50036	geologist	172.275
+50036	climatologist	173.575
+50036	weatherman	177.975
+198	nurse	0.0
+198	doctor	4.176470588
+198	accountant	5.705882353
+198	manager	7.823529412
+198	supervisor	13.23529412
+198	baker	15.82352941
+198	chef	21.17647059
+198	associate	24.64705882
+198	radiologist	27.47058824
+198	anesthesiologist	34.35294118
+198	cardiologist	40.47058824
+198	oncologist	44.88235294
+198	obstetrician	50.82352941
+198	practitioner	55.88235294
+198	attorney	74.05882353
+198	lawyer	87.52941176
+198	carpenter	95.47058824
+198	entrepreneur	117.2941176
+198	business	139.4117647
+198	journalist	152.7647059
+198	artist	161.8235294
+198	actor	172.2352941
+285	teacher	0.0
+285	farmer	1.294117647
+285	doctor	3.632352941
+285	nurse	4.632352941
+285	mechanic	6.970588235
+285	cowboy	9.955882353
+285	manager	14.63235294
+285	fireman	25.29411765
+285	engineer	38.29411765
+285	pilot	46.27941176
+285	manager	52.97058824
+285	therapist	64.91176471
+285	dentist	81.26470588
+285	surgeon	89.29411765
+285	technician	96.63235294
+285	athlete	110.9411765
+285	driver	119.8970588
+285	carpenter	132.6029412
+285	electrician	145.6176471
+285	teller	151.9411765
+285	bartender	166.6323529
+285	accountant	170.6176471
+288	lawyer	0.0
+288	stripper	4.632352941
+288	dentist	5.955882353
+288	doctor	9.294117647
+288	dancer	13.63235294
+288	singer	14.95588235
+288	consultant	17.63235294
+288	psychologist	19.27941176
+288	receptionist	24.60294118
+288	firefighter	28.60294118
+288	policeman	37.94117647
+288	guard	40.92647059
+288	chef	43.92647059
+288	garbage man	51.30882353
+288	accountant	52.94117647
+288	janitor	57.94117647
+288	architect	65.29411765
+288	worker	71.27941176
+288	teacher	73.23529412
+288	professor	80.95588235
+288	politician	82.61764706
+288	athlete	88.27941176
+288	salesman	96.29411765
+288	designer	104.9558824
+288	landscaper	130.25
+288	artist	142.2794118
+288	musician	149.2941176
+288	babysitter	155.9558824
+288	taster	160.9411765
+288	brewer	173.9411765
+297	teacher	0.0
+297	doctor	-0.235294118
+297	psychologist	2.044117647
+297	farmer	2.367647059
+297	prostitute	7.044117647
+297	optometrist	8.926470588
+297	ophthalmologist	13.64705882
+297	pediatrician	17.80882353
+297	veterinarian	22.08823529
+297	babysitter	27.88235294
+297	student	28.92647059
+297	taxi driver	30.76470588
+297	driver	33.64705882
+297	associate	35.64705882
+297	stockbroker	37.52941176
+297	banker	40.36764706
+297	physicist	42.97058824
+297	scientist	51.20588235
+297	professor	53.20588235
+297	garbage man	58.20588235
+297	trainer	60.64705882
+297	weatherperson	65.64705882
+297	reporter	67.52941176
+297	anchor	71.08823529
+297	writer	74.08823529
+297	artist	78.04411765
+297	painter	79.76470588
+297	technician	80.76470588
+297	manager	88.41176471
+297	supervisor	100.7647059
+297	attendant	103.9264706
+297	pilot	106.25
+297	nurse	111.3235294
+297	technician	118.3235294
+297	performer	121.5294118
+297	artist	133.9264706
+297	investigator	135.8088235
+297	counselor	140.1323529
+297	retailer	145.6911765
+297	importer	161.4852941
+297	reporter	166.8088235
+386	dentist	0.0
+386	therapist	2.235294118
+386	hygienist	3.117647059
+386	optometrist	13.0
+386	secretary	23.35294118
+386	entrepreneur	28.29411765
+386	athlete	33.88235294
+386	policeman	45.23529412
+386	fbi	47.94117647
+386	teacher	62.11764706
+386	coach	74.23529412
+386	technician	82.17647059
+386	priest	86.11764706
+386	dancer	108.7058824
+386	wood smith	119.7058824
+386	carpenter	127.2941176
+386	chef	131.2941176
+386	manager	142.6470588
+386	worker	144.2352941
+386	psychologist	148.9411765
+386	mathematician	165.8823529
+391	teacher	0.0
+391	doctor	7.176470588
+391	therapist	10.52941176
+391	manager	15.29411765
+391	clerk	34.17647059
+391	broadcaster	40.88235294
+391	host	51.29411765
+391	producer	58.17647059
+391	singer	65.70588235
+391	actor	73.52941176
+391	accountant	77.88235294
+391	advisor	83.11764706
+391	trainer	90.0
+391	agent	107.0
+391	analyst	120.4117647
+391	salesman	152.6470588
+391	principal	164.8235294
+393	doctor	0.0
+393	engineer	0.838235294
+393	teacher	2.911764706
+393	worker	6.220588235
+393	plumber	6.823529412
+393	manager	13.52941176
+393	owner	18.52941176
+393	realtor	25.14705882
+393	worker	26.52941176
+393	electrician	36.36764706
+393	mechanic	44.29411765
+393	cashier	48.22058824
+393	stockbroker	51.52941176
+393	nurse	56.36764706
+393	surgeon	70.14705882
+393	manufacturer	72.91176471
+393	builder	84.98529412
+393	worker	101.5294118
+393	policeman	109.6764706
+393	fbi	115.3676471
+393	cia	120.7647059
+393	president	121.7647059
+393	accountant	122.9117647
+393	librarian	144.6029412
+393	cabdriver	150.9117647
+393	chauffer	159.6029412
+393	athlete	162.9852941
+393	counselor	171.5294118
+475	lawyer	0.0
+475	doctor	1.455882353
+475	trashman	2.455882353
+475	plumber	8.014705882
+475	teacher	9.235294118
+475	professor	10.23529412
+475	cop	13.79411765
+475	investigator	17.11764706
+475	technician	18.13235294
+475	attorney	28.57352941
+475	marketer	36.01470588
+475	journalist	43.01470588
+475	publicist	43.57352941
+475	anchorman	47.13235294
+475	fbi	52.79411765
+475	cia	60.11764706
+475	singer	64.11764706
+475	dancer	66.45588235
+475	actor	67.45588235
+475	writer	70.67647059
+475	scientist	72.45588235
+475	astronaut	75.79411765
+475	carpenter	80.79411765
+475	worker	93.79411765
+475	vendor	96.58823529
+475	administrator	102.7941176
+475	principal	109.9117647
+475	president	112.7941176
+475	bodyguard	114.7941176
+475	dj	122.5735294
+475	host	127.3382353
+475	psychiatrist	139.6911765
+475	psychologist	142.9117647
+475	biologist	146.1323529
+475	scientist	151.7941176
+475	navy	153.5882353
+475	army	162.8970588
+475	military	163.8970588
+475	marines	164.6911765
+475	mailman	169.2352941
+475	manufacturer	175.2352941
+479	artist	0.0
+479	teacher	2.735294118
+479	doctor	7.411764706
+479	actor	9.735294118
+479	director	13.05882353
+479	producer	16.08823529
+479	worker	18.08823529
+479	pathologist	20.14705882
+479	audiologist	23.85294118
+479	senator	30.11764706
+479	representative	36.41176471
+479	president	41.14705882
+479	secretary	44.76470588
+479	cabinet	51.76470588
+479	treasurer	57.85294118
+479	owner	64.76470588
+479	auditor	72.14705882
+479	accountant	78.41176471
+479	advisor	83.11764706
+479	stockbroker	85.17647059
+479	curator	92.47058824
+479	guard	97.14705882
+479	police	116.1470588
+479	fireman	124.4117647
+479	nurse	126.4117647
+479	surgeon	130.0588235
+479	anesthesiologist	132.4117647
+479	psychiatrist	137.8235294
+479	psychologist	144.7941176
+479	counselor	150.4705882
+479	therapist	154.7647059
+479	server	159.4411765
+479	waitress	164.7352941
+479	hostess	167.7647059
+479	manager	171.4117647
+481	teacher	0.0
+481	president	1.647058824
+481	secretary	4.117647059
+481	engineer	14.05882353
+481	doctor	17.11764706
+481	nurse	36.94117647
+481	researcher	39.23529412
+481	assistant	43.76470588
+481	recruiter	45.41176471
+481	therapist	55.05882353
+481	minister	58.05882353
+481	representative	61.35294118
+481	buyer	63.82352941
+481	trader	76.23529412
+481	consultant	78.94117647
+481	manager	81.88235294
+481	pool	92.58823529
+481	lifeguard	99.35294118
+481	instructor	101.7647059
+481	entrepreneur	109.4117647
+481	manager	117.1764706
+481	ceo	124.0
+481	advertiser	131.8235294
+481	manager	135.7647059
+481	accountant	139.7058824
+481	stockbroker	144.7647059
+481	worker	151.0
+481	manager	159.5882353
+481	writer	170.8823529
+484	engineer	0.0
+484	doctor	1.411764706
+484	nurse	3.735294118
+484	doctor	12.05882353
+484	surgeon	14.47058824
+484	teacher	18.41176471
+484	principal	23.41176471
+484	worker	25.76470588
+484	janitor	31.14705882
+484	gardener	35.41176471
+484	photographer	47.08823529
+484	painter	51.79411765
+484	carpenter	55.41176471
+484	sculpture	58.76470588
+484	secretary	64.76470588
+484	assistant	71.76470588
+484	actor	76.76470588
+484	chauffer	83.05882353
+484	interpreter	88.08823529
+484	lawyer	95.11764706
+484	attendant	103.7352941
+484	pilot	104.5
+484	guard	111.0588235
+484	policemen	126.4705882
+484	anthropologist	133.7647059
+484	dietitian	160.1470588
+484	coroner	170.7647059
+487	nurse	0.0
+487	doctor	2.235294118
+487	dentist	2.941176471
+487	orthodontist	5.647058824
+487	chiropractor	6.176470588
+487	technician	9.176470588
+487	teacher	17.58823529
+487	professor	22.64705882
+487	engineer	24.05882353
+487	accountant	27.35294118
+487	drafter	35.76470588
+487	technician	41.64705882
+487	radiologist	47.11764706
+487	urologist	54.17647059
+487	worker	65.47058824
+487	salesman	76.58823529
+487	singer	79.35294118
+487	songwriter	86.23529412
+487	diver	87.76470588
+487	swimmer	97.41176471
+487	janitor	103.8235294
+487	principal	127.6470588
+487	dean	132.0588235
+487	picker	136.5294118
+487	farmer	167.1764706
+487	seamstress	173.9411765
+488	psychologist	0.0
+488	teacher	1.941176471
+488	manager	7.117647059
+488	salesperson	10.11764706
+488	student	18.94117647
+488	waiter	22.11764706
+488	server	25.35294118
+488	manager	27.35294118
+488	receptionist	32.11764706
+488	secretary	34.94117647
+488	lawyer	38.64705882
+488	attorney	42.35294118
+488	president	43.23529412
+488	ceo	51.64705882
+488	editor	56.05882353
+488	writer	59.35294118
+488	columnist	61.35294118
+488	actress	62.23529412
+488	actor	67.11764706
+488	singer	69.35294118
+488	dancer	71.35294118
+488	entertainer	72.35294118
+488	principal	75.17647059
+488	vice principal	79.64705882
+488	owner	82.47058824
+488	banker	84.29411765
+488	accountant	91.35294118
+488	rabbi	92.17647059
+488	priest	101.5882353
+488	dean	102.3529412
+488	pathologist	106.5294118
+488	doctor	119.2941176
+488	pediatrician	123.3529412
+488	oncologist	126.1764706
+488	optometrist	129.6470588
+488	cardiologist	133.1764706
+488	neurologist	139.9411765
+488	printer	144.1764706
+488	engineer	153.1176471
+488	hairdresser	155.8823529
+488	artist	168.9411765
+488	relations	173.4705882
+491	dentist	0.0
+491	mayor	0.705882353
+491	garbageman	5.529411765
+491	teacher	6.058823529
+491	student	10.70588235
+491	therapist	12.70588235
+491	businessman	16.88235294
+491	star	19.05882353
+491	manager	26.05882353
+491	ceo	31.41176471
+491	entrepreneur	46.35294118
+491	waitress	49.64705882
+491	cook	58.29411765
+491	psychiatrist	61.94117647
+491	merchandising	67.64705882
+491	designer	73.23529412
+491	model	79.29411765
+491	writer	82.52941176
+491	columnist	88.11764706
+491	unemployed	90.88235294
+491	manager	99.47058824
+491	assistant	102.7058824
+491	doctor	114.8823529
+491	nurse	124.1176471
+491	taster	126.5294118
+491	priest	128.0588235
+491	cashier	135.1176471
+491	president	145.7058824
+491	congressman	152.8823529
+491	supervisor	155.0588235
+491	relations	161.4705882
+491	artist	169.0
+578	dentist	0.0
+578	lawyer	2.176470588
+578	teacher	4.529411765
+578	clown	7.176470588
+578	audiologist	9.882352941
+578	paralegal	10.76470588
+578	hygienist	20.47058824
+578	secretary	23.0
+578	principal	31.11764706
+578	driver	34.47058824
+578	entrepreneur	37.11764706
+578	chef	44.41176471
+578	taxi driver	49.23529412
+578	audiologist	53.76470588
+578	planner	59.76470588
+578	doctor	67.41176471
+578	surgeon	75.11764706
+578	policeman	77.82352941
+578	daycare worker	80.11764706
+578	engineer	87.0
+578	professor	95.82352941
+578	psychologist	101.4705882
+578	driver	113.4117647
+578	coordinator	122.4117647
+578	mother	126.6470588
+578	father	135.5294118
+578	advisor	138.1764706
+578	stockbroker	144.8235294
+578	waitress	162.4117647
+578	busser	171.8235294
+578	dishwasher	176.5294118
+580	nurse	0.0
+580	doctor	0.794117647
+580	lawyer	2.426470588
+580	teacher	5.426470588
+580	owner	7.058823529
+580	agent	12.48529412
+580	manicurist	20.38235294
+580	stripper	29.95588235
+580	masseuse	34.69117647
+580	haircutter	38.05882353
+580	secretary	41.58823529
+580	accountant	47.32352941
+580	banker	49.95588235
+580	repairman	54.42647059
+580	janitor	57.85294118
+580	garbage man	63.05882353
+580	actor	67.58823529
+580	singer	74.79411765
+580	model	76.42647059
+580	athlete	78.79411765
+580	salesman	82.11764706
+580	storeowner	109.2205882
+580	veterinarian	128.5882353
+580	astronaut	138.2205882
+580	policeman	144.3235294
+580	fireman	146.4852941
+580	magician	150.6911765
+580	coordinator	160.6911765
+580	designer	165.3823529
+580	advertiser	171.75
+582	doctor	0.0
+582	teacher	0.220588235
+582	dentist	0.823529412
+582	banker	4.426470588
+582	lawyer	10.22058824
+582	nurse	26.22058824
+582	psychologist	32.61764706
+582	engineer	38.83823529
+582	scientist	51.42647059
+582	astronaut	59.02941176
+582	worker	61.63235294
+582	secretary	66.05882353
+582	principal	90.02941176
+582	cashier	94.02941176
+582	manager	100.8235294
+582	optometrist	102.8235294
+582	entrepreneur	116.2352941
+582	chef	153.8382353
+582	actor	174.0147059
+587	doctor	0.0
+587	lawyer	0.838235294
+587	psychiatrist	2.838235294
+587	dentist	4.985294118
+587	nurse	8.529411765
+587	firefighter	11.14705882
+587	policeman	12.98529412
+587	fbi	14.36764706
+587	investigator	19.91176471
+587	accountant	25.27941176
+587	taxi driver	35.60294118
+587	driver	44.29411765
+587	manager	46.98529412
+587	secretary	47.42647059
+587	manager	58.91176471
+587	associate	61.35294118
+587	biologist	71.05882353
+587	psychologist	81.75
+587	philosopher	88.98529412
+587	analyst	94.29411765
+587	pharmacist	101.75
+587	baker	108.2941176
+587	entrepreneur	118.1470588
+587	journalist	119.2794118
+587	garbage man	134.6029412
+587	pilot	137.2941176
+587	estate	144.1470588
+587	worker	155.9852941
+587	teacher	161.8235294
+587	librarian	166.5294118
+587	counselor	171.9117647
+597	janitor	0.0
+597	accountant	4.0
+597	executive	5.25
+597	vendor	7.5
+597	lawnmower	11.5
+597	actress	15.25
+597	actor	19.0
+597	fbi	20.5
+597	policeman	25.5
+597	celebrity	27.5
+597	attorney	35.5
+597	paralegal	46.75
+597	therapist	49.5
+597	psychologist	53.5
+597	sociologist	55.75
+597	biologist	59.0
+597	fireman	64.5
+597	worker	73.0
+597	tollbooth	75.0
+597	athlete	82.25
 597	athlete	91.0
-597	athlete	93.5
-597	accountant	107.25
-597	scientist	123.5
-597	chemist	128.0
-597	explorer	131.75
-597	writer	143.25
-597	director	145.75
-597	producer	147.75
-597	agent	157.5
-597	president	162.5
-597	senator	168.0
-597	doctor	178.25
-681	teacher	0.294117647
-681	judge	2.970588235
-681	lawyer	3.632352941
-681	rabbi	5.970588235
-681	priest	7.632352941
-681	nurse	9.970588235
-681	orthodontist	11.60294118
-681	designer	15.95588235
-681	arranger	21.58823529
-681	planner	25.26470588
-681	florist	28.29411765
-681	dressmaker	30.94117647
-681	tailor	36.63235294
-681	surgeon	37.26470588
-681	attorney	43.95588235
-681	cacantor	47.95588235
-681	waiter	52.63235294
-681	attendant	53.25
-681	student	58.29411765
-681	professor	60.61764706
-681	babysitter	62.94117647
-681	bartender	68.25
-681	analyst	73.25
-681	policeman	77.92647059
-681	firefighter	81.94117647
-681	emt	88.64705882
-681	hacker	92.58823529
-681	dealer	97.23529412
-681	pharmacist	106.2794118
-681	designer	109.9117647
-681	manager	115.2647059
-681	salesclerk	128.2794118
-681	librarian	133.6176471
-681	musician	137.9558824
-681	dancer	140.2941176
-681	artist	141.6323529
-681	actor	143.9705882
-681	comedian	148.9558824
-681	poet	153.3088235
-681	writer	156.6323529
-681	telemarketer	168.6029412
-681	plastic surgeon	184.25
-683	wrangler	4.470588235
-683	doctor	9.352941176
-683	prostitute	13.41176471
-683	pimp	18.82352941
-683	lawyer	21.35294118
-683	director	28.52941176
-683	worker	34.29411765
-683	superintendent	48.47058824
-683	principal	52.64705882
-683	teacher	55.11764706
-683	professor	55.64705882
-683	bum	63.0
-683	athlete	70.23529412
-683	author	95.35294118
-683	secretary	98.64705882
-683	host	106.4705882
-683	athlete	111.7058824
-683	coach	122.4705882
-683	athlete	125.0
-683	coach	128.9411765
-683	psychic	153.1176471
-683	herder	159.7058824
-683	miner	169.5882353
-683	millworker	170.7647059
-683	optometrist	182.1764706
-689	doctor	1.294117647
-689	lawyer	5.294117647
-689	janitor	7.955882353
-689	student	9.955882353
-689	teacher	11.61764706
-689	doormen	16.29411765
-689	scientist	19.94117647
-689	bondsman	26.60294118
-689	sales	34.63235294
-689	president	38.61764706
-689	mechanic	46.95588235
-689	computer technician	52.26470588
-689	cashier	59.29411765
-689	deliveryman	60.92647059
-689	golfer	67.63235294
-689	miner	69.27941176
-689	musician	74.29411765
-689	juggler	77.29411765
-689	performer	80.25
-689	star	84.61764706
-689	handler	89.58823529
-689	therapist	95.61764706
-689	lawyer	102.2941176
-689	doctor	104.2941176
-689	conductor	116.2794118
-689	managers	122.9558824
-689	supervisor	125.9411765
-689	construction	131.6029412
-689	plumber	139.2941176
-689	woodworker	144.9411765
-689	worker	146.9264706
-689	miner	151.9705882
-689	weaver	155.8823529
-689	maker	165.2352941
-689	instructor	174.1029412
-693	dietetics	3.176470588
-693	doctor	6.323529412
-693	nurse	10.70588235
-693	farmer	14.32352941
-693	firefighter	17.41176471
-693	policeman	20.26470588
-693	coach	26.70588235
-693	dentist	32.94117647
-693	pediatrician	35.02941176
-693	driver	47.02941176
-693	garbage man	54.41176471
-693	teacher	56.94117647
-693	chemist	60.94117647
-693	biologist	63.17647059
-693	astronaut	68.17647059
-693	botanist	83.55882353
-693	teachers assistant	97.73529412
-693	therapist	102.7352941
-693	athlete	106.0588235
-693	engineer	122.5588235
-693	business	126.5588235
-693	hygienist	132.5588235
-693	surgeon	135.3235294
-693	banker	142.3235294
-693	buyer	144.7058824
-693	babysitter	149.7941176
-693	psychologist	161.4117647
-693	technician	188.7941176
-783	student	6.941176471
-783	businessman	22.41176471
-783	trading	32.05882353
-783	exporting	34.17647059
-783	importing	37.17647059
-783	electronics	40.41176471
-783	computer	49.17647059
-783	office	60.41176471
-783	fishing	75.94117647
-783	fighting	91.05882353
-783	athlete	93.76470588
-783	riding	115.8235294
-783	hunting	180.9411765
-784	doctor	-1.117647059
-784	teacher	0.294117647
-784	nurse	3.470588235
-784	therapist	0.411764706
-784	agent	6.352941176
-784	waitress	12.70588235
-784	actor	16.47058824
-784	professor	15.52941176
-784	manager	22.29411765
-784	technician	19.23529412
-784	secretary	37.11764706
-784	chiropractor	45.35294118
-784	oncologist	49.52941176
-784	neurologist	55.94117647
-784	surgeon	62.82352941
-784	pediatrician	72.35294118
-784	therapist	76.82352941
-784	athlete	85.05882353
-784	anchor	96.94117647
-784	janitor	106.2941176
-784	electrician	106.9411765
-784	employee	121.7058824
-784	owner	119.6470588
-784	worker	130.1764706
-784	chef	142.0588235
-784	baker	143.4705882
-784	cashier	152.2941176
-784	designer	167.3529412
-784	coach	175.4705882
-784	manager	178.7647059
-786	librarian	4.617647059
-786	deliveryman	7.602941176
-786	sportscaster	13.26470588
-786	lawyer	20.63235294
-786	doctor	24.63235294
-786	therapist	26.26470588
-786	lifeguard	36.27941176
-786	janitor	41.29411765
-786	chef	45.30882353
-786	attendant	50.55882353
-786	writer	73.63235294
-786	teacher	76.29411765
-786	businessman	80.60294118
-786	psychologist	88.60294118
-786	psychiatrist	96.60294118
-786	pimp	106.9705882
-786	singer	115.6323529
-786	dancer	117.6323529
-786	waitress	119.9558824
-786	waiter	123.6323529
-786	hostess	131.2941176
-786	designer	140.25
-786	actor	144.9705882
-786	actress	147.2941176
-786	producer	152.9558824
-786	director	155.9558824
-786	plumber	162.2941176
-786	landlord	165.6176471
-786	engineer	174.9558824
-786	consultant	178.9264706
-787	police	28.70588235
-787	teacher	31.23529412
-787	student	33.23529412
-787	soldier	38.23529412
-787	prostitute	46.82352941
-787	secretary	61.29411765
-787	businessman	65.35294118
-787	firefighter	73.35294118
-787	doctor	79.70588235
-787	nurse	81.17647059
-787	engineer	92.29411765
-787	mason	99.17647059
-787	trainer	113.2352941
-787	custodian	120.2941176
-787	librarian	125.2941176
-787	musician	130.7647059
-787	scientist	136.2941176
-787	assistant	141.0588235
-787	cook	150.6470588
-787	assistant	156.4117647
-787	salesman	161.7058824
-787	waiter	168.7058824
-787	actor	171.1764706
-787	thief	177.1764706
-797	accountant	-1.014705882
-797	teacher	3.352941176
-797	architect	32.89705882
-797	director	36.79411765
-797	athlete	40.69117647
-797	dealer	50.52941176
-797	marketing	60.44117647
-797	manager	64.35294118
-797	representative	62.42647059
-797	doctor	73.80882353
-797	nurse	75.26470588
-797	professor	80.44117647
-797	hacker	92.70588235
-797	designer	98.25
-797	nasa	110.7205882
-797	astronaut	112.4411765
-797	firefighter	117.0735294
-797	policeman	120.4411765
-797	worker	122.3382353
-797	golfer	130.8970588
-797	driver	137.8970588
-797	owner	144.8088235
-797	ceo	147.1764706
-797	manager	150.7941176
-797	clerk	158.2647059
-797	bagboy	165.3529412
-797	homeless person	169.8970588
-797	manufacturer	179.0735294
-896	teacher	1.352941176
-896	student	3.352941176
-896	intern	5.558823529
-896	doctor	8.558823529
-896	lawyer	9.558823529
-896	dentist	10.55882353
-896	orthodontist	12.32352941
-896	therapist	16.94117647
-896	psychologist	19.32352941
-896	therapist	23.08823529
-896	decorator	29.08823529
-896	director	30.88235294
-896	stockbroker	36.32352941
-896	actor	38.76470588
-896	ceo	49.5
-896	storeowner	54.52941176
-896	clerk	61.08823529
-896	secretary	68.94117647
-896	manager	71.91176471
-896	advisor	79.29411765
-896	producer	88.14705882
-896	consultant	99.88235294
-896	technician	103.8823529
-896	surgeon	118.3529412
-896	paramedic	121.9411765
-896	emt	123.0294118
-896	gynecologist	133.3235294
-896	podiatrist	139.7352941
-896	babysitter	150.7352941
-896	speaker	156.6764706
-896	assistant	167.2647059
-896	athlete	175.6764706
-997	doctor	3.735294118
-997	lawyer	11.73529412
-997	carpenter	12.76470588
-997	worker	16.14705882
-997	groundskeeper	25.11764706
-997	chef	33.38235294
-997	painter	41.41176471
-997	sculptor	46.08823529
-997	pilot	51.73529412
-997	astronaut	56.76470588
-997	attendant	66.5
-997	fireman	71.73529412
-997	policeman	75.76470588
-997	secretary	80.76470588
-997	actor	86.05882353
-997	actress	87.41176471
-997	star	90.08823529
-997	fluffer	94.41176471
-997	assistant	98.52941176
-997	gravedigger	107.7941176
-997	butler	115.7352941
-997	maid	117.3823529
-997	hostess	122.4117647
-997	server	123.7352941
-997	driver	125.8235294
-997	assistant	132.8235294
-997	clown	140.1176471
-997	prostitute	160.4411765
-997	pimp	164.3823529
-997	stripper	168.0882353
-997	bouncer	173.4117647
-997	bartender	174.4411765
-997	janitor	184.4117647
+597	accountant	93.5
+597	scientist	107.25
+597	chemist	123.5
+597	explorer	128.0
+597	writer	131.75
+597	director	143.25
+597	producer	145.75
+597	agent	147.75
+597	president	157.5
+597	senator	162.5
+597	doctor	168.0
+681	teacher	0.0
+681	judge	0.294117647
+681	lawyer	2.970588235
+681	rabbi	3.632352941
+681	priest	5.970588235
+681	nurse	7.632352941
+681	orthodontist	9.970588235
+681	designer	11.60294118
+681	arranger	15.95588235
+681	planner	21.58823529
+681	florist	25.26470588
+681	dressmaker	28.29411765
+681	tailor	30.94117647
+681	surgeon	36.63235294
+681	attorney	37.26470588
+681	cacantor	43.95588235
+681	waiter	47.95588235
+681	attendant	52.63235294
+681	student	53.25
+681	professor	58.29411765
+681	babysitter	60.61764706
+681	bartender	62.94117647
+681	analyst	68.25
+681	policeman	73.25
+681	firefighter	77.92647059
+681	emt	81.94117647
+681	hacker	88.64705882
+681	dealer	92.58823529
+681	pharmacist	97.23529412
+681	designer	106.2794118
+681	manager	109.9117647
+681	salesclerk	115.2647059
+681	librarian	128.2794118
+681	musician	133.6176471
+681	dancer	137.9558824
+681	artist	140.2941176
+681	actor	141.6323529
+681	comedian	143.9705882
+681	poet	148.9558824
+681	writer	153.3088235
+681	telemarketer	156.6323529
+681	plastic surgeon	168.6029412
+683	wrangler	0.0
+683	doctor	4.470588235
+683	prostitute	9.352941176
+683	pimp	13.41176471
+683	lawyer	18.82352941
+683	director	21.35294118
+683	worker	28.52941176
+683	superintendent	34.29411765
+683	principal	48.47058824
+683	teacher	52.64705882
+683	professor	55.11764706
+683	bum	55.64705882
+683	athlete	63.0
+683	author	70.23529412
+683	secretary	95.35294118
+683	host	98.64705882
+683	athlete	106.4705882
+683	coach	111.7058824
+683	athlete	122.4705882
+683	coach	125.0
+683	psychic	128.9411765
+683	herder	153.1176471
+683	miner	159.7058824
+683	millworker	169.5882353
+683	optometrist	170.7647059
+689	doctor	0.0
+689	lawyer	1.294117647
+689	janitor	5.294117647
+689	student	7.955882353
+689	teacher	9.955882353
+689	doormen	11.61764706
+689	scientist	16.29411765
+689	bondsman	19.94117647
+689	sales	26.60294118
+689	president	34.63235294
+689	mechanic	38.61764706
+689	computer technician	46.95588235
+689	cashier	52.26470588
+689	deliveryman	59.29411765
+689	golfer	60.92647059
+689	miner	67.63235294
+689	musician	69.27941176
+689	juggler	74.29411765
+689	performer	77.29411765
+689	star	80.25
+689	handler	84.61764706
+689	therapist	89.58823529
+689	lawyer	95.61764706
+689	doctor	102.2941176
+689	conductor	104.2941176
+689	managers	116.2794118
+689	supervisor	122.9558824
+689	construction	125.9411765
+689	plumber	131.6029412
+689	woodworker	139.2941176
+689	worker	144.9411765
+689	miner	146.9264706
+689	weaver	151.9705882
+689	maker	155.8823529
+689	instructor	165.2352941
+693	dietetics	0.0
+693	doctor	3.176470588
+693	nurse	6.323529412
+693	farmer	10.70588235
+693	firefighter	14.32352941
+693	policeman	17.41176471
+693	coach	20.26470588
+693	dentist	26.70588235
+693	pediatrician	32.94117647
+693	driver	35.02941176
+693	garbage man	47.02941176
+693	teacher	54.41176471
+693	chemist	56.94117647
+693	biologist	60.94117647
+693	astronaut	63.17647059
+693	botanist	68.17647059
+693	teachers assistant	83.55882353
+693	therapist	97.73529412
+693	athlete	102.7352941
+693	engineer	106.0588235
+693	business	122.5588235
+693	hygienist	126.5588235
+693	surgeon	132.5588235
+693	banker	135.3235294
+693	buyer	142.3235294
+693	babysitter	144.7058824
+693	psychologist	149.7941176
+693	technician	161.4117647
+783	student	0.0
+783	businessman	6.941176471
+783	trading	22.41176471
+783	exporting	32.05882353
+783	importing	34.17647059
+783	electronics	37.17647059
+783	computer	40.41176471
+783	office	49.17647059
+783	fishing	60.41176471
+783	fighting	75.94117647
+783	athlete	91.05882353
+783	riding	93.76470588
+783	hunting	115.8235294
+784	doctor	0.0
+784	teacher	-1.117647059
+784	nurse	0.294117647
+784	therapist	3.470588235
+784	agent	0.411764706
+784	waitress	6.352941176
+784	actor	12.70588235
+784	professor	16.47058824
+784	manager	15.52941176
+784	technician	22.29411765
+784	secretary	19.23529412
+784	chiropractor	37.11764706
+784	oncologist	45.35294118
+784	neurologist	49.52941176
+784	surgeon	55.94117647
+784	pediatrician	62.82352941
+784	therapist	72.35294118
+784	athlete	76.82352941
+784	anchor	85.05882353
+784	janitor	96.94117647
+784	electrician	106.2941176
+784	employee	106.9411765
+784	owner	121.7058824
+784	worker	119.6470588
+784	chef	130.1764706
+784	baker	142.0588235
+784	cashier	143.4705882
+784	designer	152.2941176
+784	coach	167.3529412
+784	manager	175.4705882
+786	librarian	0.0
+786	deliveryman	4.617647059
+786	sportscaster	7.602941176
+786	lawyer	13.26470588
+786	doctor	20.63235294
+786	therapist	24.63235294
+786	lifeguard	26.26470588
+786	janitor	36.27941176
+786	chef	41.29411765
+786	attendant	45.30882353
+786	writer	50.55882353
+786	teacher	73.63235294
+786	businessman	76.29411765
+786	psychologist	80.60294118
+786	psychiatrist	88.60294118
+786	pimp	96.60294118
+786	singer	106.9705882
+786	dancer	115.6323529
+786	waitress	117.6323529
+786	waiter	119.9558824
+786	hostess	123.6323529
+786	designer	131.2941176
+786	actor	140.25
+786	actress	144.9705882
+786	producer	147.2941176
+786	director	152.9558824
+786	plumber	155.9558824
+786	landlord	162.2941176
+786	engineer	165.6176471
+786	consultant	174.9558824
+787	police	0.0
+787	teacher	28.70588235
+787	student	31.23529412
+787	soldier	33.23529412
+787	prostitute	38.23529412
+787	secretary	46.82352941
+787	businessman	61.29411765
+787	firefighter	65.35294118
+787	doctor	73.35294118
+787	nurse	79.70588235
+787	engineer	81.17647059
+787	mason	92.29411765
+787	trainer	99.17647059
+787	custodian	113.2352941
+787	librarian	120.2941176
+787	musician	125.2941176
+787	scientist	130.7647059
+787	assistant	136.2941176
+787	cook	141.0588235
+787	assistant	150.6470588
+787	salesman	156.4117647
+787	waiter	161.7058824
+787	actor	168.7058824
+787	thief	171.1764706
+797	accountant	0.0
+797	teacher	-1.014705882
+797	architect	3.352941176
+797	director	32.89705882
+797	athlete	36.79411765
+797	dealer	40.69117647
+797	marketing	50.52941176
+797	manager	60.44117647
+797	representative	64.35294118
+797	doctor	62.42647059
+797	nurse	73.80882353
+797	professor	75.26470588
+797	hacker	80.44117647
+797	designer	92.70588235
+797	nasa	98.25
+797	astronaut	110.7205882
+797	firefighter	112.4411765
+797	policeman	117.0735294
+797	worker	120.4411765
+797	golfer	122.3382353
+797	driver	130.8970588
+797	owner	137.8970588
+797	ceo	144.8088235
+797	manager	147.1764706
+797	clerk	150.7941176
+797	bagboy	158.2647059
+797	homeless person	165.3529412
+797	manufacturer	169.8970588
+896	teacher	0.0
+896	student	1.352941176
+896	intern	3.352941176
+896	doctor	5.558823529
+896	lawyer	8.558823529
+896	dentist	9.558823529
+896	orthodontist	10.55882353
+896	therapist	12.32352941
+896	psychologist	16.94117647
+896	therapist	19.32352941
+896	decorator	23.08823529
+896	director	29.08823529
+896	stockbroker	30.88235294
+896	actor	36.32352941
+896	ceo	38.76470588
+896	storeowner	49.5
+896	clerk	54.52941176
+896	secretary	61.08823529
+896	manager	68.94117647
+896	advisor	71.91176471
+896	producer	79.29411765
+896	consultant	88.14705882
+896	technician	99.88235294
+896	surgeon	103.8823529
+896	paramedic	118.3529412
+896	emt	121.9411765
+896	gynecologist	123.0294118
+896	podiatrist	133.3235294
+896	babysitter	139.7352941
+896	speaker	150.7352941
+896	assistant	156.6764706
+896	athlete	167.2647059
+997	doctor	0.0
+997	lawyer	3.735294118
+997	carpenter	11.73529412
+997	worker	12.76470588
+997	groundskeeper	16.14705882
+997	chef	25.11764706
+997	painter	33.38235294
+997	sculptor	41.41176471
+997	pilot	46.08823529
+997	astronaut	51.73529412
+997	attendant	56.76470588
+997	fireman	66.5
+997	policeman	71.73529412
+997	secretary	75.76470588
+997	actor	80.76470588
+997	actress	86.05882353
+997	star	87.41176471
+997	fluffer	90.08823529
+997	assistant	94.41176471
+997	gravedigger	98.52941176
+997	butler	107.7941176
+997	maid	115.7352941
+997	hostess	117.3823529
+997	server	122.4117647
+997	driver	123.7352941
+997	assistant	125.8235294
+997	clown	132.8235294
+997	prostitute	140.1176471
+997	pimp	160.4411765
+997	stripper	164.3823529
+997	bouncer	168.0882353
+997	bartender	173.4117647
+997	janitor	174.4411765

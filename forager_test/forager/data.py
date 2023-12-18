@@ -69,12 +69,12 @@ class data:
         self.df.to_csv('../data/input_files/' + domain_name.lower() + '_words.txt', sep = '\t', header = False, index = False)
         print("txt file created")
 
-        if domain_name == "foods":
-            snafu_foods = pd.read_csv('/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/norms/foods_snafu_scheme.csv')['Item'].values.tolist()
-            self.words = self.words + snafu_foods
-        elif domain_name == "animals":
-            forager_animals = pd.read_csv('/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/lexical_data/animals/vocab.csv')['vocab'].values.tolist()
-            self.words = self.words + forager_animals
+        # if domain_name == "foods":
+        #     snafu_foods = pd.read_csv('/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/norms/foods_snafu_scheme.csv')['Item'].values.tolist()
+        #     self.words = self.words + snafu_foods
+        # elif domain_name == "animals":
+        #     forager_animals = pd.read_csv('/Users/abhilashakumar/Documents/active projects/fluency projects/fluency_switch/fluency-switch-experiment/forager_test/data/lexical_data/animals/vocab.csv')['vocab'].values.tolist()
+        #     self.words = self.words + forager_animals
         
         #creating embeddings 
         # USE_embeddings(self.words, self.domain_name)
@@ -92,12 +92,12 @@ class data:
         # print("created semantic matrix") 
         
         # get phonological matrix 
-        labels, freq_matrix = get_labels_and_frequencies(self.path + '/frequencies.csv')
-        phonmatrix = phonology_funcs.create_phonological_matrix(labels)
-        phonmatrix = pd.DataFrame(phonmatrix) 
-        phonmatrix.to_csv(self.path + '/phonmatrix.csv', header = False, index = False)
-        print("created phon matrix")
+        # labels, freq_matrix = get_labels_and_frequencies(self.path + '/frequencies.csv')
+        # phonmatrix = phonology_funcs.create_phonological_matrix(labels)
+        # phonmatrix = pd.DataFrame(phonmatrix) 
+        # phonmatrix.to_csv(self.path + '/phonmatrix.csv', header = False, index = False)
+        # print("created phon matrix")
                         
-#a = data("../data/fluency_lists/reed_animals_RTs.csv", "subject", "checked_words", "response_onset_time",  "animals")
-#b = data("../data/fluency_lists/reed_foods_RTs.csv", "subject", "checked_words", "response_onset_time",  "foods")
-c = data("../data/fluency_lists/reed_occupations_RTs.csv", "subject", "checked_words", "response_onset_time", "occupations")
+#a = data("../data/fluency_lists/reed_animals_RTs.csv", "subject", "checked_words", "lagRT",  "animals")
+#b = data("../data/fluency_lists/reed_foods_RTs.csv", "subject", "checked_words", "lagRT",  "foods")
+c = data("../data/fluency_lists/reed_occupations_RTs.csv", "subject", "checked_words", "lagRT", "occupations")

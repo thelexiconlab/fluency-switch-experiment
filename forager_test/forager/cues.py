@@ -176,4 +176,13 @@ class phonology_funcs:
         sim = sim + sim.T
         np.fill_diagonal(sim, 1)
         return sim
-        
+
+
+## SAMPLE USAGE ###
+
+# w1 = "eagle"
+# w2 = "owl"
+
+# print("wordbreak of " + w1 + ": ", phonology_funcs.wordbreak(w1)[0])
+# print("wordbreak of " + w2 + ": ", phonology_funcs.wordbreak(w2)[0])
+# print("Normalized edit distance between " + w1 + " and " + w2 + ": " , phonology_funcs.normalized_edit_distance(phonology_funcs.wordbreak(w1)[0], phonology_funcs.wordbreak(w2)[0]))
