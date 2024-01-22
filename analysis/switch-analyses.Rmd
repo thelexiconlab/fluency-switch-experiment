@@ -124,21 +124,21 @@ fit_model <- function(df, column, type, dv, var_cutoff) {
 # import switch method predictions
 
 ```{r}
-foods = read_csv("forager_test/output/foods_forager/switch_results.csv") %>%
+foods = read_csv("../forager_test/output/foods_forager/switch_results.csv") %>%
   rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
   pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
   rename(subject = Subject, cluster = Fluency_Item) %>%
   mutate(subject = as.character(subject))%>%
   mutate(domain = "foods")
 
-animals = read_csv("forager_test/output/animals_forager/switch_results.csv") %>%
+animals = read_csv("../forager_test/output/animals_forager/switch_results.csv") %>%
   rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
   pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
   rename(subject = Subject, cluster = Fluency_Item) %>%
   mutate(subject = as.character(subject))%>%
   mutate(domain = "animals")
 
-occupations = read_csv("forager_test/output/occupations_forager/switch_results.csv") %>%
+occupations = read_csv("../forager_test/output/occupations_forager/switch_results.csv") %>%
   rowwise() %>% group_by(Subject, Switch_Method) %>% mutate(response_number = row_number())%>% 
   pivot_wider(names_from = Switch_Method, values_from = Switch_Value) %>%
   rename(subject = Subject, cluster = Fluency_Item) %>%
@@ -187,7 +187,7 @@ LEA_cleaned_data <- LEA_data %>%
 # Get the list of predictor variables (columns) from the dataframe
 LEA_predictor_columns <- setdiff(names(LEA_cleaned_data), c("participant_designated_switch", "subject", "domain",
                                                     "response_number", "cluster"))
-
+set.seed(123)
 glmer_model_results <- LEA_cleaned_data %>%
   filter(participant_designated_switch != 2) %>%
   group_by(domain) %>%
@@ -196,13 +196,13 @@ glmer_model_results <- LEA_cleaned_data %>%
                                     column = .x, type = "glmer", dv = "participant_designated_switch", 
                                    var_cutoff = .015)))
 
-individual_model_results = glmer_model_results %>% unnest()
-
-individual_model_results_table = individual_model_results %>% 
+individual_model_results = glmer_model_results %>% unnest() %>%
   mutate(Predictor = ifelse(Predictor == "norms_associative", "associative", 
                             ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
   separate(Predictor, sep = "_", 
-           into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val", "param3", "p3_0", "p3_val")) %>%
+           into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val", "param3", "p3_0", "p3_val")) 
+
+individual_model_results_table = individual_model_results %>%
   group_by(domain, Predictor) %>% 
   slice_max(R_squared) %>%
   arrange(domain, desc(R_squared))
@@ -211,13 +211,43 @@ individual_model_results_table = individual_model_results %>%
 
 ```
 
+## multimodaldelta model heatmap
+
+```{r}
+multimodaldelta_models = individual_model_results %>% filter(Predictor == "multimodaldelta") %>%
+  unite("alpha", p1_0, p1_val, sep = ".", remove = FALSE) %>%
+  unite("rise", p2_0, p2_val, sep = ".", remove = FALSE) %>%
+  unite("fall", p3_0, p3_val, sep = ".", remove = FALSE)%>%
+  mutate(alpha = paste0("alpha=", as.numeric(alpha)),
+         rise = as.numeric(rise), fall = as.numeric(fall))
+
+multimodaldelta_models %>% 
+  ggplot(aes(x = rise, y = fall, fill = R_squared)) +
+  geom_tile()+
+  facet_grid(domain~alpha)+
+scale_x_continuous(breaks = c("0"= 0.0, ".25"=0.25, ".5" = 0.50,".75" = 0.75, "1" = 1.0))+
+scale_y_continuous(breaks = c("0"= 0.0, ".25"=0.25, ".5" = 0.50,".75" = 0.75, "1" = 1.0))+
+  geom_tile(color = 'black', stat = 'identity', size = 1, height = 0.25, width = 0.25,
+              data = . %>% group_by(domain) %>% filter(R_squared == max(R_squared)))+
+  scale_fill_gradient2(midpoint = 0.15, high = "darkgreen", low = "darkslategray") +
+    theme_few() +
+    labs(y = "fall parameter", x = "rise parameter",
+          fill  =bquote(R^2 ~ "")) +
+    theme(aspect.ratio = 1,
+          axis.text.x = element_text(size = 8),
+          axis.text.y = element_text(size = 8))
+
+ggsave('multimodal_heatmap_participant.pdf', units = 'in', width = 10, height = 4)
+```
+
+
 
 # rater designations
 
 ## import rater data
 
 ```{r}
-data = read_csv("data/fluency-switch.csv")
+data = read_csv("../data/fluency-switch.csv")
 
 sona_IDs= data %>% filter(!is.na(sona_id)) %>% select(ID) %>%distinct() %>% pull(ID)
 
@@ -370,9 +400,9 @@ trials_agg = trials_agg %>%
 
 ## plot: ratings with lexical similarity
 ```{r}
-food_lexical = read_csv("forager_test/output/foods_forager/lexical_results.csv") %>% mutate(domain = "foods")
-animal_lexical = read_csv("forager_test/output/animals_forager/lexical_results.csv")%>% mutate(domain = "animals")
-occupation_lexical = read_csv("forager_test/output/occupations_forager/lexical_results.csv")%>% mutate(domain = "occupations")
+food_lexical = read_csv("../forager_test/output/foods_forager/lexical_results.csv") %>% mutate(domain = "foods")
+animal_lexical = read_csv("../forager_test/output/animals_forager/lexical_results.csv")%>% mutate(domain = "animals")
+occupation_lexical = read_csv("../forager_test/output/occupations_forager/lexical_results.csv")%>% mutate(domain = "occupations")
 
 all_lexical = rbind(food_lexical, animal_lexical, occupation_lexical) %>% 
   mutate(prev = lag(Fluency_Item))%>%
@@ -402,10 +432,12 @@ plot_all_lexical %>%
   ggplot(aes(x = value, y =mean_response, group = domain, color = domain )) +
   geom_point(alpha = 0.1)+
   geom_smooth(method = "lm")+
-  ylim(0,1)+
+  scale_y_continuous(breaks = c("0: cluster"= 0, "1: switch" = 1.0, ".2"= 0.2, ".4" = 0.4,
+                                ".6" = 0.6, ".8" = 0.8))+
+    coord_cartesian(ylim = c(0, 1)) +  # Set Y-axis limits
   labs(title = "",
        x = "mean lexical values",
-       y = "mean rating of word pairs") +
+       y = "mean ratings\nfor word pairs") +
   theme_minimal()+
   facet_wrap(~cue)+
   scale_color_gdocs()+
@@ -413,11 +445,15 @@ plot_all_lexical %>%
     color = "white"),
     strip.text.x = element_text(size =rel(2)),
         axis.text = element_text(size =rel(1.5)),
-        axis.title = element_text(size =rel(2)),
+        axis.title.x = element_text(size =rel(2)),
+    axis.title.y = element_text(size =rel(1.5)),
         plot.title = element_text(hjust = .5, size = rel(1.2)))
 
-## ratings lexical model
+ggsave('lexical_plot.pdf', units = "in",width = 12, height = 4)
+```
 
+## ratings lexical model
+```{r}
 ratings_lexical_model_semantic = lmer(data = plot_all_lexical %>% filter(cue == "semantic similarity"),
                              mean_response ~ value*domain + (1 | Subject))
 car::Anova(ratings_lexical_model_semantic)
@@ -467,18 +503,51 @@ rater_model_results <- rater_cleaned_data %>%
                             var_cutoff = .015))
   )
 
-rater_model_results_unnested = rater_model_results %>% unnest()
-
-best_rating_models = rater_model_results_unnested %>% 
+rater_model_results_unnested = rater_model_results %>% unnest() %>%
   mutate(Predictor = ifelse(Predictor == "norms_associative", "associative", 
                         ifelse(Predictor == "norms_categorical", "categorical", Predictor))) %>%
-  separate(Predictor, sep = "_", into = c("Predictor", "param1", "p1_0", "p1_val", "param2", "p2_0", "p2_val", "param3", "p3_0", "p3_val")) %>%
+  separate(Predictor, sep = "_", into = c("Predictor", "param1", "p1_0", "p1_val", 
+                                          "param2", "p2_0", "p2_val", "param3", "p3_0", "p3_val"))
+
+write.csv(rater_model_results_unnested, file = "rater_model_results.csv", row.names = FALSE)
+
+best_rating_models = rater_model_results_unnested %>% 
   filter(Predictor != "exp")%>%
   group_by(domain, Predictor) %>% 
   slice_max(R_squared) %>%
   arrange(domain, desc(R_squared))
 
 ```
+
+## multimodaldelta model heatmap
+
+```{r}
+multimodaldelta_models_rater = rater_model_results_unnested %>% filter(Predictor == "multimodaldelta") %>%
+  unite("alpha", p1_0, p1_val, sep = ".", remove = FALSE) %>%
+  unite("rise", p2_0, p2_val, sep = ".", remove = FALSE) %>%
+  unite("fall", p3_0, p3_val, sep = ".", remove = FALSE)%>%
+  mutate(alpha = paste0("alpha=", as.numeric(alpha)),
+         rise = as.numeric(rise), fall = as.numeric(fall))
+
+multimodaldelta_models_rater %>% 
+  ggplot(aes(x = rise, y = fall, fill = R_squared)) +
+  geom_tile()+
+  facet_grid(domain~alpha)+
+  geom_tile(color = 'black', stat = 'identity', size = 1, width = 0.25, height = 0.25,
+              data = . %>% group_by(domain) %>% filter(R_squared == max(R_squared)))+
+scale_x_continuous(breaks = c("0"= 0.0, ".25"=0.25, ".5" = 0.50,".75" = 0.75, "1" = 1.0))+
+scale_y_continuous(breaks = c("0"= 0.0, ".25"=0.25, ".5" = 0.50,".75" = 0.75, "1" = 1.0))+
+  scale_fill_gradient2(midpoint = 0.2, high = "darkgreen", low = "darkslategray") +
+    theme_few() +
+    labs(y = "fall parameter", x = "rise parameter",
+          fill  =bquote(R^2 ~ "")) +
+    theme(aspect.ratio = 1,
+          axis.text.x = element_text(size = 8),
+          axis.text.y = element_text(size = 8))
+
+ggsave('multimodal_heatmap_rater.pdf', units = 'in', width = 10, height = 4)
+```
+
 
 ## exploratory: predict individual with rater
 
@@ -562,14 +631,18 @@ summary(idio_lexical_frequency)
 car::Anova(idio_lexical_frequency)
 
 
+```
+
 
 ## plot
-
+```{r}
 idio_lexical %>%
   ggplot(aes(x = value, y =idiosyncratic, group = domain, color = domain )) +
   geom_point(alpha = 0.1)+
   geom_smooth(method = "lm")+
-  ylim(0,1)+
+  scale_y_continuous(breaks = c("0: no discordance"= 0, "1: high discordance" = 1.0, ".2"= 0.2, ".4" = 0.4,
+                                ".6" = 0.6, ".8" = 0.8))+
+    coord_cartesian(ylim = c(0, 1)) +  # Set Y-axis limits
   labs(title = "",
        x = "lexical values",
        y = "idiosyncratic score") +
@@ -583,6 +656,7 @@ idio_lexical %>%
         axis.title = element_text(size =rel(2)),
         plot.title = element_text(hjust = .5, size = rel(1.2)))
 
+ggsave('idio_lexical_plot.pdf', units = "in",width = 12, height = 4)
 
 ```
 
@@ -808,11 +882,13 @@ ggplot(aes(x= n_clusters, y = avg_idio, group = domain, color = domain)) +
 
 ```{r}
 strategies = data %>% 
-  filter(ID %in% trials$ID) %>%
+  #filter(ID %in% trials$ID) %>%
   filter(type_of_trial == "demo"  & str_detect(response, '^\\{"Q0":"')) %>%
   filter(row_number() %% 2 != 0)%>%
   mutate(response = str_extract(response, '(?<=Q0":").*?(?=")')) %>%
   select(ID,response)
+
+write.csv(strategies, file = "ID_strategies.csv", row.names = FALSE)
 ```
 
 
