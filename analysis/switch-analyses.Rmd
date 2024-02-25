@@ -16,6 +16,8 @@ library(lmerTest)
 library(broom.mixed)
 setwd(here::here())
 library(boot)
+library(irr)
+
 getwd()
 ```
 
@@ -890,6 +892,85 @@ strategies = data %>%
 
 write.csv(strategies, file = "ID_strategies.csv", row.names = FALSE)
 ```
+
+
+## final analyses
+
+```{r}
+strategies = read_csv("../data/ID_strategies_long.csv") %>%
+  filter(ID %in% actual_sample_IDs)
+
+## category kappa
+kappa_results <- strategies %>%
+  group_by(category) %>%
+  summarise(answer = list(irr::kappa2(select(cur_data(), AK, Nancy), weight = "unweighted"))) %>%
+ mutate(kappa_value = map_dbl(answer, "value"),
+        subjects = map_dbl(answer, "subjects"),
+        raters = map_dbl(answer, "raters"),
+        statistic = map_dbl(answer, "statistic"),
+        p.value = map_dbl(answer, "p.value")) %>%
+  select(category, subjects, raters, kappa_value, statistic,p.value) %>%
+  mutate(kappa_value = ifelse(is.nan(kappa_value), 1, kappa_value))
+
+mean(kappa_results$kappa_value)
+
+## overall kappa
+strategies %>%
+  summarise(answer = list(irr::kappa2(select(cur_data(), AK, Nancy), weight = "unweighted"))) %>%
+ mutate(kappa_value = map_dbl(answer, "value"),
+        subjects = map_dbl(answer, "subjects"),
+        raters = map_dbl(answer, "raters"),
+        statistic = map_dbl(answer, "statistic"),
+        p.value = map_dbl(answer, "p.value")) %>%
+  select(subjects, raters, kappa_value, statistic,p.value)
+
+strategies = strategies %>% 
+  mutate(used = ifelse(Nancy == 1 | AK == 1, 1, 0))
+
+counts = strategies %>% 
+  group_by(category) %>%
+  summarize(n_participants = sum(used)) %>%
+  mutate(percent = n_participants/220)
+
+counts
+```
+
+## coding analysis (PRIOR to FINAL coding)
+
+```{r}
+strategies = read_csv("../data/combined_strategies.csv") %>%
+  pivot_longer(names_to = "category", cols = semantic_associations_subcategories:
+                 vague_response_missing_or_misc_comment_unable_to_categorize_strategy) %>%
+  pivot_wider(names_from = "rater", values_from = value)
+
+x <- strategies %>%
+  group_by(category) %>%
+  summarise(answer = list(irr::kappa2(select(cur_data(), AK, Nancy), weight = "unweighted"))) %>%
+ mutate(kappa_value = map_dbl(answer, "value"),
+        subjects = map_dbl(answer, "subjects"),
+        raters = map_dbl(answer, "raters"),
+        statistic = map_dbl(answer, "statistic"),
+        p.value = map_dbl(answer, "p.value")) %>%
+  select(category, subjects, raters, kappa_value, statistic,p.value)
+
+maind = strategies %>% select(-Nancy) %>%
+  pivot_wider(names_from = category, values_from = Devin)
+write.csv(maind, file = "devin.csv")
+
+ak = read_csv("devin.csv") %>%
+  pivot_longer(names_to = "category", cols = semantic_associations_subcategories:vague_response_missing_or_misc_comment_unable_to_categorize_strategy) %>%
+  rename(AK = "value")%>%
+  select(-1)
+
+strategies = strategies %>% left_join(ak) %>%
+  select(-Devin) %>%
+  mutate(neq = ifelse(Nancy == AK, 1, 0))
+
+write.csv(strategies, file="ID_strategies_long.csv", row.names = FALSE)
+```
+
+
+
 
 
 
